@@ -1,15 +1,15 @@
 project_id,project_name,project_git_repo,proposal_id,proposal_name,proposal_status
-PRJ-20250416-001,todolist,,P-20250416-001,todo-list,active
-PRJ-20250416-001,todolist,,P-20260502-012,todolist-v4-看板列内拖拽排序-统计仪表板,active
-PRJ-20250416-001,todolist,,P-20260502-014,todolist-v5-搜索增强-快捷键,active
-PRJ-20250416-001,todolist,,P-20260502-015,todolist-v7-批量操作,active
-PRJ-20250416-001,todolist,,P-20260502-016,todolist-v8-暗色模式-看板泳道-增强导出,active
-PRJ-20250416-001,todolist,,P-20260502-019,todolist-v11-甘特图-循环提醒,active
-PRJ-20250416-001,todolist,,P-20260503-020,todolist-v12-任务评分-gist-多设备同步,in_dev
-PRJ-20250416-001,todolist,,P-20260503-024,todolist-v16-定时自动备份到-gist-一键恢复,active
-PRJ-20250416-001,todolist,,P-20260503-025,todolist-v17-标签管理增强-项目分组,active
-PRJ-20250416-001,todolist,,P-20260503-026,todolist-v18-标签管理增强-甘特图资源视图,active
-PRJ-20250416-001,todolist,,P-20260503-027,todolist-v19-甘特图资源负载图-看板泳道按项目分组,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20250416-001,todo-list,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260502-012,todolist-v4-看板列内拖拽排序-统计仪表板,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260502-014,todolist-v5-搜索增强-快捷键,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260502-015,todolist-v7-批量操作,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260502-016,todolist-v8-暗色模式-看板泳道-增强导出,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260502-019,todolist-v11-甘特图-循环提醒,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260503-020,todolist-v12-任务评分-gist-多设备同步,in_dev
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260503-024,todolist-v16-定时自动备份到-gist-一键恢复,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260503-025,todolist-v17-标签管理增强-项目分组,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260503-026,todolist-v18-标签管理增强-甘特图资源视图,active
+PRJ-20250416-001,todolist,https://github.com/YeLuo45/todo-list,P-20260503-027,todolist-v19-甘特图资源负载图-看板泳道按项目分组,active
 PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20250416-002,game-1024,active
 PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20260502-007,game-1024-v2-2048-无限模式切换,in_dev
 PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20260502-008,game-1024-v2-每日挑战-成就系统,in_dev
@@ -82,7 +82,7 @@ PRJ-20260418-004,future-little-leaders,https://github.com/YeLuo45/future-little-
 PRJ-20260418-005,todo-app,https://github.com/YeLuo45/todo-app,P-20250418-005,todo-app,active
 PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260419-001,temple-run,in_dev
 PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260504-070,p-20260504-070,archived
-PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260505-001-B,temple-run 分数系统+角色成长,delivered
+PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260505-081,temple-run 分数系统+角色成长,archived
 PRJ-20260419-002,tank-battle,https://github.com/YeLuo45/tank-battle,P-20250419-002,tank-battle,active
 PRJ-20260419-003,dont-step-white,https://github.com/YeLuo45/dont-step-white,P-20260419-003,dont-step-white,active
 PRJ-20260419-003,dont-step-white,https://github.com/YeLuo45/dont-step-white,P-20260504-004,dont-step-white,active

@@ -7,7 +7,8 @@ P-20260505-004,ai-stock-simulation K线指标面板增强,,active,PRJ-20260412-0
 P-20260505-005,ai-stock-simulation 多策略对比,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-005-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260505-006,ai-stock-simulation 策略参数优化面板,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-006-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260505-007,ai-stock-simulation 真实K线数据对接,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-007-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-008,ai-stock-simulation 回测报告导出增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-008-prd.md,,,,,,confirmed,,in_dev,2026-05-05,,,,提案
+P-20260505-008,ai-stock-simulation 回测报告导出增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-008-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-009,ai-stock-simulation 持仓/交易历史持久化,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-009-prd.md,,,,,,confirmed,,in_dev,2026-05-05,,,,提案
 P-20260503-029,pixelpal-v4-model-ui-thinking,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-030,pixelpal-v5-multi-persona-collaboration,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-031,pixelpal-v6-rag-knowledge-base,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
@@ -191,3 +192,5 @@ P-20260505-012,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-
 P-20260505-013,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,timeout-approved,,accepted,2026-05-06,,,,提案
 P-20260412-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,,,accepted,2026-04-12,,,,Web;Android
 P-20260505-014,android-hello-单元测试,V2.1.0单元测试;已提交c0171db,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android
+P-20260505-015,android-hello-Settings+BottomNav,V2.2.0 Settings+BottomNav;已提交d8d2b2e,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android
+P-20260505-016,android-hello-Room持久化,V2.3.0 Room持久化;已提交5137623,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android

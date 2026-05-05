@@ -3,7 +3,10 @@ P-20260412-009,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,
 P-20260505-001,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,accepted,2026-05-05,,,,提案
 P-20260505-002,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,accepted,2026-05-05,,,,提案
 P-20260505-003,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-004,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-004,ai-stock-simulation K线指标面板增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-004-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-005,ai-stock-simulation 多策略对比,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-005-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-006,ai-stock-simulation 策略参数优化面板,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-006-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-007,ai-stock-simulation 真实K线数据对接,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-007-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260503-029,pixelpal-v4-model-ui-thinking,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-030,pixelpal-v5-multi-persona-collaboration,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-031,pixelpal-v6-rag-knowledge-base,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
@@ -23,7 +26,8 @@ P-20260504-008,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://
 P-20250417-002,android-hello,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/download/v1.0.0/app-debug.apk,,,accepted,2026-04-17,,,,Android
 P-20250418-001,monopoly3d,,active,PRJ-20260418-001,monopoly3d,,,,,https://github.com/YeLuo45/monopoly3d,https://YeLuo45.github.io/monopoly3d/,,,accepted,2026-04-18,,,,提案
 P-20250418-004,future-little-leaders,,active,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,https://yeluo45.github.io/future-little-leaders/,,,accepted,2026-04-18,,,,提案
-P-20260504-3009,future-little-leaders-v2-成长激励-亲子互动,,in_dev,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,,confirmed,pending,,2026-05-03,,,,提案
+P-20260504-3009,future-little-leaders-v2-成长激励-亲子互动,,delivered,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,,confirmed,pending,,2026-05-03,,,,提案
+P-20260505-012,future-little-leaders-v3-家庭圈-family-circle,,approved_for_dev,PRJ-20260418-004,future-little-leaders,approved_for_dev,workspace-pm/proposals/P-20260505-011-prd.md,,,,,,confirmed,,2026-05-05,,,,提案
 P-20250418-005,todo-app,,active,PRJ-20260418-005,todo-app,,,,,https://github.com/YeLuo45/todo-app,,,,,2026-04-18,,,,Web
 P-20260412-007,ai-creator-h5 (H5),,active,PRJ-20260419-007,ai-creator-h5 (H5),,,,,https://github.com/YeLuo45/ai-creator-miniprogram (小程序) / https://github.com/YeLuo45/ai-creator-h5 (H5),https://yeluo45.github.io/ai-creator-h5/,,,accepted,2026-04-19,,,,提案
 P-20260419-003,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),timeout-approved,confirmed,accepted,2026-04-19,,,,Web;PWA
@@ -185,3 +189,4 @@ P-20260505-011,ai-subscription-数据统计面板,,in_dev,PRJ-20260412-008,ai-su
 P-20260505-012,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-013,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,timeout-approved,,accepted,2026-05-06,,,,提案
 P-20260412-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,,,accepted,2026-04-12,,,,Web;Android
+P-20260505-014,android-hello-单元测试,V2.1.0单元测试;已提交c0171db,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android

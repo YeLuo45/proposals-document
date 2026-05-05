@@ -9,7 +9,7 @@
 
 | # | Project ID | 项目名称 | 提案数 | GitHub Repo | GitHub Pages |
 |---|-----------|---------|-------|-------------|-------------|
-| 1 | PRJ-20250416-001 | todolist | 11 | https://github.com/YeLuo45/todo-list | - |
+| 1 | PRJ-20250416-001 | todolist | 11 | https://github.com/YeLuo45/todo-list | https://yeluo45.github.io/todo-list/ |
 | 2 | PRJ-20250416-002 | game-1024 | 6 | https://github.com/YeLuo45/game-1024 | https://yeluo45.github.io/game-1024/ |
 | 3 | PRJ-20250418-003 | harness-desktop | 1 | https://github.com/YeLuo45/harness-desktop | - |
 | 4 | PRJ-20260412-008 | ai-subscription | 11 | https://github.com/YeLuo45/ai-subscription | https://yeluo45.github.io/ai-subscription/ |

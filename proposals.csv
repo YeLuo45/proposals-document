@@ -7,6 +7,7 @@ P-20260505-004,ai-stock-simulation K线指标面板增强,,active,PRJ-20260412-0
 P-20260505-005,ai-stock-simulation 多策略对比,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-005-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260505-006,ai-stock-simulation 策略参数优化面板,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-006-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260505-007,ai-stock-simulation 真实K线数据对接,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-007-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260505-008,ai-stock-simulation 回测报告导出增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-008-prd.md,,,,,,confirmed,,in_dev,2026-05-05,,,,提案
 P-20260503-029,pixelpal-v4-model-ui-thinking,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-030,pixelpal-v5-multi-persona-collaboration,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
 P-20260503-031,pixelpal-v6-rag-knowledge-base,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案

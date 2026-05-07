@@ -188,7 +188,7 @@ P-20260505-008,ai-subscription-主题定制-深色模式,,in_dev,PRJ-20260412-00
 P-20260505-009,ai-subscription-国际化-i18n,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-010,ai-subscription-键盘快捷键,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-011,ai-subscription-数据统计面板,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
-P-20260505-012,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
+P-20260505-082,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-013,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,timeout-approved,,accepted,2026-05-06,,,,提案
 P-20260412-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,,,accepted,2026-04-12,,,,Web;Android
 P-20260505-014,android-hello-单元测试,V2.1.0单元测试;已提交c0171db,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android

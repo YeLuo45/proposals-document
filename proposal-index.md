@@ -341,6 +341,19 @@
 - `Last Update`: 2026-05-12
 - `Notes`: 新增收藏项目功能，星标按钮，收藏数据存储到GitHub仓库data/favorites.json；commit 6d3b4c4，GitHub Pages已部署
 
+### P-20260512-002: 项目提案管理-收藏列表独立视图
+
+- `Proposal ID`: `P-20260512-002`
+- `Title`: 项目提案管理-收藏列表独立视图
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `Tech Solution Path`: `workspace-dev/proposals/prj-proposals-manager/P-20260512-002-tech-solution.md`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-12
+- `Notes`: 收藏视图快速访问已收藏项目，Header添加星标入口和数量badge；commit 335fdf1，GitHub Pages已部署
+
 ### P-20260509-001: PixelPal V64 — Agent执行循环闭环
 
 - `Proposal ID`: `P-20260509-001`
@@ -676,6 +689,36 @@
  - `Technical Expectations`: pending
  - `Last Update`: 2026-05-12
  - `Notes`: commit 0ad0aadb - local-inference/types.ts+hardware-detector.ts+model-registry.ts+inference-manager.ts+index.ts；LocalClassifier(关键词分类<5ms)+硬件检测(WebGPU/WASM)+inferWithFallback云端降级；intent-parser已集成本地推理
+
+### P-20260512-007: ai-subscription-成本监控面板
+
+ - `Proposal ID`: `P-20260512-007`
+ - `Title`: ai-subscription-成本监控面板
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-007-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Acceptance`: `accepted`
+ - `PRD Confirmation`: `boss-selected-A`
+ - `Technical Expectations`: pending
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 45e45561 - cost-tracker/types.ts+storage.ts+calculator.ts+aggregator.ts；CostRecord(IndexedDB)+PRICING_TABLE(GPT-4o/Claude/Gemini)+aggregateRecords+getDailyCosts；routeAndCall自动记录成本
+
+### P-20260512-008: ai-subscription-Pipeline UI集成（流式输出）
+
+ - `Proposal ID`: `P-20260512-008`
+ - `Title`: ai-subscription-Pipeline UI集成（流式输出）
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-008-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Acceptance`: `accepted`
+ - `PRD Confirmation`: `boss-selected-A`
+ - `Technical Expectations`: pending
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 9851fa0e - components/pipeline/PipelineUI.tsx+StageOutput.tsx+index.ts；PipelineUI(AsyncGenerator消费)+StageOutput(流式文本)+4阶段状态(pending/running/done/error)；push超时，待手动push
 
 ### P-20260512-003: 成就系统大改版
 

@@ -75,10 +75,10 @@
 - `Research Direction Countdown ID`: -
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
-- `Last Update`: 2026-05-11
-- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发，仅记录时间戳）
+- `Last Update`: 2026-05-12
+- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-13)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新
 
-*最后更新：2026-05-11*
+*最后更新：2026-05-12*
 ### P-20260506-001: ai-subscription-智能分类标签系统
 
 - `Proposal ID`: `P-20260506-001`
@@ -353,6 +353,19 @@
 - `Project`: `prj-proposals-manager`
 - `Last Update`: 2026-05-12
 - `Notes`: 收藏视图快速访问已收藏项目，Header添加星标入口和数量badge；commit 335fdf1，GitHub Pages已部署
+
+### P-20260512-003: 项目提案管理-收藏项目排序
+
+- `Proposal ID`: `P-20260512-003`
+- `Title`: 项目提案管理-收藏项目排序
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `Tech Solution Path`: `workspace-dev/proposals/prj-proposals-manager/P-20260512-003-tech-solution.md`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-12
+- `Notes`: 收藏视图按最近收藏时间倒序排列；commit 9d2bdc7，GitHub Pages已部署
 
 ### P-20260509-001: PixelPal V64 — Agent执行循环闭环
 
@@ -719,6 +732,20 @@
  - `Technical Expectations`: pending
  - `Last Update`: 2026-05-12
  - `Notes`: commit 9851fa0e - components/pipeline/PipelineUI.tsx+StageOutput.tsx+index.ts；PipelineUI(AsyncGenerator消费)+StageOutput(流式文本)+4阶段状态(pending/running/done/error)；push超时，待手动push
+
+### P-20260512-009: ai-subscription-聚合推送持久化（Redis队列+定时发送）
+
+ - `Proposal ID`: `P-20260512-009`
+ - `Title`: ai-subscription-聚合推送持久化（Redis队列+定时发送）
+ - `Owner`: 小墨
+ - `Current Status`: `approved_for_dev`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-009-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Acceptance`: pending
+ - `PRD Confirmation`: `boss-selected-A`
+ - `Technical Expectations`: pending
+ - `Last Update`: 2026-05-12
+ - `Notes`: Redis聚合持久化+定时发送
 
 ### P-20260512-003: 成就系统大改版
 

@@ -3,35 +3,57 @@ P-20260412-009,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,
 P-20260505-001,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,accepted,2026-05-05,,,,提案
 P-20260505-002,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,accepted,2026-05-05,,,,提案
 P-20260505-003,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-004,ai-stock-simulation K线指标面板增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-004-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-005,ai-stock-simulation 多策略对比,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-005-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-006,ai-stock-simulation 策略参数优化面板,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-006-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-007,ai-stock-simulation 真实K线数据对接,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-007-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-008,ai-stock-simulation 回测报告导出增强,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-008-prd.md,,,,,,confirmed,,accepted,2026-05-05,,,,提案
-P-20260505-009,ai-stock-simulation 持仓/交易历史持久化,,active,PRJ-20260412-009,ai-stock-simulation,active,workspace-pm/proposals/P-20260505-009-prd.md,,,,,,confirmed,,in_dev,2026-05-05,,,,提案
-P-20260503-029,pixelpal-v4-model-ui-thinking,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-030,pixelpal-v5-multi-persona-collaboration,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-031,pixelpal-v6-rag-knowledge-base,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-032,pixelpal-v7-voice-语音交互,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-033,pixelpal-v8-mobile-pwa-移动端优化,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,Web;PWA
-P-20260503-034,pixelpal-v9-plugin-system-插件系统,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-035,pixelpal-v10-advanced-memory-高级记忆系统,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260503-036,pixelpal-v11-desktop-electron-桌面版,,in_dev,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,,2026-05-03,,,,Windows
-P-20260503-037,pixelpal-v12-multi-language-多语言切换,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,小墨于2026-05-03验收通过,2026-05-03,,,,提案
-P-20260504-001,pixelpal-v13-高级记忆系统-v2,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,,2026-05-04,,,,提案
-P-20260504-002,pixelpal-v14-webhook-插件生态,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,,2026-04-16,,,,提案
-P-20260504-003,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,accepted,2026-05-04,,,,Windows
-P-20260504-005,pixelpal-v17-数据分析面板,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,,2026-05-04,,,,提案
-P-20260504-006,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,accepted,2026-05-04,,,,提案
-P-20260504-007,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,accepted,2026-05-04,,,,Web
-P-20260504-008,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,https://github.com/YeLuo45/pixel-pal-web,,,,accepted,2026-05-05,,,,提案
+P-20260505-004,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
+P-20260509-024,position-analytics,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,delivered,2026-05-09,,,,
+P-20260509-002,p-20260509-002,,archived,p-20260509-002,p-20260509-002,,,,,,,,,,,,,,提案
+P-20260509-005,p-20260509-005,,archived,p-20260509-005,p-20260509-005,,,,,,,,,,,,,,提案
+P-20260509-006,p-20260509-006,,archived,p-20260509-006,p-20260509-006,,,,,,,,,,,,,,提案
+P-20260509-007,p-20260509-007,,archived,p-20260509-007,p-20260509-007,,,,,,,,,,,,,,提案
+P-20260509-008,p-20260509-008,,archived,p-20260509-008,p-20260509-008,,,,,,,,,,,,,,提案
+P-20260509-009,p-20260509-009,,archived,p-20260509-009,p-20260509-009,,,,,,,,,,,,,,提案
+P-20260509-010,p-20260509-010,,archived,p-20260509-010,p-20260509-010,,,,,,,,,,,,,,提案
+P-20260509-011,p-20260509-011,,archived,p-20260509-011,p-20260509-011,,,,,,,,,,,,,,提案
+P-20260509-012,p-20260509-012,,archived,p-20260509-012,p-20260509-012,,,,,,,,,,,,,,提案
+P-20260509-013,p-20260509-013,,archived,p-20260509-013,p-20260509-013,,,,,,,,,,,,,,提案
+P-20260509-014,p-20260509-014,,archived,p-20260509-014,p-20260509-014,,,,,,,,,,,,,,提案
+P-20260509-015,p-20260509-015,,archived,p-20260509-015,p-20260509-015,,,,,,,,,,,,,,提案
+P-20260509-016,p-20260509-016,,archived,p-20260509-016,p-20260509-016,,,,,,,,,,,,,,提案
+P-20260509-017,p-20260509-017,,archived,p-20260509-017,p-20260509-017,,,,,,,,,,,,,,提案
+P-20260509-018,p-20260509-018,,archived,p-20260509-018,p-20260509-018,,,,,,,,,,,,,,提案
+P-20260509-019,p-20260509-019,,archived,p-20260509-019,p-20260509-019,,,,,,,,,,,,,,提案
+P-20260509-020,p-20260509-020,,archived,p-20260509-020,p-20260509-020,,,,,,,,,,,,,,提案
+P-20260509-021,p-20260509-021,,archived,p-20260509-021,p-20260509-021,,,,,,,,,,,,,,提案
+P-20260509-022,p-20260509-022,,archived,p-20260509-022,p-20260509-022,,,,,,,,,,,,,,提案
+P-20260508-004,p-20260508-004,,archived,p-20260508-004,p-20260508-004,,,,,,,,,,,,,,提案
 P-20250417-002,android-hello,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/download/v1.0.0/app-debug.apk,,,accepted,2026-04-17,,,,Android
+P-20260505-014,android-hello Unit Tests,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
+P-20260505-015,android-hello Settings,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
+P-20260505-016,android-hello Room,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
+P-20260505-017,android-hello Retrofit,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
+P-20260506-018,android-hello SavedStateHandle,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260506-019,android-hello Dark Mode,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260506-020,android-hello Compose UI Testing,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260506-021,android-hello i18n,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260506-022,android-hello CI/CD,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260506-023,android-hello APK Release,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-06,,,,Android
+P-20260507-024,android-hello Widget,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-025,android-hello Push Notifications,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-026,android-hello Analytics,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-027,android-hello WorkManager,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-028,android-hello DataStore,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-029,android-hello R8,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-07,,,,Android
+P-20260507-030,android-hello Splash Screen,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/download/v3.6.0/app-prod-release-v36.apk,,,accepted,2026-05-07,,,,Android
+P-20260509-003,android-hello V3.10.0 深色模式优化,,delivered,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,delivered,2026-05-03,,,,
+P-20260509-004,android-hello V3.11.0 通知与提醒功能,,delivered,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,delivered,2026-05-04,,,,
 P-20250418-001,monopoly3d,,active,PRJ-20260418-001,monopoly3d,,,,,https://github.com/YeLuo45/monopoly3d,https://YeLuo45.github.io/monopoly3d/,,,accepted,2026-04-18,,,,提案
 P-20250418-004,future-little-leaders,,active,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,https://yeluo45.github.io/future-little-leaders/,,,accepted,2026-04-18,,,,提案
-P-20260504-3009,future-little-leaders-v2-成长激励-亲子互动,,delivered,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,,confirmed,pending,,2026-05-03,,,,提案
-P-20260505-012,future-little-leaders-v3-家庭圈-family-circle,,approved_for_dev,PRJ-20260418-004,future-little-leaders,approved_for_dev,workspace-pm/proposals/P-20260505-011-prd.md,,,,,,confirmed,,2026-05-05,,,,提案
+P-20260504-3009,future-little-leaders-v2-成长激励-亲子互动,,in_dev,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,,confirmed,pending,,2026-05-03,,,,提案
+P-20260505-012,future-little-leaders,,in_dev,PRJ-20260418-004,future-little-leaders,,,,,https://github.com/YeLuo45/future-little-leaders,,confirmed,pending,,2026-05-05,,,,提案
 P-20250418-005,todo-app,,active,PRJ-20260418-005,todo-app,,,,,https://github.com/YeLuo45/todo-app,,,,,2026-04-18,,,,Web
-P-20260412-007,ai-creator-h5 (H5),,active,PRJ-20260419-007,ai-creator-h5 (H5),,,,,https://github.com/YeLuo45/ai-creator-miniprogram (小程序) / https://github.com/YeLuo45/ai-creator-h5 (H5),https://yeluo45.github.io/ai-creator-h5/,,,accepted,2026-04-19,,,,提案
+P-20260419-001,temple-run,,in_dev,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,https://yeluo45.github.io/temple-run/,confirmed,confirmed,accepted,2026-04-19,,,,Web;PWA
+P-20260505-081,temple-run 分数系统+角色成长,,archived,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,https://yeluo45.github.io/temple-run/,confirmed,confirmed,accepted,2026-04-16,,,,Web;PWA
+P-20260504-070,p-20260504-070,,archived,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,,,,,2026-04-16,,,,提案
+P-20250419-002,tank-battle,,active,PRJ-20260419-002,tank-battle,,,,,https://github.com/YeLuo45/tank-battle,https://yeluo45.github.io/tank-battle/,,,,2026-04-19,,,,提案
 P-20260419-003,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),timeout-approved,confirmed,accepted,2026-04-19,,,,Web;PWA
 P-20260504-004,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),,,accepted,2026-05-04,,,,Web;PWA
 P-20260504-009,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),,,accepted,2026-05-04,,,,提案
@@ -45,10 +67,6 @@ P-20260504-016,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,http
 P-20260504-018,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),confirmed,,accepted,2026-05-04,,,,提案
 P-20260504-3024,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),,,accepted,2026-05-04,,,,提案
 P-20260504-3027,dont-step-white,,active,PRJ-20260419-003,dont-step-white,,,,,https://github.com/YeLuo45/dont-step-white,https://yeluo45.github.io/dont-step-white/ (gh-pages),,,accepted,2026-05-04,,,,Web
-P-20250419-002,tank-battle,,active,PRJ-20260419-002,tank-battle,,,,,https://github.com/YeLuo45/tank-battle,https://yeluo45.github.io/tank-battle/,,,,2026-04-19,,,,提案
-P-20260419-001,temple-run,,in_dev,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,https://yeluo45.github.io/temple-run/,confirmed,confirmed,accepted,2026-04-19,,,,Web;PWA
-P-20260505-081,temple-run 分数系统+角色成长,,archived,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,https://yeluo45.github.io/temple-run/,confirmed,confirmed,accepted,2026-04-16,,,,Web;PWA
-P-20260504-070,p-20260504-070,,archived,PRJ-20260419-001,temple-run,,,,,https://github.com/YeLuo45/temple-run,,,,,2026-04-16,,,,提案
 P-20260419-004,TradingAgents-CN,,active,PRJ-20260419-005,TradingAgents-CN,,,,,https://github.com/YeLuo45/TradingAgents-CN,,,,accepted,2026-04-19,,,,提案
 P-20260504-3046,TradingAgents-CN,,active,PRJ-20260419-005,TradingAgents-CN,,,,,https://github.com/YeLuo45/TradingAgents-CN,,,,accepted,2026-04-19,,,,提案
 P-20250421-003,personalClaw,,active,PRJ-20260421-003,personalClaw,,,,,https://github.com/YeLuo45/personalClaw,,,,,2026-04-21,,,,提案
@@ -59,12 +77,12 @@ P-20260502-003,ai-novel-assistant,,in_dev,PRJ-20260422-001,ai-novel-assistant,,,
 P-20260504-3001,ai-novel-assistant,,active,PRJ-20260422-001,ai-novel-assistant,,,,,https://github.com/YeLuo45/ai-novel-assistant,,,,,2026-05-02,,,,提案
 P-20260504-3054,ai-novel-assistant,,in_dev,PRJ-20260422-001,ai-novel-assistant,,,,,https://github.com/YeLuo45/ai-novel-assistant,,confirmed,pending,,2026-05-02,,,,提案
 P-20260422-001,room-escape-puzzle,,in_dev,PRJ-20260423-001,room-escape-puzzle,,,,,https://github.com/YeLuo45/room-escape-puzzle,https://resonant-frangipane-46af83.netlify.app/,confirmed,confirmed,accepted,2026-04-23,,,,提案
+P-20260422-005,little-garden,,in_dev,PRJ-20260423-002,little-garden,,,,,https://github.com/YeLuo45/little-garden,https://yeluo45.github.io/little-garden/,confirmed,confirmed,accepted,2026-04-23,,,,游戏
 P-20260419-005,hermes-agent-collab,,in_dev,PRJ-20260423-005,hermes-agent-collab,,,,,https://github.com/YeLuo45/hermes-agent-collab,,confirmed,confirmed,accepted,2026-04-23,,,,Web
 P-20260504-3055,P-20260502-003,,active,PRJ-20260423-005,hermes-agent-collab,,,,,https://github.com/YeLuo45/hermes-agent-collab,,,,,2026-05-02,,,,提案
 P-20260424-002,hermes-协作服务器消息转发机制重构,,active,PRJ-20260423-005,hermes-agent-collab,,,,,https://github.com/YeLuo45/hermes-agent-collab,,timeout-approved,,,2026-04-24,,,,提案
-P-20260422-005,little-garden,,in_dev,PRJ-20260423-002,little-garden,,,,,https://github.com/YeLuo45/little-garden,https://yeluo45.github.io/little-garden/,confirmed,confirmed,accepted,2026-04-23,,,,游戏
-P-20260422-003,match3-puzzle,,in_dev,PRJ-20260424-004,match3-puzzle,,,,,https://github.com/YeLuo45/match3-puzzle,https://yeluo45.github.io/match3-puzzle/,confirmed,confirmed,accepted,2026-04-24,,,,提案
 P-20260424-001,OpenMAIC,,active,PRJ-20260424-001,OpenMAIC,,,,,https://github.com/YeLuo45/OpenMAIC,,,,accepted,2026-04-24,,,,提案
+P-20260422-003,match3-puzzle,,in_dev,PRJ-20260424-004,match3-puzzle,,,,,https://github.com/YeLuo45/match3-puzzle,https://yeluo45.github.io/match3-puzzle/,confirmed,confirmed,accepted,2026-04-24,,,,提案
 P-20250416-003,calculator-app.git,,active,PRJ-20260426-003,calculator-app,,,,,https://github.com/YeLuo45/calculator-app.git,,,,accepted (2026-04-26),2026-04-26,,,,Web
 P-20260426-001,preschool-puzzle,,in_dev,PRJ-20260427-001,preschool-puzzle,,,,,https://github.com/YeLuo45/preschool-puzzle,https://yeluo45.github.io/preschool-puzzle/ (gh-pages),confirmed,confirmed,accepted,2026-04-27,,,,提案
 P-20260504-3096,preschool-puzzle,,in_dev,PRJ-20260427-001,preschool-puzzle,,,,,https://github.com/YeLuo45/preschool-puzzle,https://yeluo45.github.io/preschool-puzzle/ (gh-pages),confirmed,confirmed,accepted,2026-04-27,,,,提案
@@ -95,6 +113,12 @@ P-20260503-024,todolist-v16-定时自动备份到-gist-一键恢复,,active,PRJ-
 P-20260503-025,todolist-v17-标签管理增强-项目分组,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,accepted,2026-05-03,,,,提案
 P-20260503-026,todolist-v18-标签管理增强-甘特图资源视图,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,accepted,2026-05-03,,,,提案
 P-20260503-027,todolist-v19-甘特图资源负载图-看板泳道按项目分组,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,accepted,2026-05-03,,,,提案
+P-20250416-002,game-1024,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,https://yeluo45.github.io/game-1024/,,,accepted,2026-05-02,,,,Web;PWA;游戏
+P-20260502-007,game-1024-v2-2048-无限模式切换,,in_dev,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,confirmed,confirmed,accepted,2026-05-02,,,,提案
+P-20260502-008,game-1024-v2-每日挑战-成就系统,,in_dev,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,confirmed,confirmed,accepted,2026-05-02,,,,提案
+P-20260502-009,game-1024-v3-视觉动画增强,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,提案
+P-20260502-010,game-1024-v3-音效系统,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,Web
+P-20260502-011,game-1024-v4-悔棋-重试功能,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,提案
 P-20260502-013,dbg卡牌游戏-v6-遗物-神器系统,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,boss于2026-05-02验收通过,2026-05-02,,,,提案
 P-20260503-001,dbg卡牌游戏-v9-成就系统,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,boss于2026-05-02验收通过,2026-05-02,,,,提案
 P-20260503-002,dbg卡牌游戏-v10-章节扩展,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,boss于2026-05-03验收通过,2026-05-03,,,,提案
@@ -127,18 +151,12 @@ P-20260509-010,pvz-僵尸专属机制-newspaper愤怒变身纸片特效-football
 P-20260509-011,pvz-新植物-h-zapricot-电弧群攻-cattail-全屏跟踪-gloom-shroom-毒雾,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,accepted,2026-05-09,,,,提案
 P-20260509-012,pvz-成就系统-ui-统计面板-achievementpanel-statspanel-statsmanager,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,accepted,2026-05-09,,,,游戏
 P-20260509-013,card-game-prototype,,active,PRJ-20260421-001,card-game-prototype,,,,,https://github.com/YeLuo45/card-game-prototype,,,,accepted,2026-05-05,,,,提案
-P-20250416-002,game-1024,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,https://yeluo45.github.io/game-1024/,,,accepted,2026-05-02,,,,Web;PWA;游戏
-P-20260502-007,game-1024-v2-2048-无限模式切换,,in_dev,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,confirmed,confirmed,accepted,2026-05-02,,,,提案
-P-20260502-008,game-1024-v2-每日挑战-成就系统,,in_dev,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,confirmed,confirmed,accepted,2026-05-02,,,,提案
-P-20260502-009,game-1024-v3-视觉动画增强,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,提案
-P-20260502-010,game-1024-v3-音效系统,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,Web
-P-20260502-011,game-1024-v4-悔棋-重试功能,,active,PRJ-20250416-002,game-1024,,,,,https://github.com/YeLuo45/game-1024,,,,accepted,2026-05-02,,,,提案
+P-20250418-003,harness-desktop,,active,PRJ-20250418-003,harness-desktop,,,,,https://github.com/YeLuo45/harness-desktop,https://github.com/YeLuo45/harness-desktop/releases/tag/v1.0.1,,,accepted,2026-04-18,,,,提案
+P-20260508-001,Tool Call Loop 完善,,delivered,PRJ-20250418-003,harness-desktop,,,,,https://github.com/YeLuo45/harness-desktop,,2026-05-09,,accepted,,,,,
+P-20260509-001,Verification Hooks × Tool Call Loop 联动,,delivered,PRJ-20250418-003,harness-desktop,,,,,https://github.com/YeLuo45/harness-desktop,,2026-05-09,,accepted,,,,,
+P-20260510-001,多Agent协作引擎,,delivered,PRJ-20250418-003,harness-desktop,,,,,https://github.com/YeLuo45/harness-desktop,,timeout-approved,,,,,,,
 P-20250417-001,prj-proposals-manager,,active,PRJ-20260417-001,prj-proposals-manager,,,,,https://github.com/YeLuo45/prj-proposals-manager,https://yeluo45.github.io/prj-proposals-manager/,,,accepted,2026-05-03,,,,提案
 P-20260505-077,p-20260505-077,,archived,PRJ-20260417-001,prj-proposals-manager,,,,,https://github.com/YeLuo45/prj-proposals-manager,,,,,2026-04-16,,,,提案
-P-20250420-001,snake-battle,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,,,,2026-04-20,,,,提案
-P-20260503-021,snake-battle,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,,,小墨于2026-05-03自行验收通过,2026-05-03,,,,提案
-P-20260503-022,creative-drawing-board,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,,confirmed,timeout-approved（技术栈继承 V1：HTML5 Canvas + Vanilla JS 单文件，零外部依赖）,小墨于2026-05-03自行验收通过,2026-05-03,,,,游戏
-P-20260503-023,snake-battle-v4-成就系统-赛季通行证,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,timeout-approved,timeout-approved（技术栈继承V1-V3：Canvas + Vanilla JS + React/Vite，localStorage持久化）,pending,2026-05-03,,,,提案
 P-20260503-028,creative-drawing-board,,in_dev,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,pending,,,2026-05-03,,,,提案
 P-20260503-038,creative-drawing-board,,in_dev,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,,,,2026-05-03,,,,提案
 P-20260503-039,creative-drawing-board,,in_dev,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,,,,2026-05-03,,,,提案
@@ -179,7 +197,11 @@ P-20260506-081,creative-drawing-board,,active,PRJ-20260418-002,creative-drawing-
 P-20260506-082,creative-drawing-board,,active,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,,,小墨于2026-05-06自行验收通过,2026-05-06,,,,提案
 P-20260506-083,creative-drawing-board,,active,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,,,小墨于2026-05-06自行验收通过,2026-05-06,,,,提案
 P-20260506-084,creative-drawing-board,,active,PRJ-20260418-002,creative-drawing-board,,,,,https://github.com/YeLuo45/creative-drawing-board,,,,小墨于2026-05-06自行验收通过,2026-05-06,,,,提案
-P-20250418-003,harness-desktop,,active,PRJ-20250418-003,harness-desktop,,,,,https://github.com/YeLuo45/harness-desktop,https://github.com/YeLuo45/harness-desktop/releases/tag/v1.0.1,,,accepted,2026-04-18,,,,提案
+P-20250420-001,snake-battle,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,,,,2026-04-20,,,,提案
+P-20260503-021,snake-battle,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,,,小墨于2026-05-03自行验收通过,2026-05-03,,,,提案
+P-20260503-022,creative-drawing-board,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,,confirmed,timeout-approved（技术栈继承 V1：HTML5 Canvas + Vanilla JS 单文件，零外部依赖）,小墨于2026-05-03自行验收通过,2026-05-03,,,,游戏
+P-20260503-023,snake-battle-v4-成就系统-赛季通行证,,active,PRJ-20260420-001,snake-battle,,,,,https://github.com/YeLuo45/snake-battle,https://yeluo45.github.io/snake-battle/,timeout-approved,timeout-approved（技术栈继承V1-V3：Canvas + Vanilla JS + React/Vite，localStorage持久化）,pending,2026-05-03,,,,提案
+P-20260412-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,,,accepted,2026-04-12,,,,Web;Android
 P-20260502-017,ai-subscription-大模型调用层升级-llm-design-dev,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,timeout-approved,,2026-05-05,,,,提案
 P-20260505-005,ai-subscription-订阅源自定义刷新间隔,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-006,ai-subscription-社交分享,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,Web
@@ -188,9 +210,30 @@ P-20260505-008,ai-subscription-主题定制-深色模式,,in_dev,PRJ-20260412-00
 P-20260505-009,ai-subscription-国际化-i18n,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-010,ai-subscription-键盘快捷键,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-011,ai-subscription-数据统计面板,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
-P-20260505-082,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
+P-20260505-012,ai-subscription-rss-atom-智能解析增强,,in_dev,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,,,,2026-05-05,,,,提案
 P-20260505-013,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,timeout-approved,,accepted,2026-05-06,,,,提案
-P-20260412-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,,,accepted,2026-04-12,,,,Web;Android
-P-20260505-014,android-hello-单元测试,V2.1.0单元测试;已提交c0171db,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android
-P-20260505-015,android-hello-Settings+BottomNav,V2.2.0 Settings+BottomNav;已提交d8d2b2e,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android
-P-20260505-016,android-hello-Room持久化,V2.3.0 Room持久化;已提交5137623,delivered,PRJ-20260417-002,android-hello,delivered,,,android-hello,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/tag/v2.0.0,,confirmed,,accepted,2026-05-05,,,,Android
+P-20260506-001,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P0,pending,accepted,2026-05-06,,,,提案
+P-20260506-002,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P0,pending,accepted,2026-05-06,,,,提案
+P-20260506-003,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P0,pending,accepted,2026-05-06,,,,提案
+P-20260506-004,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P1,pending,accepted,2026-05-06,,,,提案
+P-20260506-005,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P2,pending,accepted,2026-05-06,,,,提案
+P-20260506-006,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P2,pending,accepted,2026-05-06,,,,提案
+P-20260506-007,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,boss-selected-P2,pending,accepted,2026-05-06,,,,提案
+P-20260506-008,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,confirmed,pending,accepted,2026-05-06,,,,提案
+P-20260506-009,ai-subscription,,active,PRJ-20260412-008,ai-subscription,,,,,https://github.com/YeLuo45/ai-subscription,,confirmed,pending,accepted,2026-05-06,,,,Web
+P-20260502-017,proposals,,in_dev,proposals,proposals,,,,,,(待部署),timeout-approved,timeout-approved,-,2026-05-05,,,,提案
+P-20260506-010,pixel-pal-web,,in_dev,PRJ-20260420-002,pixel-pal-web,,,,,,,confirmed,,pending,2026-05-06,,,,提案
+P-20260507-001,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,accepted,2026-05-07,,,,提案
+P-20260507-002,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,accepted,2026-05-07,,,,提案
+P-20260507-003,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,accepted,2026-05-07,,,,提案
+P-20260508-003,pixel-pal-web,,archived,PRJ-20260420-002,pixel-pal-web,,,,,,,,,active,2026-05-08,,,,提案
+P-20260508-004,pixel-pal-web,,archived,PRJ-20260420-002,pixel-pal-web,,,,,,,,,active,2026-05-08,,,,提案
+P-20260509-001,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,confirmed,,accepted,2026-05-09,,,,提案
+P-20260511-001,astrbot-design,,active,PRJ-20260511-003,astrbot-design,,,,,https://github.com/Sonic-Yoda/AstrBot,,,,pending,2026-05-11,,,,设计;文档
+P-20260511-002,autoagent-design,,active,PRJ-20260511-004,autoagent-design,,,,,https://github.com/SINOG2/AutoAgent,,,,pending,2026-05-11,,,,设计;文档
+P-20260511-003,bmad-method-design,,active,PRJ-20260511-005,bmad-method-design,,,,,https://github.com/BMAD/BMAD-METHOD,,,,pending,2026-05-11,,,,设计;文档
+P-20260511-004,chatdev-design,,active,PRJ-20260511-006,chatdev-design,,,,,https://github.com/OpenBMB/ChatDev,,,,pending,2026-05-11,,,,设计;文档
+P-20260511-005,deepcode-design,,active,PRJ-20260511-007,deepcode-design,,,,,https://github.com/HKUDS/DeepCode,,,,pending,2026-05-11,,,,设计;文档
+P-20260511-006,deepseek-coder-design,,active,PRJ-20260511-008,deepseek-coder-design,,,,,https://github.com/deepseek-ai/DeepSeek-Coder,,,,pending,2026-05-11,,,,设计;文档
+P-20260509-001,trading-agents-design,,active,PRJ-20260509-001,trading-agents-design,,,,,https://github.com/YeLuo45/trading-agents-design,,,,accepted,20260509,,,,提案
+P-20260509-002,trending-dashboard,,active,PRJ-20260509-002,trending-dashboard,,,,,https://github.com/YeLuo45/trending-dashboard,https://yeluo45.github.io/trending-dashboard/,,,accepted,2026-05-10,,,,提案

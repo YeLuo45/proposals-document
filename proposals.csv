@@ -5,26 +5,6 @@ P-20260505-002,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,
 P-20260505-003,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260505-004,ai-stock-simulation,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,confirmed,,accepted,2026-05-05,,,,提案
 P-20260509-024,position-analytics,,active,PRJ-20260412-009,ai-stock-simulation,,,,,https://github.com/YeLuo45/ai-stock-simulation,,,,delivered,2026-05-09,,,,
-P-20260509-002,p-20260509-002,,archived,p-20260509-002,p-20260509-002,,,,,,,,,,,,,,提案
-P-20260509-005,p-20260509-005,,archived,p-20260509-005,p-20260509-005,,,,,,,,,,,,,,提案
-P-20260509-006,p-20260509-006,,archived,p-20260509-006,p-20260509-006,,,,,,,,,,,,,,提案
-P-20260509-007,p-20260509-007,,archived,p-20260509-007,p-20260509-007,,,,,,,,,,,,,,提案
-P-20260509-008,p-20260509-008,,archived,p-20260509-008,p-20260509-008,,,,,,,,,,,,,,提案
-P-20260509-009,p-20260509-009,,archived,p-20260509-009,p-20260509-009,,,,,,,,,,,,,,提案
-P-20260509-010,p-20260509-010,,archived,p-20260509-010,p-20260509-010,,,,,,,,,,,,,,提案
-P-20260509-011,p-20260509-011,,archived,p-20260509-011,p-20260509-011,,,,,,,,,,,,,,提案
-P-20260509-012,p-20260509-012,,archived,p-20260509-012,p-20260509-012,,,,,,,,,,,,,,提案
-P-20260509-013,p-20260509-013,,archived,p-20260509-013,p-20260509-013,,,,,,,,,,,,,,提案
-P-20260509-014,p-20260509-014,,archived,p-20260509-014,p-20260509-014,,,,,,,,,,,,,,提案
-P-20260509-015,p-20260509-015,,archived,p-20260509-015,p-20260509-015,,,,,,,,,,,,,,提案
-P-20260509-016,p-20260509-016,,archived,p-20260509-016,p-20260509-016,,,,,,,,,,,,,,提案
-P-20260509-017,p-20260509-017,,archived,p-20260509-017,p-20260509-017,,,,,,,,,,,,,,提案
-P-20260509-018,p-20260509-018,,archived,p-20260509-018,p-20260509-018,,,,,,,,,,,,,,提案
-P-20260509-019,p-20260509-019,,archived,p-20260509-019,p-20260509-019,,,,,,,,,,,,,,提案
-P-20260509-020,p-20260509-020,,archived,p-20260509-020,p-20260509-020,,,,,,,,,,,,,,提案
-P-20260509-021,p-20260509-021,,archived,p-20260509-021,p-20260509-021,,,,,,,,,,,,,,提案
-P-20260509-022,p-20260509-022,,archived,p-20260509-022,p-20260509-022,,,,,,,,,,,,,,提案
-P-20260508-004,p-20260508-004,,archived,p-20260508-004,p-20260508-004,,,,,,,,,,,,,,提案
 P-20250417-002,android-hello,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,https://github.com/YeLuo45/android-hello/releases/download/v1.0.0/app-debug.apk,,,accepted,2026-04-17,,,,Android
 P-20260505-014,android-hello Unit Tests,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
 P-20260505-015,android-hello Settings,,active,PRJ-20260417-002,android-hello,,,,,https://github.com/YeLuo45/android-hello,,,,accepted,2026-05-05,,,,Android
@@ -227,7 +207,6 @@ P-20260507-001,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,acce
 P-20260507-002,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,accepted,2026-05-07,,,,提案
 P-20260507-003,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,,,accepted,2026-05-07,,,,提案
 P-20260508-003,pixel-pal-web,,archived,PRJ-20260420-002,pixel-pal-web,,,,,,,,,active,2026-05-08,,,,提案
-P-20260508-004,pixel-pal-web,,archived,PRJ-20260420-002,pixel-pal-web,,,,,,,,,active,2026-05-08,,,,提案
 P-20260509-001,pixel-pal-web,,active,PRJ-20260420-002,pixel-pal-web,,,,,,,confirmed,,accepted,2026-05-09,,,,提案
 P-20260511-001,astrbot-design,,active,PRJ-20260511-003,astrbot-design,,,,,https://github.com/Sonic-Yoda/AstrBot,,,,pending,2026-05-11,,,,设计;文档
 P-20260511-002,autoagent-design,,active,PRJ-20260511-004,autoagent-design,,,,,https://github.com/SINOG2/AutoAgent,,,,pending,2026-05-11,,,,设计;文档

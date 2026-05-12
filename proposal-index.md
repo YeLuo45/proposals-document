@@ -76,7 +76,7 @@
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
 - `Last Update`: 2026-05-12
-- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-13)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新
+- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-13)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
 *最后更新：2026-05-12*
 ### P-20260506-001: ai-subscription-智能分类标签系统
@@ -738,14 +738,24 @@
  - `Proposal ID`: `P-20260512-009`
  - `Title`: ai-subscription-聚合推送持久化（Redis队列+定时发送）
  - `Owner`: 小墨
- - `Current Status`: `approved_for_dev`
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
  - `PRD Path`: `workspace-pm/proposals/P-20260512-009-prd.md`
  - `Project Path`: `/home/hermes/ai-subscription`
- - `Acceptance`: pending
- - `PRD Confirmation`: `boss-selected-A`
- - `Technical Expectations`: pending
  - `Last Update`: 2026-05-12
- - `Notes`: Redis聚合持久化+定时发送
+ - `Notes`: commit 581675ba - shared/lib/ai/push-queue/(types+storage-adapter+aggregation-service+scheduler+index)；web/src/services/push-queue/PushQueuePanel.tsx；IndexedDB持久化+setInterval定时调度+存储抽象层
+
+### P-20260512-010: ai-subscription-对话历史持久化
+
+ - `Proposal ID`: `P-20260512-010`
+ - `Title`: ai-subscription-对话历史持久化
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-010-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 25111253 - shared/lib/ai/conversation-history/(types+storage+index)；conversation-manager.ts改造(依赖注入storage)；IndexedDB持久化+多会话管理+搜索
 
 ### P-20260512-003: 成就系统大改版
 

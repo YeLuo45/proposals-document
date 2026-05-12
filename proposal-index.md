@@ -76,7 +76,7 @@
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
 - `Last Update`: 2026-05-12
-- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-31 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-02 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-03 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-06 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-17 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-18 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-14 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-15 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
+- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新； cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-31 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-02 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-03 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-06 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-17 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-18 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-14 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-15 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
 *最后更新：2026-05-12*
 ### P-20260506-001: ai-subscription-智能分类标签系统
@@ -403,6 +403,18 @@
 - `Project`: `prj-proposals-manager`
 - `Last Update`: 2026-05-12
 - `Notes`: 收藏项目支持置顶功能（📌置顶/📍取消）；commit ba01f1c，GitHub Pages已部署
+
+### P-20260512-007: 项目提案管理-导出收藏列表
+
+- `Proposal ID`: `P-20260512-007`
+- `Title`: 项目提案管理-导出收藏列表
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-12
+- `Notes`: 收藏视图支持导出CSV（含项目信息+置顶状态+收藏时间）；commit 91513fa，GitHub Pages已部署
 
 ### P-20260509-001: PixelPal V64 — Agent执行循环闭环
 
@@ -811,14 +823,26 @@
  - `Proposal ID`: `P-20260512-012`
  - `Title`: ai-subscription-成本告警系统（预算阈值+通知）
  - `Owner`: 小墨
- - `Current Status`: `approved_for_dev`
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
  - `PRD Path`: `workspace-pm/proposals/P-20260512-012-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 8b4b8010 - shared/lib/ai/cost-alert/(types+storage+notifier+alert-service+index)；CostAlertPanel.tsx；Browser Notification+面板通知；每日/周/月阈值+4级状态；routeAndCall后自动触发
+
+### P-20260512-013: ai-subscription-文章Panel集成PipelineUI
+
+ - `Proposal ID`: `P-20260512-013`
+ - `Title`: ai-subscription-文章Panel集成PipelineUI
+ - `Owner`: 小墨
+ - `Current Status`: `approved_for_dev`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-013-prd.md`
  - `Project Path`: `/home/hermes/ai-subscription`
  - `Acceptance`: pending
  - `PRD Confirmation`: `boss-selected-A`
  - `Technical Expectations`: pending
  - `Last Update`: 2026-05-12
- - `Notes`: 成本告警系统（阈值+通知+历史）
+ - `Notes`: 文章Panel集成PipelineUI（AI处理按钮+流式处理+结果展示）
 
 ### P-20260512-003: 成就系统大改版
 

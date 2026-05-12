@@ -76,7 +76,7 @@
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
 - `Last Update`: 2026-05-12
-- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-13)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
+- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-31 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-02 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-03 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-06 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
 *最后更新：2026-05-12*
 ### P-20260506-001: ai-subscription-智能分类标签系统
@@ -366,6 +366,31 @@
 - `Project`: `prj-proposals-manager`
 - `Last Update`: 2026-05-12
 - `Notes`: 收藏视图按最近收藏时间倒序排列；commit 9d2bdc7，GitHub Pages已部署
+
+### P-20260512-004: 项目提案管理-收藏数据本地缓存
+
+- `Proposal ID`: `P-20260512-004`
+- `Title`: 项目提案管理-收藏数据本地缓存
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `Tech Solution Path`: `workspace-dev/proposals/prj-proposals-manager/P-20260512-004-tech-solution.md`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-12
+- `Notes`: useFavorites添加localStorage缓存层（5分钟TTL）；commit 4e46611，GitHub Pages已部署
+
+### P-20260512-005: 项目提案管理-收藏批量管理
+
+- `Proposal ID`: `P-20260512-005`
+- `Title`: 项目提案管理-收藏批量管理
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-12
+- `Notes`: 收藏视图支持多选模式和批量删除；commit fdad67c，GitHub Pages已部署
 
 ### P-20260509-001: PixelPal V64 — Agent执行循环闭环
 

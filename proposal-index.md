@@ -1031,6 +1031,19 @@
 - `Last Update`: 2026-05-14
 - `Notes`: 新增15-20张卡牌(雷霆一击/吸血之刃等)+6个遗物(锈铁戒指/燃烧之核等)+稀有度分级(普通/稀有/传奇)+特殊词缀(lifesteal/critical/burn等)
 
+### P-20260514-003: card-game-prototype V68 — 自动化测试用例覆盖
+
+- `Proposal ID`: `P-20260514-003`
+- `Title`: card-game-prototype V68 — 自动化测试用例覆盖
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-003-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `pending`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: Jest单元测试(card-effects/relic-effects/damage/status-effects)+Puppeteer E2E(battle-flow/ui-render)，覆盖率>80%
+
 ### P-20260513-005: GitHub Repo Manager V2 — 核心闭环真实化
 
 - `Proposal ID`: `P-20260513-005`
@@ -1183,6 +1196,19 @@
 - `Last Update`: 2026-05-14
 - `Notes`: 个性化智能已完成（RecommendationsPanel / TopicTrackingPanel / ReportsPanel）；commit 2a1ef15；GitHub Pages 已部署
 
+### P-20260514-007: trending-dashboard-社交深化
+
+- `Proposal ID`: `P-20260514-007`
+- `Title`: trending-dashboard 社交深化
+- `Owner`: 小墨
+- `Current Status`: `prd_pending_confirmation`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-007-prd.md`
+- `Project`: `trending-dashboard`
+- `PRD Confirmation`: `pending`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Description`: 评论系统 + 分享海报 + 通知提醒
+
 ### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
 
 - `Proposal ID`: `P-20260514-003`
@@ -1239,3 +1265,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit b496af33；Conditional Routing路由条件（minContentLength/maxContentLength/requiresVision/preference）；RouterModelInfo增强；findModelForTask评分路由；routeTaskWithConditions；build成功(23.8s)
+
+### P-20260514-007: ai-subscription-订阅源智能分类
+
+- `Proposal ID`: `P-20260514-007`
+- `Title`: ai-subscription-订阅源智能分类
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 78cf0677；集成 feed-category 模块到订阅流程；scheduler.ts 自动触发AI分类；FeedList.tsx增加智能分类菜单和FeedCategoryPanel；build成功(21s)

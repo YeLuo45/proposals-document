@@ -1201,11 +1201,11 @@
 - `Proposal ID`: `P-20260514-007`
 - `Title`: trending-dashboard 社交深化
 - `Owner`: 小墨
-- `Current Status`: `prd_pending_confirmation`
+- `Current Status`: `approved_for_dev`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-007-prd.md`
 - `Project`: `trending-dashboard`
-- `PRD Confirmation`: `pending`
-- `Technical Expectations`: `pending`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `timeout-approved`
 - `Last Update`: 2026-05-14
 - `Description`: 评论系统 + 分享海报 + 通知提醒
 
@@ -1277,3 +1277,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit 78cf0677；集成 feed-category 模块到订阅流程；scheduler.ts 自动触发AI分类；FeedList.tsx增加智能分类菜单和FeedCategoryPanel；build成功(21s)
+
+### P-20260514-008: ai-subscription-智能订阅源推荐
+
+- `Proposal ID`: `P-20260514-008`
+- `Title`: ai-subscription-智能订阅源推荐
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit fc08a7d8；集成已有feed-recommend模块（similarity-engine+interest-analyzer+recommend-service）；FeedList.tsx导航集成FeedRecommendPanel；build成功(19.4s)

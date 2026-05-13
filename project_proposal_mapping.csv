@@ -17,6 +17,7 @@ PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20260502-009,g
 PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20260502-010,game-1024-v3-音效系统,active
 PRJ-20250416-002,game-1024,https://github.com/YeLuo45/game-1024,P-20260502-011,game-1024-v4-悔棋-重试功能,active
 PRJ-20250418-003,harness-desktop,https://github.com/YeLuo45/harness-desktop,P-20250418-003,harness-desktop,active
+PRJ-20250418-003,harness-desktop,https://github.com/YeLuo45/harness-desktop,P-20260510-001,多Agent协作引擎,delivered
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260412-008,ai-subscription,active
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260502-017,ai-subscription-大模型调用层升级-llm-design-dev,in_dev
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-005,ai-subscription-订阅源自定义刷新间隔,in_dev
@@ -26,16 +27,51 @@ PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-009,ai-subscription-国际化-i18n,in_dev
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-010,ai-subscription-键盘快捷键,in_dev
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-011,ai-subscription-数据统计面板,in_dev
-PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-082,ai-subscription-rss-atom-智能解析增强,in_dev
 PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260505-013,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-001,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-002,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-003,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-004,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-005,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-006,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-007,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-008,ai-subscription,active
+PRJ-20260412-008,ai-subscription,https://github.com/YeLuo45/ai-subscription,P-20260506-009,ai-subscription,active
 PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260412-009,ai-stock-simulation,active
 PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260505-001,ai-stock-simulation,active
 PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260505-002,ai-stock-simulation,active
 PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260505-003,ai-stock-simulation,active
 PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260505-004,ai-stock-simulation,active
+PRJ-20260412-009,ai-stock-simulation,https://github.com/YeLuo45/ai-stock-simulation,P-20260509-024,position-analytics,active
 PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20250417-001,prj-proposals-manager,active
 PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260505-077,p-20260505-077,archived
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-001,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-002,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-003,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-004,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-005,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-006,prj-proposals-manager,active
+PRJ-20260417-001,prj-proposals-manager,https://github.com/YeLuo45/prj-proposals-manager,P-20260512-007,prj-proposals-manager,active
 PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20250417-002,android-hello,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260505-014,android-hello Unit Tests,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260505-015,android-hello Settings,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260505-016,android-hello Room,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260505-017,android-hello Retrofit,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-018,android-hello SavedStateHandle,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-019,android-hello Dark Mode,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-020,android-hello Compose UI Testing,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-021,android-hello i18n,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-022,android-hello CI/CD,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260506-023,android-hello APK Release,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-024,android-hello Widget,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-025,android-hello Push Notifications,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-026,android-hello Analytics,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-027,android-hello WorkManager,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-028,android-hello DataStore,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-029,android-hello R8,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260507-030,android-hello Splash Screen,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260509-003,android-hello V3.10.0 深色模式优化,active
+PRJ-20260417-002,android-hello,https://github.com/YeLuo45/android-hello,P-20260509-004,android-hello V3.11.0 通知与提醒功能,active
 PRJ-20260418-001,monopoly3d,https://github.com/YeLuo45/monopoly3d,P-20250418-001,monopoly3d,active
 PRJ-20260418-002,creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,P-20260503-028,creative-drawing-board,in_dev
 PRJ-20260418-002,creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,P-20260503-038,creative-drawing-board,in_dev
@@ -79,6 +115,7 @@ PRJ-20260418-002,creative-drawing-board,https://github.com/YeLuo45/creative-draw
 PRJ-20260418-002,creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,P-20260506-084,creative-drawing-board,active
 PRJ-20260418-004,future-little-leaders,https://github.com/YeLuo45/future-little-leaders,P-20250418-004,future-little-leaders,active
 PRJ-20260418-004,future-little-leaders,https://github.com/YeLuo45/future-little-leaders,P-20260504-3009,future-little-leaders-v2-成长激励-亲子互动,in_dev
+PRJ-20260418-004,future-little-leaders,https://github.com/YeLuo45/future-little-leaders,P-20260505-012,future-little-leaders,in_dev
 PRJ-20260418-005,todo-app,https://github.com/YeLuo45/todo-app,P-20250418-005,todo-app,active
 PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260419-001,temple-run,in_dev
 PRJ-20260419-001,temple-run,https://github.com/YeLuo45/temple-run,P-20260504-070,p-20260504-070,archived
@@ -99,27 +136,17 @@ PRJ-20260419-003,dont-step-white,https://github.com/YeLuo45/dont-step-white,P-20
 PRJ-20260419-003,dont-step-white,https://github.com/YeLuo45/dont-step-white,P-20260504-3027,dont-step-white,active
 PRJ-20260419-005,TradingAgents-CN,https://github.com/YeLuo45/TradingAgents-CN,P-20260419-004,TradingAgents-CN,active
 PRJ-20260419-005,TradingAgents-CN,https://github.com/YeLuo45/TradingAgents-CN,P-20260504-3046,TradingAgents-CN,active
-PRJ-20260419-007,ai-creator-h5 (H5),https://github.com/YeLuo45/ai-creator-miniprogram (小程序) / https://github.com/YeLuo45/ai-creator-h5 (H5),P-20260412-007,ai-creator-h5 (H5),active
 PRJ-20260420-001,snake-battle,https://github.com/YeLuo45/snake-battle,P-20250420-001,snake-battle,active
 PRJ-20260420-001,snake-battle,https://github.com/YeLuo45/snake-battle,P-20260503-021,snake-battle,active
 PRJ-20260420-001,snake-battle,https://github.com/YeLuo45/snake-battle,P-20260503-022,creative-drawing-board,active
 PRJ-20260420-001,snake-battle,https://github.com/YeLuo45/snake-battle,P-20260503-023,snake-battle-v4-成就系统-赛季通行证,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-029,pixelpal-v4-model-ui-thinking,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-030,pixelpal-v5-multi-persona-collaboration,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-031,pixelpal-v6-rag-knowledge-base,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-032,pixelpal-v7-voice-语音交互,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-033,pixelpal-v8-mobile-pwa-移动端优化,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-034,pixelpal-v9-plugin-system-插件系统,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-035,pixelpal-v10-advanced-memory-高级记忆系统,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-036,pixelpal-v11-desktop-electron-桌面版,in_dev
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260503-037,pixelpal-v12-multi-language-多语言切换,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-001,pixelpal-v13-高级记忆系统-v2,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-002,pixelpal-v14-webhook-插件生态,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-003,pixel-pal-web,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-005,pixelpal-v17-数据分析面板,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-006,pixel-pal-web,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-007,pixel-pal-web,active
-PRJ-20260420-002,pixel-pal-web,https://github.com/YeLuo45/pixel-pal-web,P-20260504-008,pixel-pal-web,active
+PRJ-20260420-002,pixel-pal-web,,P-20260506-010,pixel-pal-web,in_dev
+PRJ-20260420-002,pixel-pal-web,,P-20260507-001,pixel-pal-web,active
+PRJ-20260420-002,pixel-pal-web,,P-20260507-002,pixel-pal-web,active
+PRJ-20260420-002,pixel-pal-web,,P-20260507-003,pixel-pal-web,active
+PRJ-20260420-002,pixel-pal-web,,P-20260508-003,pixel-pal-web,archived
+PRJ-20260420-002,pixel-pal-web,,P-20260508-004,pixel-pal-web,archived
+PRJ-20260420-002,pixel-pal-web,,P-20260509-001,pixel-pal-web,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260502-013,dbg卡牌游戏-v6-遗物-神器系统,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260503-001,dbg卡牌游戏-v9-成就系统,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260503-002,dbg卡牌游戏-v10-章节扩展,active
@@ -143,7 +170,6 @@ PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-protot
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-001,card-game-prototype,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-002,card-game-prototype,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-003,card-game-prototype,active
-PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-004,pvz-视觉增强-a-b-c-walkinganimator启用-子弹命中粒子-植物受伤抖动,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-005,pvz-视觉增强-d-e-屏幕震动-僵尸啃咬特效,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260508-006,pvz-新植物-僵尸-potatomine土豆雷-torchwood火炬树桩-pole-vaulting-zombie撑杆跳僵尸,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260509-008,pvz-p2-植物-僵尸全暴露-卡牌翻页-squash-wintermelon-iceshroom-hypnoshroom-scaredyshroom-football-newspaper-miner-ladder,active
@@ -151,7 +177,9 @@ PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-protot
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260509-010,pvz-僵尸专属机制-newspaper愤怒变身纸片特效-football头盔hp分阶段视觉-ladder架梯逻辑,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260509-011,pvz-新植物-h-zapricot-电弧群攻-cattail-全屏跟踪-gloom-shroom-毒雾,active
 PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260509-012,pvz-成就系统-ui-统计面板-achievementpanel-statspanel-statsmanager,active
-PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260509-013,card-game-prototype,active
+PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260513-002,card-game-prototype,in_dev
+PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260513-004,card-game-prototype,active
+PRJ-20260421-001,card-game-prototype,https://github.com/YeLuo45/card-game-prototype,P-20260513-007,card-game-prototype,in_dev
 PRJ-20260421-003,personalClaw,https://github.com/YeLuo45/personalClaw,P-20250421-003,personalClaw,active
 PRJ-20260422-001,ai-novel-assistant,https://github.com/YeLuo45/ai-novel-assistant,P-20250421-002,ai-novel-assistant,active
 PRJ-20260422-001,ai-novel-assistant,https://github.com/YeLuo45/ai-novel-assistant,P-20260502-001,ai-novel-assistant,in_dev
@@ -185,3 +213,54 @@ PRJ-20260428-002,flight-chess-3d,https://github.com/YeLuo45/flight-chess-3d,P-20
 PRJ-20260428-002,flight-chess-3d,https://github.com/YeLuo45/flight-chess-3d,P-20260504-3043,flight-chess-3d,in_dev
 PRJ-20260430-001,tower-baby-guard,https://github.com/YeLuo45/tower-baby-guard,P-20260430-006,tower-baby-guard,active
 PRJ-20260430-002,doc-editor,https://github.com/YeLuo45/doc-editor,P-20260430-007,doc-editor,active
+PRJ-20260509-001,trading-agents-design,https://github.com/YeLuo45/trading-agents-design,P-20260509-001,trading-agents-design,active
+PRJ-20260511-003,astrbot-design,https://github.com/Sonic-Yoda/AstrBot,P-20260511-001,astrbot-design,active
+PRJ-20260511-003,astrbot-design,https://github.com/Sonic-Yoda/AstrBot,P-20260513-001,astrbot-design,in_dev
+PRJ-20260511-003,astrbot-design,https://github.com/Sonic-Yoda/AstrBot,P-20260513-002,astrbot-design,in_dev
+PRJ-20260511-003,astrbot-design,https://github.com/Sonic-Yoda/AstrBot,P-20260513-003,astrbot-design,active
+PRJ-20260511-004,autoagent-design,https://github.com/SINOG2/AutoAgent,P-20260511-002,autoagent-design,active
+PRJ-20260511-005,bmad-method-design,https://github.com/BMAD/BMAD-METHOD,P-20260511-003,bmad-method-design,active
+PRJ-20260511-006,chatdev-design,https://github.com/OpenBMB/ChatDev,P-20260511-004,chatdev-design,active
+PRJ-20260511-007,deepcode-design,https://github.com/HKUDS/DeepCode,P-20260511-005,deepcode-design,active
+PRJ-20260511-008,deepseek-coder-design,https://github.com/deepseek-ai/DeepSeek-Coder,P-20260511-006,deepseek-coder-design,active
+agent-记忆系统-跨-session-llm-决策记忆,agent-记忆系统-跨-session-llm-决策记忆,,P-20260513-002,agent-记忆系统-跨-session-llm-决策记忆,in_dev
+cultivation-simulator,cultivation-simulator,,P-20260512-003,cultivation-simulator,archived
+github-repo-manager,github-repo-manager,,P-20260513-003,github-repo-manager,active
+github-repo-manager,github-repo-manager,,P-20260513-005,github-repo-manager,in_dev
+p-20260508-004,p-20260508-004,,P-20260508-004,p-20260508-004,archived
+p-20260509-002,p-20260509-002,,P-20260509-002,p-20260509-002,archived
+p-20260509-005,p-20260509-005,,P-20260509-005,p-20260509-005,archived
+p-20260509-006,p-20260509-006,,P-20260509-006,p-20260509-006,archived
+p-20260509-007,p-20260509-007,,P-20260509-007,p-20260509-007,archived
+p-20260509-008,p-20260509-008,,P-20260509-008,p-20260509-008,archived
+p-20260509-009,p-20260509-009,,P-20260509-009,p-20260509-009,archived
+p-20260509-010,p-20260509-010,,P-20260509-010,p-20260509-010,archived
+p-20260509-011,p-20260509-011,,P-20260509-011,p-20260509-011,archived
+p-20260509-012,p-20260509-012,,P-20260509-012,p-20260509-012,archived
+p-20260509-013,p-20260509-013,,P-20260509-013,p-20260509-013,archived
+p-20260509-014,p-20260509-014,,P-20260509-014,p-20260509-014,archived
+p-20260509-015,p-20260509-015,,P-20260509-015,p-20260509-015,archived
+p-20260509-016,p-20260509-016,,P-20260509-016,p-20260509-016,archived
+p-20260509-017,p-20260509-017,,P-20260509-017,p-20260509-017,archived
+p-20260509-018,p-20260509-018,,P-20260509-018,p-20260509-018,archived
+p-20260509-019,p-20260509-019,,P-20260509-019,p-20260509-019,archived
+p-20260509-020,p-20260509-020,,P-20260509-020,p-20260509-020,archived
+p-20260509-021,p-20260509-021,,P-20260509-021,p-20260509-021,archived
+p-20260509-022,p-20260509-022,,P-20260509-022,p-20260509-022,archived
+p-20260512-001,p-20260512-001,,P-20260512-001,p-20260512-001,archived
+p-20260512-002,p-20260512-002,,P-20260512-002,p-20260512-002,archived
+p-20260512-004,p-20260512-004,,P-20260512-004,p-20260512-004,archived
+p-20260512-005,p-20260512-005,,P-20260512-005,p-20260512-005,archived
+p-20260512-006,p-20260512-006,,P-20260512-006,p-20260512-006,archived
+p-20260512-007,p-20260512-007,,P-20260512-007,p-20260512-007,archived
+p-20260512-008,p-20260512-008,,P-20260512-008,p-20260512-008,archived
+p-20260512-009,p-20260512-009,,P-20260512-009,p-20260512-009,archived
+p-20260512-010,p-20260512-010,,P-20260512-010,p-20260512-010,archived
+p-20260512-011,p-20260512-011,,P-20260512-011,p-20260512-011,archived
+p-20260512-012,p-20260512-012,,P-20260512-012,p-20260512-012,archived
+p-20260512-013,p-20260512-013,,P-20260512-013,p-20260512-013,archived
+p-20260512-014,p-20260512-014,,P-20260512-014,p-20260512-014,archived
+p-20260512-015,p-20260512-015,,P-20260512-015,p-20260512-015,archived
+p-20260512-016,p-20260512-016,,P-20260512-016,p-20260512-016,archived
+p-20260512-017,p-20260512-017,,P-20260512-017,p-20260512-017,archived
+proposals,proposals,,P-20260502-017,proposals,in_dev

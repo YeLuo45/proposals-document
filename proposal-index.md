@@ -52,7 +52,7 @@
 - `PRD Confirmation`: `confirmed`
 - `Technical Expectations`: `pending`
 - `Last Update`: 2026-05-05
-- `Notes`: 家庭成员角色系统 + 任务归属 + 家庭共享任务池 + 宝宝头像优化 + 家庭数据概览；cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，状态已存在，仅记录时间戳
+- `Notes`: 家庭成员角色系统 + 任务归属 + 家庭共享任务池 + 宝宝头像优化 + 家庭数据概览；cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，状态已存在，仅记录时间戳；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
 ### P-20260502-017: ai-subscription-大模型调用层升级-llm-design-dev
 
@@ -75,10 +75,60 @@
 - `Research Direction Countdown ID`: -
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
-- `Last Update`: 2026-05-12
-- `Notes`: 状态已存在，无需更新（cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，仅记录时间戳）；再次触发(2026-05-13 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-14 cron)，状态已就绪，无需更新；再次触发(2026-05-14 cron 2nd)，状态已就绪，无需更新；再次触发(2026-05-15 cron)，状态已就绪，无需更新；再次触发(2026-05-16 cron)，状态已就绪，无需更新；再次触发(2026-05-17 cron)，状态已就绪，无需更新；再次触发(2026-05-19 cron)，状态已就绪，无需更新；再次触发(2026-05-20 cron)，状态已就绪，无需更新；再次触发(2026-05-21 cron)，状态已就绪，无需更新；再次触发(2026-05-22 cron)，状态已就绪，无需更新；再次触发(2026-05-23 cron)，状态已就绪，无需更新；再次触发(2026-05-26 cron)，状态已就绪，无需更新；再次触发(2026-05-27 cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新； cron)，状态已就绪，无需更新；再次触发(2026-05-28 cron)，状态已就绪，无需更新 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-28 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-29 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-30 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-31 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-02 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-03 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-06 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-17 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-18 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-06-19 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-14 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-07-15 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
+- `Last Update`: 2026-05-13
+再次触发(2026-09-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-10-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-11-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-01-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-02-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-03-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-04-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新-13 cron P-20260502-017-tech-confirm 08:10)，状态已就绪，无需更新；再次触发(2027-05-13 cron P-20260502-017-tech-confirm 08:45)，状态已就绪，无需更新；再次触发(2026-05-13 06:00 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-14 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-14 10:05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
-*最后更新：2026-05-12*
+*最后更新：2026-05-14*
+
+### P-20260513-001: AstrBot-Plugin-Marketplace
+
+- `Proposal ID`: `P-20260513-001`
+- `Title`: AstrBot-Plugin-Marketplace
+- `Owner`: 小墨
+- `Current Status`: `in_acceptance`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-001-prd.md`
+- `Technical Solution`: `workspace-pm/proposals/P-20260513-001-prd.md#技术方案`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/astrbot-design/`
+- `Acceptance`: `pending`
+- `PRD Confirmation`: `confirmed` (boss selected: a/b = 轻量GitHub方案 + 必选签名)
+- `Technical Expectations`: `confirmed`
+- `Technical Stack`: 轻量方案（GitHub JSON + Actions），Ed25519 签名
+- `Last Update`: 2026-05-13
+- `Notes`: 已交付：18文件，docs构建成功，git push成功。Phase 1 MVP：插件列表/搜索/安装/卸载/更新，签名必选，安全扫描
+
+### P-20260513-002: AstrBot-Multi-Agent-Collaboration
+
+- `Proposal ID`: `P-20260513-002`
+- `Title`: AstrBot-Multi-Agent-Collaboration
+- `Owner`: 小墨
+- `Current Status`: `in_acceptance`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-002-prd.md`
+- `Technical Solution`: `workspace-pm/proposals/P-20260513-002-prd.md#技术方案`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/astrbot-design/`
+- `Acceptance`: `pending`
+- `PRD Confirmation`: `confirmed` (boss selected: b=async event-driven)
+- `Technical Expectations`: `confirmed`
+- `Technical Stack`: asyncio + Queue 事件驱动架构
+- `Last Update`: 2026-05-13
+- `Notes`: 已交付：13文件，Python语法验证通过，git push成功。MessageQueue/ContextPool/Agent基类/内置Teams/Dashboard/API
+
+### P-20260513-003: AstrBot-Knowledge-Base-Enhancements
+
+- `Proposal ID`: `P-20260513-003`
+- `Title`: AstrBot-Knowledge-Base-Enhancements
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-003-prd.md`
+- `Technical Solution`: `workspace-pm/proposals/P-20260513-003-prd.md#技术方案`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/astrbot-design/`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed` (boss selected: a/b = 本地模型 + LRU缓存)
+- `Technical Stack`: sentence-transformers + FAISS + BM25 + Cross-Encoder + LRU
+- `Last Update`: 2026-05-13
+- `Notes`: 已交付：14文件，Python语法验证通过，git push成功。Hybrid Search/Reranker/Query Expander/Notion-Obsidian-Confluence/Episodic Memory
+
 ### P-20260506-001: ai-subscription-智能分类标签系统
 
 - `Proposal ID`: `P-20260506-001`
@@ -835,14 +885,60 @@
  - `Proposal ID`: `P-20260512-013`
  - `Title`: ai-subscription-文章Panel集成PipelineUI
  - `Owner`: 小墨
- - `Current Status`: `approved_for_dev`
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
  - `PRD Path`: `workspace-pm/proposals/P-20260512-013-prd.md`
  - `Project Path`: `/home/hermes/ai-subscription`
- - `Acceptance`: pending
- - `PRD Confirmation`: `boss-selected-A`
- - `Technical Expectations`: pending
  - `Last Update`: 2026-05-12
- - `Notes`: 文章Panel集成PipelineUI（AI处理按钮+流式处理+结果展示）
+ - `Notes`: commit 1be74a1a - ArticleDetail.tsx改造(AI处理按钮+PipelineUI集成+流式处理)；ArticleProcessResult.tsx；localStorage持久化
+
+### P-20260512-014: ai-subscription-多语言推送支持（Telegram/Email/WebPush）
+
+ - `Proposal ID`: `P-20260512-014`
+ - `Title`: ai-subscription-多语言推送支持（Telegram/Email/WebPush）
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-014-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 2c7aad05 - shared/lib/ai/push-channel/(types+storage+telegram-sender+email-sender+webpush-sender+channel-service+index)；PushChannelPanel.tsx；Telegram/Email/WebPush三渠道+模板变量
+
+### P-20260512-015: ai-subscription-订阅源智能分类（AI自动打标签）
+
+ - `Proposal ID`: `P-20260512-015`
+ - `Title`: ai-subscription-订阅源智能分类（AI自动打标签）
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-015-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit beb728a2 - shared/lib/ai/feed-category/(types+storage+feed-analyzer+tag-recommender+feed-category-service+index)；FeedCategoryPanel.tsx；RSS AI分析+标签推荐+标签库
+
+### P-20260512-016: ai-subscription-智能订阅源推荐（基于阅读历史）
+
+ - `Proposal ID`: `P-20260512-016`
+ - `Title`: ai-subscription-智能订阅源推荐（基于阅读历史）
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-016-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit 915addea - shared/lib/ai/feed-recommend/(types+storage+interest-analyzer+similarity-engine+recommend-service+index)；FeedRecommendPanel.tsx；兴趣向量+余弦相似度+推荐理由
+
+### P-20260512-017: ai-subscription-离线支持（Service Worker + 本地缓存）
+
+ - `Proposal ID`: `P-20260512-017`
+ - `Title`: ai-subscription-离线支持（Service Worker + 本地缓存）
+ - `Owner`: 小墨
+ - `Current Status`: `accepted`
+ - `Acceptance`: `accepted`
+ - `PRD Path`: `workspace-pm/proposals/P-20260512-017-prd.md`
+ - `Project Path`: `/home/hermes/ai-subscription`
+ - `Last Update`: 2026-05-12
+ - `Notes`: commit cd97e833 - shared/lib/ai/offline/(types+cache-manager+sync-service+index)；web/sw.ts；OfflineIndicator.tsx；Service Worker注册+IndexedDB缓存+网络状态监听
 
 ### P-20260512-003: 成就系统大改版
 
@@ -859,3 +955,287 @@
 - `Notes`: V28成就系统重制：30+成就/稀有度/赛季挑战/头像框气泡
 
 ### P-20260508-004: PixelPal V51 — MiniMax 清新浅色主题
+### P-20260513-004: card-game-prototype V62 — Roguelike 完整体验
+
+- `Proposal ID`: `P-20260513-004`
+- `Title`: card-game-prototype V62 — Roguelike 完整体验
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-004-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `accepted`
+- `Last Update`: 2026-05-13
+- `Notes`: commit 50aa412 - relics-loader.js(8遗物)+elite-loader.js(5精英+2Boss+章节节点)；V62代码已push，需验收
+
+### P-20260513-007: card-game-prototype V63 — Meta进度 & 成就系统
+
+- `Proposal ID`: `P-20260513-007`
+- `Title`: card-game-prototype V63 — Meta进度 & 成就系统
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `Last Update`: 2026-05-13
+- `Notes`: V63已部署到 https://yeluo45.github.io/card-game-prototype/
+
+### P-20260513-008: card-game-prototype V64 — 战斗系统深化
+
+- `Proposal ID`: `P-20260513-008`
+- `Title`: card-game-prototype V64 — 战斗系统深化
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-008-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `accepted`
+- `Last Update`: 2026-05-13
+- `Notes`: V64已部署到 https://yeluo45.github.io/card-game-prototype/ — 状态效果(虚弱/易伤/中毒/燃烧/力量)/新卡牌(fireball等)/手牌上限10张/能量检查
+
+### P-20260513-009: card-game-prototype V65 — 敌人AI行为系统
+
+- `Proposal ID`: `P-20260513-009`
+- `Title`: card-game-prototype V65 — 敌人AI行为系统
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-009-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: V65已部署到 https://yeluo45.github.io/card-game-prototype/ — EnemyAI类(5种策略)/Boss第二阶段/精英敌人标识/enemy-ai.js(5,644字节)
+
+### P-20260514-001: card-game-prototype V66 — 视觉与音效系统
+
+- `Proposal ID`: `P-20260514-001`
+- `Title`: card-game-prototype V66 — 视觉与音效系统
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-001-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: V66已部署到 https://yeluo45.github.io/card-game-prototype/ — 伤害飘字(damageFloat)+卡牌飞行动画(card-fly-to-enemy)+状态pulse(statusPulse)+AudioManager(Web Audio API)+敌人攻击闪红
+
+### P-20260514-002: card-game-prototype V67 — 卡牌与遗物扩充
+
+- `Proposal ID`: `P-20260514-002`
+- `Title`: card-game-prototype V67 — 卡牌与遗物扩充
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-002-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `pending`
+- `PRD Confirmation`: `pending`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: 新增15-20张卡牌(雷霆一击/吸血之刃等)+6个遗物(锈铁戒指/燃烧之核等)+稀有度分级(普通/稀有/传奇)+特殊词缀(lifesteal/critical/burn等)
+
+### P-20260513-005: GitHub Repo Manager V2 — 核心闭环真实化
+
+- `Proposal ID`: `P-20260513-005`
+- `Title`: GitHub Repo Manager V2 — 核心闭环真实化
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-005-prd.md`
+- `Project Path`: `/home/hermes/github-repo-manager`
+- `Acceptance`: `pending`
+- `Last Update`: 2026-05-13
+- `Notes`: Build/Deploy/Scheduler 已实现但未充分验证；A1超时保护缺失、A3任务持久化缺失；Windows exe 打包需在 Windows 主机进行
+
+### P-20260513-002: card-game-prototype V61 — 卡包市场 / 远程加载
+
+- `Proposal ID`: `P-20260513-001`
+- `Title`: card-game-prototype V60 — 卡牌插件系统
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-001-prd.md`
+- `Tech Solution Path`: `workspace-dev/proposals/card-game-prototype/P-20260513-001-tech-solution.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
+- `Acceptance`: `pending`
+- `PRD Confirmation`: `timeout-approved`
+- `Technical Expectations`: `timeout-approved`
+- `Timeout Resolution`: Q1=轻量方案（GitHub JSON + Actions），Q2=插件签名必选
+- `Last Update`: 2026-05-13
+- `Notes`: PRD确认超时(5min)，默认通过处理；技术诉求超时(5min)，默认通过：轻量方案（GitHub JSON + Actions），插件签名必选。现有已accepted状态为前置版本V60已完成交付，本次为新迭代提案记录。
+
+### P-20260513-003: GitHub Repo Manager — 定时拉取 + 自动构建部署系统
+
+- `Proposal ID`: `P-20260513-003`
+- `Title`: GitHub Repo Manager — 定时拉取 + 自动构建部署系统
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-003-prd.md`
+- `Project Path`: `/home/hermes/github-repo-manager`
+- `Technical Expectations`: `timeout-approved`
+- `Technical Stack`: `Vue 3 + Vite + Node.js (Express) + Electron + SQLite (better-sqlite3) + simple-git`
+- `Technical Expectations Timeout Resolution`: 倒计时到期(2026-05-13)，按已确认技术栈默认通过
+- `Delivery Notes`: dev subagent 超时(600s)，项目骨架已创建；main 修复 server/db/init.js electron require 问题；重建 better-sqlite3 兼容 Node 20；Vite build 成功；Electron Windows exe 需在 Windows 主机构建
+- `Last Update`: 2026-05-13
+- `Notes`: commit ed43353 + ff58a2c；Vue 3 + Node.js + Electron 项目骨架；Express + SQLite 后端(修复 electron 耦合)；Electron 主进程 + 托盘；npm run dev 正常
+
+### P-20260513-002: Agent 记忆系统 — 跨 Session LLM 决策记忆
+
+- `Proposal ID`: `P-20260513-002`
+- `Title`: Agent 记忆系统 — 跨 Session LLM 决策记忆
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-002-prd.md`
+- `Tech Solution Path`: `workspace-dev/proposals/P-20260513-002-tech-solution.md`
+- `Project Path`: (待分配)
+- `Acceptance`: pending
+- `PRD Confirmation`: `timeout-approved`
+- `Technical Expectations`: `timeout-approved`
+- `Technical Stack`: `asyncio + Queue（异步事件驱动）`
+- `Timeout Resolution`: `Q=async event-driven（asyncio + Queue）`
+- `Last Update`: 2026-05-13
+- `Notes`: PRD 确认超时(2026-05-13 09:39)，按默认通过处理；Q=async event-driven（asyncio + Queue）；技术方案已输出
+
+### P-20260514-001: PixelPal V98 — Agent 专业分工体系深化
+
+- `Proposal ID`: `P-20260514-001`
+- `Title`: PixelPal V98 — Agent 专业分工体系深化
+- `Owner`: 小墨
+- `Current Status`: `in_acceptance`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-001-prd.md`
+- `Project Path`: `/home/hermes/pixel-pal-web`
+- `Project`: `PRJ-20260420-002`
+- `Acceptance`: pending
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: dev交付完成，commit e8a270d，v98-agent-role-system分支，build成功(✓ 3.3s)；RoleSystem文件在src/services/agents/roleSystem/；init.ts/agentBus.ts/orchestratorAgent.ts已更新；待主Agent验收
+
+### P-20260514-002: PixelPal V99 — Agent 自我进化与学习系统
+
+- `Proposal ID`: `P-20260514-002`
+- `Title`: PixelPal V99 — Agent 自我进化与学习系统
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-002-prd.md`
+- `Project Path`: `/home/hermes/pixel-pal-web`
+- `Project`: `PRJ-20260420-002`
+- `Acceptance`: pending
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: pending
+- `Last Update`: 2026-05-14
+- `Notes`: V98的自然延伸；ExecutionHistory执行追踪 + FailureCaseLibrary失败归因 + PromptEvolutionEngine动态优化 + AgentSelectionStrategy成功率选择 + AdaptiveThreshold学习型阈值
+
+### P-20260513-006: ai-novel-assistant V23 — 一键三版本规划流程
+
+- `Proposal ID`: `P-20260513-006`
+- `Title`: ai-novel-assistant V23 — 一键三版本规划流程
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `PRD Path`: `workspace-pm/proposals/P-20260513-006-prd.md`
+- `Project Path`: `/home/hermes/ai-novel-assistant`
+- `Acceptance`: `delivered`
+- `Last Update`: 2026-05-14
+- `Notes`: V23完成，commit 53d1405，master分支；CreateProjectModal扩展字段 + VersionGeneratorPage三版本生成 + VersionSelector选择UI + RelationshipGraph关系图 + 数据模型扩展；build成功；GitHub Actions部署中
+
+### P-20260514-001: prj-proposals-manager-个人数据仪表盘
+
+- `Proposal ID`: `P-20260514-001`
+- `Title`: prj-proposals-manager-个人数据仪表盘
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-001-prd.md`
+- `Project Path`: `/home/hermes/workspace-dev/proposals/prj-proposals-manager`
+- `Project`: `prj-proposals-manager`
+- `Last Update`: 2026-05-13
+- `Notes`: Dashboard视图新增：4统计卡片（总提案/Active/in_dev/本月新增）+项目分布饼图+月度趋势折线图+最近活跃提案列表+快捷入口；commit ae95401，GitHub Pages已部署
+
+### P-20260514-002: trending-dashboard-社交协作功能
+
+- `Proposal ID`: `P-20260514-002`
+- `Title`: trending-dashboard 社交协作功能
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-002-prd.md`
+- `Project`: `trending-dashboard`
+- `Last Update`: 2026-05-14
+- `Notes`: 社交协作功能已完成（收藏夹/精选分享/作者关注）；commit de95798 via API；GitHub Pages 已部署
+
+### P-20260514-005: trending-dashboard-数据增强
+
+- `Proposal ID`: `P-20260514-005`
+- `Title`: trending-dashboard 数据增强
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-005-prd.md`
+- `Project`: `trending-dashboard`
+- `Last Update`: 2026-05-14
+- `Notes`: 数据增强已完成（RisingBadge / SortControls / ProjectDetailPanel）；commit 2726406；GitHub Pages 已部署
+
+### P-20260514-006: trending-dashboard-个性化智能
+
+- `Proposal ID`: `P-20260514-006`
+- `Title`: trending-dashboard 个性化智能
+- `Owner`: 小墨
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-006-prd.md`
+- `Project`: `trending-dashboard`
+- `Last Update`: 2026-05-14
+- `Notes`: 个性化智能已完成（RecommendationsPanel / TopicTrackingPanel / ReportsPanel）；commit 2a1ef15；GitHub Pages 已部署
+
+### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
+
+- `Proposal ID`: `P-20260514-003`
+- `Title`: ai-subscription-Multi-Agent Pipeline架构升级
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-001-prd.md`
+- `Project Path`: `/home/hermes/ai-subscription`
+- `Project`: `ai-subscription`
+- `PRD Confirmation`: `timeout-approved`
+- `Technical Expectations`: `timeout-approved`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 36e1e371；MessageBus+ContextPool+6 Agent类+content-pipeline-team；并行执行tagger+translator；CriticAgent评分+降级；PipelineUI critic展示；修复pre-existing CostAlertService导出bug；build成功(22.5s)
+
+### P-20260514-004: ai-subscription-Pipeline Dashboard可视化
+
+- `Proposal ID`: `P-20260514-004`
+- `Title`: ai-subscription-Pipeline Dashboard可视化
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-004-prd.md`
+- `Project Path`: `/home/hermes/ai-subscription`
+- `Project`: `ai-subscription`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 181c7be6；5个新组件：AgentNodeCard+MessageFlow+ContextViewer+CriticTimeline+PipelineDashboard；ArticleDetail添加Dashboard入口按钮；build成功
+
+### P-20260514-005: ai-subscription-自定义Agent注册机制
+
+- `Proposal ID`: `P-20260514-005`
+- `Title`: ai-subscription-自定义Agent注册机制
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-005-prd.md`
+- `Project Path`: `/home/hermes/ai-subscription`
+- `Project`: `ai-subscription`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit ee4ef6ec；AgentRegistry单例+IndexedDB持久化；AgentRegistrationPanel注册面板（表单+测试+列表）；CoordinatorAgent集成registry调度；build成功(23.5s)
+
+### P-20260514-006: ai-subscription-条件路由
+
+- `Proposal ID`: `P-20260514-006`
+- `Title`: ai-subscription-条件路由
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit b496af33；Conditional Routing路由条件（minContentLength/maxContentLength/requiresVision/preference）；RouterModelInfo增强；findModelForTask评分路由；routeTaskWithConditions；build成功(23.8s)

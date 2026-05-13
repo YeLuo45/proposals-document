@@ -15,7 +15,7 @@
 | 4 | PRJ-20260412-008 | ai-subscription | 11 | https://github.com/YeLuo45/ai-subscription | https://yeluo45.github.io/ai-subscription/ |
 | 5 | PRJ-20260412-009 | ai-stock-simulation | 5 | https://github.com/YeLuo45/ai-stock-simulation | https://yeluo45.github.io/ai-stock-simulation/ |
 | 6 | PRJ-20260417-001 | prj-proposals-manager | 2 | https://github.com/YeLuo45/prj-proposals-manager | https://yeluo45.github.io/prj-proposals-manager/ |
-| 7 | PRJ-20260417-002 | android-hello | 1 | https://github.com/YeLuo45/android-hello | - |
+| 7 | PRJ-20260417-002 | android-hello | 19 | https://github.com/YeLuo45/android-hello |
 | 8 | PRJ-20260418-001 | monopoly3d | 1 | https://github.com/YeLuo45/monopoly3d | https://yeluo45.github.io/monopoly3d/ |
 | 9 | PRJ-20260418-002 | creative-drawing-board | 40 | https://github.com/YeLuo45/creative-drawing-board | https://yeluo45.github.io/creative-drawing-board/ |
 | 10 | PRJ-20260418-004 | future-little-leaders | 2 | https://github.com/YeLuo45/future-little-leaders | https://yeluo45.github.io/future-little-leaders/ |

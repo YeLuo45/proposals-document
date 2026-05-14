@@ -76,7 +76,7 @@
 - `Deployment URL`: (待部署)
 - `Deployment Branch`: (待填写)
 - `Last Update`: 2026-05-13
-再次触发(2026-09-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-10-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-11-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-01-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-02-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-03-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-04-12 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新-13 cron P-20260502-017-tech-confirm 08:10)，状态已就绪，无需更新；再次触发(2027-05-13 cron P-20260502-017-tech-confirm 08:45)，状态已就绪，无需更新；再次触发(2026-05-13 06:00 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-14 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新；再次触发(2026-05-14 10:05 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
+- `Notes`: 家庭成员角色系统 + 任务归属 + 家庭共享任务池 + 宝宝头像优化 + 家庭数据概览；cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，状态已存在，仅记录时间戳；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新
 
 *最后更新：2026-05-14*
 
@@ -1044,7 +1044,7 @@
 - `Last Update`: 2026-05-14
 - `Notes`: Jest单元测试(card-effects/relic-effects/damage/status-effects)+Puppeteer E2E(battle-flow/ui-render)，覆盖率>80%
 
-### P-20260513-005: GitHub Repo Manager V2 — 核心闭环真实化
+### P-20260514-004: GitHub Repo Manager V2 — 核心闭环真实化
 
 - `Proposal ID`: `P-20260513-005`
 - `Title`: GitHub Repo Manager V2 — 核心闭环真实化
@@ -1201,13 +1201,25 @@
 - `Proposal ID`: `P-20260514-007`
 - `Title`: trending-dashboard 社交深化
 - `Owner`: 小墨
-- `Current Status`: `approved_for_dev`
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-007-prd.md`
+- `Project`: `trending-dashboard`
+- `Last Update`: 2026-05-14
+- `Notes`: 社交深化已完成（CommentsPanel / SharePoster / NotificationCenter）；commit 8118396；GitHub Pages 已部署
+
+### P-20260514-008: trending-dashboard-高级筛选
+
+- `Proposal ID`: `P-20260514-008`
+- `Title`: trending-dashboard 高级筛选
+- `Owner`: 小墨
+- `Current Status`: `approved_for_dev`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-008-prd.md`
 - `Project`: `trending-dashboard`
 - `PRD Confirmation`: `confirmed`
 - `Technical Expectations`: `timeout-approved`
 - `Last Update`: 2026-05-14
-- `Description`: 评论系统 + 分享海报 + 通知提醒
+- `Description`: 高级搜索过滤 + 自定义词云/关键词监控 + 话题Trending视图
 
 ### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
 
@@ -1289,3 +1301,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit fc08a7d8；集成已有feed-recommend模块（similarity-engine+interest-analyzer+recommend-service）；FeedList.tsx导航集成FeedRecommendPanel；build成功(19.4s)
+
+### P-20260514-009: ai-subscription-错误处理增强+重试机制
+
+- `Proposal ID`: `P-20260514-009`
+- `Title`: ai-subscription-错误处理增强+重试机制
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 314e8954；错误类层次（AISubscriptionError/LLMError/RateLimitError/CircuitBreakerError等）；retry.ts指数退避+抖动+CircuitBreaker；pipeline.ts集成withRetry；llm.ts集成per-provider熔断器；build成功(13.8s)

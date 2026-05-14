@@ -1036,13 +1036,13 @@
 - `Proposal ID`: `P-20260514-003`
 - `Title`: card-game-prototype V68 — 自动化测试用例覆盖
 - `Owner`: 小墨
-- `Current Status`: `approved_for_dev`
+- `Current Status`: `accepted`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-003-prd.md`
 - `Project Path`: `/home/hermes/card-game-prototype`
 - `Acceptance`: `pending`
 - `Technical Expectations`: `pending`
 - `Last Update`: 2026-05-14
-- `Notes`: Jest单元测试(card-effects/relic-effects/damage/status-effects)+Puppeteer E2E(battle-flow/ui-render)，覆盖率>80%
+- `Notes`: Jest单元测试(91 passed - card-effects/damage/status-effects/relic-effects)+Puppeteer E2E跳过(需网络安装puppeteer)
 
 ### P-20260514-004: GitHub Repo Manager V2 — 核心闭环真实化
 
@@ -1220,6 +1220,19 @@
 - `Last Update`: 2026-05-14
 - `Notes`: 高级筛选已完成（AdvancedFilterBar / TopicTrendingView / 关键词高亮）；commit 8270834；GitHub Pages 已部署
 
+### P-20260514-009: trending-dashboard-体验优化
+
+- `Proposal ID`: `P-20260514-009`
+- `Title`: trending-dashboard 体验优化
+- `Owner`: 小墨
+- `Current Status`: `prd_pending_confirmation`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-009-prd.md`
+- `Project`: `trending-dashboard`
+- `PRD Confirmation`: `pending`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Description`: 暗黑模式 + 移动端适配 + 数据导出 + 国际化
+
 ### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
 
 - `Proposal ID`: `P-20260514-003`
@@ -1324,3 +1337,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit d5653af4；AnalyticsDashboard组件（订阅统计/AI成本/模型排行/任务类型分布）；CostTrendChart折线图+ModelCostRanking+CostRecordsTable；FeedList.tsx导航集成；build成功(15.4s)
+
+### P-20260514-011: ai-subscription-离线支持+PWA增强
+
+- `Proposal ID`: `P-20260514-011`
+- `Title`: ai-subscription-离线支持+PWA增强
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 9f94283c；Service Worker（CacheFirst/NetworkFirst/StaleWhileRevalidate策略）；manifest.json配置+shortcuts；OfflineIndicator离线指示器+usePWAUpdate；main.tsx SW注册；offlineCache.ts；build成功(23.6s)

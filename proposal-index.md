@@ -1044,15 +1044,19 @@
 - `Last Update`: 2026-05-14
 - `Notes`: Jest单元测试(91 passed - card-effects/damage/status-effects/relic-effects)+Puppeteer E2E跳过(需网络安装puppeteer)
 
-### P-20260514-004: GitHub Repo Manager V2 — 核心闭环真实化
+### P-20260514-004: card-game-prototype V69 — 卡牌平衡性调优
 
-- `Proposal ID`: `P-20260513-005`
-- `Title`: GitHub Repo Manager V2 — 核心闭环真实化
+- `Proposal ID`: `P-20260514-004`
+- `Title`: card-game-prototype V69 — 卡牌平衡性调优
 - `Owner`: 小墨
-- `Current Status`: `approved_for_dev`
-- `PRD Path`: `workspace-pm/proposals/P-20260513-005-prd.md`
-- `Project Path`: `/home/hermes/github-repo-manager`
+- `Current Status`: `accepted`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-004-prd.md`
+- `Project Path`: `/home/hermes/card-game-prototype`
 - `Acceptance`: `pending`
+- `Last Update`: 2026-05-14
+- `Notes`: 雷霆一击暴击20%→15%/吸血之刃3费6伤→3费7伤25%/锈铁戒指+1→+2/生命符咒+3→+5/燃烧之核+20%→+15%/诅咒之瓶虚弱+2→+3
+
+### P-20260514-003:
 - `Last Update`: 2026-05-13
 - `Notes`: Build/Deploy/Scheduler 已实现但未充分验证；A1超时保护缺失、A3任务持久化缺失；Windows exe 打包需在 Windows 主机进行
 
@@ -1225,11 +1229,11 @@
 - `Proposal ID`: `P-20260514-009`
 - `Title`: trending-dashboard 体验优化
 - `Owner`: 小墨
-- `Current Status`: `prd_pending_confirmation`
+- `Current Status`: `approved_for_dev`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-009-prd.md`
 - `Project`: `trending-dashboard`
-- `PRD Confirmation`: `pending`
-- `Technical Expectations`: `pending`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `timeout-approved`
 - `Last Update`: 2026-05-14
 - `Description`: 暗黑模式 + 移动端适配 + 数据导出 + 国际化
 
@@ -1349,3 +1353,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit 9f94283c；Service Worker（CacheFirst/NetworkFirst/StaleWhileRevalidate策略）；manifest.json配置+shortcuts；OfflineIndicator离线指示器+usePWAUpdate；main.tsx SW注册；offlineCache.ts；build成功(23.6s)
+
+### P-20260514-012: ai-subscription-多语言UI i18n支持
+
+- `Proposal ID`: `P-20260514-012`
+- `Title`: ai-subscription-多语言UI i18n支持
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 5793a742；i18n/en.ts+zh.ts翻译文件；FeedList.tsx使用i18n翻译；build成功(18.1s)；ja/ko翻译待后续迭代添加

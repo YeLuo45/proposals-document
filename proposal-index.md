@@ -1213,13 +1213,12 @@
 - `Proposal ID`: `P-20260514-008`
 - `Title`: trending-dashboard 高级筛选
 - `Owner`: 小墨
-- `Current Status`: `approved_for_dev`
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-008-prd.md`
 - `Project`: `trending-dashboard`
-- `PRD Confirmation`: `confirmed`
-- `Technical Expectations`: `timeout-approved`
 - `Last Update`: 2026-05-14
-- `Description`: 高级搜索过滤 + 自定义词云/关键词监控 + 话题Trending视图
+- `Notes`: 高级筛选已完成（AdvancedFilterBar / TopicTrendingView / 关键词高亮）；commit 8270834；GitHub Pages 已部署
 
 ### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
 
@@ -1313,3 +1312,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit 314e8954；错误类层次（AISubscriptionError/LLMError/RateLimitError/CircuitBreakerError等）；retry.ts指数退避+抖动+CircuitBreaker；pipeline.ts集成withRetry；llm.ts集成per-provider熔断器；build成功(13.8s)
+
+### P-20260514-010: ai-subscription-数据分析面板
+
+- `Proposal ID`: `P-20260514-010`
+- `Title`: ai-subscription-数据分析面板
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit d5653af4；AnalyticsDashboard组件（订阅统计/AI成本/模型排行/任务类型分布）；CostTrendChart折线图+ModelCostRanking+CostRecordsTable；FeedList.tsx导航集成；build成功(15.4s)

@@ -1229,13 +1229,25 @@
 - `Proposal ID`: `P-20260514-009`
 - `Title`: trending-dashboard 体验优化
 - `Owner`: 小墨
-- `Current Status`: `approved_for_dev`
+- `Current Status`: `delivered`
+- `Acceptance`: `accepted`
 - `PRD Path`: `workspace-pm/proposals/P-20260514-009-prd.md`
 - `Project`: `trending-dashboard`
-- `PRD Confirmation`: `confirmed`
-- `Technical Expectations`: `timeout-approved`
 - `Last Update`: 2026-05-14
-- `Description`: 暗黑模式 + 移动端适配 + 数据导出 + 国际化
+- `Notes`: 体验优化已完成（ThemeProvider暗黑模式 / MobileDrawer / I18nProvider中英 / ExportPanel）；commit 7ba6981；GitHub Pages 已部署
+
+### P-20260514-010: trending-dashboard-性能与扩展
+
+- `Proposal ID`: `P-20260514-010`
+- `Title`: trending-dashboard 性能与扩展
+- `Owner`: 小墨
+- `Current Status`: `prd_pending_confirmation`
+- `PRD Path`: `workspace-pm/proposals/P-20260514-010-prd.md`
+- `Project`: `trending-dashboard`
+- `PRD Confirmation`: `pending`
+- `Technical Expectations`: `pending`
+- `Last Update`: 2026-05-14
+- `Description`: PWA离线支持 + 开源许可证筛选 + 多数据源
 
 ### P-20260514-003: ai-subscription-Multi-Agent Pipeline架构升级
 
@@ -1365,3 +1377,15 @@
 - `Technical Expectations`: `confirmed`
 - `Last Update`: 2026-05-14
 - `Notes`: 交付完成；commit 5793a742；i18n/en.ts+zh.ts翻译文件；FeedList.tsx使用i18n翻译；build成功(18.1s)；ja/ko翻译待后续迭代添加
+
+### P-20260514-013: ai-subscription-阅读历史导出
+
+- `Proposal ID`: `P-20260514-013`
+- `Title`: ai-subscription-阅读历史导出
+- `Owner`: 小墨
+- `Current Status`: `accepted`
+- `Acceptance`: `accepted`
+- `PRD Confirmation`: `confirmed`
+- `Technical Expectations`: `confirmed`
+- `Last Update`: 2026-05-14
+- `Notes`: 交付完成；commit 22dd34d1；storage.ts添加exportPushHistory函数；ImportExportPanel阅读历史导出；JSON格式导出；build成功(15.3s)

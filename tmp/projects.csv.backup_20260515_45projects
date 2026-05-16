@@ -1,0 +1,16 @@
+id,name,proposal_count,git_repo,local_path,description,last_update
+`ai-subscription`06,ai-subscription,1,,,commit 07ed1acd - 语言检测+翻译按钮+TranslationSettings+translationDB,2026-05-
+future-little-leaders,future-little-leaders,1,,,家庭成员角色系统 + 任务归属 + 家庭共享任务池 + 宝宝头像优化 + 家庭数据概览；cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，状态已存在，仅记录时间戳；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新,2026-05-05
+ai-subscription`on,ai-subscripti,1,,,commit 0572d8b - API Key管理+REST端点+DeveloperPanel+apiDB,2026-05-06
+PRJ-20260420-002,pixel-pal-web,9,,,V98的自然延伸；ExecutionHistory执行追踪 + FailureCaseLibrary失败归因 + PromptEvolutionEngine动态优化 + AgentSelectionStrategy成功率选择 + AdaptiveThreshold学习型阈值,2026-05-14
+PRJ-20260419-007,ai-creator-h5,3,,,PWA离线支持增强完成：SW v1.6.0缓存更新+全局离线状态栏+生成页离线禁用+版本更新toast；commit caccf7a，部署到 https://yeluo45.github.io/ai-creator-h5/,2026-05-08
+prj-proposals-manager,prj-proposals-manager,8,,,Dashboard视图新增：4统计卡片（总提案/Active/in_dev/本月新增）+项目分布饼图+月度趋势折线图+最近活跃提案列表+快捷入口；commit ae95401，GitHub Pages已部署,2026-05-13
+`card-game-prototype`ivation-simulator,cult,1,,,V28成就系统重制：30+成就/稀有度/赛季挑战/头像框气泡,2026-05-12
+`ai-subscription`subscription-大模型调用层升级-llm-design-dev,proposals,1,,,家庭成员角色系统 + 任务归属 + 家庭共享任务池 + 宝宝头像优化 + 家庭数据概览；cron P-20260502-017-tech-confirm 重复触发(2026-05-11)，状态已存在，仅记录时间戳；再次触发(2027-05-13 cron P-20260502-017-tech-confirm)，状态已就绪，无需更新*最后更新：2026-05-14*,2026-05-13
+`astrbot-design`ent-Collaboration,astrbot-design,1,,,已交付：13文件，Python语法验证通过，git push成功。MessageQueue/ContextPool/Agent基类/内置Teams/Dashboard/API,2026-05-13
+`card-game-prototype` V64 — 战斗系统深化,card-game-prototype,1,,,V64已部署到 https://yeluo45.github.io/card-game-prototype/ — 状态效果(虚弱/易伤/中毒/燃烧/力量)/新卡牌(fireball等)/手牌上限10张/能量检查,2026-05-13
+agent-记忆系统-跨-session-llm-决策记忆`pectations`: `timeout-approved,github-repo-manager,1,,,commit ed43353 + ff58a2c；Vue 3 + Node.js + Electron 项目骨架；Express + SQLite 后端(修复 electron 耦合)；Electron 主进程 + 托盘；npm run dev 正常,2026-05-13
+agent-记忆系统-跨-session-llm-决策记忆,agent-记忆系统-跨-session-llm-决策记忆,1,,,PRD 确认超时(2026-05-13 09:39)，按默认通过处理；Q=async event-driven（asyncio + Queue）；技术方案已输出,2026-05-13
+ai-novel-assistant,ai-novel-assistant,1,,,V23完成，commit 53d1405，master分支；CreateProjectModal扩展字段 + VersionGeneratorPage三版本生成 + VersionSelector选择UI + RelationshipGraph关系图 + 数据模型扩展；build成功；GitHub Actions部署中,2026-05-14
+trending-dashboard,trending-dashboard-社交协作功能,7,,,trending-dashboard 性能与扩展,2026-05-14
+shannon-design,shannon-design-文档站,1,,,VitePress 文档站，9个页面全部 HTTP 200；架构/CLI/Worker/Pipeline/Temporal/Docker/配置；基于 shannon (Keygraph-AI) 源码生成,2026-05-14

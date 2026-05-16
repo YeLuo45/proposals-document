@@ -1,0 +1,2335 @@
+{
+  "projects": [
+    {
+      "id": "PRJ-20260412-009",
+      "name": "ai-stock-simulation",
+      "proposalCount": 6,
+      "proposals": [
+        {
+          "id": "P-20260412-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-024",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-009",
+          "created": "ai-stock-simulation",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260417-002",
+      "name": "android-hello",
+      "proposalCount": 20,
+      "proposals": [
+        {
+          "id": "P-20250417-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-014",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-015",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-016",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-017",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-018",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-019",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-020",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-021",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-022",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-023",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-024",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-025",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-026",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-027",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-028",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-029",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-030",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-002",
+          "created": "android-hello",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260418-001",
+      "name": "monopoly3d",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20250418-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-001",
+          "created": "monopoly3d",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260418-004",
+      "name": "future-little-leaders",
+      "proposalCount": 3,
+      "proposals": [
+        {
+          "id": "P-20250418-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-004",
+          "created": "future-little-leaders",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3009",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-004",
+          "created": "future-little-leaders",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-012",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-004",
+          "created": "future-little-leaders",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260418-005",
+      "name": "todo-app",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20250418-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-005",
+          "created": "todo-app",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260419-001",
+      "name": "temple-run",
+      "proposalCount": 3,
+      "proposals": [
+        {
+          "id": "P-20260419-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260419-001",
+          "created": "temple-run",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-070",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260419-001",
+          "created": "temple-run",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-081",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260419-001",
+          "created": "temple-run",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260419-002",
+      "name": "tank-battle",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20250419-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-002",
+          "created": "tank-battle",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260419-003",
+      "name": "dont-step-white",
+      "proposalCount": 13,
+      "proposals": [
+        {
+          "id": "P-20260419-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-010",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-011",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-012",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-013",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-014",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-015",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-016",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-018",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3024",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3027",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-003",
+          "created": "dont-step-white",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260419-005",
+      "name": "TradingAgents-CN",
+      "proposalCount": 2,
+      "proposals": [
+        {
+          "id": "P-20260419-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-005",
+          "created": "TradingAgents-CN",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3046",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260419-005",
+          "created": "TradingAgents-CN",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260421-003",
+      "name": "personalClaw",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20250421-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-003",
+          "created": "personalClaw",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260422-001",
+      "name": "ai-novel-assistant",
+      "proposalCount": 6,
+      "proposals": [
+        {
+          "id": "P-20250421-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-003",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3054",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260422-001",
+          "created": "ai-novel-assistant",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260423-001",
+      "name": "room-escape-puzzle",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260422-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260423-001",
+          "created": "room-escape-puzzle",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260423-002",
+      "name": "little-garden",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260422-005",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260423-002",
+          "created": "little-garden",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260423-005",
+      "name": "hermes-agent-collab",
+      "proposalCount": 3,
+      "proposals": [
+        {
+          "id": "P-20260419-005",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260423-005",
+          "created": "hermes-agent-collab",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260424-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260423-005",
+          "created": "hermes-agent-collab",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3055",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260423-005",
+          "created": "hermes-agent-collab",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260424-001",
+      "name": "OpenMAIC",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260424-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260424-001",
+          "created": "OpenMAIC",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260424-004",
+      "name": "match3-puzzle",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260422-003",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260424-004",
+          "created": "match3-puzzle",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260426-003",
+      "name": "calculator-app",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20250416-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260426-003",
+          "created": "calculator-app",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260427-001",
+      "name": "preschool-puzzle",
+      "proposalCount": 2,
+      "proposals": [
+        {
+          "id": "P-20260426-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260427-001",
+          "created": "preschool-puzzle",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3096",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260427-001",
+          "created": "preschool-puzzle",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260428-002",
+      "name": "flight-chess-3d",
+      "proposalCount": 8,
+      "proposals": [
+        {
+          "id": "P-20260427-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-004",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3032",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3035",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3040",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3041",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-3043",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-002",
+          "created": "flight-chess-3d",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260428-001",
+      "name": "whack-a-mole-3d",
+      "proposalCount": 6,
+      "proposals": [
+        {
+          "id": "P-20260429-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260430-001",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260430-002",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260430-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260430-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260430-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260428-001",
+          "created": "whack-a-mole-3d",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260430-001",
+      "name": "tower-baby-guard",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260430-006",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260430-001",
+          "created": "tower-baby-guard",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260430-002",
+      "name": "doc-editor",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260430-007",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260430-002",
+          "created": "doc-editor",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20250416-001",
+      "name": "todolist",
+      "proposalCount": 11,
+      "proposals": [
+        {
+          "id": "P-20250416-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-012",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-014",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-015",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-016",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-019",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-020",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-024",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-025",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-026",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-027",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-001",
+          "created": "todolist",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20250416-002",
+      "name": "game-1024",
+      "proposalCount": 6,
+      "proposals": [
+        {
+          "id": "P-20250416-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-007",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-008",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-010",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-011",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250416-002",
+          "created": "game-1024",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260421-001",
+      "name": "card-game-prototype",
+      "proposalCount": 30,
+      "proposals": [
+        {
+          "id": "P-20260502-013",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-006",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-007",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-008",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-010",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-011",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-012",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-013",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-014",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-015",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-016",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-017",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-018",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-019",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-006",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-008",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-010",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-011",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260509-012",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260421-001",
+          "created": "card-game-prototype",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20250418-003",
+      "name": "harness-desktop",
+      "proposalCount": 2,
+      "proposals": [
+        {
+          "id": "P-20250418-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20250418-003",
+          "created": "harness-desktop",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260510-001",
+          "title": "",
+          "status": "delivered",
+          "priority": "PRJ-20250418-003",
+          "created": "harness-desktop",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260417-001",
+      "name": "prj-proposals-manager",
+      "proposalCount": 2,
+      "proposals": [
+        {
+          "id": "P-20250417-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260417-001",
+          "created": "prj-proposals-manager",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-077",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260417-001",
+          "created": "prj-proposals-manager",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260418-002",
+      "name": "creative-drawing-board",
+      "proposalCount": 40,
+      "proposals": [
+        {
+          "id": "P-20260503-028",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-038",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-039",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-040",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-041",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-042",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-043",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-044",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-045",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-046",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-047",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-048",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-049",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-050",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-051",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-052",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-053",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-054",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-055",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-056",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-057",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-058",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-059",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-060",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-061",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-062",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-063",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-064",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-065",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-066",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-067",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-068",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260504-069",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-078",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-079",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-080",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-081",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-082",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-083",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-084",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260418-002",
+          "created": "creative-drawing-board",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260420-001",
+      "name": "snake-battle",
+      "proposalCount": 4,
+      "proposals": [
+        {
+          "id": "P-20250420-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-001",
+          "created": "snake-battle",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-021",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-001",
+          "created": "snake-battle",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-022",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-001",
+          "created": "snake-battle",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260503-023",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-001",
+          "created": "snake-battle",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260412-008",
+      "name": "ai-subscription",
+      "proposalCount": 19,
+      "proposals": [
+        {
+          "id": "P-20260412-008",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260502-017",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-005",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-006",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-007",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-008",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-009",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-010",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-011",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260505-013",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-006",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-007",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-008",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260506-009",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260412-008",
+          "created": "ai-subscription",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260420-002",
+      "name": "pixel-pal-web",
+      "proposalCount": 4,
+      "proposals": [
+        {
+          "id": "P-20260506-010",
+          "title": "",
+          "status": "in_dev",
+          "priority": "PRJ-20260420-002",
+          "created": "pixel-pal-web",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-002",
+          "created": "pixel-pal-web",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-002",
+          "created": "pixel-pal-web",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260507-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260420-002",
+          "created": "pixel-pal-web",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-003",
+      "name": "astrbot-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-003",
+          "created": "astrbot-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-004",
+      "name": "autoagent-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-002",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-004",
+          "created": "autoagent-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-005",
+      "name": "bmad-method-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-005",
+          "created": "bmad-method-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-006",
+      "name": "chatdev-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-004",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-006",
+          "created": "chatdev-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-007",
+      "name": "deepcode-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-005",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-007",
+          "created": "deepcode-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260511-008",
+      "name": "deepseek-coder-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260511-006",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260511-008",
+          "created": "deepseek-coder-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260509-001",
+      "name": "trading-agents-design",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260509-001",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260509-001",
+          "created": "trading-agents-design",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260509-002",
+      "name": "trending-dashboard",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260516-001",
+      "name": "hermes-agent-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260419-007",
+      "name": "ai-creator-h5",
+      "proposalCount": 3,
+      "proposals": [
+        {
+          "id": "P-20260507-006",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260419-007",
+          "created": "ai-creator-h5",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-001",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260419-007",
+          "created": "ai-creator-h5",
+          "updated": "",
+          "assignee": ""
+        },
+        {
+          "id": "P-20260508-002",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260419-007",
+          "created": "ai-creator-h5",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260516-002",
+      "name": "cultivation-simulator",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260512-003",
+          "title": "",
+          "status": "archived",
+          "priority": "PRJ-20260516-002",
+          "created": "cultivation-simulator",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260516-003",
+      "name": "github-repo-manager",
+      "proposalCount": 1,
+      "proposals": [
+        {
+          "id": "P-20260513-003",
+          "title": "",
+          "status": "active",
+          "priority": "PRJ-20260516-003",
+          "created": "github-repo-manager",
+          "updated": "",
+          "assignee": ""
+        }
+      ]
+    },
+    {
+      "id": "PRJ-20260515-001",
+      "name": "thunderbolt-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-002",
+      "name": "media-crawler-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-003",
+      "name": "claude-howto-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-001",
+      "name": "deepseek-tui-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-002",
+      "name": "openspec-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-003",
+      "name": "ai-hedge-fund-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-004",
+      "name": "crawl4ai-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-005",
+      "name": "n8n-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260514-006",
+      "name": "nanobot-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-004",
+      "name": "generic-agent-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-005",
+      "name": "open-space-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-006",
+      "name": "scrapling-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-007",
+      "name": "claude-code-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-008",
+      "name": "claudecodesrc-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-009",
+      "name": "freqtrade-develop-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-010",
+      "name": "langcli-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-011",
+      "name": "ohmypi-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-012",
+      "name": "opencode-dev-design",
+      "proposalCount": 0,
+      "proposals": []
+    },
+    {
+      "id": "PRJ-20260515-013",
+      "name": "ruflo-design",
+      "proposalCount": 0,
+      "proposals": []
+    }
+  ],
+  "lastUpdate": "2026-05-16T13:45:00+08:00"
+}

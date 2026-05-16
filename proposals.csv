@@ -1,7 +1,11 @@
 id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,git_repo,deployment_url,prd_confirmation,tech_expectations,acceptance,last_update,engine,target,game_type,notes
-P-20260517-002,PRJ-20250418-003,harness-desktop,delivered,2026-05-17,Tool Sandbox for Agent safety,
+P-20260518-004,PRJ-20250418-003,harness-desktop,delivered,2026-05-18,Phase-Gated Pipeline (chatdev-inspired),
+P-20260518-003,PRJ-20250418-003,harness-desktop,delivered,2026-05-18,Provider Dynamic Switching,,,,,,,,,,,,,,
+P-20260518-002,PRJ-20250418-003,harness-desktop,delivered,2026-05-18,Multi-Channel Expansion (Discord/Feishu),,,,,,,,,,,,,,
+P-20260518-001,PRJ-20250418-003,harness-desktop,delivered,2026-05-18,Dream Memory (two-phase consolidation),,,,,,,,,,,,,,
+P-20260517-002,PRJ-20250418-003,harness-desktop,delivered,2026-05-17,Tool Sandbox for Agent safety,,,,,,,,,,,,,,
 P-20250416-001,,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,,,,,,
-P-20260517-001,PRJ-20250418-003,harness-desktop,delivered,2026-05-17,Channel Integration (Telegram/Discord),
+P-20260517-001,PRJ-20250418-003,harness-desktop,delivered,2026-05-17,Channel Integration (Telegram/Discord),,,,,,,,,,,,,,
 P-20260502-012,,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,,,,,,
 P-20260502-014,,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,,,,,,
 P-20260502-015,,,active,PRJ-20250416-001,todolist,,,,,https://github.com/YeLuo45/todo-list,,,,,,,,,
@@ -212,8 +216,8 @@ P-20260511-005,,,active,PRJ-20260511-007,deepcode-design,,,,,https://github.com/
 P-20260511-006,,,active,PRJ-20260511-008,deepseek-coder-design,,,,,https://github.com/YeLuo45/DeepSeek-Coder,,,,,,,,,
 P-20260512-003,,,archived,PRJ-20260516-002,cultivation-simulator,,,,,https://github.com/YeLuo45/cultivation-simulator,,,,,,,,,
 P-20260513-003,,,active,PRJ-20260516-003,github-repo-manager,,,,,https://github.com/YeLuo45/github-repo-manager,,,,,,,,,
-P-20260516-001,,,active,PRJ-20250418-003,harness-desktop,,delivered,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260516-001-prd.md,,https://github.com/YeLuo45/harness-desktop,,pending,,2026-05-16,,,,,
-P-20260516-002,,,active,PRJ-20260412-009,ai-stock-simulation,debate-agent-unattended,辩论式策略评估+无人值守模式,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260516-001-prd.md,,https://github.com/YeLuo45/ai-stock-simulation,,pending,,2026-05-16,,,,
-P-20260517-001,,,active,PRJ-20260420-002,pixel-pal-web,telegram-discord-adapters,多渠道Adapter扩展(Telegram+Discord),/home/hermes/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260516-002-prd.md,,https://github.com/YeLuo45/pixel-pal-web,,pending,,2026-05-17,,,,
-P-20260517-002,,,active,PRJ-20260420-002,pixel-pal-web,plan-review-gate,Plan Review Gate — Agent执行前LLM审查计划质量,/home/hermes/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260517-002-prd.md,,https://github.com/YeLuo45/pixel-pal-web,,pending,,2026-05-17,,,,
-P-20260517-003,PRJ-20260430-002,doc-editor,approved_for_dev,2026-05-17,doc-editor-v2-multi-agent,
+P-20260518-003,Provider极速接入,nanobot-style Provider注册接口+热插拔机制,delivered,PRJ-20260420-002,pixel-pal-web,delivered,provider-abstraction,Provider极速接入 — 添加新LLM Provider仅需2步（注册+配置），参考nanobot设计,/home/hermes/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260518-003-prd.md,,/home/hermes/pixel-pal-web,,accepted,,2026-05-18,,,,
+P-20260519-003,PRJ-20260420-002,pixel-pal-web,V109 More Channel Adapters,feature,pending,approved_for_dev,pending,2026-05-19
+P-20260517-003,,,active,PRJ-20260412-009,ai-stock-simulation,multi-datasource,多数据源融合(Tushare+AKShare),/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260517-003-prd.md,,https://github.com/YeLuo45/ai-stock-simulation,,pending,,2026-05-17,,,,
+P-20260518-005,in_dev,B2 - Visual Workflow Designer,2026-05-18,Visual drag-drop workflow designer with React Flow
+P-20260517-004,,,active,PRJ-20260412-009,ai-stock-simulation,regime-detection,市场Regime检测+策略池自适应切换,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260517-004-prd.md,,https://github.com/YeLuo45/ai-stock-simulation,,pending,,2026-05-17,,,,

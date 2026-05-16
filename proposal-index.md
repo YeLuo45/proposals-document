@@ -10,12 +10,22 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: github-repo-manager
 - **Owner**: 小墨
-- **Stage**: PRD pending confirmation
-- **Acceptance**: pending
-- **Last Update**: 2026-05-16
+- **Stage**: 待 push 到远程
+- **Acceptance**: 代码已提交本地 master (8efea95)
+- **Last Update**: 2026-05-17
 - **PRD Path**: workspace-pm/proposals/P-20260516-003-prd.md
+- **Tech Solution**: workspace-dev/proposals/github-repo-manager/P-20260516-003-tech-solution.md
 - **Direction**: A (MessageBus 事件驱动重构)
 - **Mode**: 无人值守模式（自动确认、自动验收、自动迭代）
+- **Git**: 本地 master 已 commit (8efea95)，push 阻塞（HTTP 408），tree 已创建 (ef8fe36)
+- **阻塞**: 网络阻塞 git push，API 方式 tree 已创建但 commit 创建超时
+- **API**: GET/PUT /api/settings/telegram, POST /api/settings/telegram/test
+- **Notes**: 
+  - npm run build: ✅
+  - Telegram Bot API 封装: ✅
+  - 多渠道通知 (Email + Telegram): ✅
+  - 统一 send() 入口: ✅
+  - GitHub push: 网络不稳定，commit 已保存待重试
 
 ### IN DEV
 
@@ -484,6 +494,41 @@ Last updated: 2026-05-16 23:45:00
 - **Last Update**: 
 
 ### ACTIVE
+
+#### P-20260517-005: PRD: Tower-Baby-Guard V6 — 音效系统 + BOSS战强化
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: V6 — audio system + BOSS health bar + phases + screen shake
+- **Acceptance**: in_dev
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 nanobot 音效+BOSS战 | 无人值守模式 | Godot 4 GDScript | audio/ + screen_shake.gd + boss_health_bar.tscn
+
+#### P-20260517-004: PRD: Tower-Baby-Guard V5 — YAML Level Editor + Story System
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — level select + 3 JSON levels + story vignettes + special events
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 ChatDev YAML workflow | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
+
+#### P-20260517-003: PRD: Tower-Baby-Guard V4 — Persistence + Achievement System
+
+#### P-20260517-002: PRD: Tower-Baby-Guard V3 — Tower Upgrade System
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — 15 upgrades (3 per tower) + upgrade panel + sell value
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 nanobot 技能市场模式 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
 
 #### P-20260517-001: PRD: Tower-Baby-Guard V2 — Tower Collaboration System
 
@@ -1736,6 +1781,33 @@ Last updated: 2026-05-16 23:45:00
 - **Last Update**: 2026-05-16
 - **Notes**: lastSelectedModel 偏好持久化 + modelUsage 统计 + "我的"页统计展示 + 生成成功自动 increment。Commit bb196a1，部署 https://yeluo45.github.io/ai-creator-h5/
 
+#### P-20260516-005: ai-creator-h5 V6 - API额度管理 + 成本统计
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-16
+- **Notes**: MODEL_COST 配置 + bar 可视化 + 累计消耗估算。Commit 1dcde2a，部署 https://yeluo45.github.io/ai-creator-h5/
+
+#### P-20260516-006: ai-creator-h5 V7 - 收藏夹/专辑管理
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-16
+- **Notes**: albums/favorites 数据模型 + 收藏弹窗 + 专辑 CRUD UI + 专辑展开查看收藏。Commit 137748d7，部署 https://yeluo45.github.io/ai-creator-h5/
+
+#### P-20260516-007: ai-creator-h5 V8 - 批量操作 + 社区分享
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-16
+- **Notes**: 批量选择/删除/收藏 + 分享按钮（复制base64到剪贴板）。Commit 05a2242，部署 https://yeluo45.github.io/ai-creator-h5/
+
 #### P-20260508-002: P-20260508-002: 创意工坊 & 社区生态
 
 - **Project**: ai-creator-h5
@@ -1811,7 +1883,7 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: ai-novel-assistant
 - **Owner**: 小墨
-- **Stage**: approved_for_dev
+- **Stage**: delivered
 - **Acceptance**: pending
 - **Last Update**: 2026-05-16
 - **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260516-006-prd.md
@@ -1858,15 +1930,88 @@ Last updated: 2026-05-16 23:45:00
 - **Type**: feature
 - **Project**: pixel-pal-web
 - **Owner**: 小墨
-- **Stage**: approved_for_dev
-- **Acceptance**: pending
+- **Stage**: delivered
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-17
 - **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260517-002-prd.md
 - **Reference**: deepcode-design/workflow-architecture.md §3.2 PlanReviewRuntime
+
+---
+
+- **Proposal ID**: P-20260518-001
+- **Title**: Loop Detection System
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260518-001-prd.md
+- **Reference**: nanobot/nanobot/agent/loop.py (max_iterations=20)
 - **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
 |- **Unattended**: true
 |
-|#### P-20260517-003: PRD: doc-editor V2 — 多 Agent 文档协作系统 + 无人值守模式
+
+---
+
+- **Proposal ID**: P-20260518-002
+- **Title**: Checkpoint + Progress Tracker
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260518-002-prd.md
+- **Reference**: deepcode-design/workflow-architecture.md §3.3 PlanningCheckpointCallback
+
+#### P-20260518-003: Provider 极速接入
+
+- **Proposal ID**: P-20260518-003
+- **Title**: Provider 极速接入
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260518-003-prd.md
+- **Reference**: nanobot README "adding a new LLM provider now takes just 2 simple steps"
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+|#### P-20260519-001: Memory Persistence V2
+
+- **Proposal ID**: P-20260519-001
+- **Title**: Memory Persistence V2
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260519-001-prd.md
+- **Reference**: nanobot memory store pattern + V105 CheckpointManager
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260519-002: Skill Chaining
+
+- **Proposal ID**: P-20260519-002
+- **Title**: Skill Chaining
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/pixel-pal-web/P-20260519-002-prd.md
+- **Reference**: nanobot skill framework pattern
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+
+#### P-20260517-003: PRD: doc-editor V2 — 多 Agent 文档协作系统 + 无人值守模式
 |
 |- **Project**: doc-editor
 |- **Owner**: 小墨
@@ -1902,3 +2047,131 @@ Last updated: 2026-05-16 23:45:00
 - **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260516-006-prd.md
 - **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
 - **Unattended**: true
+
+#### P-20260516-007: PRD: creative-drawing-board V57 — AI 辅助绘画增强
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-16
+- **Last Update**: 2026-05-16
+- **Dev Commit**: 64e0427 (对称辅助已存在，笔画补全/智能填心见V58)
+- **Lines**: 39,035 (行数未变，代码已存在于早期版本)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=57
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260516-007-prd.md
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-002: PRD: creative-drawing-board V58 — 笔画补全 + 智能填色
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: cde4999 (285行)
+- **Lines**: 39,035 → 39,318 (+283)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=58
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-001-prd.md
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-003: PRD: creative-drawing-board V59 — 协作绘画（实时同步）
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: approved_for_dev
+- **Acceptance**: pending
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-002-prd.md
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-004: PRD: MCP Client 集成 — 扩展 AI 工具生态
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-002-prd.md
+- **Reference**: nanobot-design (MCP tool system), thunderbolt-design (扩展工具生态)
+- **Notes**: 62f37169 - 7 files, 1451 insertions. 构建 26.91s。零新增依赖，自实现 MCP JSON-RPC over stdio。无人值守完成。
+
+#### P-20260517-005: PRD: MCP 工具生态扩展 — 接入真实 MCP 服务器
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-003-prd.md
+- **Reference**: 前置: P-20260517-004 MCP Client 核心
+- **Notes**: a0e4e737 - MCP 服务器模板（GitHub/Brave Search/Slack/Filesystem）+ 工具调用历史。构建 29.69s。无人值守完成。
+
+#### P-20260517-006: PRD: AI 原生工具调用 — MCP 工具增强内容分析
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: approved_for_dev
+- **Acceptance**: pending
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-006-prd.md
+- **Reference**: 前置: P-20260517-005 MCP 工具生态扩展
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-003: PRD: creative-drawing-board V59 — 协作绘画（实时同步）
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 82ff30e (829行)
+- **Lines**: 39,318 → 40,147 (+829)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=59
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-002-prd.md
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-005: PRD: creative-drawing-board V60 — 云同步（账号体系）
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 9e4ae16 (~920行)
+- **Lines**: 40,147 → 41,066 (+919)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=60
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-003-prd.md
+- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
+- **Unattended**: true
+
+#### P-20260517-006: PRD: creative-drawing-board V61 — Tauri 多平台打包
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: e5b4575 (15 files, +1,447行)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=61
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-006-prd.md
+- **Notes**: Tauri v2 脚手架完成 - src-tauri/Rust项目/tauri.conf.json/Cargo配置/原生命令(fs/dialog/notification/clipboard)
+- **Unattended**: true
+
+#### P-20260517-007: PRD: creative-drawing-board V62 — Tauri 原生集成
+
+#### P-20260519-003: V109 More Channel Adapters
+
+- **Proposal ID**: P-20260519-003
+- **Title**: V109 More Channel Adapters
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: approved_for_dev
+- **Acceptance**: pending
+- **Last Update**: 2026-05-19
+

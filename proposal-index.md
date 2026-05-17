@@ -14,6 +14,21 @@ Last updated: 2026-05-18
 - `Last Update`: 2026-05-18
 - `Notes`: Direction A — nanobot-inspired MessageBus refactor. AsyncMessageBus with queue (max 1000), 3x retry + dead-letter, ChannelAdapter pattern (WS/SSE/HTTP). Committed c03f776, pushed.
 
+### P-20260518-012: future-little-leaders V10 V3 M5 Dashboard 补全 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit dc2b28b9，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V10-M5-dashboard.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (dc2b28b9)
+- **Features**: 积分总览; 7日收支趋势; 任务趋势柱状图; 技能树进度; 成就进度环; AI建议区块; getDashboardStatsV2
+
+---
+
 ### P-20260518-010: future-little-leaders V9 成长报告 AI 总结 (Direction A)
 
 - **Project**: future-little-leaders
@@ -3790,6 +3805,20 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (7feeed3, 069147d)
 - **Features**: 日志面板; 版本管理; 执行结果预览; 状态徽章; 进度条; 快捷键; 撤销; 连接线状态
+
+### P-20260518-009: preschool-puzzle 道具效果集成 V3 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-009-prd.md
+- **Direction**: A (iter 2)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Features**: shape_hint效果; time_pause效果; color_magnifier效果; sort_assist效果; map_fragment效果; wall_soften效果
+- **Git**: main (8cd4e51)
 
 ### P-20260518-008: preschool-puzzle 道具系统 V2 (Direction A)
 

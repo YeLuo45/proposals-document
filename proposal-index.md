@@ -1199,16 +1199,27 @@ Last updated: 2026-05-16 23:45:00
 - **Features**: App.jsx 集成 useSyncWorker，ConflictModal 冲突解决流程，storage.js 统一存储层（OPFS自动切换）
 - **Deploy**: https://yeluo45.github.io/todo-list/?v=33
 
-#### P-20260518-007: TodoList V34 — 离线优先深化round3（TaskContext集成统一存储层）
+#### P-20260518-007: TodoList V36 — 离线优先深化round5（冲突自动合并策略）
 
 - **Project**: TodoList
 - **Owner**: 小墨
 - **Stage**: delivered
 - **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
 - **Last Update**: 2026-05-18
-- **Git**: main (61ebaf3)
-- **Features**: TaskContext 改用 storage.js API（getTasks/setTasks/initStorage），OPFS 阈值500自动触发，initStorage 异步初始化
-- **Deploy**: https://yeluo45.github.io/todo-list/?v=34
+- **Git**: main (5d4d10c)
+- **Features**: syncWorker autoMerge() 自动合并策略，冲突检测（updatedAt比对），subtasks 去重
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=36
+
+#### P-20260518-008: TodoList V37 — 离线优先深化round6（OPFS迁移进度Toast）
+
+- **Project**: TodoList
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
+- **Last Update**: 2026-05-18
+- **Git**: main (ec2f063)
+- **Features**: storage.js migrateToOPFS 分批进度回调，App.jsx OPFS 迁移进度 Toast + 样式
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=37
 
 #### P-20260419-001: Proposal Request Intake
 
@@ -3806,6 +3817,20 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (7feeed3, 069147d)
 - **Features**: 日志面板; 版本管理; 执行结果预览; 状态徽章; 进度条; 快捷键; 撤销; 连接线状态
 
+### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-010-prd.md
+- **Direction**: A (iter 3)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Features**: 每日签到奖励; 扭蛋系统; 道具升级; 价格调整
+- **Git**: main (26f8aa7)
+
 ### P-20260518-009: preschool-puzzle 道具效果集成 V3 (Direction A)
 
 - **Project**: preschool-puzzle
@@ -3834,6 +3859,20 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (fb9c349)
 - **Features**: 星星经济; ToolRegistry道具注册表; ItemShop商店; 6个道具; localStorage持久化
 
+---
+
+### P-20260518-003: hermes-agent-collab thunderbolt-inspired SQLite WAL Backend + Dual-Storage Factory (Direction B)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-003-prd.md
+- **Git**: gh-pages (e11f7be)
+- **Features**: StorageBackend ABC; SQLiteStore (WAL mode, thread-local connections, crash recovery); get_storage_backend() factory; append_event/list_events; events table schema; JsonFileStore subclasses StorageBackend; WAL pragmas (journal_mode=WAL, synchronous=NORMAL, busy_timeout=5000)
+
+---
+
 ### P-20260518-004: ai-creator-h5 AI创作工作流编排器 v3 (Direction A iter5)
 
 - **Project**: ai-creator-h5
@@ -3857,3 +3896,27 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (b44383e)
 - **Features**: AI智能推荐; 模板市场; 6个精选模板; 收藏/评分; 分类筛选; 导出JSON
+### P-20260518-006: ai-creator-h5 AI创作工作流编排器 v5 (Direction A iter7)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit a304c9e，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-006-prd.md
+- **Direction**: A (iteration 7)
+- **Mode**: 无人值守模式
+- **Git**: main (a304c9e)
+- **Features**: 执行监控面板; 实时状态栏; 节点耗时统计; 性能排行; 执行历史; 重新执行
+### P-20260518-007: ai-creator-h5 AI创作工作流编排器 v6 (Direction A iter8)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 7f28787，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-007-prd.md
+- **Direction**: A (iteration 8)
+- **Mode**: 无人值守模式
+- **Git**: main (7f28787)
+- **Features**: 版本历史追踪; 版本对比; 差异高亮; 回滚; 分支创建/切换/合并/删除

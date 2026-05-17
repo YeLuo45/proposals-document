@@ -1,8 +1,1130 @@
 # Proposal Index
 
+Last updated: 2026-05-18
+
+### P-20260518-001: nanobot-inspired AsyncMessageBus + Channel Adapter
+
+- `Proposal ID`: `P-20260518-001`
+- `Title`: nanobot-inspired MessageBus + Channel Adapter 架构重构
+- `Owner`: 小墨
+- `Current Status`: accepted
+- `Project`: hermes-agent-collab
+- `Source Design`: nanobot-design (Async MessageBus + Channel Adapters)
+- `PRD Path`: workspace-dev/proposals/hermes-agent-collab/docs/P-20260518-001-prd.md
+- `Last Update`: 2026-05-18
+- `Notes`: Direction A — nanobot-inspired MessageBus refactor. AsyncMessageBus with queue (max 1000), 3x retry + dead-letter, ChannelAdapter pattern (WS/SSE/HTTP). Committed c03f776, pushed.
+
+### P-20260518-010: future-little-leaders V9 成长报告 AI 总结 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit 6c8335da，push 成功；SDK commit d2ed559，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V9-ai-growth-summary.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (6c8335da) + SDK main (d2ed559)
+- **Features**: aiSummaryService; buildGrowthStats; 模板回退; FastAPI; AI Summary区域; ai_summary_cache表
+
+---
+
+### P-20260518-007: future-little-leaders V8 Python SDK + 家校互通 (Direction A)
+
+- **Project**: future-little-leaders-sdk-python
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: pip install 成功，from fll_sdk import __version__ 输出 1.0.0，Git push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V8-python-sdk.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: main (3fbafe9)
+- **Features**: FLLClient; JWT认证; Pydantic模型; WebhookServer; Cloudflare Worker占位; school_sync示例
+
+---
+
+### P-20260518-005: future-little-leaders V7 家庭通知中枢 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit 74f58f5a，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V7-notification-hub.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (74f58f5a)
+- **Features**: 12通道; SQLite持久化; Tab分组; 日期分组; 未读置顶; 渠道偏好设置; notificationStore
+
+---
+
+### P-20260518-002: hermes-agent-collab chatdev-inspired Agent Role System + Phase-Gated Pipeline (Direction A)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-002-prd.md
+- **Git**: gh-pages (025a728)
+- **Features**: AgentRole (ORCHESTRATOR/EXECUTOR/CRITIC/MONITOR/SPECIALIST); ROLE_SYSTEM_PROMPTS; TaskComplexity (SIMPLE/NORMAL/COMPLEX); OrchestrationPhase enum with can_transition_to/next_phase; Agent.system_prompt; Task.complexity/phase/phase_history; evaluate_complexity/get_next_phase helpers; TaskManager.transition_phase/advance_phase; TaskAction.phase_transition; phase-gated set_status/complete/fail/cancel
+
+---
+
+### P-20260518-003: future-little-leaders V6 自进化技能树/成长图谱系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit 9753b773，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V6-skill-tree.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9753b773)
+- **Features**: 四棵树(knowledge/habit/social/creative); SVG树状图; 自进化阈值调整; 40+节点; skillTreeStore; 集成achievementStore
+
+---
+
+### P-20260517-035: future-little-leaders V5 可视化任务编排画布 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit d14a0811，push 成功
+- **Last Update**: 2026-05-17
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (d14a0811)
+- **Features**: 拖拽节点画布; SVG贝塞尔连线; flowStore CRUD; flow-builder/flow-list 页面
+
+---
+
+### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit face16f9，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V4-offline-sync.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (face16f9)
+- **Features**: sql.js SQLite; Delta Sync Engine; E2E 加密架构; V4 PRD; 修复 add-task.vue 重复声明; 修复 family-dashboard.vue 缺少 </style>
+
+---
+
+Last updated: 2026-05-18
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: npm run build:h5 成功，Git commit face16f9，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V4-offline-sync.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (face16f9)
+- **Features**: sql.js SQLite; Delta Sync Engine; E2E 加密架构; V4 PRD; 修复 add-task.vue 重复声明; 修复 family-dashboard.vue 缺少 </style>
+
+---
+
 Last updated: 2026-05-16 23:45:00
 
+### P-20260517-037: ai-creator-h5 API开放平台 (Direction D)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit e5fab2c，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-037-prd.md
+- **Direction**: D
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (e5fab2c)
+- **Features**: API开放平台; API Key管理; 接口文档; services/apiService.js; pages/api.html
+
+---
+
+### P-20260517-036: ai-creator-h5 实时协作 (Direction C)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 1eff031，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-036-prd.md
+- **Direction**: C
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (1eff031)
+- **Features**: 实时协作; 分享链接; 评论系统; services/collabService.js; pages/shared.html
+
+---
+
+### P-20260517-035: ai-creator-h5 AI角色专业化 (Direction B)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit a8f4321，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-035-prd.md
+- **Direction**: B
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (a8f4321)
+- **Features**: AI角色专业化; 插画师/音乐人/配音师/设计师; services/roleService.js; pages/roles.html
+
+---
+
+### P-20260517-034: ai-creator-h5 创作质量评估 (Direction A)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 067933c，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-034-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (067933c)
+- **Features**: 0-100质量分; 维度评分; 优化建议; services/qualityService.js
+
+---
+
+### P-20260517-033: ai-creator-h5 端到端加密 (Direction F)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 7d7da2e，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-033-prd.md
+- **Direction**: F
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (7d7da2e)
+- **Features**: E2E加密; AES-256-GCM; Web Crypto API; 隐私模式; services/cryptoService.js
+
+---
+
+### P-20260517-032: ai-creator-h5 跨平台桌面端 (Direction E)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 39295b7，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-032-prd.md
+- **Direction**: E
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (39295b7)
+- **Features**: Tauri 2桌面端; src-tauri/; package.json tauri脚本
+
+---
+
+### P-20260517-031: ai-creator-h5 PWA离线优先增强 (Direction D)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit a1bc35b，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-031-prd.md
+- **Direction**: D
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (a1bc35b)
+- **Features**: Offline-First; 离线队列; IndexedDB; 缓存管理; services/offlineQueue.js
+
+---
+
+### P-20260517-030: ai-creator-h5 记忆系统 (Direction C)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 984f7e6，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-030-prd.md
+- **Direction**: C
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (984f7e6)
+- **Features**: Dream Memory; IndexedDB存储; 偏好分析; 智能推荐; pages/memory.html; services/memoryService.js
+
+---
+
+### P-20260517-029: ai-creator-h5 多渠道分享 (Direction B)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit ab247d1，push 成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-029-prd.md
+- **Direction**: B
+- **Mode**: 无人值守模式
+- **Git**: 已推送 origin/main (ab247d1)
+- **Features**: 微信/Twitter/Telegram/短链分享; pages/share.html; services/shareService.js
+
+---
+
+### P-20260517-028: ai-creator-h5 工具系统生态 (Direction A)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit e2c3572，构建成功
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-028-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 main 已 commit (e2c3572)
+- **Features**: nanobot-design Tool System; 5内置工具; pages/tools.html; services/toolRegistry.js
+
+---
+
 ## Active Proposals
+
+### PENDING CONFIRMATION
+
+#### P-20260607-001: 部署时间线
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (2306885)
+- **Last Update**: 2026-06-07
+- **PRD Path**: workspace-pm/proposals/P-20260607-001-prd.md
+- **Direction**: B
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (2306885)
+- **Features**: 甘特图可视化 / 日/周/月视图 / 统计概览 / 仓库排行 / 里程碑追踪
+
+### PENDING CONFIRMATION
+
+#### P-20260606-001: 部署回滚增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (2f478da)
+- **Last Update**: 2026-06-06
+- **PRD Path**: workspace-pm/proposals/P-20260606-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (2f478da)
+- **Features**: 快照管理 / 两版本对比 / 一键回滚 / 回滚历史 / 影响分析
+
+### PENDING CONFIRMATION
+
+#### P-20260605-001: 审计日志
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (ebbc6af)
+- **Last Update**: 2026-06-05
+- **PRD Path**: workspace-pm/proposals/P-20260605-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (ebbc6af)
+- **Features**: 操作日志 / 登录历史 / 统计概览 / CSV+JSON导出 / 变更前后对比
+
+### PENDING CONFIRMATION
+
+#### P-20260605-002: Compliance Report 合规报告
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (94196b3)
+- **Last Update**: 2026-06-05
+- **PRD Path**: workspace-pm/proposals/P-20260605-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (94196b3)
+- **Views**: ComplianceReportView.vue
+- **Features**: GDPR/SOC2/PCI-DSS/ISO27001报告 / 多格式导出 / 合规状态概览
+
+### PENDING CONFIRMATION
+
+#### P-20260605-003: Notification Center 统一通知中心
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (3fff871)
+- **Last Update**: 2026-06-05
+- **PRD Path**: workspace-pm/proposals/P-20260605-003-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (3fff871)
+- **Views**: NotificationCenterView.vue
+- **Features**: 通知聚合 / 未读数 / 快速操作 / 偏好设置 / 免打扰时段
+
+### PENDING CONFIRMATION
+
+#### P-20260606-001: Data Export & Report Generation 数据导出
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (2b95c9b)
+- **Last Update**: 2026-06-06
+- **PRD Path**: workspace-pm/proposals/P-20260606-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (2b95c9b)
+- **Views**: DataExportView.vue
+- **Features**: CSV/JSON/Excel导出 / 模板 / 定时任务 / 历史记录
+
+### PENDING CONFIRMATION
+
+#### P-20260606-002: Environment Health Matrix 环境健康矩阵
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (9ddcadb)
+- **Last Update**: 2026-06-06
+- **PRD Path**: workspace-pm/proposals/P-20260606-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (9ddcadb)
+- **Views**: EnvironmentHealthView.vue
+- **Features**: 多环境矩阵 / 五维评分 / 趋势图 / 问题汇总 / 依赖关系
+
+### PENDING CONFIRMATION
+
+#### P-20260607-001: Onboarding Wizard 新用户入门向导
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (ffd68b3)
+- **Last Update**: 2026-06-07
+- **PRD Path**: workspace-pm/proposals/P-20260607-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (ffd68b3)
+- **Views**: OnboardingWizard.vue
+- **Features**: 5步向导 / GitHub连接 / 仓库添加 / 环境配置 / Pipeline创建
+
+### PENDING CONFIRMATION
+
+#### P-20260604-001: 批量操作增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (20024f4)
+- **Last Update**: 2026-06-04
+- **PRD Path**: workspace-pm/proposals/P-20260604-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (20024f4)
+- **Features**: 批量选择(多选/全选/反选) / 批量编辑/删除 / CSV导入 / 模板应用 / 导出
+
+### PENDING CONFIRMATION
+
+#### P-20260603-001: Webhook 可视化调试
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (1489a9c)
+- **Last Update**: 2026-06-03
+- **PRD Path**: workspace-pm/proposals/P-20260603-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (1489a9c)
+- **Features**: 请求模拟 / 响应查看 / 响应对比 / 模板库 / cURL生成
+
+### PENDING CONFIRMATION
+
+#### P-20260602-001: API 密钥管理增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (e34d0a6)
+- **Last Update**: 2026-06-02
+- **PRD Path**: workspace-pm/proposals/P-20260602-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (e34d0a6)
+- **Features**: 密钥轮换 / 访问日志 / 权限分级 / 过期提醒
+
+### PENDING CONFIRMATION
+
+#### P-20260603-002: Deployment Timeline 部署时间线
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (a888bb0)
+- **Last Update**: 2026-06-03
+- **PRD Path**: workspace-pm/proposals/P-20260603-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (a888bb0)
+- **Views**: DeploymentTimelineView.vue
+- **Features**: 部署时间线 / 趋势统计 / 环境对比 / 成功失败回滚颜色标注
+
+### PENDING CONFIRMATION
+
+#### P-20260604-001: Cost Analysis Dashboard 成本分析
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (5c79408)
+- **Last Update**: 2026-06-04
+- **PRD Path**: workspace-pm/proposals/P-20260604-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (5c79408)
+- **Views**: CostAnalysisView.vue
+- **Features**: 成本分解 / 趋势预测 / 仓库分布 / 环境分类 / 资源类型
+
+### PENDING CONFIRMATION
+
+#### P-20260604-002: Security Audit Log 安全审计
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6f57d70)
+- **Last Update**: 2026-06-04
+- **PRD Path**: workspace-pm/proposals/P-20260604-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6f57d70)
+- **Views**: SecurityAuditView.vue
+- **Features**: 安全事件审计 / 异常检测 / 趋势统计 / 合规报告
+
+### PENDING CONFIRMATION
+
+#### P-20260602-002: Repository Insights 仓库洞察
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (c2efa36)
+- **Last Update**: 2026-06-02
+- **PRD Path**: workspace-pm/proposals/P-20260602-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (c2efa36)
+- **Views**: RepoInsightsView.vue
+- **Features**: 代码质量评分 / 依赖关系图 / 热力图 / 贡献者分析 / 健康预警
+
+### PENDING CONFIRMATION
+
+#### P-20260601-001: 自定义工作流编排
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6604a32)
+- **Last Update**: 2026-06-01
+- **PRD Path**: workspace-pm/proposals/P-20260601-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6604a32)
+- **Features**: 可视化编辑器 / 节点拖拽 / 连线 / 执行引擎 / 3内置模板
+
+### PENDING CONFIRMATION
+
+#### P-20260601-002: Pipeline Dependency Graph + API Keys
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (77be614)
+- **Last Update**: 2026-06-01
+- **PRD Path**: workspace-pm/proposals/P-20260601-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (77be614, f118b99, 304d066, 627e522)
+- **Views**: PipelineGraphView.vue, WorkflowCanvasView.vue
+- **Features**: 依赖图可视化 / 节点拖拽 / 连线 / API密钥管理
+
+### PENDING CONFIRMATION
+
+#### P-20260531-001: 国际化 (i18n)
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (38dee42)
+- **Last Update**: 2026-05-31
+- **PRD Path**: workspace-pm/proposals/P-20260531-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (38dee42)
+- **Features**: 中英文切换 / 语言选择器 / 翻译文件
+
+### PENDING CONFIRMATION
+
+#### P-20260530-001: 定时任务可视化编辑器
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (8222211)
+- **Last Update**: 2026-05-30
+- **PRD Path**: workspace-pm/proposals/P-20260530-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (8222211)
+- **Views**: SchedulerEditorView.vue
+- **Features**: Cron模板 / 分步输入 / 执行历史 / 任务链
+
+### PENDING CONFIRMATION
+
+#### P-20260530-002: Webhook Event Simulator
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (b91ce42)
+- **Last Update**: 2026-05-30
+- **PRD Path**: workspace-pm/proposals/P-20260530-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (b91ce42)
+- **Views**: WebhookSimulatorView.vue
+- **Features**: Push/PR/Tag/Release事件模拟 / 历史记录 / 响应预览
+
+### PENDING CONFIRMATION
+
+#### P-20260529-001: 部署预览环境
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (d9810e0)
+- **Last Update**: 2026-05-29
+- **PRD Path**: workspace-pm/proposals/P-20260529-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (d9810e0)
+- **Views**: PreviewEnvironmentsView.vue
+- **Features**: 环境CRUD / 自动过期 / 快照管理 / 资源限制
+
+### PENDING CONFIRMATION
+
+#### P-20260528-002: 移动端适配
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (1b16a77)
+- **Last Update**: 2026-05-28
+- **PRD Path**: workspace-pm/proposals/P-20260528-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (1b16a77)
+- **Features**: 响应式布局 / 底部Tab栏 / FAB / PWA manifest
+
+### PENDING CONFIRMATION
+
+#### P-20260528-001: AI 异常检测
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (c1e2172)
+- **Last Update**: 2026-05-28
+- **PRD Path**: workspace-pm/proposals/P-20260528-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (c1e2172)
+- **Views**: AnomalyDetectionView.vue
+- **Features**: 4种检测模型 / Critical/Warning/Info / 阈值配置 / 修复建议
+
+### PENDING CONFIRMATION
+
+#### P-20260527-002: GitOps 集成
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (11e6616)
+- **Last Update**: 2026-05-27
+- **PRD Path**: workspace-pm/proposals/P-20260527-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (11e6616)
+- **Views**: GitOpsView.vue
+- **Features**: 声明式配置 / YAML+JSON解析 / Webhook自动同步 / 配置历史
+
+### PENDING CONFIRMATION
+
+#### P-20260527-001: 通知渠道扩展
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (c014115)
+- **Last Update**: 2026-05-27
+- **PRD Path**: workspace-pm/proposals/P-20260527-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (c014115)
+- **Views**: NotificationSettingsView.vue
+- **Features**: Slack/Discord / 4内置模板 / 规则引擎 / 变量替换
+
+### PENDING CONFIRMATION
+
+#### P-20260527-003: Activity Timeline 活动时间线
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (ef27ca4)
+- **Last Update**: 2026-05-27
+- **PRD Path**: workspace-pm/proposals/P-20260527-003-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (ef27ca4)
+- **Views**: ActivityTimelineView.vue
+- **Features**: 仓库活跃度排行 / 操作时间线 / 事件聚合 / 统计卡片
+
+### PENDING CONFIRMATION
+
+#### P-20260527-004: 导入导出配置备份系统
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6692d2b)
+- **Last Update**: 2026-05-27
+- **PRD Path**: workspace-pm/proposals/P-20260527-004-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6692d2b)
+- **Views**: BackupView.vue
+- **Features**: 整机配置导出JSON / 选择性合并导入 / credentials加密 / 备份历史
+
+### PENDING CONFIRMATION
+
+#### P-20260526-002: Pipeline 模板市场
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6a0afbb)
+- **Last Update**: 2026-05-26
+- **PRD Path**: workspace-pm/proposals/P-20260526-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6a0afbb)
+- **Views**: PipelineTemplatesView.vue
+- **Features**: 5内置模板 / CRUD / 评分 / 一键应用到仓库
+
+### PENDING CONFIRMATION
+
+#### P-20260526-001: SSH 终端集成
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6a17003)
+- **Last Update**: 2026-05-26
+- **PRD Path**: workspace-pm/proposals/P-20260526-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6a17003)
+- **Views**: SSHTerminalView.vue
+- **Features**: SSH连接 / xterm.js终端 / 命令执行 / 密码或密钥认证
+
+### PENDING CONFIRMATION
+
+#### P-20260525-002: 日志聚合搜索
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (c145202)
+- **Last Update**: 2026-05-25
+- **PRD Path**: workspace-pm/proposals/P-20260525-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (c145202)
+- **Views**: LogSearchView.vue
+- **Features**: 多源聚合 / 全文搜索 / 过滤器 / 实时流 / 分页
+
+### PENDING CONFIRMATION
+
+#### P-20260525-001: 统计分析仪表盘
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (d8bd304)
+- **Last Update**: 2026-05-25
+- **PRD Path**: workspace-pm/proposals/P-20260525-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (d8bd304)
+- **Views**: StatsDashboard.vue
+- **Features**: 总览卡片 / 趋势图 / 分布图 / 仓库排行 / 正在运行
+
+### PENDING CONFIRMATION
+
+#### P-20260525-002: 日志聚合搜索
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (c145202)
+- **Last Update**: 2026-05-25
+- **PRD Path**: workspace-pm/proposals/P-20260525-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (c145202)
+- **Views**: LogSearchView.vue
+- **Router**: /logs/search
+- **API**:
+  - GET /api/logs/search — 多源搜索
+  - GET /api/logs/stats — 日志统计
+  - GET /api/logs/stream/:repoId — SSE实时流
+- **Features**: 多源搜索 / 过滤器 / 实时流 / 分页
+
+### DELIVERED
+
+#### P-20260525-001: 统计分析仪表盘
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (d8bd304)
+- **Last Update**: 2026-05-25
+- **PRD Path**: workspace-pm/proposals/P-20260525-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (d8bd304)
+- **Views**: StatsDashboard.vue
+- **Router**: /stats
+- **API**:
+  - GET /api/stats/overview — 总览统计
+  - GET /api/stats/pipeline-trend — Pipeline趋势
+  - GET /api/stats/deploy-trend — 部署趋势
+  - GET /api/stats/repo-ranking — 仓库排行
+  - GET /api/stats/active-runs — 正在运行
+- **Features**: 总览卡片 / 趋势图 / 分布图 / 仓库排行 / 正在运行
+
+### PENDING CONFIRMATION
+
+#### P-20260524-002: 多环境配置
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (fd01602)
+- **Last Update**: 2026-05-24
+- **PRD Path**: workspace-pm/proposals/P-20260524-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (fd01602)
+- **Views**: EnvConfigView.vue
+- **Features**: 环境CRUD / 变量管理 / 切换active / 敏感加密 / ${VAR}解析
+
+### PENDING CONFIRMATION
+
+#### P-20260524-001: Webhook 触发记录
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (ac3300b)
+- **Last Update**: 2026-05-24
+- **PRD Path**: workspace-pm/proposals/P-20260524-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (ac3300b)
+- **Views**: WebhookEventsLog.vue
+- **Features**: 事件列表 / 按仓库/类型/状态筛选 / 详情弹窗 / 统计面板
+
+### PENDING CONFIRMATION
+
+#### P-20260523-002: 凭证安全管理
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (05d2eaf)
+- **Last Update**: 2026-05-23
+- **PRD Path**: workspace-pm/proposals/P-20260523-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (05d2eaf)
+- **Views**: CredentialsView.vue
+- **Features**: AES-256-GCM加密 / CRUD / 按仓配置 / 测试验证
+
+### PENDING CONFIRMATION
+
+#### P-20260523-001: 部署回滚 UI
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (86c7a76)
+- **Last Update**: 2026-05-23
+- **PRD Path**: workspace-pm/proposals/P-20260523-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (86c7a76)
+- **Views**: RollbackView.vue
+- **Features**: 目标选择 / 快照列表 / 一键回滚 / 二次确认 / 回滚历史
+
+### PENDING CONFIRMATION
+
+#### P-20260522-002: 仓库分组增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (220f1df)
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (220f1df)
+- **Views**: GroupManager.vue
+- **API**:
+  - GET/POST /api/groups — 分组CRUD
+  - GET /api/groups/:id — 分组详情(含成员)
+  - PUT/DELETE /api/groups/:id — 更新/删除
+  - PUT /api/groups/reorder — 拖拽排序
+  - POST /api/groups/:id/batch-action — 组级别批量操作
+- **Tables**: groups (新增description/last_activity字段)
+
+### PENDING CONFIRMATION
+
+#### P-20260522-001: 调度器可视化
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (7fb1412)
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (7fb1412)
+- **Views**: SchedulerView.vue
+- **API**:
+  - GET/POST /api/scheduler/jobs — 任务CRUD
+  - PUT/DELETE /api/scheduler/jobs/:id — 更新/删除
+  - POST /api/scheduler/jobs/:id/toggle — 启用/禁用
+  - POST /api/scheduler/jobs/:id/run — 手动触发
+  - GET /api/scheduler/history — 执行历史
+- **Tables**: scheduled_jobs, scheduled_job_history
+
+### DELIVERED
+
+#### P-20260522-002: 仓库分组增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (220f1df)
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (220f1df)
+- **Views**: GroupManager.vue
+- **Router**: /groups
+- **API**:
+  - GET/POST /api/groups — 列表/创建
+  - GET /api/groups/:id — 分组详情(含成员)
+  - PUT /api/groups/:id — 更新分组
+  - DELETE /api/groups/:id — 删除分组
+  - PUT /api/groups/reorder — 拖拽排序
+  - POST /api/groups/:id/repos — 添加仓库到分组
+  - DELETE /api/groups/:id/repos/:repoId — 从分组移除
+  - POST /api/groups/:id/batch-action — 组级别批量操作
+- **Tables**: groups (新增description/last_activity字段)
+- **Files**:
+  - server/db/init.js: groups表字段扩展
+  - server/routes/groups.js: API路由
+  - server/services/groupsService.js: 业务逻辑
+  - src/views/GroupManager.vue: 分组管理UI
+  - src/router.js: /groups路由
+  - src/App.vue: 分组导航
+
+### PENDING CONFIRMATION
+
+#### P-20260521-002: Pipeline 步骤细分
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (dbee051)
+- **Last Update**: 2026-05-21
+- **PRD Path**: workspace-pm/proposals/P-20260521-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (dbee051)
+- **Views**: PipelineStages.vue
+- **API**:
+  - GET/POST /api/pipeline-stages/templates — 模板CRUD
+  - GET /api/pipeline-stages/templates/default — 默认模板
+  - POST /api/pipeline-stages/pipelines/:id/stages — 添加Stage
+  - GET /api/pipeline-stages/pipelines/:id/stages — 列表
+  - PUT /api/pipeline-stages/stages/:id — 更新Stage
+  - DELETE /api/pipeline-stages/stages/:id — 删除
+  - POST /api/pipeline-stages/stages/reorder — 拖拽排序
+- **Tables**: pipeline_templates, pipeline_stages_v2
+
+### PENDING CONFIRMATION
+
+#### P-20260521-001: GitHub Actions 集成
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (984bfb9)
+- **Last Update**: 2026-05-21
+- **PRD Path**: workspace-pm/proposals/P-20260521-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (984bfb9)
+- **Views**: GitHubActions.vue
+- **API**:
+  - GET /api/github/actions/workflows?repoId= — 列表 Workflows
+  - POST /api/github/actions/workflows/:workflowId/run — 触发
+  - GET /api/github/actions/runs?repoId= — Runs 列表
+  - GET /api/github/actions/runs/:runId — Run 详情 + Jobs + Steps
+  - GET /api/github/actions/jobs/:jobId — Job 详情
+  - GET /api/github/actions/logs/:jobId/:stepNumber — Step 日志
+- **Tables**: github_actions_configs, action_runs
+
+### PENDING CONFIRMATION
+
+#### P-20260520-002: 通知系统 UI
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (eea97fc)
+- **Last Update**: 2026-05-20
+- **PRD Path**: workspace-pm/proposals/P-20260520-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (eea97fc)
+- **Views**:
+  - NotificationSettings.vue: 5个Tab (Telegram/Email/Webhook/事件订阅/历史)
+- **API**:
+  - GET/PUT /api/settings/email — Email 配置
+  - POST /api/settings/email/test — 测试邮件
+  - GET/PUT /api/settings/webhook — Webhook 配置
+  - POST /api/settings/webhook/test — 测试 Webhook
+- **Notes**:
+  - Settings.vue 简化为链接入口
+  - 完整通知渠道配置 UI
+
+### PENDING CONFIRMATION
+
+#### P-20260520-001: UI 界面增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (6873691)
+- **Last Update**: 2026-05-20
+- **PRD Path**: workspace-pm/proposals/P-20260520-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (6873691)
+- **Views**:
+  - PipelineKanban.vue: 四列看板 (pending/running/success/failed) + 详情弹窗
+  - BatchPanel.vue: 批量列表 + 创建表单 + pause/resume/cancel
+  - DeployTargets.vue: 目标CRUD + 类型表单 (githubPages/vps/s3/script) + 连接测试
+- **Router**: /pipelines /batch /deploy-targets
+- **Nav**: App.vue 侧边栏新增导航项
+
+### PENDING CONFIRMATION
+
+#### P-20260519-002: 部署目标管理增强
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (7c7a545)
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-pm/proposals/P-20260519-002-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (7c7a545)
+- **API**:
+  - GET/POST /api/deploy/targets — 列表/创建
+  - GET/PUT/DELETE /api/deploy/targets/:id — 详情/更新/删除
+  - POST /api/deploy/targets/:id/test — 测试连接
+  - POST /api/deploy/:targetId/run — 执行部署
+  - POST /api/deploy/:targetId/rollback — 回滚
+  - POST /api/deploy/multi — 多目标部署
+  - GET /api/deploy/:targetId/snapshots — 可用快照
+  - GET /api/deploy/rollback/history — 回滚历史
+- **Notes**:
+  - deploy_targets / deploy_history / rollback_history 表
+  - 4种部署器: githubPages / vps(ssh2) / s3(@aws-sdk) / script
+  - RollbackManager: backup/restore
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (1b81129)
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-002-prd.md
+- **Tech Solution**: workspace-dev/proposals/github-repo-manager/P-20260518-002-tech-solution.md
+- **Direction**: A
+- **Mode**: 无人值守模式（自动确认、自动验收、自动迭代）
+- **Git**: 本地 master 已 commit (1b81129)
+- **API**:
+  - GET /api/pipeline-history (列表+分页)
+  - GET /api/pipeline-history/stats (统计)
+  - GET /api/pipeline-history/kanban (看板)
+  - GET /api/pipeline-history/:id (详情)
+  - POST /api/pipeline-history/cleanup
+- **Notes**:
+  - server/db/init.js: pipeline_history + pipeline_stages 表
+  - server/services/pipelineHistory.js: 历史记录服务
+  - server/routes/pipelineHistory.js: API 路由
+  - server/services/pipelineOrchestrator.js: 集成历史钩子
+
+### PENDING CONFIRMATION
+
+#### P-20260518-001: Webhook 外部触发 + GitHub Webhook 事件订阅
+
+- **Project**: github-repo-manager
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 代码已提交本地 master (704ecfa)
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260518-001-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: 本地 master 已 commit (704ecfa)
+- **Files**:
+  - server/routes/webhook.js: Webhook接收端点 (trigger + generic)
+  - server/services/webhookTrigger.js: 事件处理逻辑
+  - server/routes/credentials.js: 凭证管理CRUD
+  - server/services/credentialService.js: AES-256-GCM加密
+  - src/views/WebhookSettings.vue: Webhook配置UI
+  - src/views/WebhookEventsLog.vue: 事件日志UI
+  - src/views/CredentialsView.vue: 凭证管理UI
+  - src/views/RollbackView.vue: 回滚历史UI
+- **API**:
+  - POST /api/webhook/trigger — GitHub Webhook触发
+  - POST /api/webhook/generic — 通用Webhook
+  - GET/POST /api/webhook/events — 事件日志
+  - GET/PUT/DELETE /api/settings/webhook/:id — Webhook配置
+  - GET/POST/PUT/DELETE /api/credentials — 凭证CRUD
+- **Tables**: webhook_events, webhook_secrets, credentials
+- **Notes**: electron-builder下载Electron卡住，Vite构建成功(75s)，但完整包未生成
 
 ### PENDING CONFIRMATION
 
@@ -10,7 +1132,7 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: github-repo-manager
 - **Owner**: 小墨
-- **Stage**: 待 push 到远程
+- **Stage**: delivered
 - **Acceptance**: 代码已提交本地 master (8efea95)
 - **Last Update**: 2026-05-17
 - **PRD Path**: workspace-pm/proposals/P-20260516-003-prd.md
@@ -28,6 +1150,50 @@ Last updated: 2026-05-16 23:45:00
   - GitHub push: 网络不稳定，commit 已保存待重试
 
 ### IN DEV
+
+#### P-20260518-004: TodoList V31 — 离线优先架构（Zustand 统一状态管理）
+
+- **Project**: TodoList
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
+- **Last Update**: 2026-05-18
+- **Git**: main (7d35b0c)
+- **Features**: Zustand 统一状态管理，12+ localStorage 调用迁移到 store，离线状态栏 OfflineBanner，migrateFromLegacy 数据迁移
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=31
+
+#### P-20260518-005: TodoList V32 — 离线优先深化（SharedWorker + OPFS + 冲突解决）
+
+- **Project**: TodoList
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
+- **Last Update**: 2026-05-18
+- **Git**: main (028845f)
+- **Features**: SharedWorker 跨标签页同步，OPFS 大文件存储，ConflictModal 冲突解决弹窗
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=32
+
+#### P-20260518-006: TodoList V33 — 离线优先深化round2（集成 + OPFS存储层）
+
+- **Project**: TodoList
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
+- **Last Update**: 2026-05-18
+- **Git**: main (7d295cd)
+- **Features**: App.jsx 集成 useSyncWorker，ConflictModal 冲突解决流程，storage.js 统一存储层（OPFS自动切换）
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=33
+
+#### P-20260518-007: TodoList V34 — 离线优先深化round3（TaskContext集成统一存储层）
+
+- **Project**: TodoList
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 构建成功，GitHub Actions 部署成功，curl 验证 200 OK
+- **Last Update**: 2026-05-18
+- **Git**: main (61ebaf3)
+- **Features**: TaskContext 改用 storage.js API（getTasks/setTasks/initStorage），OPFS 阈值500自动触发，initStorage 异步初始化
+- **Deploy**: https://yeluo45.github.io/todo-list/?v=34
 
 #### P-20260419-001: Proposal Request Intake
 
@@ -499,12 +1665,45 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: tower-baby-guard
 - **Owner**: 小墨
-- **Stage**: V6 — audio system + BOSS health bar + phases + screen shake
-- **Acceptance**: in_dev
+- **Stage**: DELIVERED — audio system + BOSS health bar + phases + screen shake
+- **Acceptance**: delivered
 - **Last Update**: 2026-05-17
 - **PRD Confirmation**: auto-approved (unattended mode)
 - **Technical Expectations**: auto-approved (unattended mode)
-- **Notes**: 借鉴 nanobot 音效+BOSS战 | 无人值守模式 | Godot 4 GDScript | audio/ + screen_shake.gd + boss_health_bar.tscn
+- **Notes**: 借鉴 nanobot 音效+BOSS战 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
+
+#### P-20260517-006: PRD: Tower-Baby-Guard V7 — 多关卡世界系统
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — world select + 9 scenes + world progression + 3 world mechanics
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 trading-agents 多世界扩展 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
+
+#### P-20260517-007: PRD: Tower-Baby-Guard V8 — 天气系统 + 动态环境
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — 5 weather types + dynamic particles + weather mechanics
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 trading-agents 动态天气 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
+
+#### P-20260517-008: PRD: Tower-Baby-Guard V9 — 无尽模式 + 每日挑战 + 录像回放
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — endless waves + daily challenge + replay system
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 nanobot roguelike+录像 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
 
 #### P-20260517-004: PRD: Tower-Baby-Guard V5 — YAML Level Editor + Story System
 
@@ -1046,6 +2245,23 @@ Last updated: 2026-05-16 23:45:00
 - **Stage**: 
 - **Acceptance**: 
 - **Last Update**: 2026-05-05
+
+#### P-20260517-008: PRD: 卡牌DBG V25 — 成就系统+统计追踪
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: approved_for_dev
+- **Acceptance**: 
+- **Last Update**: 2026-05-17
+- **PRD Path**: workspace-pm/proposals/P-20260517-008-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+
+#### P-20260517-007: PRD: 卡牌DBG V24 — 更多卡牌类型(POWER/CURSE/TREASURE)
+
+#### P-20260517-006: PRD: 卡牌DBG V23 — 随机事件+商人系统
+
+#### P-20260517-005: PRD: 卡牌DBG V22 — 多策略敌人AI辩论系统
 
 #### P-20260504-010: P-20260504-010 PRD: 遗物系统扩展
 
@@ -2113,13 +3329,243 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: ai-subscription
 - **Owner**: 小墨
-- **Stage**: approved_for_dev
-- **Acceptance**: pending
+- **Stage**: accepted
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-17
 - **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-006-prd.md
 - **Reference**: 前置: P-20260517-005 MCP 工具生态扩展
-- **Notes**: 无人值守模式 - 自动确认+自动验收+自动迭代
-- **Unattended**: true
+- **Notes**: b06a2fbf - MCP AI 适配器（callMCPTool/enhanceWithMCP）+ GitHub/Brave Search 增强 + MCPEnhancePanel + GitHub Trending 推荐。构建 29.44s。无人值守完成。
+
+#### P-20260517-014: PRD: ai-subscription 测试体系建设 — Vitest 单元测试 + 集成测试
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-014-prd.md
+- **Reference**: 前置: P-20260517-013 UI/UX 打磨
+- **Notes**: bf030bb2 - Vitest配置(vite.config.ts test{}) + 8个测试文件(cryptoService/sanitize/offline/engine/EmptyState/OfflineIndicator/ThemeSwitcher/setup)。构建 24.70s（需NODE_ENV=development）。无人值守完成。
+
+#### P-20260517-027: PRD: ai-subscription API 开放平台 — 第三方集成 + Webhook 事件订阅 + 开放 API
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-027-prd.md
+- **Reference**: 前置: P-20260517-026 高级个性化
+- **Notes**: 54cdea19 - ApiPlatform.tsx(Webhook/API Key/集成) + server/routes/platform.ts + 导航集成。构建 30.39s。无人值守完成。
+
+#### P-20260517-026: PRD: ai-subscription 高级个性化 — 主题定制 + 布局自定义 + Widget 小部件
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-026-prd.md
+- **Reference**: 前置: P-20260517-025 数据导出增强
+- **Notes**: b1525bbe - PersonalizationPanel.tsx(主题/布局/Widget管理) + usePersonalization hook + theme.css + Settings集成。构建 27.68s。无人值守完成。
+
+#### P-20260517-025: PRD: ai-subscription 数据导出增强 — OPML 导出 + JSON 备份 + 订阅源迁移工具
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-025-prd.md
+- **Reference**: 前置: P-20260517-024 高级探索
+- **Notes**: 214317c1 - export.ts(OPML/JSON导出) + Settings.tsx(导出/导入管理UI)。构建 27.50s。无人值守完成。
+
+#### P-20260517-024: PRD: ai-subscription 高级探索 — AI Agent 编排 + 自定义工作流画布 + 可视化流程设计
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-024-prd.md
+- **Reference**: 前置: P-20260517-023 社区功能
+- **Notes**: e170f1b8 - Explorer.tsx(高级探索页面) + Agent Registry + Workflow Canvas + Pipeline Visualizer + 导航集成。构建 26.66s。无人值守完成。
+
+#### P-20260517-023: PRD: ai-subscription 社区功能 — 公开订阅列表 + 分享功能 + 用户个人主页
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-023-prd.md
+- **Reference**: 前置: P-20260517-022 用户体验优化
+- **Notes**: 0c963b00 - Community.tsx(发现/我的列表/我的订阅) + communityDB.ts + types/community.ts + 导航集成。构建 30.41s。无人值守完成。
+
+#### P-20260517-022: PRD: ai-subscription 用户体验优化 — 快捷键增强 + 键盘导航 + 全局搜索优化
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-022-prd.md
+- **Reference**: 前置: P-20260517-021 智能推荐
+- **Notes**: 473af794 - useKeyboardShortcuts增强 + useGlobalSearch(模糊搜索/防抖/键盘导航) + useListNavigation + 快捷键帮助面板。构建 23.90s。无人值守完成。
+
+#### P-20260517-021: PRD: ai-subscription 智能推荐增强 — 个性化推荐 + 相似文章推荐
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-021-prd.md
+- **Reference**: 前置: P-20260517-020 性能深化
+- **Notes**: d30d1369 - Recommend.tsx页面 + recommendationService.ts(相似度计算) + 导航集成。构建 27.75s。无人值守完成。
+
+#### P-20260517-020: PRD: ai-subscription 性能深化 — 代码分割优化 + Service Worker 缓存策略 + CDN 加速
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-020-prd.md
+- **Reference**: 前置: P-20260517-019 国际化扩展
+- **Notes**: 7e1f6392 - vendor-ml独立chunk(6MB) + vendor-charts + vendor-i18n + sw.js缓存策略v3(CDN_CACHE)。构建 29.04s。无人值守完成。
+
+#### P-20260517-019: PRD: ai-subscription 国际化扩展 — 多语言支持 + RTL 布局适配
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-019-prd.md
+- **Reference**: 前置: P-20260517-018 高级安全
+- **Notes**: 669148b8 - 6个新语言文件(th/vi/id/de/fr/es) + LanguageSwitcher 8语言选项 + i18n/index.tsx支持所有 locales。构建 30.87s。无人值守完成。
+
+#### P-20260517-018: PRD: ai-subscription 高级安全功能 — E2E 加密传输 + MCP 鉴权增强 + 敏感操作二次验证
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-018-prd.md
+- **Reference**: 前置: P-20260517-017 数据可视化
+- **Notes**: 25922451 - cryptoService增强(AES-GCM加密) + SensitiveConfirmModal(敏感操作二次验证) + MCP鉴权增强(Bearer Token)。构建 30.79s。无人值守完成。
+
+#### P-20260517-017: PRD: ai-subscription 数据可视化增强 — 阅读趋势图表 + 健康度仪表盘 + 阅读统计
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-017-prd.md
+- **Reference**: 前置: P-20260517-016 高级功能
+- **Notes**: f4ffaae3 - ReadingTrendChart(7天折线图/纯SVG) + HealthDashboard(环形图/健康度评分) + ReadingTimeStats(热力图) + AnalyticsDashboard(整合三个组件)。构建 25.43s。无人值守完成。
+
+#### P-20260517-016: PRD: ai-subscription 高级功能探索 — AI Agent 自动化 + 对话式交互
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-016-prd.md
+- **Reference**: 前置: P-20260517-015 部署优化
+- **Notes**: 55bdbeb1 - AIAssistantPanel(Ant Design Drawer聊天界面) + chatService(自然语言查询/订阅统计/内容推荐/摘要生成) + localStorage持久化(ai-subscription-chat-history)。构建 25.43s。无人值守完成。
+
+#### P-20260517-015: PRD: ai-subscription 部署优化 — CI/CD + 版本管理
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-015-prd.md
+- **Reference**: 前置: P-20260517-014 测试体系
+- **Notes**: 73c1575c - GitHub Actions CI(.github/workflows/ci.yml npm ci/test/build) + Deploy(deploy.yml peaceiris/actions-gh-pages) + CHANGELOG.md。构建 28.47s。无人值守完成。
+
+#### P-20260517-013: PRD: ai-subscription UI/UX 打磨 — 暗色模式 + 动画 + 空状态页面
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-013-prd.md
+- **Reference**: 前置: P-20260517-012 PWA 增强
+- **Notes**: 1fef7781 - 暗色模式(ThemeSwitcher亮/暗/跟随系统) + CSS过渡动画(200ms) + EmptyState(6场景纯SVG插图) + SkeletonBlock(纯CSS shimmer)。构建 3.92s。无人值守完成。
+
+#### P-20260517-012: PRD: ai-subscription PWA 增强 — 桌面通知 + 离线能力 + 快捷方式
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-012-prd.md
+- **Reference**: 前置: P-20260517-011 安全加固
+- **Notes**: d2425dfa - manifest.json/icons(192/512) + notify()桌面通知 + isOnline()离线检测 + InstallBanner(beforeinstallprompt)。构建 4.24s。无人值守完成。
+
+#### P-20260517-011: PRD: ai-subscription 安全加固 — E2E 加密 + MCP 鉴权 + 日志脱敏
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-011-prd.md
+- **Reference**: 前置: P-20260517-010 性能优化
+- **Notes**: ed59fe62 - AES-GCM E2E加密(cryptoService) + MCP Bearer Token鉴权(Authorization头) + 日志脱敏(sanitize.ts) + secureCopy(30s清空)。构建 35.66s。无人值守完成。
+
+#### P-20260517-010: PRD: ai-subscription 性能优化 — Bundle 拆包 + 懒加载 + Service Worker 缓存
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-010-prd.md
+- **Reference**: 前置: P-20260517-009 多语言 i18n
+- **Notes**: 2faec6ad - manualChunks拆包(vendor-react/ai-sdk/antd/utils) + React.lazy懒加载MCPServerPanel/AnalyticsDashboard + 自定义sw.js缓存。构建 29.70s。无人值守完成。
+
+#### P-20260517-009: PRD: ai-subscription 多语言 i18n 完善 — zh/en 翻译补全 + 语言检测
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-009-prd.md
+- **Reference**: 前置: P-20260517-008 数据分析增强
+- **Notes**: 37ef19e7 - zh.json/en.json完整翻译 + LanguageSwitcher + I18nProvider + useTranslation hook。构建 19.84s。无人值守完成。
+
+#### P-20260517-008: PRD: ai-subscription 数据分析增强 — 订阅源健康度 + 阅读趋势可视化
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-008-prd.md
+- **Reference**: 前置: P-20260517-007 工作流自动化
+- **Notes**: ad84cd81 - AnalyticsDashboard + TrendChart(纯SVG) + analytics服务。构建 21.79s。无人值守完成。
+
+#### P-20260517-007: PRD: 高级工作流自动化 — 条件触发器 + Webhook 事件驱动
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-007-prd.md
+- **Reference**: 前置: P-20260517-006 MCP AI 工具调用
+- **Notes**: 627d30b8 - 工作流引擎核心（types/engine/executor/scheduler）+ Webhook接收端点 + WorkflowListPanel。构建 24.68s。无人值守完成。
 
 #### P-20260517-003: PRD: creative-drawing-board V59 — 协作绘画（实时同步）
 
@@ -2164,6 +3610,89 @@ Last updated: 2026-05-16 23:45:00
 
 #### P-20260517-007: PRD: creative-drawing-board V62 — Tauri 原生集成
 
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: de12c08 (+101行)
+- **Lines**: 41,066 → 41,167 (+101)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=62
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-007-prd.md
+- **Notes**: Tauri原生集成 - isTauri检测/tauriSaveFile/tauriCopyImage/tauriNotify/同步完成系统通知/复制图片按钮
+- **Unattended**: true
+
+#### P-20260517-008: PRD: creative-drawing-board V63 — 主题商店 + 高级画笔
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 61d2ee5 (+352行)
+- **Lines**: 41,167 → 41,519 (+352)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=63
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-008-prd.md
+- **Notes**: 主题商店+高级画笔 - 6主题(3免费3付费)/6画笔(3免费3付费)/购买确认弹窗/主题应用/画笔切换
+- **Unattended**: true
+
+#### P-20260517-009: PRD: creative-drawing-board V64 — 动画帧编辑
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 809c23a (+397行)
+- **Lines**: 41,519 → 41,916 (+397)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=64
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-009-prd.md
+- **Notes**: 动画帧编辑 - 时间轴/播放控制/FPS调节/帧增删复制/导出PNG序列/底部固定按钮
+- **Unattended**: true
+
+#### P-20260517-010: PRD: creative-drawing-board V65 — 社交分享
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 66771ed (+280行)
+- **Lines**: 41,916 → 42,196 (+280)
+- **Deployed**: https://yeluo45.github.io/creative-drawing-board/?v=65
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-010-prd.md
+- **Notes**: 社交分享 - 二维码/分享链接(URL编码)/Twitter/Facebook/微信二维码/加载分享作品
+- **Unattended**: true
+
+#### P-20260517-011: PRD: creative-drawing-board V66 — Tauri 构建发布
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: ✅ 2026-05-17
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 67d89ad (+9行)
+- **Lines**: 42,196 → 42,205 (+9)
+- **Deployed**: GitHub Actions CI: Build Tauri App (run 25986912054) ✅ SUCCESS
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-011-prd.md
+- **Notes**: Tauri v2 构建链路打通 - GitHub Actions CI (windows-latest) 自动构建，产出 NSIS/MSI 安装包。修复了 FilePath API 变更、base64 依赖、async/await edition 问题。
+- **Artifacts**: nsis/msi bundles via GitHub Release (draft)
+- **Unattended**: true
+
+#### P-20260517-012: UI布局重构 - 分组折叠式工具栏
+
+- **Project**: creative-drawing-board
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-17
+- **Dev Commit**: 147eae8 (+294行)
+- **Lines**: 42,205 → 42,349 (+144)
+- **Deployed**: ✅ master push SUCCESS
+- **PRD Path**: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-012-prd.md
+- **Notes**: 分组折叠式工具栏 - 6个功能分组（core/drawing/material/media/settings/special），核心工具组常驻展开，间距从6px增加到12px
+- **Unattended**: true
+
 #### P-20260519-003: V109 More Channel Adapters
 
 - **Proposal ID**: P-20260519-003
@@ -2171,7 +3700,131 @@ Last updated: 2026-05-16 23:45:00
 - **Type**: feature
 - **Project**: pixel-pal-web
 - **Owner**: 小墨
-- **Stage**: approved_for_dev
-- **Acceptance**: pending
+- **Stage**: delivered
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 
+
+#### P-20260519-004: V110 Channel Adapter Phase 2
+
+- **Proposal ID**: P-20260519-004
+- **Title**: V110 Channel Adapter Phase 2
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+
+
+#### P-20260519-005: V111 More Channel Adapters 2
+
+- **Proposal ID**: P-20260519-005
+- **Title**: V111 More Channel Adapters 2
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+
+
+#### P-20260519-006: V112 Channel Adapter Phase 2-2
+
+- **Proposal ID**: P-20260519-006
+- **Title**: V112 Channel Adapter Phase 2-2
+- **Type**: feature
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+
+
+#### P-20260517-011: PRD: Tower-Baby-Guard V12 — 好友借租 + 商店扭蛋系统
+
+- **Project**: tower-baby-guard
+- **Owner**: 小墨
+- **Stage**: DELIVERED — friend rental + gacha shop system
+- **Acceptance**: delivered
+- **Last Update**: 2026-05-17
+- **PRD Confirmation**: auto-approved (unattended mode)
+- **Technical Expectations**: auto-approved (unattended mode)
+- **Notes**: 借鉴 trading-agents 协作思路 + nanobot 扭蛋 | 无人值守模式 | Godot 4 GDScript | DELIVERED + PUSHED
+
+### P-20260518-001: ai-creator-h5 AI创作工作流编排器 (Direction A iter3)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 478e240，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-001-prd.md
+- **Direction**: A (iteration 3)
+- **Mode**: 无人值守模式
+- **Git**: main (478e240)
+- **Features**: 可视化节点编排; 执行引擎; 模板管理; 画布缩放/平移; 无新增依赖
+
+### P-20260518-002: ai-creator-h5 AI角色组合协作系统 V2 (Direction B iter2)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit fdee205+7769028，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-002-prd.md
+- **Direction**: B (iteration 2)
+- **Mode**: 无人值守模式
+- **Git**: main (fdee205, 7769028)
+- **Features**: 多角色组合协作; 并行创作; 角色预设管理; 协作状态实时显示; 6种角色
+
+### P-20260518-003: ai-creator-h5 AI创作工作流编排器 v2 (Direction A iter4)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 7feeed3+069147d，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-003-prd.md
+- **Direction**: A (iteration 4)
+- **Mode**: 无人值守模式
+- **Git**: main (7feeed3, 069147d)
+- **Features**: 日志面板; 版本管理; 执行结果预览; 状态徽章; 进度条; 快捷键; 撤销; 连接线状态
+
+### P-20260518-008: preschool-puzzle 道具系统 V2 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git push 成功 (fb9c349), npm run build 无错, 商店按钮+星星显示正常, 6道具注册表, localStorage 持久化
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-008-prd.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Git**: main (fb9c349)
+- **Features**: 星星经济; ToolRegistry道具注册表; ItemShop商店; 6个道具; localStorage持久化
+
+### P-20260518-004: ai-creator-h5 AI创作工作流编排器 v3 (Direction A iter5)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit d8c04ce+ca19af4，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-004-prd.md
+- **Direction**: A (iteration 5)
+- **Mode**: 无人值守模式
+- **Git**: main (d8c04ce, ca19af4)
+### P-20260518-005: ai-creator-h5 AI创作工作流编排器 v4 (Direction A iter6)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit b44383e，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-005-prd.md
+- **Direction**: A (iteration 6)
+- **Mode**: 无人值守模式
+- **Git**: main (b44383e)
+- **Features**: AI智能推荐; 模板市场; 6个精选模板; 收藏/评分; 分类筛选; 导出JSON

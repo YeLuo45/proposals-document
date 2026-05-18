@@ -29,6 +29,21 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-019: future-little-leaders-admin V17 家长后台管理 (Direction A)
+
+- **Project**: future-little-leaders-admin
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit f64e6ab, push成功; React+Vite+Ant Design+Dashboard+Family+Tasks+Reports+Social; GitHub repo created
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V17-admin.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: main (f64e6ab)
+- **Features**: React+Vite+Ant Design; Dashboard; Family; Tasks; Reports; Social; GitHub Actions CI/CD
+
+---
+
 ### P-20260518-018: future-little-leaders V16 微信小程序特定功能 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4187,3 +4202,16 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (b8ef099)
 - **Features**: 懒加载(工具栏/属性面板); Canvas节点虚拟化(IntersectionObserver); ES动态导入(debugger/variableInspector/timeTravel); 性能监控面板(FPS/节点/连接/内存)
+
+### P-20260518-014: ai-creator-h5 AI创作工作流编排器 v13 (Direction A iter15)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 8edd0fc，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v13.md
+- **Direction**: A (iteration 15)
+- **Mode**: 无人值守模式
+- **Git**: main (8edd0fc)
+- **Features**: AI意图理解; 自然语言工作流生成; 节点AI描述标签; 语义搜索(TF-IDF+同义词); 意图补全建议

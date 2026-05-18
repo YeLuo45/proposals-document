@@ -2,6 +2,66 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-028: future-little-leaders-admin V25 Admin Export/BulkOps/Analytics 管理功能增强 (Direction A)
+
+- **Project**: future-little-leaders-admin
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 1c50fbb, push成功; DataTable Export BulkOps Analytics数据表
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V25-testing-admin.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: main (1c50fbb)
+- **Features**: DataTable Export BulkOps Analytics 数据导出 批量操作 数据分析
+
+---
+
+### P-20260518-027: future-little-leaders V25 E2E Testing Infrastructure Playwright测试框架 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 58059187, push成功; Playwright E2E babyStore/taskFlow/dashboard测试
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V25-testing-admin.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (58059187)
+- **Features**: Playwright E2E测试 测试框架 babyStore taskFlow dashboard
+
+---
+
+### P-20260518-026: future-little-leaders V24 Offline-First PWA Enhancement 离线优先增强 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9095201a, push成功; Service Worker 离线队列 Push Notification PWA安装提示
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V24-offline-pwa.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9095201a)
+- **Features**: Service Worker 离线队列 通知队列 PWA安装提示 离线回退 增量更新 sw-register
+
+---
+
+### P-20260518-025: future-little-leaders V23 Seasonal Challenge + Badge Evolution 赛季系统+徽章进化 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit e84bc212, push成功; 赛季系统 徽章四级进化 3D徽章墙 赛季排行榜
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V23-seasonal-challenge.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (e84bc212)
+- **Features**: 赛季系统 徽章进化 3D徽章墙 排行榜 SeasonalCard BadgeEvolution BadgeItem RankingItem
+
+---
+
 ### P-20260518-024: future-little-leaders V22 Multi-Child Family Management 多儿童家庭管理 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4169,6 +4229,18 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-029: hermes-agent-collab PostgreSQL Storage Backend (Direction I)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-010-prd.md
+- **Git**: gh-pages (a701773)
+- **Features**: PostgreSQLStore (async via asyncpg, sync via psycopg2); LISTEN/NOTIFY for event streaming; JSONB columns with GIN indexes; connection pooling (asyncpg pool + psycopg2 ThreadedConnectionPool); _TABLE_DDL for all entity types; get_storage_backend() supports storage_backend: 'postgres'; asyncpg + psycopg2-binary in requirements.txt
+
+---
+
 ### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
 
 - **Project**: hermes-agent-collab
@@ -4367,6 +4439,19 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (b9c6b57)
 - **Features**: AI智能优化; 执行数据分析; 瓶颈节点识别; 优化建议(并行化/缓存/参数调整); 一键应用; 自动调优(A/B测试); 优化历史追踪
 
+### P-20260518-019: ai-creator-h5 AI创作工作流编排器 v18 (Direction A iter20)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 4c7af81，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v18.md
+- **Direction**: A (iteration 20)
+- **Mode**: 无人值守模式
+- **Git**: main (4c7af81)
+- **Features**: Webhook URL生成; GET/POST触发; API Key认证; Cron定时调度; REST API暴露; Swagger风格文档; 触发器管理面板
+
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨
 - **Stage**: delivered
@@ -4518,3 +4603,45 @@ Last updated: 2026-05-16 23:45:00
 - **Source Design**: nanobot-design
 - **Features**: speed_gear; memory_crystal; 道具栏位置
 - **Git**: main (6b950cb)
+
+### P-20260518-027: preschool-puzzle A11道具效果联动 V21 (Direction A - A11)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-027-prd.md
+- **Direction**: A (iter 20)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 道具combo系统; 连击奖励+5星; showComboPopup
+- **Git**: main (2a515e6)
+
+### P-20260518-028: preschool-puzzle A12道具历史 V22 (Direction A - A12)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-028-prd.md
+- **Direction**: A (iter 21)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: trackItemUsage; 历史记录20条; getItemHistory
+- **Git**: main (f6107d6)
+
+### P-20260518-029: preschool-puzzle A13节日活动道具 V23 (Direction A - A13)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-029-prd.md
+- **Direction**: A (iter 22)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: firework; star_rain; rainbow_boost; 节日道具特效
+- **Git**: main (31772c3)

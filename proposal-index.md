@@ -2,6 +2,21 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-020: future-little-leaders V18 Advanced Data Analytics (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit dd063816, push成功; 3D成长轨迹(SVG)/能力雷达图/家庭报告PDF(Canvas)
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V18-advanced-analytics.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (dd063816)
+- **Features**: 3D成长轨迹SVG; 能力雷达图; 家庭报告PDF Canvas生成; Analytics Tab; growth-report.vue集成
+
+---
+
 ### P-20260518-001: nanobot-inspired AsyncMessageBus + Channel Adapter
 
 - `Proposal ID`: `P-20260518-001`
@@ -4215,3 +4230,58 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (8edd0fc)
 - **Features**: AI意图理解; 自然语言工作流生成; 节点AI描述标签; 语义搜索(TF-IDF+同义词); 意图补全建议
+
+### P-20260518-015: ai-creator-h5 AI创作工作流编排器 v14 (Direction A iter16)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 67011d1，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v14.md
+- **Direction**: A (iteration 16)
+- **Mode**: 无人值守模式
+- **Git**: main (67011d1)
+- **Features**: 多工作流管理; 标签分类; 收藏夹; 搜索筛选; 批量操作
+
+### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-016-prd.md
+- **Direction**: A (iter 9)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: ChallengePanel; 挑战按钮; 每周刷新; 速度赛; 收藏家
+- **Git**: main (625aadd)
+
+### P-20260518-017: preschool-puzzle 收藏家挑战自动检测 V11 (Direction A - A5)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-017-prd.md
+- **Direction**: A (iter 10)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: StarManager挑战检测; setChallengeManager; addItem自动检测
+- **Git**: main (445062b)
+
+### P-20260518-018: preschool-puzzle 融合系统 UI V12 (Direction A - A6)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-018-prd.md
+- **Direction**: A (iter 11)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 融合标签页; 购买/融合Tab切换; fusionButtons列表; 3道具→plus版
+- **Git**: main (27001e6)

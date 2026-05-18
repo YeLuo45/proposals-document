@@ -29,6 +29,21 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-018: future-little-leaders V16 微信小程序特定功能 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 0f121fe4, push成功; 微信分享卡片+附近发现+反馈
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V16-wx-miniprogram.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (0f121fe4)
+- **Features**: wxService; locationService; wx-jssdk; share-card; nearby; feedback; share-poster
+
+---
+
 ### P-20260518-017: future-little-leaders V15 儿童社交功能 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4028,6 +4043,18 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-007: hermes-agent-collab REST API + SSE Real-time Events Layer (Direction F)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-007-prd.md
+- **Git**: gh-pages (ab02550)
+- **Features**: MessageSendRequest/SessionCreateRequest/DistributionCreateRequest models; orchestration lifecycle endpoints; MultiAgentProtocol REST (send/ack/session/distribute/match); plugin/hook management endpoints; SSE streams with workspace scoping + event filtering + cursor
+
+---
+
 ### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
 
 - **Project**: hermes-agent-collab
@@ -4135,3 +4162,15 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (548f61d)
 - **Features**: 多格式导出; 代码生成(JS/Python); 定时调度; 触发器管理; 执行报告; 浏览器通知
+### P-20260518-012: ai-creator-h5 AI创作工作流编排器 v11 (Direction A iter13)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 602809a，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-012-prd.md
+- **Direction**: A (iteration 13)
+- **Mode**: 无人值守模式
+- **Git**: main (602809a)
+- **Features**: 断点调试; 变量监察面板; 执行轨迹; 条件断点; 时间旅行; 单步执行

@@ -2,6 +2,21 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-023: future-little-leaders V21 Home-School Collaboration 家校协作实时通知 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9d85c0d7, push成功; 9 files 班级动态Feed 家校聊天 智能提醒 NotificationBus插件架构
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V21-home-school-collab.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9d85c0d7)
+- **Features**: 班级动态Feed 家校聊天 智能提醒 NotificationBus 插件架构 FeedCard ChatBubble ReminderConfig
+
+---
+
 ### P-20260518-022: future-little-leaders V20 Parent Growth Academy 家长成长学院 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4115,6 +4130,18 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-008: hermes-agent-collab API Key Auth + Real-time Web Dashboard (Direction G)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-008-prd.md
+- **Git**: gh-pages (b213572)
+- **Features**: ApiKey model (PBKDF2-HMAC-SHA256, 100k iterations); ApiKeyStore + AuthService; /auth endpoints (create/list/get/revoke/verify); workspace-scoped scopes (admin/write/read); dashboard/index.html (Overview/Events/Orchestrations/Agents/Tasks tabs with live SSE); GET /dashboard serves dashboard HTML
+
+---
+
 ### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
 
 - **Project**: hermes-agent-collab
@@ -4287,7 +4314,20 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (8addc89)
 - **Features**: 工作流市场; 发布/浏览/搜索/筛选; 评分系统(1-5星); 评论系统(回复/点赞); 收藏市场工作流
 
-- **Project**: preschool-puzzle
+### P-20260518-017: ai-creator-h5 AI创作工作流编排器 v16 (Direction A iter18)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit a7c091f，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v16.md
+- **Direction**: A (iteration 18)
+- **Mode**: 无人值守模式
+- **Git**: main (a7c091f)
+- **Features**: 执行报告; 时间轴/节点详情/变量变化; 纯CSS图表(柱状/饼图/折线); 执行对比; HTML/PDF/JSON导出; 报告模板
+
+### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨
 - **Stage**: delivered
 - **Acceptance**: accepted

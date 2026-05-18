@@ -29,6 +29,21 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-017: future-little-leaders V15 儿童社交功能 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 48bab4e9, push成功; 朋友系统+积分赠送+组队任务+成长PK
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V15-social.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (48bab4e9)
+- **Features**: friendStore; challengeStore; friendService; challengeService; 6 social pages; social components
+
+---
+
 ### P-20260518-016: future-little-leaders V14 多语言 i18n 支持 (Direction A)
 
 - **Project**: future-little-leaders
@@ -3881,14 +3896,29 @@ Last updated: 2026-05-16 23:45:00
 
 - **Project**: preschool-puzzle
 - **Owner**: 小墨
-- **Stage**: in_dev
-- **Acceptance**: 
+- **Stage**: delivered
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-18
 - **PRD Path**: workspace-pm/proposals/P-20260518-013-prd.md
 - **Direction**: A (iter 6)
 - **Mode**: 无人值守模式
 - **Source Design**: nanobot-design (ToolRegistry)
-- **Features**: 道具强化; 套装收集; 材料升级; 升级券
+- **Features**: 道具强化; _plus版效果增强; shield计数; all游戏同步
+- **Git**: main (80b6a5a)
+
+### P-20260518-014: preschool-puzzle 道具套装收集 V8 (Direction A - A3)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-014-prd.md
+- **Direction**: A (iter 7)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 6套装; shape_master; time_controller; shield_king; color_expert; maze_master; all_plus; all_plus升级为9道具
+- **Git**: main (4bac5e6)
 
 ### P-20260518-012: preschool-puzzle 新道具开发与效果增强 V6 (Direction A)
 
@@ -3983,6 +4013,18 @@ Last updated: 2026-05-16 23:45:00
 - **PRD Path**: docs/P-20260518-005-prd.md
 - **Git**: gh-pages (1bb5599)
 - **Features**: HookEvent enum (17 lifecycle events); Plugin dataclass; PluginRegistry (subscribe/emit/enable/disable); global + workspace registries; TaskMetricsPlugin + AgentMetricsPlugin; hook emissions in agent_registry/task_manager/skill_system/orchestration_manager
+
+---
+
+### P-20260518-006: hermes-agent-collab generic-agent Multi-Agent Collaboration Protocol (Direction E)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-006-prd.md
+- **Git**: gh-pages (9ad4329)
+- **Features**: MessageType (9 types); AgentMessage/AgentSession/DelegationPolicy/TaskDistribution/CapabilityMatchResult; MultiAgentProtocol (send/ack/session/distribute/match/timeout); find_by_capability(); for_messages/for_sessions; 7 new HookEvents
 
 ---
 
@@ -4081,3 +4123,15 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (577c10e)
 - **Features**: 自然语言生成工作流; 智能节点推荐; 意图路由节点; 对话式编辑; 5个预设模板
+### P-20260518-011: ai-creator-h5 AI创作工作流编排器 v10 (Direction A iter12)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 548f61d，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-011-prd.md
+- **Direction**: A (iteration 12)
+- **Mode**: 无人值守模式
+- **Git**: main (548f61d)
+- **Features**: 多格式导出; 代码生成(JS/Python); 定时调度; 触发器管理; 执行报告; 浏览器通知

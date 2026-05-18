@@ -2,6 +2,51 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-041: future-little-leaders V38 Data Portability + Blockchain Receipts 数据主权+区块链凭证 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9535b8eb, push成功; 数据导出JSON/CSV/JSON-LD 区块链凭证
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V38-data-portability.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9535b8eb)
+- **Features**: 数据导出 JSON CSV JSON-LD 区块链凭证 hashService blockchainReceiptService dataExportService export-wizard achievement-receipt
+
+---
+
+### P-20260518-040: future-little-leaders V37 Multi-language + Cultural Localization 多语言+文化本地化 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 091fe988, push成功; 地区内容 文化节日主题 课程大纲对齐 本地化格式化
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V37-i18n-culture.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (091fe988)
+- **Features**: 多语言支持 文化本地化 地区内容 文化节日主题 课程大纲对齐 本地化格式化 localeService localeFormatter en-US zh-TW zh-HK
+
+---
+
+### P-20260518-039: future-little-leaders V36 AI Tutor Pipeline Multi-Agent协作教学 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 3ab68809, push成功; 多Agent协作教学 Orchestrator MathAgent ChineseAgent EnglishAgent LifeAgent
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V36-ai-tutor-pipeline.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (3ab68809)
+- **Features**: 多Agent协作教学 Orchestrator MathAgent ChineseAgent EnglishAgent LifeAgent aiTutorService tutorStore AgentAvatar TutorPipeline
+
+---
+
 ### P-20260518-038: future-little-leaders V35 Family Ritual System 家庭仪式感 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4415,6 +4460,42 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-043: hermes-agent-collab 敏感数据脱敏（Direction Z）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-043-prd.md
+- **Git**: gh-pages (d77e3fb)
+- **Features**: SecretStore (Fernet AES-GCM 加密), SecretRedactingFilter (日志脱敏), mask_dict/mask_value 工具函数, POST/GET/DELETE /secrets, POST /secrets/{id}/rotate, GET /secrets, cryptography>=41.0.0
+
+---
+
+### P-20260518-042: hermes-agent-collab 任务依赖图可视化 API（Direction X）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-042-prd.md
+- **Git**: gh-pages (4177e65)
+- **Features**: TaskGraphBuilder (从 TaskManager 构建图), TopologicalSorter (Kahn 算法 + 循环检测), ExecutionPlanGenerator (分阶段执行计划), GET /workspaces/{id}/graph, /graph/toposort, /graph/plan, GET /tasks/{id}/upstream, /downstream
+
+---
+
+### P-20260518-041: hermes-agent-collab Webhook 事件订阅系统（Direction T）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-019-prd.md
+- **Git**: gh-pages (0114b82)
+- **Features**: WebhookManager (订阅 CRUD, 事件过滤, 投递历史), WebhookDeliveryTask (HMAC-SHA256 签名, 指数退避重试), GET/POST/PATCH/DELETE /api/collab/webhooks, POST /webhooks/{id}/test, GET /webhooks/{id}/deliveries, 连续失败10次自动禁用, WEBHOOK_ENABLED/MAX_RETRIES/TIMEOUT/DELIVERY_LIMIT env vars
+
+---
+
 ### P-20260518-038: hermes-agent-collab 任务结果缓存层（Direction S）
 
 - **Project**: hermes-agent-collab
@@ -4736,6 +4817,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (728aeea)
 - **Features**: AI助手对话; 聊天面板(侧边栏/历史/Markdown); 快捷命令(/help/optimize/debug/explain/template); 上下文感知; FAQ自动回复
+
+### P-20260518-023: ai-creator-h5 AI创作工作流编排器 v22 (Direction A iter24)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 8fb1c2b，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v22.md
+- **Direction**: A (iteration 24)
+- **Mode**: 无人值守模式
+- **Git**: main (8fb1c2b)
+- **Features**: 权限管理(多级角色/节点级权限/继承/审批); 审计日志(操作记录/分类/搜索导出); 操作回放(时间轴/快进倒退/注解)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

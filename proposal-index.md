@@ -2,6 +2,66 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-037: future-little-leaders V34 AI Companion Smart Buddy Assistant 智能伙伴 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 4036b498, push成功; AI伙伴 卡通头像 BuddyAvatar 对话辅导 心情追踪
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V34-ai-companion.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (4036b498)
+- **Features**: AI伙伴 卡通头像 BuddyAvatar 对话辅导 心情追踪 BuddyChat BuddyMood aiCompanionService buddyStore
+
+---
+
+### P-20260518-036: future-little-leaders V33 Plugin Marketplace + Theme System 插件市场+主题系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 0e923630, push成功; 插件市场 主题系统 PluginManager ThemeStore 插件安装卸载
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V33-plugin-marketplace.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (0e923630)
+- **Features**: 插件市场 主题系统 PluginManager ThemeStore 插件安装卸载 marketplace plugin-detail theme-store
+
+---
+
+### P-20260518-035: future-little-leaders V32 WebSocket Real-time + Cloud Functions 实时通信 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit cbdc94fe, push成功; WebSocket连接管理器 实时事件 CloudFunctions 实时Store 心跳保活
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V32-realtime-websocket.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (cbdc94fe)
+- **Features**: WebSocket连接管理器 实时事件 CloudFunctions 实时Store 心跳保活 wsConnectionManager realtimeStore cloudFunctions
+
+---
+
+### P-20260518-034: future-little-leaders V31 API Gateway + Rate Limiting API网关+限流 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 67e2edd4, push成功; API网关 JWT认证 令牌桶限流 429响应 请求日志 反爬
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V31-api-gateway.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (67e2edd4)
+- **Features**: API网关 JWT认证 令牌桶限流 429响应 请求日志 反爬 apiGateway rateLimit
+
+---
+
 ### P-20260518-033: future-little-leaders V30 Anti-Cheat System + Reputation Scoring 反作弊+信誉评分 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4340,6 +4400,54 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-036: hermes-agent-collab 配置热更新（Direction R）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-017-prd.md
+- **Git**: gh-pages (d8c4c89)
+- **Features**: ConfigWatcher (mtime polling, watchdog), ConfigReloader (SIGUSR1), REST API (GET /admin/config | POST /admin/config/reload | GET /admin/config/diff), ConfigHotReloadService coordinator, ConfigDiff compute/apply, register_reload_callback for components, CONFIG_WATCH/SIGNAL/API_ENABLED + CONFIG_PATH/POLL_INTERVAL env vars, pyyaml dependency
+
+---
+
+### P-20260518-035: hermes-agent-collab 分布式 Tracing（OpenTelemetry）(Direction P)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-016-prd.md
+- **Git**: gh-pages (bee390c)
+- **Features**: OpenTelemetry tracing (trace/spans), OTelTracingMiddleware, OTLP/console/jaeger exporters, W3C Trace Context propagation, create_span helper, add_task/llm/db/channel_span_attributes helpers, TRACING_* env vars (ENABLED/SERVICE_NAME/EXPORTER/OTLP_ENDPOINT/SAMPLE_RATE), opentelemetry-*-fastapi/httpx instrumentation
+
+---
+
+### P-20260518-034: hermes-agent-collab Priority Scheduler + 抢占式执行 (Direction N)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-015-prd.md
+- **Git**: gh-pages (3d91501)
+- **Features**: PriorityScheduler (4-level queue: CRITICAL/HIGH/NORMAL/LOW), TaskPriority/TaskState enums, PriorityTask with checkpoint/deadline/retry, Worker pool (N workers), preemption logic (_check_preemption), starvation prevention (300s threshold), PriorityQueue with get/get_nowait/put/cancel/preempt
+
+---
+
+### P-20260518-033: hermes-agent-collab API Rate Limiting + 流量控制 (Direction M)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-014-prd.md
+- **Git**: gh-pages (9141b2e)
+- **Features**: RateLimiter (TokenBucket+SlidingWindow hybrid); per-key/per-endpoint/global limits; RedisSlidingWindowCounter (ZSET-based); RateLimitMiddleware; HTTP 429 with Retry-After; X-RateLimit-* headers; RATE_LIMIT_* env vars (ENABLED/STORAGE/GLOBAL/PER_KEY/ENDPOINT/BURST/WINDOW); server.py add_middleware(RateLimitMiddleware)
+
+---
+
 ### P-20260518-032: hermes-agent-collab Redis Channel Adapter (Direction L)
 
 - **Project**: hermes-agent-collab
@@ -4575,6 +4683,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (d2cff90)
 - **Features**: 移动端适配; 响应式布局; 底部Tab导航; 手势操作; PWA增强; 离线工作流编辑; 离线队列同步; 冲突解决
+
+### P-20260518-021: ai-creator-h5 AI创作工作流编排器 v20 (Direction A iter22)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 31c5286，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v20.md
+- **Direction**: A (iteration 22)
+- **Mode**: 无人值守模式
+- **Git**: main (31c5286)
+- **Features**: 多语言i18n(5语言); 主题定制(深色/浅色/高对比度); 无障碍(ARIA/键盘导航/屏幕阅读器)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨
@@ -4825,3 +4946,59 @@ Last updated: 2026-05-16 23:45:00
 - **Source Design**: nanobot-design
 - **Features**: 赛季奖励领取; 里程碑UI; 100星奖励
 - **Git**: main (184a196)
+
+### P-20260518-034: preschool-puzzle A18限时挑战模式 V28 (Direction A - A18)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-034-prd.md
+- **Direction**: A (iter 27)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 限时挑战模式; 60秒倒计时; 道具充分应用
+- **Git**: main (f5e67a9)
+
+### P-20260518-035: preschool-puzzle A19道具合成 V29 (Direction A - A19)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-035-prd.md
+- **Direction**: A (iter 28)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 道具合成系统; 3个同种→强化版
+- **Git**: main (d892d1c)
+
+### P-20260518-036: preschool-puzzle A20道具图鉴 V30 (Direction A - A20)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-036-prd.md
+- **Direction**: A (iter 29)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 道具图鉴; 收集进度; 锁定状态
+- **Git**: main (d892d1c)
+
+### P-20260519-001: preschool-puzzle A21首页重构 V31 (Direction A - A21)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-pm/proposals/P-20260519-001-prd.md
+- **Direction**: A (iter 30)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 首页重构; 限时挑战入口; 功能入口重新布局
+- **Git**: main (27b8922)

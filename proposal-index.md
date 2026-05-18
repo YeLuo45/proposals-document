@@ -1,6 +1,66 @@
 # Proposal Index
 
-Last updated: 2026-05-18
+Last updated: 2026-05-19
+
+### P-20260519-002: TodoList V41 A3 MCP工具扩展 (GitHub/Jira/Figma MCP集成)
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: A3a/A3b/A3c 3轮迭代全部完成commit push成功; MCP Client基础设施+GitHub/Jira/Figma MCP+自动任务创建
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V41-A3a-MCP-infrastructure.md,workspace-dev/proposals/todo-list/PRD-V41-A3b-MCP-JiraFigma.md,workspace-dev/proposals/todo-list/PRD-V41-A3c-MCP-auto-task.md
+- **Direction**: A3
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: MCP Client JSON-RPC stdio通信; GitHub/Jira/Figma MCP封装; 智能字段映射; 自动导入开关; 批量导入+进度条; externalUrl外部链接追踪
+
+---
+
+### P-20260519-004: TodoList V42 A4 MCP工具编排 (MessageBus + Chain Execution + Webhook)
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: commit push成功; MCP Orchestrator(MessageBus模式+链式执行+Pub/Sub)
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V42-A4-MCP-orchestration.md
+- **Direction**: A4
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: MCP Orchestrator工具注册+链式执行+Pub/Sub事件总线; 内置编排流程(GitHub Issue→Task/Jira Issue→Task/GitHub→Jira同步); Webhook触发器; 编排日志面板
+
+---
+
+### P-20260518-043: future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit bfafea66, 网络故障等待推送; 智能家居设备控制 任务-设备联动
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V40-smart-home.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (bfafea66)
+- **Features**: 智能家居设备控制 任务-设备联动 环境自适应 smartHomeService HomeAssistant device-panel automation-rules
+
+---
+
+### P-20260518-042: future-little-leaders V39 AR/VR Growth Space 沉浸式成长空间 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 03f5ee2c, push成功; AR任务星球 3D成就展厅 WebGL 虚拟奖励空间
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V39-ar-vr-space.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (03f5ee2c)
+- **Features**: AR任务星球 3D成就展厅 WebGL 虚拟奖励空间 ArTaskWorld Achievement3DGallery VirtualRewardSpace arVrService webglRenderer
+
+---
 
 ### P-20260518-041: future-little-leaders V38 Data Portability + Blockchain Receipts 数据主权+区块链凭证 (Direction A)
 
@@ -4460,6 +4520,30 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-045: hermes-agent-collab gRPC 接口（Direction AB）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-045-prd.md
+- **Git**: gh-pages (26136c7)
+- **Features**: CollaborationServicer (gRPC 动态注册), protos/hermes/collab/v1/collaboration.proto, collaboration_pb2 stub, grpc_server.py (--port 50051), grpcio>=1.60.0
+
+---
+
+### P-20260518-044: hermes-agent-collab 多租户隔离（Direction AA）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-044-prd.md
+- **Git**: gh-pages (a976abd)
+- **Features**: TenantContext (ContextVar 线程局部), TenantIsolationMiddleware (跨租户访问防护), QuotaManager (滑动窗口+固定配额, Redis/内存双模式), GET/POST/PUT /admin/tenants, /admin/tenants/{id}/quota, /workspaces/{id}/usage
+
+---
+
 ### P-20260518-043: hermes-agent-collab 敏感数据脱敏（Direction Z）
 
 - **Project**: hermes-agent-collab
@@ -4830,6 +4914,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (8fb1c2b)
 - **Features**: 权限管理(多级角色/节点级权限/继承/审批); 审计日志(操作记录/分类/搜索导出); 操作回放(时间轴/快进倒退/注解)
+
+### P-20260518-024: ai-creator-h5 AI创作工作流编排器 v23 (Direction A iter25)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit d1900a9
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v23.md
+- **Direction**: A (iteration 25)
+- **Mode**: 无人值守模式
+- **Git**: main (d1900a9)
+- **Features**: 插件沙箱安全加固(DOM限制/网络拦截/存储隔离/资源限制); 代码签名(Web Crypto API/证书/撤销); 依赖审查(漏洞/版本/冲突); 安全审计面板(日志/风险/建议)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

@@ -32,6 +32,36 @@ Last updated: 2026-05-19
 
 ---
 
+### P-20260519-005: TodoList V43 B2 多Agent协作编排 (CreatorAgent + ReviewAgent + ReminderAgent)
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: commit push成功; 多Agent协作编排 (CreatorAgent自然语言解析/ReviewAgent重复检测+优先级建议/ReminderAgent定时通知)
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V43-B2-multi-agent.md
+- **Direction**: B2
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: BaseAgent基类+Pub/Sub; CreatorAgent自然语言解析任务(tomorrow/today/nextWeek关键词+#标签); ReviewAgent编辑距离重复检测+优先级建议; ReminderAgent setTimeout+Notification提醒; AgentPanel控制面板
+
+---
+
+### P-20260519-006: TodoList V45 D 自进化记忆系统 (L2情景记忆 + L3语义记忆 + L4元认知)
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: commit push成功; 自进化记忆系统 L2情景记忆+L3语义记忆+L4元认知
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V45-D-memory-system.md
+- **Direction**: D
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: L2情景记忆(episodes持久化+检索); L3语义记忆(高频任务模式提取+frequency≥3); L4元认知(预测到期日+连续完成天数+完成率统计); StatsDashboard记忆Tab
+
+---
+
 ### P-20260518-043: future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A)
 
 - **Project**: future-little-leaders
@@ -44,6 +74,51 @@ Last updated: 2026-05-19
 - **Mode**: 无人值守模式
 - **Git**: feature/hermes20260503 (bfafea66)
 - **Features**: 智能家居设备控制 任务-设备联动 环境自适应 smartHomeService HomeAssistant device-panel automation-rules
+
+---
+
+### P-20260518-043: future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit bfafea66, push成功; 智能家居设备控制 任务-设备联动
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V40-smart-home.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (bfafea66)
+- **Features**: 智能家居设备控制 任务-设备联动 环境自适应 smartHomeService HomeAssistant device-panel automation-rules
+
+---
+
+### P-20260518-045: future-little-leaders V42 Developer SDK + Plugin API 开放平台SDK (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 3e02b128, push成功; Developer SDK OAuth API客户端 Plugin API WebHook
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V42-sdk-api.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (3e02b128)
+- **Features**: Developer SDK OAuth API客户端 Plugin API WebHook littleLeadersSDK openApi
+
+---
+
+### P-20260518-044: future-little-leaders V41 Cross-Platform Widgets + Mini App 跨平台Widgets+小程序生态 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit c0ba233e, push成功; 跨平台Widgets iOS/Android/Web组件 小程序生态
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V41-widgets.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (c0ba233e)
+- **Features**: 跨平台Widgets iOS/Android/Web组件 小程序生态 WebWidget TodayTaskWidget ios android miniapp
 
 ---
 
@@ -4520,6 +4595,30 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-047: hermes-agent-collab 审计日志（Direction AD）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-047-prd.md
+- **Git**: gh-pages (35b710f)
+- **Features**: AuditLogger (append-only JSONL, SHA-256 hash chain), GET /audit/logs, /audit/workspaces, /audit/verify/{id}
+
+---
+
+### P-20260518-046: hermes-agent-collab 配置验证 Schema（Direction AC）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-046-prd.md
+- **Git**: gh-pages (883e5a4)
+- **Features**: ConfigSchemaValidator (jsonschema Draft-07, validate_partial), DEFAULT_SCHEMA (limits/features/quotas), 热更新 reload() 前置校验 + 校验失败抛异常
+
+---
+
 ### P-20260518-045: hermes-agent-collab gRPC 接口（Direction AB）
 
 - **Project**: hermes-agent-collab
@@ -4927,6 +5026,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (d1900a9)
 - **Features**: 插件沙箱安全加固(DOM限制/网络拦截/存储隔离/资源限制); 代码签名(Web Crypto API/证书/撤销); 依赖审查(漏洞/版本/冲突); 安全审计面板(日志/风险/建议)
+
+### P-20260518-025: ai-creator-h5 AI创作工作流编排器 v24 (Direction A iter26)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 23030e0，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v24.md
+- **Direction**: A (iteration 26)
+- **Mode**: 无人值守模式
+- **Git**: main (23030e0)
+- **Features**: 企业级SSO(SAML/OAuth/OIDC); 多租户(隔离/管理/配额); LDAP/AD目录集成; 企业管理面板(设置/用户/配额/安全策略)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

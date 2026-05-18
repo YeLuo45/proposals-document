@@ -2,6 +2,21 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-038: future-little-leaders V35 Family Ritual System 家庭仪式感 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 5e3e371e, push成功; 每日仪式 每周挑战 回忆存档 家庭使命
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V35-family-ritual.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (5e3e371e)
+- **Features**: 家庭仪式感 每日仪式 每周挑战 回忆存档 家庭使命 familyRitualStore daily-ritual weekly-challenge memory-archive family-mission
+
+---
+
 ### P-20260518-037: future-little-leaders V34 AI Companion Smart Buddy Assistant 智能伙伴 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4400,6 +4415,18 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-038: hermes-agent-collab 任务结果缓存层（Direction S）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-018-prd.md
+- **Git**: gh-pages (f5b92f8)
+- **Features**: TaskResultCache (Redis TTL, LRU/LFU/TTL 策略), get/set/delete/warm/invalidate API, get_or_compute cache-aside, TaskManager.complete_task 自动缓存写入, GET /tasks/{id}/result (cache-first), POST/DELETE /tasks/{id}/result/cache, POST /workspaces/{id}/cache/warm, GET /cache/stats, TASK_CACHE_ENABLED/TTL/STRATEGY/REDIS_KEY_PREFIX env vars
+
+---
+
 ### P-20260518-036: hermes-agent-collab 配置热更新（Direction R）
 
 - **Project**: hermes-agent-collab
@@ -4696,6 +4723,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (31c5286)
 - **Features**: 多语言i18n(5语言); 主题定制(深色/浅色/高对比度); 无障碍(ARIA/键盘导航/屏幕阅读器)
+
+### P-20260518-022: ai-creator-h5 AI创作工作流编排器 v21 (Direction A iter23)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 728aeea，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v21.md
+- **Direction**: A (iteration 23)
+- **Mode**: 无人值守模式
+- **Git**: main (728aeea)
+- **Features**: AI助手对话; 聊天面板(侧边栏/历史/Markdown); 快捷命令(/help/optimize/debug/explain/template); 上下文感知; FAQ自动回复
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

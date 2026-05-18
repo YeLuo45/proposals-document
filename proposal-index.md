@@ -29,6 +29,21 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-013: future-little-leaders V11 Flow 模板市场 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 07e3fb0c, push成功; 8 files changed, 1809 insertions(+), 10 deletions(-)
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V11-flow-template-market.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (07e3fb0c)
+- **Features**: flowExporter; flowImporter; 5预设模板; flow-templates页面; scheduler服务
+
+---
+
 ### P-20260518-010: future-little-leaders V9 成长报告 AI 总结 (Direction A)
 
 - **Project**: future-little-leaders
@@ -3920,3 +3935,15 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (7f28787)
 - **Features**: 版本历史追踪; 版本对比; 差异高亮; 回滚; 分支创建/切换/合并/删除
+### P-20260518-008: ai-creator-h5 AI创作工作流编排器 v7 (Direction A iter9)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 02ecc5d，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-008-prd.md
+- **Direction**: A (iteration 9)
+- **Mode**: 无人值守模式
+- **Git**: main (02ecc5d)
+- **Features**: 分享链接; 权限管理; 在线用户指示; 节点锁定; 审计日志; BroadcastChannel跨标签页协作

@@ -2,6 +2,21 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-024: future-little-leaders V22 Multi-Child Family Management 多儿童家庭管理 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9fbda2cd, push成功; 多儿童仪表盘 兄弟姐妹竞赛 家庭积分池 成就对比
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V22-multi-child.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9fbda2cd)
+- **Features**: 多儿童仪表盘 兄弟姐妹竞赛 家庭积分池 成就对比 ChildProfileCard FamilyPointsPool SiblingCompetition FamilyComparison
+
+---
+
 ### P-20260518-023: future-little-leaders V21 Home-School Collaboration 家校协作实时通知 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4142,6 +4157,18 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-009: hermes-agent-collab Python SDK + CLI Tool (Direction H)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-009-prd.md
+- **Git**: gh-pages (07305ef)
+- **Features**: hermes_agent_collab/ Python SDK (HermesCollab client with httpx, Config, full Pydantic models, exceptions, WebSocketClient); cli.py Rich terminal UI (agents/tasks/orchestrations/events/workspaces/auth/health commands)
+
+---
+
 ### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
 
 - **Project**: hermes-agent-collab
@@ -4327,6 +4354,19 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (a7c091f)
 - **Features**: 执行报告; 时间轴/节点详情/变量变化; 纯CSS图表(柱状/饼图/折线); 执行对比; HTML/PDF/JSON导出; 报告模板
 
+### P-20260518-018: ai-creator-h5 AI创作工作流编排器 v17 (Direction A iter19)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit b9c6b57，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v17.md
+- **Direction**: A (iteration 19)
+- **Mode**: 无人值守模式
+- **Git**: main (b9c6b57)
+- **Features**: AI智能优化; 执行数据分析; 瓶颈节点识别; 优化建议(并行化/缓存/参数调整); 一键应用; 自动调优(A/B测试); 优化历史追踪
+
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨
 - **Stage**: delivered
@@ -4436,3 +4476,45 @@ Last updated: 2026-05-16 23:45:00
 - **Source Design**: nanobot-design
 - **Features**: ColorSortGame道具UI; MazeGame道具UI; itemStatus同步
 - **Git**: main (4ef9ef1)
+
+### P-20260518-024: preschool-puzzle A9新道具-lucky_charm+time_bank V18 (Direction A - A9)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-024-prd.md
+- **Direction**: A (iter 17)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: lucky_charm; time_bank; useItem处理
+- **Git**: main (4938774)
+
+### P-20260518-025: preschool-puzzle A9商店新道具 V19 (Direction A - A9)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-025-prd.md
+- **Direction**: A (iter 18)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 商店添加lucky_charm; time_bank定义
+- **Git**: main (27d2947)
+
+### P-20260518-026: preschool-puzzle A10新道具 V20 (Direction A - A10)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-026-prd.md
+- **Direction**: A (iter 19)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: speed_gear; memory_crystal; 道具栏位置
+- **Git**: main (6b950cb)

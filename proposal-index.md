@@ -29,6 +29,36 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-016: future-little-leaders V14 多语言 i18n 支持 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 4a954aa1, push成功; i18n框架+4语言+settings语言切换
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V14-i18n.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (4a954aa1)
+- **Features**: i18n; zh-CN; zh-TW; en; zh-HK; settings language picker; global $t
+
+---
+
+### P-20260518-015: future-little-leaders V13 V4 离线同步深度集成 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 1d77bb18, push成功; initV4+SyncConflictModal+SyncStore+conflictResolver+Workers D1
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V13-v4-offline-sync-deep-integration.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (1d77bb18)
+- **Features**: initV4; appInitializer; SyncConflictModal; SyncStatusBadge; syncStore; conflictResolver; Workers D1 API
+
+---
+
 ### P-20260518-014: future-little-leaders V12 积分商城增强 (Direction A)
 
 - **Project**: future-little-leaders
@@ -3847,18 +3877,32 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (7feeed3, 069147d)
 - **Features**: 日志面板; 版本管理; 执行结果预览; 状态徽章; 进度条; 快捷键; 撤销; 连接线状态
 
-### P-20260518-012: preschool-puzzle 新道具开发与效果增强 V6 (Direction A)
+### P-20260518-013: preschool-puzzle 道具强化与套装收集 V7 (Direction A)
 
 - **Project**: preschool-puzzle
 - **Owner**: 小墨
 - **Stage**: in_dev
 - **Acceptance**: 
 - **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-013-prd.md
+- **Direction**: A (iter 6)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Features**: 道具强化; 套装收集; 材料升级; 升级券
+
+### P-20260518-012: preschool-puzzle 新道具开发与效果增强 V6 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
 - **PRD Path**: workspace-pm/proposals/P-20260518-012-prd.md
 - **Direction**: A (iter 5)
 - **Mode**: 无人值守模式
 - **Source Design**: nanobot-design (ToolRegistry)
-- **Features**: 4新道具; 减速沙漏; 双倍积分; 护盾; 答案之书
+- **Features**: 4新道具; 减速沙漏; 双倍积分; 护盾; 答案之书; 全游戏通用效果
+- **Git**: main (4153cb0)
 
 ### P-20260518-011: preschool-puzzle 成就徽章与道具套装 V5 (Direction A)
 
@@ -4025,3 +4069,15 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (d2f3693)
 - **Features**: 插件市场; 自定义节点; 节点构建器; 沙箱执行器; 3个官方插件; 数据转换/字符串处理/数学计算
+### P-20260518-010: ai-creator-h5 AI创作工作流编排器 v9 (Direction A iter11)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 577c10e，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-010-prd.md
+- **Direction**: A (iteration 11)
+- **Mode**: 无人值守模式
+- **Git**: main (577c10e)
+- **Features**: 自然语言生成工作流; 智能节点推荐; 意图路由节点; 对话式编辑; 5个预设模板

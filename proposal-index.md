@@ -2,6 +2,81 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-033: future-little-leaders V30 Anti-Cheat System + Reputation Scoring 反作弊+信誉评分 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9cff8248, push成功; 异常检测 信誉评分 反作弊 举报审核
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V30-anti-cheat.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9cff8248)
+- **Features**: 反作弊 异常检测 信誉评分 举报审核 antiCheatService reputationStore
+
+---
+
+### P-20260518-032: future-little-leaders V29 Security Hardening + Privacy Protection 安全加固 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 0ea6fd21, push成功; 隐私脱敏 安全审计 二次验证 privacyMask securityAudit
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V29-security-privacy.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (0ea6fd21)
+- **Features**: 隐私脱敏 安全审计 二次验证 privacyMask securityAudit securityService
+
+---
+
+### P-20260518-031: future-little-leaders V28 Accessibility + i18n Enhancement 无障碍增强 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 0481d294, push成功; 高对比度 ARIA 键盘导航 屏幕阅读器 日文 韩文
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V28-a11y-i18n.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (0481d294)
+- **Features**: 无障碍 ARIA 高对比度主题 键盘导航 屏幕阅读器 日文 ja.js 韩文 ko.js a11y.js
+
+---
+
+### P-20260518-030: future-little-leaders V27 Performance Optimization + Code Splitting 性能优化 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2890f0af, push成功; 路由懒加载 manualChunks BundleAnalyzer imageOptimizer
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V27-performance-optimization.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2890f0af)
+- **Features**: 路由懒加载 分包 manualChunks Bundle分析 imageOptimizer 防抖节流 虚拟滚动
+
+---
+
+### P-20260518-029: future-little-leaders V26 WeChat Mini-Program Deep Integration 微信深度集成 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 4c1a3f5, push成功; 微信登录 小程序码 微信运动 微信支付 wxMiniService wxpay
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V26-wx-deep-integration.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (4c1a3f5)
+- **Features**: 微信登录 小程序码 微信运动同步 微信支付 wxMiniService wxpay sports-sync
+
+---
+
 ### P-20260518-028: future-little-leaders-admin V25 Admin Export/BulkOps/Analytics 管理功能增强 (Direction A)
 
 - **Project**: future-little-leaders-admin
@@ -4241,6 +4316,42 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-030: hermes-agent-collab Prometheus Metrics + MetricsPlugin (Direction J)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-011-prd.md
+- **Git**: gh-pages (bafa1be)
+- **Features**: MetricsRegistry singleton (counter/gauge/histogram factories); 6 metric groups (task/agent/hook/api/system/workspace); GET /metrics returning Prometheus text format; MetricsPlugin (builtin:metrics) bridging HookEvents to Prometheus; HookEvent extended: TASK_STATUS_CHANGED, HOOK_EMITTED, HOOK_FAILED; prometheus-client in requirements.txt
+
+---
+
+### P-20260518-031: hermes-agent-collab Docker Compose Deployment (Direction K)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-012-prd.md
+- **Git**: gh-pages (0a62332)
+- **Features**: Dockerfile multi-stage (python:3.12-slim builder+runtime); docker-compose.yml (app+postgres:16-alpine+redis:7-alpine); docker-compose.prod.yml (app+postgres+redis+nginx:alpine); docker/entrypoint.sh (pg_isready wait); docker/nginx.conf (upstream routing /metrics /sse /ws /api); .dockerignore; hermes_data/postgres_data/redis_data volumes
+
+---
+
+### P-20260518-032: hermes-agent-collab Redis Channel Adapter (Direction L)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-013-prd.md
+- **Git**: gh-pages (41e1de2)
+- **Features**: CollabConfig with Redis settings (REDIS_HOST/PORT/DB/PASSWORD/STREAM_KEY/PUBSUB_PREFIX); RedisStreamAdapter (XADD/XREAD/XREADGROUP, consumer groups, event persistence, MAXLEN ~10000); RedisPubSubAdapter (PUBLISH/SUBSCRIBE, per-session channels); RedisChannelBridge singleton; hook_manager.py re-exports; docker-compose.yml with Redis healthcheck; CHANNEL_ADAPTERS env var; redis>=5.0.0
+
+---
+
 ### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
 
 - **Project**: hermes-agent-collab
@@ -4452,6 +4563,19 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (4c7af81)
 - **Features**: Webhook URL生成; GET/POST触发; API Key认证; Cron定时调度; REST API暴露; Swagger风格文档; 触发器管理面板
 
+### P-20260518-020: ai-creator-h5 AI创作工作流编排器 v19 (Direction A iter21)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit d2cff90，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v19.md
+- **Direction**: A (iteration 21)
+- **Mode**: 无人值守模式
+- **Git**: main (d2cff90)
+- **Features**: 移动端适配; 响应式布局; 底部Tab导航; 手势操作; PWA增强; 离线工作流编辑; 离线队列同步; 冲突解决
+
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨
 - **Stage**: delivered
@@ -4645,3 +4769,59 @@ Last updated: 2026-05-16 23:45:00
 - **Source Design**: nanobot-design
 - **Features**: firework; star_rain; rainbow_boost; 节日道具特效
 - **Git**: main (31772c3)
+
+### P-20260518-030: preschool-puzzle A14限时商店 V24 (Direction A - A14)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-030-prd.md
+- **Direction**: A (iter 23)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 每日特惠; 7折随机道具; 倒计时刷新
+- **Git**: main (55d8349)
+
+### P-20260518-031: preschool-puzzle A15每周Bundle V25 (Direction A - A15)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-031-prd.md
+- **Direction**: A (iter 24)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 每周Bundle; 5道具各3个; 订阅状态
+- **Git**: main (5990913)
+
+### P-20260518-032: preschool-puzzle A16赛季系统 V26 (Direction A - A16)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-032-prd.md
+- **Direction**: A (iter 25)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 赛季系统; 4周周期; 任务追踪; 进度显示
+- **Git**: main (45fc0cc)
+
+### P-20260518-033: preschool-puzzle A17成就里程碑奖励 V27 (Direction A - A17)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-033-prd.md
+- **Direction**: A (iter 26)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 赛季奖励领取; 里程碑UI; 100星奖励
+- **Git**: main (184a196)

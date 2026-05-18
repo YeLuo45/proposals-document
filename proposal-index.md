@@ -29,6 +29,21 @@ Last updated: 2026-05-18
 
 ---
 
+### P-20260518-014: future-little-leaders V12 积分商城增强 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit a95a9de7, push成功; 35商品+积分商城+兑换记录+排行榜
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V12-reward-shop.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (a95a9de7)
+- **Features**: rewardItems(35商品); rewardStore; leaderboardStore; rewardService; reward-shop; reward-detail; exchange-records; leaderboard; LeaderboardItem; reward_items表; exchange_records表
+
+---
+
 ### P-20260518-013: future-little-leaders V11 Flow 模板市场 (Direction A)
 
 - **Project**: future-little-leaders
@@ -3832,6 +3847,33 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (7feeed3, 069147d)
 - **Features**: 日志面板; 版本管理; 执行结果预览; 状态徽章; 进度条; 快捷键; 撤销; 连接线状态
 
+### P-20260518-012: preschool-puzzle 新道具开发与效果增强 V6 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: in_dev
+- **Acceptance**: 
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-012-prd.md
+- **Direction**: A (iter 5)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Features**: 4新道具; 减速沙漏; 双倍积分; 护盾; 答案之书
+
+### P-20260518-011: preschool-puzzle 成就徽章与道具套装 V5 (Direction A)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-011-prd.md
+- **Direction**: A (iter 4)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design (ToolRegistry)
+- **Features**: 成就系统; 道具套装; 升级券; 8成就徽章
+- **Git**: main (c8f7fdf)
+
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
 - **Project**: preschool-puzzle
@@ -3885,6 +3927,30 @@ Last updated: 2026-05-16 23:45:00
 - **PRD Path**: docs/P-20260518-003-prd.md
 - **Git**: gh-pages (e11f7be)
 - **Features**: StorageBackend ABC; SQLiteStore (WAL mode, thread-local connections, crash recovery); get_storage_backend() factory; append_event/list_events; events table schema; JsonFileStore subclasses StorageBackend; WAL pragmas (journal_mode=WAL, synchronous=NORMAL, busy_timeout=5000)
+
+---
+
+### P-20260518-005: hermes-agent-collab ruflo-inspired Hook/Plugin Architecture + Built-in Metrics Plugins (Direction D)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-005-prd.md
+- **Git**: gh-pages (1bb5599)
+- **Features**: HookEvent enum (17 lifecycle events); Plugin dataclass; PluginRegistry (subscribe/emit/enable/disable); global + workspace registries; TaskMetricsPlugin + AgentMetricsPlugin; hook emissions in agent_registry/task_manager/skill_system/orchestration_manager
+
+---
+
+### P-20260518-004: hermes-agent-collab deepcode-inspired TaskRouter + Complexity-Gated Decomposition (Direction C)
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-004-prd.md
+- **Git**: gh-pages (01989c8)
+- **Features**: TaskRouter class (route based on TaskComplexity); SIMPLE (1 SubTask, no LLM); NORMAL (2-4 SubTasks via LLM); COMPLEX (4-8 SubTasks + CriticReview quality gates); _llm_decompose with fallback; OrchestrationManager.decompose_task() delegates to TaskRouter
 
 ---
 
@@ -3947,3 +4013,15 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (02ecc5d)
 - **Features**: 分享链接; 权限管理; 在线用户指示; 节点锁定; 审计日志; BroadcastChannel跨标签页协作
+### P-20260518-009: ai-creator-h5 AI创作工作流编排器 v8 (Direction A iter10)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit d2f3693，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-009-prd.md
+- **Direction**: A (iteration 10)
+- **Mode**: 无人值守模式
+- **Git**: main (d2f3693)
+- **Features**: 插件市场; 自定义节点; 节点构建器; 沙箱执行器; 3个官方插件; 数据转换/字符串处理/数学计算

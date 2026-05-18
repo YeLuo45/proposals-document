@@ -2,6 +2,36 @@
 
 Last updated: 2026-05-18
 
+### P-20260518-022: future-little-leaders V20 Parent Growth Academy 家长成长学院 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2a0ab972, push成功; 9 files 知识库 视频课程 专家问答 学习进度
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V20-parent-academy.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2a0ab972)
+- **Features**: 家长成长学院 知识库 视频课程 专家问答 LearningProgress ArticleCard CourseCard ExpertBadge
+
+---
+
+### P-20260518-021: future-little-leaders V19 AI-Driven Personalized Task Recommendation (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 1c344a9c, push成功; 9 files AI推荐引擎 个性化推荐 AI对话 智能日程 难度自适应
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V19-ai-recommend.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (1c344a9c)
+- **Features**: AI推荐首页 个性化推荐算法 协同过滤 AI对话 ChatBubble 日程时间轴 难度自适应 DifficultyBadge
+
+---
+
 ### P-20260518-020: future-little-leaders V18 Advanced Data Analytics (Direction A)
 
 - **Project**: future-little-leaders
@@ -4244,7 +4274,18 @@ Last updated: 2026-05-16 23:45:00
 - **Git**: main (67011d1)
 - **Features**: 多工作流管理; 标签分类; 收藏夹; 搜索筛选; 批量操作
 
-### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
+### P-20260518-016: ai-creator-h5 AI创作工作流编排器 v15 (Direction A iter17)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 8addc89，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v15.md
+- **Direction**: A (iteration 17)
+- **Mode**: 无人值守模式
+- **Git**: main (8addc89)
+- **Features**: 工作流市场; 发布/浏览/搜索/筛选; 评分系统(1-5星); 评论系统(回复/点赞); 收藏市场工作流
 
 - **Project**: preschool-puzzle
 - **Owner**: 小墨
@@ -4285,3 +4326,73 @@ Last updated: 2026-05-16 23:45:00
 - **Source Design**: nanobot-design
 - **Features**: 融合标签页; 购买/融合Tab切换; fusionButtons列表; 3道具→plus版
 - **Git**: main (27001e6)
+
+### P-20260518-019: preschool-puzzle 融合点击处理 V13 (Direction A - A6)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-019-prd.md
+- **Direction**: A (iter 12)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 融合Tab点击处理; upgrade调用; 升级动画
+- **Git**: main (f99025b)
+
+### P-20260518-020: preschool-puzzle 挑战完成动画 V14 (Direction A - A7)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-020-prd.md
+- **Direction**: A (iter 13)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 挑战奖励弹出; showRewardPopup; 金色弹窗动画
+- **Git**: main (96eb6a5)
+
+### P-20260518-021: preschool-puzzle 游戏内道具状态追踪 V15 (Direction A - A8)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-021-prd.md
+- **Direction**: A (iter 14)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: itemStatus追踪; useItem更新状态; update同步timer
+- **Git**: main (293e3af)
+
+### P-20260518-022: preschool-puzzle 道具状态 UI 增强 V16 (Direction A - A8)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-022-prd.md
+- **Direction**: A (iter 15)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: 道具发光边框; 护盾计数显示; 暂停状态指示
+- **Git**: main (3cc69aa)
+
+### P-20260518-023: preschool-puzzle 全游戏道具状态UI V17 (Direction A - A8)
+
+- **Project**: preschool-puzzle
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-pm/proposals/P-20260518-023-prd.md
+- **Direction**: A (iter 16)
+- **Mode**: 无人值守模式
+- **Source Design**: nanobot-design
+- **Features**: ColorSortGame道具UI; MazeGame道具UI; itemStatus同步
+- **Git**: main (4ef9ef1)

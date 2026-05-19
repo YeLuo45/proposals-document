@@ -347,6 +347,306 @@ Last updated: 2026-05-19
 
 ---
 
+### P-20260519-051: future-little-leaders V100 Family Legacy System 家族传承系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit aa481aea, push成功; 家族历史 家族树 家训传承
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V100-family-legacy.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (aa481aea)
+- **Features**: 家族传承系统 家族历史 家族树 家训传承 familyLegacyService familyLegacyStore
+
+---
+
+### P-20260519-050: future-little-leaders V99 Growth Portfolio System 成长档案袋系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 8af695c6, push成功; 综合素质档案 作品集 成长时间线
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V99-growth-portfolio.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (8af695c6)
+- **Features**: 成长档案袋系统 综合素质档案 作品集管理 成长时间线 growthPortfolioService growthPortfolioStore
+
+---
+
+### P-20260519-049: future-little-leaders V98 Interest Discovery System 兴趣发现系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit cdc3b073, push成功; 兴趣测评 推荐探索 兴趣追踪
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V98-interest-discovery.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (cdc3b073)
+- **Features**: 兴趣发现系统 兴趣测评 推荐探索 兴趣追踪 interestDiscoveryService interestDiscoveryStore
+
+---
+
+### P-20260519-048: future-little-leaders V97 Daily Ceremonies System 日常仪式系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit d58ddddf, push成功; 晨间惯例 晚间惯例 特别日仪式
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V97-daily-ceremonies.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (d58ddddf)
+- **Features**: 日常仪式系统 晨间惯例 晚间惯例 特别日仪式 dailyCeremoniesService dailyCeremoniesStore
+
+---
+
+### P-20260519-047: future-little-leaders V96 Digital Pet System 数字宠物系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit ce712ae3, push成功; 虚拟宠物养成 宠物技能 宠物竞赛
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V96-digital-pet.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (ce712ae3)
+- **Features**: 数字宠物系统 虚拟宠物养成 宠物技能 宠物竞赛 petService petStore pet-skills pet-competition
+
+---
+
+### P-20260519-046: future-little-leaders V95 World Culture Explorer System 世界文化探索系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit cb260985, push成功; 环球文化之旅 风土人情 文化体验
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V95-world-culture-explorer.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (cb260985)
+- **Features**: 世界文化探索系统 环球文化之旅 风土人情 文化体验 worldCultureStore worldCultureService world-culture
+
+---
+
+### P-20260519-045: future-little-leaders V94 Science Museum System 科学博物馆系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2d4962e7, push成功; 博物馆展厅 互动展品 科学收藏册
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V94-science-museum.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2d4962e7)
+- **Features**: 科学博物馆系统 博物馆展厅 互动展品 科学收藏册 scienceMuseumStore science-museum hall-list
+
+---
+
+### P-20260519-044: future-little-leaders V93 Mindfulness Garden System 正念花园系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 86dd3995, push成功; 冥想练习 呼吸训练 正念游戏
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V93-mindfulness-garden.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (86dd3995)
+- **Features**: 正念花园系统 冥想练习 呼吸训练 正念游戏 mindfulnessStore mindfulness-garden meditation breathing
+
+---
+
+### P-20260519-043: future-little-leaders V92 Creative Drama System 创意戏剧系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit d20f0d59, push成功; 角色扮演 情景表演 剧本创作
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V92-creative-drama.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (d20f0d59)
+- **Features**: 创意戏剧系统 角色扮演 情景表演 剧本创作 dramaStore dramaService drama role-dress-up
+
+---
+
+### P-20260519-042: future-little-leaders V91 Social Skills Dojo System 社交技能道场 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2fc2be21, push成功; 社交情景模拟 对话练习 社交成就
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V91-social-skills-dojo.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2fc2be21)
+- **Features**: 社交技能道场 社交情景模拟 对话练习 社交成就 socialSkillsDojoService socialSkillsDojoStore social-skills-dojo
+
+---
+
+### P-20260519-041: future-little-leaders V90 Dream Journal System 梦想日记系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 69718401, push成功; 梦想清单 愿景板 目标追踪
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V90-dream-journal.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (69718401)
+- **Features**: 梦想日记系统 梦想清单 愿景板 目标追踪 dreamJournalService dreamJournalStore dream-journal
+
+---
+
+### P-20260519-040: future-little-leaders V89 Weekend Camp System 周末营系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit a0ac3b54, push成功; 主题周末活动 户外探索 创意工坊
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V89-weekend-camp.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (a0ac3b54)
+- **Features**: 周末营系统 主题周末活动 户外探索 创意工坊 社交活动 weekendCampService weekendCampStore weekend-camp
+
+---
+
+### P-20260519-039: future-little-leaders V88 Character Quest System 品格修炼系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 1ab4424b, push成功; 品德修炼任务 品格等级 修炼日记
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V88-character-quest.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (1ab4424b)
+- **Features**: 品格修炼系统 品德修炼任务 品格等级 修炼日记 characterQuestService characterQuestStore character
+
+---
+
+### P-20260519-038: future-little-leaders V87 Growth Report Card System 成长报告卡系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2aa9d793, push成功; 综合素质报告 能力雷达图 家长寄语
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V87-growth-report-card.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2aa9d793)
+- **Features**: 成长报告卡系统 综合素质报告 能力雷达图 家长寄语 growthReportCardStore growthReportCardService
+
+---
+
+### P-20260519-037: future-little-leaders V86 Parent-Child Challenge System 亲子挑战系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 3d42cfcd, push成功; 亲子组队 协作任务 家庭竞赛
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V86-parent-child-challenge.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (3d42cfcd)
+- **Features**: 亲子挑战系统 亲子组队 协作任务 家庭竞赛 parentChildStore parentChildService parent-child
+
+---
+
+### P-20260519-036: future-little-leaders V85 Reading Club System 读书会系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit ac9408dc, push成功; 读书俱乐部 阅读打卡 书评分享
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V85-reading-club.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (ac9408dc)
+- **Features**: 读书会系统 读书俱乐部 阅读打卡 书评分享 readingClubStore readingClubService book-club review-publish
+
+---
+
+### P-20260519-035: future-little-leaders V84 Knowledge Tree System 知识树系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 8cf00947, push成功; 知识图谱 学习路径 树形可视化
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V84-knowledge-tree.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (8cf00947)
+- **Features**: 知识树系统 知识图谱 学习路径 树形可视化 knowledgeTreeStore knowledgeTreeCanvas KnowledgeNode
+
+---
+
+### P-20260519-034: future-little-leaders V83 Study Room System 自习室系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 921d3d38, push成功; 自习室 背景音乐 专注统计
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V83-study-room.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (921d3d38)
+- **Features**: 自习室系统 自习室 背景音乐 专注统计 studyStore study-room ambient-sounds focus-stats
+
+---
+
+### P-20260519-033: future-little-leaders V82 Mood Journal System 情绪日记系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 2a51b7b4, push成功; 情绪追踪 情绪分析 调节建议
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V82-mood-journal.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (2a51b7b4)
+- **Features**: 情绪日记系统 情绪追踪 情绪分析 调节建议 moodStore mood-journal mood-analytics
+
+---
+
+### P-20260519-032: future-little-leaders V81 Habit Master System 习惯养成系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit d20f4e26, push成功; 习惯追踪 21天挑战 习惯链
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V81-habit-master.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (d20f4e26)
+- **Features**: 习惯养成系统 习惯追踪 21天挑战 习惯链 habitStore habit-master
+
+---
+
 ### P-20260519-031: future-little-leaders V80 Daily Challenge System 每日挑战系统 (Direction A)
 
 - **Project**: future-little-leaders
@@ -5276,9 +5576,9 @@ Last updated: 2026-05-16 23:45:00
 - **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 - **PRD Path**: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md
-- **Direction**: A++ (iter 18: 稀有皮肤特效)
-- **Features**: 8角色; 12种皮肤; 彩虹/霓虹/银河粒子尾迹特效
-- **Git**: gh-pages (5d462d2)
+- **Direction**: A+++ (iter 38: 气泡表情)
+- **Features**: Idle气泡表情; 5秒触发; emoji上升动画
+- **Git**: gh-pages (db8579b)
 
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
@@ -5429,6 +5729,34 @@ Last updated: 2026-05-16 23:45:00
 - **PRD Path**: docs/P-20260518-012-prd.md
 - **Git**: gh-pages (0a62332)
 - **Features**: Dockerfile multi-stage (python:3.12-slim builder+runtime); docker-compose.yml (app+postgres:16-alpine+redis:7-alpine); docker-compose.prod.yml (app+postgres+redis+nginx:alpine); docker/entrypoint.sh (pg_isready wait); docker/nginx.conf (upstream routing /metrics /sse /ws /api); .dockerignore; hermes_data/postgres_data/redis_data volumes
+
+---
+
+### P-20260519-008: hermes-agent-collab Redis 缓存层增强（Direction AM）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-002-prd.md
+- **Git**: gh-pages (07b7128)
+- **Features**: RedisCache (658l), CacheLayer, distributed lock, sliding window ratelimit, 8 REST endpoints
+- **Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Branch**: gh-pages
+
+---
+
+### P-20260519-3097: hermes-agent-collab 多语言 i18n 国际化框架（Direction AL）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-001-prd.md
+- **Git**: gh-pages (753f423)
+- **Features**: I18nManager (614l), 4 locales (en/zh/ja/ko), template interpolation, 9 REST endpoints
+- **Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Branch**: gh-pages
 
 ---
 
@@ -6037,6 +6365,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (e0b4a94)
 - **Features**: 微前端架构(模块化设计/EventBus通信/版本管理); 模块化动态加载(按需import/预加载/LRU缓存); 性能监控仪表盘(FPS/内存/网络/泄漏检测); 优化工具(代码分割/依赖分析/打包体积)
+
+### P-20260519-007: ai-creator-h5 AI创作工作流编排器 v30 (Direction A iter32)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 04fce8a，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v30.md
+- **Direction**: A (iteration 32)
+- **Mode**: 无人值守模式
+- **Git**: gh-pages (04fce8a)
+- **Features**: AI自进化(自我评估/趋势分析/进化目标/策略管理); 持续学习(行为学习/模式识别/知识积累); 自动模型更新(版本检测/下载/回滚); 进化控制面板(状态监控/学习进度/模型管理/更新设置)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

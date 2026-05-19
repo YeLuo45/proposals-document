@@ -77,6 +77,21 @@ Last updated: 2026-05-19
 
 ---
 
+### P-20260519-008: TodoList V47 A5 Subagent + Cron定时任务
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: commit push成功; Subagent spawning + Cron scheduler + 自动任务检查 + Gist同步 + Notebook执行
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V47-A5a-subagent-cron.md,workspace-dev/proposals/todo-list/PRD-V47-A5b-auto-check-sync.md,workspace-dev/proposals/todo-list/PRD-V47-A5c-notebook-execution.md
+- **Direction**: A5
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: Subagent spawning(Web Worker); Cron scheduler(setTimeout); 逾期自动提升优先级; 重复任务检测; 每周报告(周日20:00); Gist定时同步; Notebook执行器(scriptTemplates+执行历史)
+
+---
+
 ### P-20260518-043: future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A)
 
 - **Project**: future-little-leaders
@@ -104,6 +119,21 @@ Last updated: 2026-05-19
 - **Mode**: 无人值守模式
 - **Git**: feature/hermes20260503 (bfafea66)
 - **Features**: 智能家居设备控制 任务-设备联动 环境自适应 smartHomeService HomeAssistant device-panel automation-rules
+
+---
+
+### P-20260519-009: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 7083acca, push成功; 品德故事 价值观学习 志愿服务 荣誉榜
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V58-moral-education.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (7083acca)
+- **Features**: 品德教育系统 品德故事 价值观学习 志愿服务 荣誉榜 moralEducationService moralEducationStore stories values volunteer
 
 ---
 
@@ -4835,6 +4865,20 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-055: hermes-agent-collab 通知管道（Direction AH）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-055-prd.md
+- **Git**: gh-pages (fc93c59)
+- **Features**: NotificationManager (510l), Slack/Email/Webhook/Console async channels, 5 REST endpoints
+- **Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Branch**: gh-pages
+
+---
+
 ### P-20260518-054: hermes-agent-collab 分布式追踪增强（Direction AG）
 
 - **Project**: hermes-agent-collab
@@ -5332,6 +5376,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (27b434a)
 - **Features**: AI预测(时间/资源/成功率预测/瓶颈预警); 智能调度(最优路径/并行优化/负载均衡); 自适应节点(自监控/自动调参/失败恢复); 预测面板(仪表盘/模拟器/优化建议/准确率)
+
+### P-20260518-027: ai-creator-h5 AI创作工作流编排器 v26 (Direction A iter28)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 031aa5e，push 成功
+- **Last Update**: 2026-05-18
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v26.md
+- **Direction**: A (iteration 28)
+- **Mode**: 无人值守模式
+- **Git**: main (031aa5e)
+- **Features**: 边缘计算(节点注册/Agent部署/边缘云通信); 离线AI推理(本地模型/推理引擎/版本管理/缓存); 端云协同(边缘优先/云优先/混合策略/数据同步/冲突解决); 边缘管理面板(节点/模型/协作/同步/性能)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

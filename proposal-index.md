@@ -5576,9 +5576,9 @@ Last updated: 2026-05-16 23:45:00
 - **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 - **PRD Path**: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md
-- **Direction**: A+++ (iter 38: 气泡表情)
-- **Features**: Idle气泡表情; 5秒触发; emoji上升动画
-- **Git**: gh-pages (db8579b)
+- **Direction**: A+++ (iter 43: 生日系统)
+- **Features**: 生日系统; 当日庆祝; 粒子效果
+- **Git**: gh-pages (9056226)
 
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
@@ -5731,6 +5731,24 @@ Last updated: 2026-05-16 23:45:00
 - **Features**: Dockerfile multi-stage (python:3.12-slim builder+runtime); docker-compose.yml (app+postgres:16-alpine+redis:7-alpine); docker-compose.prod.yml (app+postgres+redis+nginx:alpine); docker/entrypoint.sh (pg_isready wait); docker/nginx.conf (upstream routing /metrics /sse /ws /api); .dockerignore; hermes_data/postgres_data/redis_data volumes
 
 ---
+
+### P-20260519-053: hermes-agent-collab API 限流与配额管理（Direction AO）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-004-prd.md
+- **Notes**: Sliding window + Token bucket + Fixed window, multi-dimension policies
+
+### P-20260519-052: hermes-agent-collab Admin UI 仪表盘扩展（Direction AN）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-003-prd.md
+- **Notes**: 7 new tabs: Workspaces, Quotas, Audit, Experiments, Knowledge Graph, Notifications, Settings
 
 ### P-20260519-008: hermes-agent-collab Redis 缓存层增强（Direction AM）
 
@@ -6378,6 +6396,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: gh-pages (04fce8a)
 - **Features**: AI自进化(自我评估/趋势分析/进化目标/策略管理); 持续学习(行为学习/模式识别/知识积累); 自动模型更新(版本检测/下载/回滚); 进化控制面板(状态监控/学习进度/模型管理/更新设置)
+
+### P-20260519-008: ai-creator-h5 AI创作工作流编排器 v31 (Direction A iter33)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 927215f，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v31.md
+- **Direction**: A (iteration 33)
+- **Mode**: 无人值守模式
+- **Git**: gh-pages (927215f)
+- **Features**: 区块链(SHA-256哈希链/区块浏览器/共识机制); 不可篡改日志(哈希上链/完整性验证/篡改检测); 去中心化存储(IPFS模拟/CID/数据分片); 区块链管理面板(状态/链浏览器/审计/存储)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

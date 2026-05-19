@@ -122,6 +122,51 @@ Last updated: 2026-05-19
 
 ---
 
+### P-20260519-012: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 9c43f22c, push成功; 环保任务 环保知识 绿色挑战
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V61-environmental-awareness.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (9c43f22c)
+- **Features**: 环保意识教育系统 环保任务 环保知识 绿色挑战 ecoService ecoStore eco-tasks eco-knowledge green-challenges
+
+---
+
+### P-20260519-011: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit fd92790a, push成功; 零花钱管理 储蓄目标 消费记录 财商知识
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V60-financial-literacy.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (fd92790a)
+- **Features**: 财商教育系统 零花钱管理 储蓄目标 消费记录 财商知识 financeService financeStore allowance savings-goals spending
+
+---
+
+### P-20260519-010: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit a55dc0a0, push成功; 图形化编程 代码积木 编程挑战 创意编程
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V59-coding-education.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (a55dc0a0)
+- **Features**: 编程教育系统 图形化编程 代码积木 编程挑战 创意编程 codingEducationService codingEducationStore visual编程 code-blocks challenges
+
+---
+
 ### P-20260519-009: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
 
 - **Project**: future-little-leaders
@@ -4865,6 +4910,20 @@ Last updated: 2026-05-16 23:45:00
 
 ---
 
+### P-20260518-056: hermes-agent-collab A/B 测试框架（Direction AI）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-18
+- **PRD Path**: docs/P-20260518-056-prd.md
+- **Git**: gh-pages (be7f5f5)
+- **Features**: ExperimentManager (585l), consistent hashing, Welch t-test + Z-test, 8 REST endpoints
+- **Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Branch**: gh-pages
+
+---
+
 ### P-20260518-055: hermes-agent-collab 通知管道（Direction AH）
 
 - **Project**: hermes-agent-collab
@@ -5389,6 +5448,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (031aa5e)
 - **Features**: 边缘计算(节点注册/Agent部署/边缘云通信); 离线AI推理(本地模型/推理引擎/版本管理/缓存); 端云协同(边缘优先/云优先/混合策略/数据同步/冲突解决); 边缘管理面板(节点/模型/协作/同步/性能)
+
+### P-20260519-002: ai-creator-h5 AI创作工作流编排器 v27 (Direction A iter29)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit ab61051，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v27.md
+- **Direction**: A (iteration 29)
+- **Mode**: 无人值守模式
+- **Git**: main (ab61051)
+- **Features**: 知识图谱(实体关系/DFS_BFS遍历/推理引擎); 语义搜索(TF-IDF/相似度匹配/上下文感知); 智能推荐(图谱推荐/行为学习/协同过滤); 知识面板(图谱可视化/搜索/推荐/分析)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

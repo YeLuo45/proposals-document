@@ -92,6 +92,21 @@ Last updated: 2026-05-19
 
 ---
 
+### P-20260519-011: TodoList V49 B3c 多Agent并行执行+投票引擎
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: commit push成功; parallelExecutor并行执行; votingEngine投票引擎; AgentPanel并行Tab
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V49-B3c-parallel-execution.md
+- **Direction**: B3c
+- **Mode**: 无人值守模式
+- **Git**: origin/main
+- **Features**: parallelExecutor executeParallel(Promise.all); aggregateResults(vote/priority/all策略); votingEngine startVoting/castVote/tallyVotes; AgentPanel并行Tab(执行+投票UI)
+
+---
+
 ### P-20260519-010: TodoList V48 B3b 动态工具注册+Agent工具市场
 
 - **Project**: todo-list
@@ -329,6 +344,141 @@ Last updated: 2026-05-19
 - **Mode**: 无人值守模式
 - **Git**: feature/hermes20260503 (d17d66c1)
 - **Features**: 美术工作坊系统 数字绘画板 手工制作 美术课程 作品展示 artService artStore drawing-board crafts gallery
+
+---
+
+### P-20260519-031: future-little-leaders V80 Daily Challenge System 每日挑战系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 8eb32ed7, push成功; 每日任务 挑战日历 连续奖励
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V80-daily-challenge.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (8eb32ed7)
+- **Features**: 每日挑战系统 每日任务 挑战日历 连续奖励 dailyChallengeStore daily-challenge
+
+---
+
+### P-20260519-030: future-little-leaders V79 Achievement Badge System 成就徽章系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit c88888b9, push成功; 徽章库 徽章收集 展示墙
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V79-achievement-badge.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (c88888b9)
+- **Features**: 成就徽章系统 徽章库 徽章收集 展示墙 badgeService badgeStore badge-library badge-collection badge-showcase
+
+---
+
+### P-20260519-029: future-little-leaders V78 Peer Coaching System 同伴辅导系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit caaf813e, push成功; 学习伙伴匹配 同伴答疑 互评反馈
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V78-peer-coaching.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (caaf813e)
+- **Features**: 同伴辅导系统 学习伙伴匹配 同伴答疑 互评反馈 peerCoachingService peerCoachingStore buddy-matching peer-qa mutual-feedback
+
+---
+
+### P-20260519-028: future-little-leaders V77 Growth Journal System 成长日记系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 02ae2983, push成功; 每日反思 周记月记 成长相册 里程碑
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V77-growth-journal.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (02ae2983)
+- **Features**: 成长日记系统 每日反思 周记月记 成长相册 里程碑 growthJournalService growthJournalStore daily-reflection weekly-review growth-album
+
+---
+
+### P-20260519-027: future-little-leaders V76 Family Charter System 家庭宪章系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 5629f5ca, push成功; 家庭价值观 家规共创 家庭会议
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V76-family-charter.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (5629f5ca)
+- **Features**: 家庭宪章系统 家庭价值观 家规共创 家庭会议 familyCharterService familyCharterStore values rules meetings
+
+---
+
+### P-20260519-026: future-little-leaders V75 Leadership Challenge System 领导力挑战系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 92b78f7b, push成功; 领导力任务 角色扮演 领导力数据
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V75-leadership-challenge.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (92b78f7b)
+- **Features**: 领导力挑战系统 领导力任务 角色扮演 领导力数据 leadershipService leadershipStore quest-list scenario-list
+
+---
+
+### P-20260519-025: future-little-leaders V74 Public Speaking System 演讲与口才系统 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit f27b48f3, push成功; 演讲模板 演讲练习 演讲挑战
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V74-public-speaking.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (f27b48f3)
+- **Features**: 演讲与口才系统 演讲模板 演讲练习 演讲挑战 publicSpeakingService publicSpeakingStore templates practice challenge
+
+---
+
+### P-20260519-024: future-little-leaders V73 Critical Thinking Training System 思辨能力训练 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 3bca18dd, push成功; 逻辑谜题 辩论练习 决策训练
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V73-critical-thinking.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (3bca18dd)
+- **Features**: 思辨能力训练系统 逻辑谜题 辩论练习 决策训练 criticalThinkingStore logic-puzzles debate-practice decision-making
+
+---
+
+### P-20260519-023: future-little-leaders V72 PBL Project Learning System PBL项目制学习 (Direction A)
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: git commit 13d3e402, push成功; PBL项目库 项目阶段管理 小组协作
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/future-little-leaders/PRD-V72-pbl-learning.md
+- **Direction**: A
+- **Mode**: 无人值守模式
+- **Git**: feature/hermes20260503 (13d3e402)
+- **Features**: PBL项目制学习系统 PBL项目库 项目阶段管理 小组协作 pblStore project-library project-steps team-collaboration
 
 ---
 
@@ -5126,9 +5276,9 @@ Last updated: 2026-05-16 23:45:00
 - **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 - **PRD Path**: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md
-- **Direction**: A+ (iter 14: 每日登录)
-- **Features**: 8角色; XP等级; localStorage; 成就; 每日登录奖励(7日循环)
-- **Git**: gh-pages (0739758)
+- **Direction**: A++ (iter 18: 稀有皮肤特效)
+- **Features**: 8角色; 12种皮肤; 彩虹/霓虹/银河粒子尾迹特效
+- **Git**: gh-pages (5d462d2)
 
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
@@ -5874,6 +6024,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: main (bb9622d)
 - **Features**: 实时协作(操作者感知/光标同步/OT算法/冲突解决/锁机制); @提及通知; 评论系统; 协作统计; 协作面板(用户/评论/活动/权限/历史/设置)
+
+### P-20260519-005: ai-creator-h5 AI创作工作流编排器 v29 (Direction A iter31)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit e0b4a94，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v29.md
+- **Direction**: A (iteration 31)
+- **Mode**: 无人值守模式
+- **Git**: main (e0b4a94)
+- **Features**: 微前端架构(模块化设计/EventBus通信/版本管理); 模块化动态加载(按需import/预加载/LRU缓存); 性能监控仪表盘(FPS/内存/网络/泄漏检测); 优化工具(代码分割/依赖分析/打包体积)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

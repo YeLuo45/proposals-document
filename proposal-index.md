@@ -5576,9 +5576,9 @@ Last updated: 2026-05-16 23:45:00
 - **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 - **PRD Path**: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md
-- **Direction**: B (iter 7: 计算器)
-- **Features**: 计算器; 按Q输入; 语音播报结果
-- **Git**: gh-pages (cabaff5)
+- **Direction**: D (iter 5: 冒险商店)
+- **Features**: 金币系统; 按P获取; 冒险完整体系
+- **Git**: gh-pages (510ca2e)
 
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
@@ -5731,6 +5731,15 @@ Last updated: 2026-05-16 23:45:00
 - **Features**: Dockerfile multi-stage (python:3.12-slim builder+runtime); docker-compose.yml (app+postgres:16-alpine+redis:7-alpine); docker-compose.prod.yml (app+postgres+redis+nginx:alpine); docker/entrypoint.sh (pg_isready wait); docker/nginx.conf (upstream routing /metrics /sse /ws /api); .dockerignore; hermes_data/postgres_data/redis_data volumes
 
 ---
+
+### P-20260519-054: hermes-agent-collab 深度链路追踪（Direction AS）
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-005-prd.md
+- **Notes**: InMemoryTraceStore, Slow Span detection, EnhancedTracingManager, 5 new trace API endpoints
 
 ### P-20260519-053: hermes-agent-collab API 限流与配额管理（Direction AO）
 
@@ -6422,6 +6431,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: gh-pages (60bf7cb)
 - **Features**: 量子计算(量子比特/量子门/H/CNOT/Toffoli/布洛赫球); 量子ML(QNN/聚类/PCA/QAOA); 量子安全(BB84 QKD/CRYSTALS-Kyber/量子随机数); 量子面板(模拟器/ML/安全/资源监控)
+
+### P-20260519-011: ai-creator-h5 AI创作工作流编排器 v33 (Direction A iter35)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 0b3f593，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v33.md
+- **Direction**: A (iteration 35)
+- **Mode**: 无人值守模式
+- **Git**: gh-pages (0b3f593)
+- **Features**: 数字孪生(虚拟实体建模/物理属性映射/状态同步/生命周期); 实时同步(数据流/双向同步/延迟补偿/冲突解决); 虚实映射(IoT传感器/设备控制/地理空间/3D可视化); 数字孪生面板(实体管理/监控/同步状态)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

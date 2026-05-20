@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-21
-Total: 237 proposals, 14 projects
+Total: 238 proposals, 14 projects
 
 ### P-20260520-002: flow-editor V45e 执行进度环
 
@@ -105,6 +105,24 @@ Total: 237 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/cultivation-simulator
 - **Git**:  (无人值守模式；参考generic-agent五层记忆实现NPC自进化)
 - **Description**: 无人值守模式；参考generic-agent五层记忆实现NPC自进化
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260521-007: Direction A1: proposal audit 命令（CSV完整性校验+自动修复）
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-21
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**:  (Direction A1无人值守模式交付；audit命令(commit eb09bf5)；检测14问题，auto-fix 3字段(2空last_update+1空project_id)；VALID_STAGES/STATUSES枚举已扩展；audit --fix通过，0 issues；push成功)
+- **Description**: Direction A1无人值守模式交付；audit命令(commit eb09bf5)；检测14问题，auto-fix 3字段(2空last_update+1空project_id)；VALID_STAGES/STATUSES枚举已扩展；audit --fix通过，0 issues；push成功
 ---
 
 ### P-20260519-001: future-little-leaders V50 Gamified Science Lab 游戏化科学实验室 (Direction A)

@@ -99,12 +99,14 @@ Total: 238 proposals, 14 projects
 
 - **Project**: cultivation-simulator
 - **Owner**: 小墨
-- **Stage**: in_dev
+- **Stage**: accepted
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-21
 - **PRD Path**: workspace-dev/proposals/cultivation-simulator/docs/P-20260521-005-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**:  (无人值守模式；参考generic-agent五层记忆实现NPC自进化)
+- **Git**: https://github.com/YeLuo45/cultivation-simulator (分支: main, Commit: 37bf90e)
 - **Description**: 无人值守模式；参考generic-agent五层记忆实现NPC自进化
+- **Notes**: V49 NPC五层记忆系统：L0情景/L1短时/L2长时/L3技能/L4史诗；技能结晶机制；进化等级1-5
 ---
 
 ## PRJ-20260420-002: pixel-pal-web

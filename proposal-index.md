@@ -1,7 +1,25 @@
 # Proposal Index
 
 Last updated: 2026-05-21
-Total: 237 proposals, 13 projects
+Total: 237 proposals, 14 projects
+
+### P-20260520-002: flow-editor V45e 执行进度环
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 2026-05-20
+- **Last Update**: 2026-05-21
+---
+
+### P-20260519-011: workflow v33 数字孪生+实时同步+虚实映射
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 2026-05-19
+- **Last Update**: 2026-05-21
+---
 
 ## PRJ-20260516-002: cultivation-simulator
 
@@ -67,8 +85,8 @@ Total: 237 proposals, 13 projects
 - **Last Update**: 2026-05-21
 - **PRD Path**: workspace-pm/proposals/P-20260521-005-prd.md
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**:  (Direction A无人值守模式；proposal sync-to-index 命令已实现，commit 6586ae5，push 成功；proposal-index.md 6819→2140行，237提案13项目)
-- **Description**: Direction A无人值守模式；proposal sync-to-index 命令已实现，commit 6586ae5，push 成功；proposal-index.md 6819→2140行，237提案13项目
+- **Git**:  (Direction A无人值守模式交付；sync-to-index命令(commit 6586ae5/push 5eff835)；proposal-index.md 6819→2140行，237提案13项目)
+- **Description**: Direction A无人值守模式交付；sync-to-index命令(commit 6586ae5/push 5eff835)；proposal-index.md 6819→2140行，237提案13项目
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -853,7 +871,7 @@ Total: 237 proposals, 13 projects
 
 ### P-20260519-054: Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager
 
-- **Project**: hermes-agent-collab
+- **Project**: MISSING
 - **Owner**: 小墨
 - **Stage**: accepted
 - **Last Update**: 2026-05-19
@@ -2122,20 +2140,4 @@ Total: 237 proposals, 13 projects
 - **Last Update**: 2026-05-17
 - **Git**:  (提案)
 - **Description**: 提案
----
-
-### P-20260520-002: flow-editor V45e 执行进度环
-
-- **Project**: future-little-leaders
-- **Owner**: 小墨
-- **Stage**: delivered
-- **Acceptance**: 2026-05-20
----
-
-### P-20260519-011: workflow v33 数字孪生+实时同步+虚实映射
-
-- **Project**: ai-creator-h5
-- **Owner**: 小墨
-- **Stage**: delivered
-- **Acceptance**: 2026-05-19
 ---

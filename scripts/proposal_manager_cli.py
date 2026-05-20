@@ -37,9 +37,9 @@ VALID_PROPOSAL_STATUSES = {
     "intake", "clarifying", "prd_pending_confirmation", "approved_for_dev",
     "in_tdd_test", "in_dev", "in_test_acceptance", "test_failed",
     "accepted", "needs_revision", "deployed", "deploying",
-    "research_direction_pending", "active", "archived"
+    "research_direction_pending", "active", "archived", "delivered"
 }
-VALID_PROPOSAL_STAGES = {"ideation", "development", "research", "proposal"}
+VALID_PROPOSAL_STAGES = {"ideation", "development", "research", "proposal", "in_dev", "in_acceptance", "accepted", "delivered", "active", "approved_for_dev", "prd_pending_confirmation"}
 VALID_PRDS = {"pending", "confirmed", "timeout-approved", "rejected", ""}
 VALID_TECH_EXPS = {"pending", "confirmed", "timeout-approved", ""}
 VALID_ACCEPTANCES = {"pending", "accepted", "rejected", ""}
@@ -779,6 +779,144 @@ def cmd_sync_to_index(args):
     print(f"Written: {PROPOSAL_INDEX_PATH}")
 
 
+# ==================== Audit ====================
+
+def cmd_audit(args):
+    """Audit proposals.csv for data quality issues, optionally auto-fix."""
+    headers, proposals = load_proposals()
+
+    if not proposals:
+        log("No proposals found in CSV")
+        return
+
+    # Expected headers
+    required_fields = ['id', 'title', 'project_id', 'status', 'stage', 'last_update']
+    optional_fields = ['owner', 'prd_path', 'tech_solution_path', 'project_path',
+                       'git_repo', 'deployment_url', 'deployment_branch',
+                       'prd_confirmation', 'tech_expectations', 'acceptance',
+                       'research_direction', 'engine', 'target', 'game_type', 'notes']
+
+    issues = []
+    fix_counts = {
+        'empty_title': 0,
+        'empty_project_id': 0,
+        'invalid_status': 0,
+        'invalid_stage': 0,
+        'empty_last_update': 0,
+    }
+
+    for idx, p in enumerate(proposals):
+        row_num = idx + 2  # +2 for header row and 0-index
+        pid = p.get('id', '')
+
+        # 1. Empty title
+        if not p.get('title', '').strip():
+            issue = f"Row {row_num} [{pid}]: title is empty"
+            fix = f"title=UNTITLED-{pid}"
+            issues.append(('error', issue, fix))
+            fix_counts['empty_title'] += 1
+
+        # 2. Empty project_id
+        if not p.get('project_id', '').strip():
+            issue = f"Row {row_num} [{pid}]: project_id is empty"
+            fix = "project_id=MISSING"
+            issues.append(('error', issue, fix))
+            fix_counts['empty_project_id'] += 1
+
+        # 3. Invalid status
+        status = p.get('status', '')
+        if status and status not in VALID_PROPOSAL_STATUSES:
+            issue = f"Row {row_num} [{pid}]: invalid status='{status}'"
+            fix = f"status=unknown"
+            issues.append(('warn', issue, fix))
+            fix_counts['invalid_status'] += 1
+
+        # 4. Invalid stage
+        stage = p.get('stage', '')
+        if stage and stage not in VALID_PROPOSAL_STAGES:
+            issue = f"Row {row_num} [{pid}]: invalid stage='{stage}'"
+            fix = "stage=proposal"
+            issues.append(('warn', issue, fix))
+            fix_counts['invalid_stage'] += 1
+
+        # 5. Empty last_update
+        if not p.get('last_update', '').strip():
+            issue = f"Row {row_num} [{pid}]: last_update is empty"
+            fix = "last_update=2026-05-21"
+            issues.append(('warn', issue, fix))
+            fix_counts['empty_last_update'] += 1
+
+    # Output report
+    print(f"\n=== CSV Audit Report ===")
+    print(f"Total proposals: {len(proposals)}")
+    print(f"Headers: {', '.join(headers)}")
+    print(f"")
+    print(f"Issues found:")
+    print(f"  Empty title:        {fix_counts['empty_title']}")
+    print(f"  Empty project_id:    {fix_counts['empty_project_id']}")
+    print(f"  Invalid status:      {fix_counts['invalid_status']}")
+    print(f"  Invalid stage:       {fix_counts['invalid_stage']}")
+    print(f"  Empty last_update:   {fix_counts['empty_last_update']}")
+    print(f"")
+
+    if issues:
+        print(f"Details (max 20):")
+        for sev, desc, fix in issues[:20]:
+            prefix = "ERROR" if sev == 'error' else "WARN "
+            print(f"  [{prefix}] {desc}")
+            print(f"         Fix: {fix}")
+        if len(issues) > 20:
+            print(f"  ... and {len(issues) - 20} more issues")
+
+    total_issues = sum(fix_counts.values())
+    print(f"\nTotal: {total_issues} issues")
+
+    # Auto-fix if requested
+    if args.fix and total_issues > 0:
+        fixes_applied = 0
+        today = datetime.now().strftime('%Y-%m-%d')
+
+        for p in proposals:
+            pid = p.get('id', '')
+
+            # Fix empty title
+            if not p.get('title', '').strip():
+                p['title'] = f"UNTITLED-{pid}"
+                fixes_applied += 1
+
+            # Fix empty project_id
+            if not p.get('project_id', '').strip():
+                p['project_id'] = 'MISSING'
+                p['project_name'] = 'MISSING'
+                fixes_applied += 1
+
+            # Fix invalid status
+            status = p.get('status', '')
+            if status and status not in VALID_PROPOSAL_STATUSES:
+                p['status'] = 'unknown'
+                fixes_applied += 1
+
+            # Fix invalid stage
+            stage = p.get('stage', '')
+            if stage and stage not in VALID_PROPOSAL_STAGES:
+                p['stage'] = 'proposal'
+                fixes_applied += 1
+
+            # Fix empty last_update
+            if not p.get('last_update', '').strip():
+                p['last_update'] = today
+                fixes_applied += 1
+
+        write_csv(PROPOSALS_CSV, headers, proposals)
+        print(f"\nAuto-fixed {fixes_applied} fields in {PROPOSALS_CSV}")
+
+        # Re-run sync-to-index
+        cmd_sync_to_index(args)
+        print("Re-synced proposal-index.md")
+    elif not args.fix and total_issues > 0:
+        print(f"\nRun with --fix to auto-repair issues")
+
+
 # ==================== Main ====================
 
 def main():
@@ -922,6 +1060,11 @@ def main():
     # proposal sync-to-index
     pr_sync = prop_sub.add_parser('sync-to-index', help='Sync proposal-index.md from CSV (CSV is source of truth)')
     pr_sync.set_defaults(func=cmd_sync_to_index)
+
+    # proposal audit
+    pr_audit = prop_sub.add_parser('audit', help='Audit proposals.csv for data quality issues')
+    pr_audit.add_argument('--fix', action='store_true', help='Auto-fix issues found')
+    pr_audit.set_defaults(func=cmd_audit)
 
     args = parser.parse_args()
     

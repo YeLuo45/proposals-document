@@ -5576,9 +5576,9 @@ Last updated: 2026-05-16 23:45:00
 - **Acceptance**: accepted
 - **Last Update**: 2026-05-19
 - **PRD Path**: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md
-- **Direction**: A+++ (iter 43: 生日系统)
-- **Features**: 生日系统; 当日庆祝; 粒子效果
-- **Git**: gh-pages (9056226)
+- **Direction**: B (iter 7: 计算器)
+- **Features**: 计算器; 按Q输入; 语音播报结果
+- **Git**: gh-pages (cabaff5)
 
 ### P-20260518-010: preschool-puzzle 星辰商店与限时道具 V4 (Direction A)
 
@@ -6409,6 +6409,19 @@ Last updated: 2026-05-16 23:45:00
 - **Mode**: 无人值守模式
 - **Git**: gh-pages (927215f)
 - **Features**: 区块链(SHA-256哈希链/区块浏览器/共识机制); 不可篡改日志(哈希上链/完整性验证/篡改检测); 去中心化存储(IPFS模拟/CID/数据分片); 区块链管理面板(状态/链浏览器/审计/存储)
+
+### P-20260519-009: ai-creator-h5 AI创作工作流编排器 v32 (Direction A iter34)
+
+- **Project**: ai-creator-h5
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: Git commit 60bf7cb，push 成功
+- **Last Update**: 2026-05-19
+- **PRD Path**: workspace-dev/proposals/prd-ai-creator-h5-v32.md
+- **Direction**: A (iteration 34)
+- **Mode**: 无人值守模式
+- **Git**: gh-pages (60bf7cb)
+- **Features**: 量子计算(量子比特/量子门/H/CNOT/Toffoli/布洛赫球); 量子ML(QNN/聚类/PCA/QAOA); 量子安全(BB84 QKD/CRYSTALS-Kyber/量子随机数); 量子面板(模拟器/ML/安全/资源监控)
 
 ### P-20260518-016: preschool-puzzle 挑战面板 UI V10 (Direction A - A5)
 - **Owner**: 小墨

@@ -304,3 +304,5 @@ P-20260519-007,workflow v30 AI自进化系统+持续学习+自动模型更新,�
 P-20260519-052,Direction AN: Admin UI 仪表盘扩展 — 多标签页管理界面,小墨,,,hermes-agent-collab,accepted,docs/P-20260519-003-prd.md,,,,,,,,2026-05-19,,,,
 P-20260519-053,Direction AO: API 限流与配额管理 — Sliding Window / Token Bucket 多维度策略,小墨,,,hermes-agent-collab,accepted,docs/P-20260519-004-prd.md,,,,,,,,2026-05-19,,,,
 P-20260519-008,workflow v31 区块链集成+不可篡改日志+去中心化存储,小墨,delivered,PRJ-20260508-001,ai-creator-h5,delivered,,,,,,,accepted,2026-05-19,,,,feat(workflow): v31 区块链(SHA-256哈希链/区块浏览器/共识机制); 不可篡改日志(哈希上链/完整性验证/篡改检测); 去中心化存储(IPFS模拟/CID/数据分片); 区块链管理面板(状态/链浏览器/审计/存储); Git commit 927215f; push成功
+P-20260520-001,flow-editor V45d 条件分支执行回溯,小墨,delivered,PRJ-20260508-001,future-little-leaders,delivered,,,,,,,accepted,2026-05-20,,,,feat(flow-editor): V45d 条件分支执行回溯(branchDecisions状态/condition节点T/F圆形徽章绿红渐变/日志分支类型🔀/橙文字); Git commit cd9b33f3; push成功
+P-20260519-009,workflow v32 量子计算模拟+量子ML+量子安全加密,小墨,delivered,PRJ-20260508-001,ai-creator-h5,delivered,,,,,,,accepted,2026-05-19,,,,feat(workflow): v32 量子计算(量子比特/量子门/H/CNOT/Toffoli/布洛赫球); 量子ML(QNN/聚类/PCA/QAOA); 量子安全(BB84 QKD/CRYSTALS-Kyber/量子随机数); 量子面板(模拟器/ML/安全/资源监控); Git commit 60bf7cb; push成功

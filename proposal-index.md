@@ -1,481 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 167 proposals, 15 projects
-
-## PRJ-20260430-002: doc-editor
-
-- **Description**: 文档编辑器，支持多人协作编辑
-- **Git Repo**: https://github.com/YeLuo45/doc-editor
-- **Local Path**: /home/hermes/projects/doc-editor
-
-### P-20260522-015: Direction E: 版本历史对比 (Version Diff)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 词语级diff算法+颜色标记(绿新增/红删除/黄修改)；多选版本对比
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-## PRJ-20260420-002: pixel-pal-web
-
-- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
-- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
-- **Local Path**: /home/hermes/projects/pixel-pal-web
-
-### P-20260522-012: proposal_manager_cli.py 功能增强 Direction A
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: in_dev
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式；强化sync-to-index、audit、export、import命令；补录github-repo-manager 35+ PRD
-- **PRD Path**: workspace-pm/proposals/P-20260522-003-prd.md
-- **Project Path**: /home/hermes/proposals
-- **Git**: 分支: Direction A
----
-
-## PRJ-20260521-002: price-compare
-
-- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
-- **Git Repo**: https://github.com/YeLuo45/price-compare
-- **Local Path**: /home/hermes/projects/price-compare
-
-### P-20260522-005: PRD: price-compare 数据层强化 - 真实API接入与价格图表
-
-- **Project**: price-compare
-- **Owner**: boss
-- **Stage**: approved_for_dev
-- **Acceptance**: 无人值守模式 Round1 完成。feat commit 00355f4，构建成功(7.30s)，数据层强化 + ECharts + IndexedDB。
-- **Last Update**: 无人值守模式迭代，方向A: proposal_manager_cli.py 脚本操作 CSV → proposal-index.md 是派生索引；price-compare Round1
-- **Project Path**: /home/hermes/projects/price-compare
----
-
-## PRJ-20260417-001: prj-proposals-manager
-
-- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
-- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
-- **Local Path**: /home/hermes/projects/prj-proposals-manager
-
-### P-20260522-026: PRD: proposal_manager_cli.py 深化优化 Round 2
-
-- **Project**: prj-proposals-manager
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
-- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md
-- **Project Path**: /home/hermes/prj-proposals-manager
----
-
-## PRJ-20260421-001: card-game-prototype
-
-- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
-- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
-- **Local Path**: /home/hermes/projects/card-game-prototype
-
-### P-20260522-025: card-game-prototype Direction A Round2: proposal sync-to-index 验证 + CSV数据质量报告
-
-- **Project**: card-game-prototype
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
-- **Project Path**: /home/hermes/projects/card-game-prototype
----
-
-## PRJ-20260516-002: cultivation-simulator
-
-- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
-- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
-- **Local Path**: /home/hermes/projects/cultivation-simulator
-
-### P-20260522-028: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
-
-- **Project**: cultivation-simulator
-- **Owner**: 小墨
-- **Stage**: delivered
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式Direction A交付；内置提案系统(game.js新增proposalBtn常驻按钮/提交面板/提案列表/方向标签/状态追踪)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
-- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
-- **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式
----
-
-## PRJ-20260421-001: card-game-prototype
-
-- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
-- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
-- **Local Path**: /home/hermes/projects/card-game-prototype
-
-### P-20260522-003: card-game-prototype Direction A: CSV审计修复 + proposal-index同步
-
-- **Project**: card-game-prototype
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式Direction A交付；audit --fix修复13个重复ID；CSV:240→228行(proposals)→242行(含新增P-20260522-003)；proposal-index同步完成
-- **Project Path**: /home/hermes/projects/card-game-prototype
----
-
-## PRJ-20260417-001: prj-proposals-manager
-
-- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
-- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
-- **Local Path**: /home/hermes/projects/prj-proposals-manager
-
-### P-20260522-022: PRD: proposal_manager_cli.py 脚本优化 — CSV→proposal-index.md 同步增强
-
-- **Project**: prj-proposals-manager
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守模式Direction A交付: 修复cmd_archive引用错误(enable archive-project), audit 0 issues, 246 proposals, 自动同步机制完善。Commit: 1fbc91b
-- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md
-- **Project Path**: /home/hermes/prj-proposals-manager
----
-
-## PRJ-20260412-008: ai-subscription
-
-- **Description**: AI内容订阅聚合平台，支持多源订阅和智能推荐
-- **Git Repo**: https://github.com/YeLuo45/ai-subscription
-- **Local Path**: /home/hermes/projects/ai-subscription
-
-### P-20260522-039: ai-subscription Provider路由器增强 + 多Provider竞价 (Direction A)
-
-- **Project**: ai-subscription
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: Direction A
-- **Last Update**: 无人值守Direction A交付；cost-optimizer模块(6文件)；llm-router增强；commit 277cf4dd；push成功；构建验证：既有问题非本轮引入
-- **Technical Solution**: /home/hermes/projects/ai-subscription
-- **Project Path**: https://github.com/YeLuo45/ai-subscription
-- **Git**: 分支: timeout-approved
----
-
-## PRJ-20260516-002: cultivation-simulator
-
-- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
-- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
-- **Local Path**: /home/hermes/projects/cultivation-simulator
-
-### P-20260522-029: cultivation-simulator V51 proposal_manager_cli.py 深化集成 (Direction A)
-
-- **Project**: cultivation-simulator
-- **Owner**: 小墨
-- **Stage**: delivered
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守Direction A交付；build_vite.js添加post-build hook调用CLI sync-to-index；Commit a423da9；push成功
-- **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: Direction A：游戏内提案→CSV→proposal-index.md全自动同步闭环；深化proposal_manager_cli.py集成
----
-
-## PRJ-20260521-002: price-compare
-
-- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
-- **Git Repo**: https://github.com/YeLuo45/price-compare
-- **Local Path**: /home/hermes/projects/price-compare
-
-### P-20260522-033: price-compare Round6 - proposal audit 增强 (跨项目ID冲突检测)
-
-- **Project**: price-compare
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守 Round6 完成
-- **Project Path**: /home/hermes/projects/price-compare
----
-
-### P-20260522-032: price-compare Round5 - proposal export (JSON/CSV/LaTeX)
-
-- **Project**: price-compare
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守 Round5 完成
-- **Project Path**: /home/hermes/projects/price-compare
----
-
-### P-20260522-030: price-compare Round4 - proposal diff 字段级对比
-
-- **Project**: price-compare
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 无人值守 Round4 完成
-- **Project Path**: /home/hermes/projects/price-compare
----
-
-## PRJ-20260430-002: doc-editor
-
-- **Description**: 文档编辑器，支持多人协作编辑
-- **Git Repo**: https://github.com/YeLuo45/doc-editor
-- **Local Path**: /home/hermes/projects/doc-editor
-
-### P-20260522-014: Direction D: 文档评论功能 (Comments)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 文档评论面板：添加/删除评论，选定文本评论，匿名评论
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-016: Direction F: 导出增强 (JSON/LaTeX/DOCX)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 支持JSON/LaTeX/DOCX多格式导出，Word XML格式生成
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-006: Direction F: 导出增强 (JSON/LaTeX/DOCX)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 支持JSON/LaTeX/DOCX多格式导出
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-019: Direction I: 协作者面板 (Collaborators Panel)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 协作者面板：在线状态指示/邀请协作者/存在指示器
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-009: Direction I: 协作者面板 (Collaborators Panel)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 协作者面板：在线状态/邀请/存在指示器
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-008: Direction H: 文档模板系统 (6个预设模板)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 会议记录/项目提案/周报/头脑风暴/学习笔记模板
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-## PRJ-20260421-001: card-game-prototype
-
-- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
-- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
-- **Local Path**: /home/hermes/projects/card-game-prototype
-
-### P-20260522-027: card-game-prototype Round5: 修复 proposal add ID 生成逻辑 (per-project counter)
-
-- **Project**: card-game-prototype
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: ✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
-- **Project Path**: /home/hermes/projects/card-game-prototype
----
-
-## PRJ-20260430-002: doc-editor
-
-- **Description**: 文档编辑器，支持多人协作编辑
-- **Git Repo**: https://github.com/YeLuo45/doc-editor
-- **Local Path**: /home/hermes/projects/doc-editor
-
-### P-20260522-010: Direction A: doc-editor 提案系统数据一致性规范
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: proposal_manager_cli.py脚本操作CSV→proposal-index.md派生索引；修复archive子命令冲突；批量登记doc-editor历史提案(A-I方向)
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-## PRJ-20260417-001: prj-proposals-manager
-
-- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
-- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
-- **Local Path**: /home/hermes/projects/prj-proposals-manager
-
-### P-20260522-031: Direction A Round 3: 清理 CSV header 泄漏脏数据 + validate 0 errors 确认
-
-- **Project**: prj-proposals-manager
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
-- **Project Path**: /home/hermes/projects/prj-proposals-manager
----
-
-### P-20260522-024: Direction A: proposal_manager_cli.py CSV→index 管道强化 (stats/validate/dry-run/verbose)
-
-- **Project**: prj-proposals-manager
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: mode: unattended. 实现5个子功能: stats(统计), validate-csv(一致性校验), sync-to-index --dry-run/--verbose, audit --csv-only. Commit: a9ffe65. 本地已push，网络恢复后自动同步。
-- **Project Path**: /home/hermes/projects/prj-proposals-manager
----
-
-## PRJ-20260423-005: hermes-agent-collab
-
-- **Description**: Hermes Agent协作系统，用于多Agent任务协调
-- **Git Repo**: https://github.com/YeLuo45/hermes-agent-collab
-- **Local Path**: /home/hermes/projects/hermes-agent-collab
-
-### P-20260519-054: Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager
-
-- **Project**: hermes-agent-collab
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: hermes-agent-collab 链路追踪提案，project_id修复
-- **PRD Path**: docs/P-20260519-005-prd.md
----
-
-## PRJ-20260430-002: doc-editor
-
-- **Description**: 文档编辑器，支持多人协作编辑
-- **Git Repo**: https://github.com/YeLuo45/doc-editor
-- **Local Path**: /home/hermes/projects/doc-editor
-
-### P-20260522-013: Direction C: ReviewerAgent AI审核
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: ReviewerAgent AI自动化审查(语法检查+风格分析+一致性检查)
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-017: Direction G: ResearcherAgent 网络搜索+插入引用
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: ResearcherAgent网络搜索+插入引用到文档，SearchResult结构
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-007: Direction G: ResearcherAgent 网络搜索+插入引用
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: ResearcherAgent网络搜索 + 插入引用到文档
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-020: Direction A: ManagerAgent 编排能力 + ContextPool localStorage 持久化
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: ManagerAgent状态机编排(DRAFT→IN_REVIEW→APPROVED→PUBLISHED)；ContextPool持久化到localStorage key=doc-editor-agent-contexts
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-### P-20260522-021: Direction B: EditorAgent AI格式化/润色
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: EditorAgent AI自动格式化+润色；role/content字段修复到AgentMessage
-- **Project Path**: /home/hermes/projects/doc-editor
----
-
-## PRJ-20260420-002: pixel-pal-web
-
-- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
-- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
-- **Local Path**: /home/hermes/projects/pixel-pal-web
-
-### P-20260522-034: Direction A8: proposal stats JSON输出+健康度报告
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: Direction A8交付(commit d62720e)；stats命令改用regex解析(防数据丢失)+健康度指标(orphan/stale_intake/empty_last_update)；stats --format json输出health字段
-- **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: 分支: Direction A
----
-
-### P-20260522-023: Direction A5: cmd_archive regex解析修复 + archive-project命令
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
-- **Project Path**: /home/hermes/projects/pixel-pal-web
----
-
-### P-20260522-004: Direction A4: acceptance vs tech_expectations 字段语义调研
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: Direction A4调研完成(commit 201c21f)；结论：无全局互换问题；不同项目用法不同：pixel-pal-web用acceptance=日期+tech_expectations=accepted；future-little-leaders用tech_expectations=提交日志；proposal diff已能发现字段异常；无需全局互换修复
-- **Project Path**: /home/hermes/projects/pixel-pal-web
----
-
-### P-20260522-002: Direction A3: proposal diff 命令（字段对比）
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: Direction A3无人值守模式交付；proposal diff命令(commit 201c21f)；支持两个提案的字段级差异对比；发现P-20260522-001字段问题(acceptance/tech_expectations值互换)
-- **Project Path**: /home/hermes/projects/pixel-pal-web
----
-
-### P-20260522-001: Direction A2: CSV重复ID检测+修复
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: 2026-05-22
-- **Last Update**: Direction A3发现字段值互换；acceptance=accepted是正确值(交付通过)；已通过proposal diff发现并更正
-- **Project Path**: /home/hermes/projects/pixel-pal-web
----
-
-## PRJ-20260430-002: doc-editor
-
-- **Description**: 文档编辑器，支持多人协作编辑
-- **Git Repo**: https://github.com/YeLuo45/doc-editor
-- **Local Path**: /home/hermes/projects/doc-editor
-
-### P-20260522-018: Direction H: 文档模板系统 (6个预设模板)
-
-- **Project**: doc-editor
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-22
-- **Last Update**: 6个预设模板：空白/会议记录/项目提案/周报/头脑风暴/学习笔记
-- **Project Path**: /home/hermes/projects/doc-editor
----
+Total: 168 proposals, 16 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -1358,7 +884,7 @@ Total: 167 proposals, 15 projects
 - **Project**: future-little-leaders
 - **Owner**: 小墨
 - **Stage**: delivered
-- **Acceptance**: 2026-05-22
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 ---
 
@@ -1373,7 +899,7 @@ Total: 167 proposals, 15 projects
 - **Project**: ai-creator-h5
 - **Owner**: 小墨
 - **Stage**: delivered
-- **Acceptance**: 2026-05-22
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 ---
 
@@ -1461,6 +987,493 @@ Total: 167 proposals, 15 projects
 - **Project Path**: /home/hermes/projects/cultivation-simulator
 ---
 
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-001: Direction A2: CSV重复ID检测+修复
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Description**: Direction A3发现字段值互换；acceptance=accepted是正确值(交付通过)；已通过proposal diff发现并更正
+---
+
+### P-20260522-002: Direction A3: proposal diff 命令（字段对比）
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Description**: Direction A3无人值守模式交付；proposal diff命令(commit 201c21f)；支持两个提案的字段级差异对比；发现P-20260522-001字段问题(acceptance/tech_expectations值互换)
+---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
+
+### P-20260522-003: card-game-prototype Direction A: CSV审计修复 + proposal-index同步
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Description**: 无人值守模式Direction A交付；audit --fix修复13个重复ID；CSV:240→228行(proposals)→242行(含新增P-20260522-003)；proposal-index同步完成
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-004: Direction A4: acceptance vs tech_expectations 字段语义调研
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Description**: Direction A4调研完成(commit 201c21f)；结论：无全局互换问题；不同项目用法不同：pixel-pal-web用acceptance=日期+tech_expectations=accepted；future-little-leaders用tech_expectations=提交日志；proposal diff已能发现字段异常；无需全局互换修复
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-005: PRD: price-compare 数据层强化 - 真实API接入与价格图表
+
+- **Project**: price-compare
+- **Owner**: boss
+- **Stage**: approved_for_dev
+- **Acceptance**: 无人值守模式 Round1 完成。feat commit 00355f4，构建成功(7.30s)，数据层强化 + ECharts + IndexedDB。
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Description**: 无人值守模式迭代，方向A: proposal_manager_cli.py 脚本操作 CSV → proposal-index.md 是派生索引；price-compare Round1
+---
+
+## PRJ-20260430-002: doc-editor
+
+- **Description**: 文档编辑器，支持多人协作编辑
+- **Git Repo**: https://github.com/YeLuo45/doc-editor
+- **Local Path**: /home/hermes/projects/doc-editor
+
+### P-20260522-006: Direction F: 导出增强 (JSON/LaTeX/DOCX)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 支持JSON/LaTeX/DOCX多格式导出
+---
+
+### P-20260522-007: Direction G: ResearcherAgent 网络搜索+插入引用
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: ResearcherAgent网络搜索 + 插入引用到文档
+---
+
+### P-20260522-008: Direction H: 文档模板系统 (6个预设模板)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 会议记录/项目提案/周报/头脑风暴/学习笔记模板
+---
+
+### P-20260522-009: Direction I: 协作者面板 (Collaborators Panel)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 协作者面板：在线状态/邀请/存在指示器
+---
+
+### P-20260522-010: Direction A: doc-editor 提案系统数据一致性规范
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: proposal_manager_cli.py脚本操作CSV→proposal-index.md派生索引；修复archive子命令冲突；批量登记doc-editor历史提案(A-I方向)
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-012: proposal_manager_cli.py 功能增强 Direction A
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: in_dev
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-003-prd.md
+- **Project Path**: /home/hermes/proposals
+- **Git**: 分支: Direction A
+- **Description**: 无人值守模式；强化sync-to-index、audit、export、import命令；补录github-repo-manager 35+ PRD
+---
+
+## PRJ-20260430-002: doc-editor
+
+- **Description**: 文档编辑器，支持多人协作编辑
+- **Git Repo**: https://github.com/YeLuo45/doc-editor
+- **Local Path**: /home/hermes/projects/doc-editor
+
+### P-20260522-013: Direction C: ReviewerAgent AI审核
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: ReviewerAgent AI自动化审查(语法检查+风格分析+一致性检查)
+---
+
+### P-20260522-014: Direction D: 文档评论功能 (Comments)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 文档评论面板：添加/删除评论，选定文本评论，匿名评论
+---
+
+### P-20260522-015: Direction E: 版本历史对比 (Version Diff)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 词语级diff算法+颜色标记(绿新增/红删除/黄修改)；多选版本对比
+---
+
+### P-20260522-016: Direction F: 导出增强 (JSON/LaTeX/DOCX)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 支持JSON/LaTeX/DOCX多格式导出，Word XML格式生成
+---
+
+### P-20260522-017: Direction G: ResearcherAgent 网络搜索+插入引用
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: ResearcherAgent网络搜索+插入引用到文档，SearchResult结构
+---
+
+### P-20260522-018: Direction H: 文档模板系统 (6个预设模板)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 6个预设模板：空白/会议记录/项目提案/周报/头脑风暴/学习笔记
+---
+
+### P-20260522-019: Direction I: 协作者面板 (Collaborators Panel)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: 协作者面板：在线状态指示/邀请协作者/存在指示器
+---
+
+### P-20260522-020: Direction A: ManagerAgent 编排能力 + ContextPool localStorage 持久化
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: ManagerAgent状态机编排(DRAFT→IN_REVIEW→APPROVED→PUBLISHED)；ContextPool持久化到localStorage key=doc-editor-agent-contexts
+---
+
+### P-20260522-021: Direction B: EditorAgent AI格式化/润色
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Description**: EditorAgent AI自动格式化+润色；role/content字段修复到AgentMessage
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-022: PRD: proposal_manager_cli.py 脚本优化 — CSV→proposal-index.md 同步增强
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md
+- **Project Path**: /home/hermes/prj-proposals-manager
+- **Git**: Commit: 1fbc91b
+- **Description**: 无人值守模式Direction A交付: 修复cmd_archive引用错误(enable archive-project), audit 0 issues, 246 proposals, 自动同步机制完善。
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-023: Direction A5: cmd_archive regex解析修复 + archive-project命令
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Description**: Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-024: Direction A: proposal_manager_cli.py CSV→index 管道强化 (stats/validate/dry-run/verbose)
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/prj-proposals-manager
+- **Git**: Commit: a9ffe65
+- **Description**: mode: unattended. 实现5个子功能: stats(统计), validate-csv(一致性校验), sync-to-index --dry-run/--verbose, audit --csv-only. . 本地已push，网络恢复后自动同步。
+---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
+
+### P-20260522-025: card-game-prototype Direction A Round2: proposal sync-to-index 验证 + CSV数据质量报告
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Description**: 无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-026: PRD: proposal_manager_cli.py 深化优化 Round 2
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md
+- **Project Path**: /home/hermes/prj-proposals-manager
+- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
+---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
+
+### P-20260522-027: card-game-prototype Round5: 修复 proposal add ID 生成逻辑 (per-project counter)
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Description**: ✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
+---
+
+## PRJ-20260516-002: cultivation-simulator
+
+- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
+- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
+- **Local Path**: /home/hermes/projects/cultivation-simulator
+
+### P-20260522-028: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
+
+- **Project**: cultivation-simulator
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
+- **Project Path**: /home/hermes/projects/cultivation-simulator
+- **Git**: 分支: Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式
+- **Description**: 无人值守模式Direction A交付；内置提案系统(game.js新增proposalBtn常驻按钮/提交面板/提案列表/方向标签/状态追踪)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-030: price-compare Round4 - proposal diff 字段级对比
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Description**: 无人值守 Round4 完成
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-031: Direction A Round 3: 清理 CSV header 泄漏脏数据 + validate 0 errors 确认
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/prj-proposals-manager
+- **Description**: mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-032: price-compare Round5 - proposal export (JSON/CSV/LaTeX)
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Description**: 无人值守 Round5 完成
+---
+
+### P-20260522-033: price-compare Round6 - proposal audit 增强 (跨项目ID冲突检测)
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Description**: 无人值守 Round6 完成
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-034: Direction A8: proposal stats JSON输出+健康度报告
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: 分支: Direction A
+- **Description**: Direction A8交付(commit d62720e)；stats命令改用regex解析(防数据丢失)+健康度指标(orphan/stale_intake/empty_last_update)；stats --format json输出health字段
+---
+
+## PRJ-20260516-002: cultivation-simulator
+
+- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
+- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
+- **Local Path**: /home/hermes/projects/cultivation-simulator
+
+### P-20260522-029: cultivation-simulator V51 proposal_manager_cli.py 深化集成 (Direction A)
+
+- **Project**: cultivation-simulator
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/cultivation-simulator
+- **Git**: 分支: Direction A：游戏内提案→CSV→proposal-index.md全自动同步闭环；深化proposal_manager_cli.py集成
+- **Description**: 无人值守Direction A交付；build_vite.js添加post-build hook调用CLI sync-to-index；Commit a423da9；push成功
+---
+
 ## PRJ-20260418-002: creative-drawing-board
 
 - **Description**: 在线创意画板，支持多种绘画工具和分享功能
@@ -1471,7 +1484,7 @@ Total: 167 proposals, 15 projects
 
 - **Project**: creative-drawing-board
 - **Owner**: 小墨
-- **Acceptance**: 2026-05-22
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **PRD Path**: /home/hermes/proposals/workspace-pm/proposals/P-20260522-035-prd.md
 - **Project Path**: /home/hermes/projects/creative-drawing-board
@@ -1501,7 +1514,7 @@ Total: 167 proposals, 15 projects
 - **Project**: cultivation-simulator
 - **Owner**: 小墨
 - **Stage**: delivered
-- **Acceptance**: 2026-05-22
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 ---
 
@@ -1524,20 +1537,67 @@ Total: 167 proposals, 15 projects
 - **Description**: 26个MCP工具+ToolRegistry+SandboxExecutor+cli.js；node server/mcp/cli.js list显示26工具；语法检查通过；Commit 4c879b3
 ---
 
+## PRJ-20260412-008: ai-subscription
+
+- **Description**: AI内容订阅聚合平台，支持多源订阅和智能推荐
+- **Git Repo**: https://github.com/YeLuo45/ai-subscription
+- **Local Path**: /home/hermes/projects/ai-subscription
+
+### P-20260522-040: ai-subscription Provider路由器增强 + 多Provider竞价 (Direction A)
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: Direction A
+- **Last Update**: 2026-05-22
+- **Technical Solution**: /home/hermes/projects/ai-subscription
+- **Project Path**: https://github.com/YeLuo45/ai-subscription
+- **Git**: 分支: timeout-approved
+- **Description**: 无人值守Direction A交付；cost-optimizer模块(6文件)；llm-router增强；commit 277cf4dd；push成功；构建验证：既有问题非本轮引入
+---
+
 ## PRJ-20250416-001: todolist
 
 - **Description**: Todo/任务管理Web应用
 - **Git Repo**: https://github.com/YeLuo45/todo-list
 - **Local Path**: /home/hermes/projects/todolist
 
-### P-20260522-040: V51: audit命令增加纯重复ID检测
+### P-20260522-040-dup: V51: audit命令增加纯重复ID检测
 
 - **Project**: todo-list
 - **Owner**: 小墨
 - **Stage**: delivered
-- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
-- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V51-Direction-A.md
-- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/proposals-document)
-- **Description**: audit命令增加纯重复ID检测; 57个ID出现94次重复; --fix保留最新last_update; Commit f4aaa18
+---
+
+## PRJ-20260422-001: ai-novel-assistant
+
+- **Description**: AI小说创作助手，提供故事生成和写作辅助
+- **Git Repo**: https://github.com/YeLuo45/ai-novel-assistant
+- **Local Path**: /home/hermes/projects/ai-novel-assistant
+
+### P-20260522-042: V35: 工具系统生态深化 - Sandbox + MCP Client + ToolPanel增强
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: 2026-05-22
+- **Last Update**: 2026-05-22
+---
+
+## PRJ-20260423-005: hermes-agent-collab
+
+- **Description**: Hermes Agent协作系统，用于多Agent任务协调
+- **Git Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Local Path**: /home/hermes/projects/hermes-agent-collab
+
+### P-20260519-054: Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-19
+- **PRD Path**: docs/P-20260519-005-prd.md
+- **Description**: hermes-agent-collab 链路追踪提案，project_id修复
 ---

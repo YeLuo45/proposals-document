@@ -7,7 +7,7 @@ CSV is the source of truth; markdown files are derived from CSV.
 CSV Schema:
 - projects.csv: id, name, proposal_count, git_repo, local_path, description, last_update
 - proposals.csv: id, title, owner, status, project_id, project_name, stage,
-                 prd_path, tech_solution_path, project_path, git_repo, deployment_url,
+                 prd_path, tech_solution_path, project_path,
                  deployment_branch, prd_confirmation, tech_expectations, acceptance,
                  research_direction, last_update, engine, target, game_type, notes
 """
@@ -76,7 +76,7 @@ VALID_GAME_TYPES = {"", "休闲", "策略", "卡牌", "RPG", "消除", "塔防",
 # CSV Headers
 PROJECTS_CSV_HEADERS = ['id', 'name', 'proposal_count', 'git_repo', 'local_path', 'description', 'last_update']
 PROPOSALS_CSV_HEADERS = ['id', 'title', 'owner', 'status', 'project_id', 'project_name', 'stage',
-                          'prd_path', 'tech_solution_path', 'project_path', 'git_repo', 'deployment_url',
+                          'prd_path', 'tech_solution_path', 'project_path',
                           'deployment_branch', 'prd_confirmation', 'tech_expectations', 'acceptance',
                           'research_direction', 'last_update', 'engine', 'target', 'game_type', 'notes']
 
@@ -723,7 +723,7 @@ def cmd_archive(args):
         raw_content = f.read()
 
     FIELDNAMES_ARCH = ['id','title','owner','status','project_id','project_name','stage',
-                        'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                        'prd_path','tech_solution_path','project_path',
                         'deployment_branch','prd_confirmation','tech_expectations','acceptance',
                         'research_direction','last_update','engine','target','game_type','notes']
 
@@ -784,7 +784,7 @@ def cmd_archive(args):
         except:
             fixed_lines.append(line)
 
-    header = "id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,git_repo,deployment_url,deployment_branch,prd_confirmation,tech_expectations,acceptance,research_direction,last_update,engine,target,game_type,notes\n"
+    header = "id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,deployment_branch,prd_confirmation,tech_expectations,acceptance,research_direction,last_update,engine,target,game_type,notes\n"
     with open(PROPOSALS_CSV, 'w', encoding='utf-8') as f:
         f.write(header + '\n'.join(fixed_lines))
 
@@ -1101,7 +1101,7 @@ def cmd_audit(args):
         raw_content = f.read()
 
     FIELDNAMES_AUDIT = ['id','title','owner','status','project_id','project_name','stage',
-                         'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                         'prd_path','tech_solution_path','project_path',
                          'deployment_branch','prd_confirmation','tech_expectations','acceptance',
                          'research_direction','last_update','engine','target','game_type','notes']
 
@@ -1343,7 +1343,7 @@ def cmd_diff(args):
         raw_content = f.read()
 
     FIELDNAMES_DIFF = ['id','title','owner','status','project_id','project_name','stage',
-                        'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                        'prd_path','tech_solution_path','project_path',
                         'deployment_branch','prd_confirmation','tech_expectations','acceptance',
                         'research_direction','last_update','engine','target','game_type','notes']
 
@@ -1792,7 +1792,7 @@ def cmd_stats_proposals(args):
         raw_content = f.read()
 
     FIELDNAMES = ['id','title','owner','status','project_id','project_name','stage',
-                  'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                  'prd_path','tech_solution_path','project_path',
                   'deployment_branch','prd_confirmation','tech_expectations','acceptance',
                   'research_direction','last_update','engine','target','game_type','notes']
 
@@ -1963,11 +1963,7 @@ def cmd_validate_proposals(args):
         if len(csv_ids) != len(index_ids):
             issues.append(('info', f"[index] count mismatch: CSV={len(csv_ids)} vs index={len(index_ids)}", 'run sync-to-index'))
 
-    # 4. All deployment_url fields are valid URLs or empty
-    for p in proposals:
-        url = p.get('deployment_url', '').strip()
-        if url and not (url.startswith('http://') or url.startswith('https://') or url.startswith('git@') or url.startswith('//')):
-            issues.append(('error', f"[{p['id']}] deployment_url='{url}' is not a valid URL", 'must start with http://, https://, or git@'))
+    # 4. (removed: deployment_url no longer in proposals.csv schema)
 
     # Report
     print(f"\n=== Validation Report ===")

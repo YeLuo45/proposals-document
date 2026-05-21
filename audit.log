@@ -227,3 +227,4 @@
 [2026-05-22 07:47:24] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
 [2026-05-22 07:47:31] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
 [2026-05-22 07:48:37] CSV_WRITE | proposals.csv | 168 rows, 20 fields
+[2026-05-22 07:51:19] ERROR | die | dict contains fields not in fieldnames: None

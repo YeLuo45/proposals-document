@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 166 proposals, 14 projects
+Total: 167 proposals, 15 projects
 
 ## PRJ-20260430-002: doc-editor
 
@@ -17,7 +17,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 词语级diff算法+颜色标记(绿新增/红删除/黄修改)；多选版本对比
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260420-002: pixel-pal-web
@@ -35,8 +34,7 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 无人值守模式；强化sync-to-index、audit、export、import命令；补录github-repo-manager 35+ PRD
 - **PRD Path**: workspace-pm/proposals/P-20260522-003-prd.md
 - **Project Path**: /home/hermes/proposals
-- **Git**: 分支: Direction A | [GitHub](timeout-approved)
-- **Deployment**: [accepted](accepted)
+- **Git**: 分支: Direction A
 ---
 
 ## PRJ-20260521-002: price-compare
@@ -53,7 +51,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 无人值守模式 Round1 完成。feat commit 00355f4，构建成功(7.30s)，数据层强化 + ECharts + IndexedDB。
 - **Last Update**: 无人值守模式迭代，方向A: proposal_manager_cli.py 脚本操作 CSV → proposal-index.md 是派生索引；price-compare Round1
 - **Project Path**: /home/hermes/projects/price-compare
-- **Git**: [GitHub](2026-05-22)
 ---
 
 ## PRJ-20260417-001: prj-proposals-manager
@@ -71,7 +68,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
 - **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md
 - **Project Path**: /home/hermes/prj-proposals-manager
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260421-001: card-game-prototype
@@ -88,7 +84,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
 - **Project Path**: /home/hermes/projects/card-game-prototype
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -106,8 +101,7 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 无人值守模式Direction A交付；内置提案系统(game.js新增proposalBtn常驻按钮/提交面板/提案列表/方向标签/状态追踪)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
 - **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式 | [GitHub](timeout-approved)
-- **Deployment**: [accepted](accepted)
+- **Git**: 分支: Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式
 ---
 
 ## PRJ-20260421-001: card-game-prototype
@@ -124,7 +118,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守模式Direction A交付；audit --fix修复13个重复ID；CSV:240→228行(proposals)→242行(含新增P-20260522-003)；proposal-index同步完成
 - **Project Path**: /home/hermes/projects/card-game-prototype
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260417-001: prj-proposals-manager
@@ -142,7 +135,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 无人值守模式Direction A交付: 修复cmd_archive引用错误(enable archive-project), audit 0 issues, 246 proposals, 自动同步机制完善。Commit: 1fbc91b
 - **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md
 - **Project Path**: /home/hermes/prj-proposals-manager
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260412-008: ai-subscription
@@ -160,8 +152,7 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 无人值守Direction A交付；cost-optimizer模块(6文件)；llm-router增强；commit 277cf4dd；push成功；构建验证：既有问题非本轮引入
 - **Technical Solution**: /home/hermes/projects/ai-subscription
 - **Project Path**: https://github.com/YeLuo45/ai-subscription
-- **Git**: 分支: timeout-approved | [GitHub](https://yeluo45.github.io/ai-subscription/)
-- **Deployment**: [master](master)
+- **Git**: 分支: timeout-approved
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -178,8 +169,7 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守Direction A交付；build_vite.js添加post-build hook调用CLI sync-to-index；Commit a423da9；push成功
 - **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: Direction A：游戏内提案→CSV→proposal-index.md全自动同步闭环；深化proposal_manager_cli.py集成 | [GitHub](timeout-approved)
-- **Deployment**: [accepted](accepted)
+- **Git**: 分支: Direction A：游戏内提案→CSV→proposal-index.md全自动同步闭环；深化proposal_manager_cli.py集成
 ---
 
 ## PRJ-20260521-002: price-compare
@@ -196,7 +186,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守 Round6 完成
 - **Project Path**: /home/hermes/projects/price-compare
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-032: price-compare Round5 - proposal export (JSON/CSV/LaTeX)
@@ -207,7 +196,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守 Round5 完成
 - **Project Path**: /home/hermes/projects/price-compare
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-030: price-compare Round4 - proposal diff 字段级对比
@@ -218,7 +206,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 无人值守 Round4 完成
 - **Project Path**: /home/hermes/projects/price-compare
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260430-002: doc-editor
@@ -235,7 +222,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 文档评论面板：添加/删除评论，选定文本评论，匿名评论
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-016: Direction F: 导出增强 (JSON/LaTeX/DOCX)
@@ -246,7 +232,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 支持JSON/LaTeX/DOCX多格式导出，Word XML格式生成
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-006: Direction F: 导出增强 (JSON/LaTeX/DOCX)
@@ -257,7 +242,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 支持JSON/LaTeX/DOCX多格式导出
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-019: Direction I: 协作者面板 (Collaborators Panel)
@@ -268,7 +252,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 协作者面板：在线状态指示/邀请协作者/存在指示器
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-009: Direction I: 协作者面板 (Collaborators Panel)
@@ -279,7 +262,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 协作者面板：在线状态/邀请/存在指示器
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-008: Direction H: 文档模板系统 (6个预设模板)
@@ -290,7 +272,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 会议记录/项目提案/周报/头脑风暴/学习笔记模板
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260421-001: card-game-prototype
@@ -307,7 +288,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: ✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
 - **Project Path**: /home/hermes/projects/card-game-prototype
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260430-002: doc-editor
@@ -324,7 +304,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: proposal_manager_cli.py脚本操作CSV→proposal-index.md派生索引；修复archive子命令冲突；批量登记doc-editor历史提案(A-I方向)
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260417-001: prj-proposals-manager
@@ -367,7 +346,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: hermes-agent-collab 链路追踪提案，project_id修复
 - **PRD Path**: docs/P-20260519-005-prd.md
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260430-002: doc-editor
@@ -384,7 +362,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: ReviewerAgent AI自动化审查(语法检查+风格分析+一致性检查)
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-017: Direction G: ResearcherAgent 网络搜索+插入引用
@@ -395,7 +372,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: ResearcherAgent网络搜索+插入引用到文档，SearchResult结构
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-007: Direction G: ResearcherAgent 网络搜索+插入引用
@@ -406,7 +382,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: ResearcherAgent网络搜索 + 插入引用到文档
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-020: Direction A: ManagerAgent 编排能力 + ContextPool localStorage 持久化
@@ -417,7 +392,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: ManagerAgent状态机编排(DRAFT→IN_REVIEW→APPROVED→PUBLISHED)；ContextPool持久化到localStorage key=doc-editor-agent-contexts
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-021: Direction B: EditorAgent AI格式化/润色
@@ -428,7 +402,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: EditorAgent AI自动格式化+润色；role/content字段修复到AgentMessage
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260420-002: pixel-pal-web
@@ -446,7 +419,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: Direction A8交付(commit d62720e)；stats命令改用regex解析(防数据丢失)+健康度指标(orphan/stale_intake/empty_last_update)；stats --format json输出health字段
 - **Project Path**: /home/hermes/projects/pixel-pal-web
 - **Git**: 分支: Direction A
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-023: Direction A5: cmd_archive regex解析修复 + archive-project命令
@@ -457,7 +429,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-004: Direction A4: acceptance vs tech_expectations 字段语义调研
@@ -468,7 +439,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: Direction A4调研完成(commit 201c21f)；结论：无全局互换问题；不同项目用法不同：pixel-pal-web用acceptance=日期+tech_expectations=accepted；future-little-leaders用tech_expectations=提交日志；proposal diff已能发现字段异常；无需全局互换修复
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260522-002: Direction A3: proposal diff 命令（字段对比）
@@ -489,7 +459,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: Direction A3发现字段值互换；acceptance=accepted是正确值(交付通过)；已通过proposal diff发现并更正
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260430-002: doc-editor
@@ -506,7 +475,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: 2026-05-22
 - **Last Update**: 6个预设模板：空白/会议记录/项目提案/周报/头脑风暴/学习笔记
 - **Project Path**: /home/hermes/projects/doc-editor
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260418-004: future-little-leaders
@@ -520,8 +488,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit face16f9，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260517-035: future-little-leaders V5 可视化任务编排画布 (Direction A)
@@ -529,8 +495,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit d14a0811，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-003: future-little-leaders V6 自进化技能树/成长图谱系统 (Direction A)
@@ -538,8 +502,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit 9753b773，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-005: future-little-leaders V7 家庭通知中枢 (Direction A)
@@ -547,8 +509,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit 74f58f5a，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-010: future-little-leaders V9 成长报告 AI 总结 (Direction A)
@@ -556,8 +516,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit 6c8335da，push 成功；SDK commit d2ed559，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-012: future-little-leaders V10 V3 M5 Dashboard 补全 (Direction A)
@@ -565,8 +523,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](npm run build:h5 成功，Git commit dc2b28b9，push 成功)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-013: future-little-leaders V11 Flow 模板市场 (Direction A)
@@ -574,8 +530,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 07e3fb0c, push成功; 8 files changed, 1809 insertions(+), 10 deletions(-))
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-014: future-little-leaders V12 积分商城增强 (Direction A)
@@ -583,8 +537,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit a95a9de7, push成功; 35商品+积分商城+兑换记录+排行榜)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-015: future-little-leaders V13 V4 离线同步深度集成 (Direction A)
@@ -592,8 +544,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 1d77bb18, push成功; initV4+SyncConflictModal+SyncStore+conflictResolver+Workers D1)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-016: future-little-leaders V14 多语言 i18n 支持 (Direction A)
@@ -601,8 +551,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 4a954aa1, push成功; i18n框架+4语言+settings语言切换)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-017: future-little-leaders V15 儿童社交功能 (Direction A)
@@ -610,8 +558,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 48bab4e9, push成功; 朋友系统+积分赠送+组队任务+成长PK)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-018: future-little-leaders V16 微信小程序特定功能 (Direction A)
@@ -619,8 +565,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 0f121fe4, push成功; 微信分享卡片+附近发现+反馈)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-020: future-little-leaders V18 Advanced Data Analytics (Direction A)
@@ -628,8 +572,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit dd063816, push成功; 3D成长轨迹(SVG)/能力雷达图/家庭报告PDF(Canvas))
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-021: future-little-leaders V19 AI-Driven Personalized Task Recommendation (Direction A)
@@ -637,8 +579,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 1c344a9c, push成功; 9 files AI推荐引擎 个性化推荐 AI对话 智能日程 难度自适应)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-022: future-little-leaders V20 Parent Growth Academy 家长成长学院 (Direction A)
@@ -646,8 +586,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2a0ab972, push成功; 9 files 知识库 视频课程 专家问答 学习进度)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-023: future-little-leaders V21 Home-School Collaboration 家校协作实时通知 (Direction A)
@@ -655,8 +593,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9d85c0d7, push成功; 9 files 班级动态Feed 家校聊天 智能提醒 NotificationBus插件架构)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-024: future-little-leaders V22 Multi-Child Family Management 多儿童家庭管理 (Direction A)
@@ -664,8 +600,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9fbda2cd, push成功; 多儿童仪表盘 兄弟姐妹竞赛 家庭积分池 成就对比)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-025: future-little-leaders V23 Seasonal Challenge + Badge Evolution 赛季系统+徽章进化 (Direction A)
@@ -673,8 +607,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit e84bc212, push成功; 赛季系统 徽章四级进化 3D徽章墙 赛季排行榜)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-026: future-little-leaders V24 Offline-First PWA Enhancement 离线优先增强 (Direction A)
@@ -682,8 +614,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9095201a, push成功; Service Worker 离线队列 Push Notification PWA安装提示)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-027: future-little-leaders V25 E2E Testing Infrastructure Playwright测试框架 (Direction A)
@@ -691,8 +621,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 58059187, push成功; Playwright E2E babyStore/taskFlow/dashboard测试)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-029: future-little-leaders V26 WeChat Mini-Program Deep Integration 微信深度集成 (Direction A)
@@ -700,8 +628,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 4c1a3f5, push成功; 微信登录 小程序码 微信运动 微信支付 wxMiniService wxpay)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-030: future-little-leaders V27 Performance Optimization + Code Splitting 性能优化 (Direction A)
@@ -709,8 +635,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2890f0af, push成功; 路由懒加载 manualChunks BundleAnalyzer imageOptimizer)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-031: future-little-leaders V28 Accessibility + i18n Enhancement 无障碍增强 (Direction A)
@@ -718,8 +642,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 0481d294, push成功; 高对比度 ARIA 键盘导航 屏幕阅读器 日文 韩文)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-032: future-little-leaders V29 Security Hardening + Privacy Protection 安全加固 (Direction A)
@@ -727,8 +649,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 0ea6fd21, push成功; 隐私脱敏 安全审计 二次验证 privacyMask securityAudit)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-033: future-little-leaders V30 Anti-Cheat System + Reputation Scoring 反作弊+信誉评分 (Direction A)
@@ -736,8 +656,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9cff8248, push成功; 异常检测 信誉评分 反作弊 举报审核)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-034: future-little-leaders V31 API Gateway + Rate Limiting API网关+限流 (Direction A)
@@ -745,8 +663,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 67e2edd4, push成功; API网关 JWT认证 令牌桶限流 429响应 请求日志 反爬)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-035: future-little-leaders V32 WebSocket Real-time + Cloud Functions 实时通信 (Direction A)
@@ -754,8 +670,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit cbdc94fe, push成功; WebSocket连接管理器 实时事件 CloudFunctions 实时Store 心跳保活)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-036: future-little-leaders V33 Plugin Marketplace + Theme System 插件市场+主题系统 (Direction A)
@@ -763,8 +677,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 0e923630, push成功; 插件市场 主题系统 PluginManager ThemeStore 插件安装卸载)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-037: future-little-leaders V34 AI Companion Smart Buddy Assistant 智能伙伴 (Direction A)
@@ -772,8 +684,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 4036b498, push成功; AI伙伴 卡通头像 BuddyAvatar 对话辅导 心情追踪)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-038: future-little-leaders V35 Family Ritual System 家庭仪式感 (Direction A)
@@ -781,8 +691,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 5e3e371e, push成功; 每日仪式 每周挑战 回忆存档 家庭使命)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-039: future-little-leaders V36 AI Tutor Pipeline Multi-Agent协作教学 (Direction A)
@@ -790,8 +698,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 3ab68809, push成功; 多Agent协作教学 Orchestrator MathAgent ChineseAgent EnglishAgent LifeAgent)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-040: future-little-leaders V37 Multi-language + Cultural Localization 多语言+文化本地化 (Direction A)
@@ -799,8 +705,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 091fe988, push成功; 地区内容 文化节日主题 课程大纲对齐 本地化格式化)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-041: future-little-leaders V38 Data Portability + Blockchain Receipts 数据主权+区块链凭证 (Direction A)
@@ -808,8 +712,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9535b8eb, push成功; 数据导出JSON/CSV/JSON-LD 区块链凭证)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-042: future-little-leaders V39 AR/VR Growth Space 沉浸式成长空间 (Direction A)
@@ -817,8 +719,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 03f5ee2c, push成功; AR任务星球 3D成就展厅 WebGL 虚拟奖励空间)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-043: future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A)
@@ -826,8 +726,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit bfafea66, push成功; 智能家居设备控制 任务-设备联动)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-044: future-little-leaders V41 Cross-Platform Widgets + Mini App 跨平台Widgets+小程序生态 (Direction A)
@@ -835,8 +733,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit c0ba233e, push成功; 跨平台Widgets iOS/Android/Web组件 小程序生态)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-045: future-little-leaders V42 Developer SDK + Plugin API 开放平台SDK (Direction A)
@@ -844,8 +740,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 3e02b128, push成功; Developer SDK OAuth API客户端 Plugin API WebHook)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-046: future-little-leaders V43 Personalized Learning Path 个性化学习路径引擎 (Direction A)
@@ -853,8 +747,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9a5d0d0d, push成功; 能力评估 学习路径生成 动态难度调整)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-047: future-little-leaders V44 Emotional Intelligence Training 情绪智力训练 (Direction A)
@@ -862,8 +754,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit c6d0c500, push成功; 情绪识别训练 情绪日记 放松练习)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-048: future-little-leaders V45 Parent-Child Activity System 亲子活动系统 (Direction A)
@@ -871,8 +761,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit d69bfeeb, push成功; 亲子活动库 步骤指导 成果展示 协作任务)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-049: future-little-leaders V46 Reading Tracker System 阅读追踪系统 (Direction A)
@@ -880,8 +768,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit a2a34601, push成功; 书籍库 阅读打卡 阅读理解 读书笔记 阅读挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-050: future-little-leaders V47 Social Learning Circles 社交学习圈 (Direction A)
@@ -889,8 +775,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9ed4d818, push成功; 学习小组 同伴辅导 知识分享 社交挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-051: future-little-leaders V48 Physical Activity Tracker 运动追踪系统 (Direction A)
@@ -898,8 +782,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit adcb9e97, push成功; 运动打卡 健康报告 运动会 运动挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260518-052: future-little-leaders V49 Creative Arts Studio 创意艺术工作室 (Direction A)
@@ -907,8 +789,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 01a6088e, push成功; 绘画板 音乐创作 作品集 艺术挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-001: future-little-leaders V50 Gamified Science Lab 游戏化科学实验室 (Direction A)
@@ -916,8 +796,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit cf8bf6b1, push成功; 虚拟实验 科学探索任务 科学百科)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-002: future-little-leaders V51 Digital Pet Companion 虚拟宠物伙伴 (Direction A)
@@ -925,8 +803,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2f564dff, push成功; 宠物领养 宠物照顾 宠物进化)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-003: future-little-leaders V52 Sleep & Wellness Tracker 睡眠健康追踪 (Direction A)
@@ -934,8 +810,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit eb41036f, push成功; 睡眠记录 睡眠报告 健康习惯)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-004: future-little-leaders V53 Personalized Avatar System 个性化虚拟形象 (Direction A)
@@ -943,8 +817,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 6cc0c116, push成功; Avatar自定义 虚拟衣柜 Avatar成就)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-005: future-little-leaders V54 Family Memory Archive 家庭回忆档案 (Direction A)
@@ -952,8 +824,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 53025e9a, push成功; 照片时间线 成长里程碑 家庭大事记)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-006: future-little-leaders V55 Collaborative Game System 协作游戏系统 (Direction A)
@@ -961,8 +831,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 77e3b8f5, push成功; 协作解谜 团队挑战 棋盘游戏 实时对战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-007: future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A)
@@ -970,8 +838,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit b881859b, push成功; VIP订阅 积分商城 悬赏任务 限时奖励)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-008: future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A)
@@ -979,8 +845,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2e831dd5, push成功; 每日学习卡片 微课堂 知识速查 每日挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-009: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
@@ -988,8 +852,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 7083acca, push成功; 品德故事 价值观学习 志愿服务 荣誉榜)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-010: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
@@ -997,8 +859,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit a55dc0a0, push成功; 图形化编程 代码积木 编程挑战 创意编程)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-012: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
@@ -1006,8 +866,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 9c43f22c, push成功; 环保任务 环保知识 绿色挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-013: future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A)
@@ -1015,8 +873,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 051447f1, push成功; 环球旅行 文化发现 地理知识 国际笔友)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-014: future-little-leaders V63 Safety Education System 安全教育系统 (Direction A)
@@ -1024,8 +880,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit dc383484, push成功; 网络安全 校园安全 急救知识 安全演练)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-015: future-little-leaders V64 Time Management System 时间管理系统 (Direction A)
@@ -1033,8 +887,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2889ecf6, push成功; 日程管理 番茄钟 时间追踪 习惯打卡)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-016: future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A)
@@ -1042,8 +894,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 508269a8, push成功; 故事创作 日记写作 诗歌创作 写作提示)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-017: future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A)
@@ -1051,8 +901,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit f595a553, push成功; 音乐欣赏 节奏游戏 乐器认知 音乐创作)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-018: future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A)
@@ -1060,8 +908,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 7778c41e, push成功; 实验项目库 虚拟实验 实验记录 科学成就)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-019: future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A)
@@ -1069,8 +915,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit d17d66c1, push成功; 数字绘画板 手工制作 美术课程 作品展示)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-020: future-little-leaders V69 Math Playground System 数学游乐场系统 (Direction A)
@@ -1078,8 +922,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit acce2d1a, push成功; 数学游戏 速算训练 数学探索 段位系统)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-021: future-little-leaders V70 Language Learning System 语言学习系统 (Direction A)
@@ -1087,8 +929,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit ba932ab8, push成功; 多语言课程 词汇记忆 口语练习)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-022: future-little-leaders V71 Health & Nutrition System 健康营养系统 (Direction A)
@@ -1096,8 +936,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 62808de7, push成功; 饮食记录 营养分析 健康提醒 健康食谱)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-023: future-little-leaders V72 PBL Project Learning System PBL项目制学习 (Direction A)
@@ -1105,8 +943,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 13d3e402, push成功; PBL项目库 项目阶段管理 小组协作)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-024: future-little-leaders V73 Critical Thinking Training System 思辨能力训练 (Direction A)
@@ -1114,8 +950,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 3bca18dd, push成功; 逻辑谜题 辩论练习 决策训练)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-025: future-little-leaders V74 Public Speaking System 演讲与口才系统 (Direction A)
@@ -1123,8 +957,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit f27b48f3, push成功; 演讲模板 演讲练习 演讲挑战)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-026: future-little-leaders V75 Leadership Challenge System 领导力挑战系统 (Direction A)
@@ -1132,8 +964,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 92b78f7b, push成功; 领导力任务 角色扮演 领导力数据)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-027: future-little-leaders V76 Family Charter System 家庭宪章系统 (Direction A)
@@ -1141,8 +971,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 5629f5ca, push成功; 家庭价值观 家规共创 家庭会议)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-028: future-little-leaders V77 Growth Journal System 成长日记系统 (Direction A)
@@ -1150,8 +978,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 02ae2983, push成功; 每日反思 周记月记 成长相册 里程碑)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-029: future-little-leaders V78 Peer Coaching System 同伴辅导系统 (Direction A)
@@ -1159,8 +985,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit caaf813e, push成功; 学习伙伴匹配 同伴答疑 互评反馈)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-030: future-little-leaders V79 Achievement Badge System 成就徽章系统 (Direction A)
@@ -1168,8 +992,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit c88888b9, push成功; 徽章库 徽章收集 展示墙)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-031: future-little-leaders V80 Daily Challenge System 每日挑战系统 (Direction A)
@@ -1177,8 +999,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 8eb32ed7, push成功; 每日任务 挑战日历 连续奖励)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-032: future-little-leaders V81 Habit Master System 习惯养成系统 (Direction A)
@@ -1186,8 +1006,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit d20f4e26, push成功; 习惯追踪 21天挑战 习惯链)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-033: future-little-leaders V82 Mood Journal System 情绪日记系统 (Direction A)
@@ -1195,8 +1013,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2a51b7b4, push成功; 情绪追踪 情绪分析 调节建议)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-034: future-little-leaders V83 Study Room System 自习室系统 (Direction A)
@@ -1204,8 +1020,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 921d3d38, push成功; 自习室 背景音乐 专注统计)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-035: future-little-leaders V84 Knowledge Tree System 知识树系统 (Direction A)
@@ -1213,8 +1027,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 8cf00947, push成功; 知识图谱 学习路径 树形可视化)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-036: future-little-leaders V85 Reading Club System 读书会系统 (Direction A)
@@ -1222,8 +1034,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit ac9408dc, push成功; 读书俱乐部 阅读打卡 书评分享)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-037: future-little-leaders V86 Parent-Child Challenge System 亲子挑战系统 (Direction A)
@@ -1231,8 +1041,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 3d42cfcd, push成功; 亲子组队 协作任务 家庭竞赛)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-038: future-little-leaders V87 Growth Report Card System 成长报告卡系统 (Direction A)
@@ -1240,8 +1048,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2aa9d793, push成功; 综合素质报告 能力雷达图 家长寄语)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-039: future-little-leaders V88 Character Quest System 品格修炼系统 (Direction A)
@@ -1249,8 +1055,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 1ab4424b, push成功; 品德修炼任务 品格等级 修炼日记)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-040: future-little-leaders V89 Weekend Camp System 周末营系统 (Direction A)
@@ -1258,8 +1062,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit a0ac3b54, push成功; 主题周末活动 户外探索 创意工坊)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-041: future-little-leaders V90 Dream Journal System 梦想日记系统 (Direction A)
@@ -1267,8 +1069,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 69718401, push成功; 梦想清单 愿景板 目标追踪)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-042: future-little-leaders V91 Social Skills Dojo System 社交技能道场 (Direction A)
@@ -1276,8 +1076,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2fc2be21, push成功; 社交情景模拟 对话练习 社交成就)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-043: future-little-leaders V92 Creative Drama System 创意戏剧系统 (Direction A)
@@ -1285,8 +1083,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit d20f0d59, push成功; 角色扮演 情景表演 剧本创作)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-044: future-little-leaders V93 Mindfulness Garden System 正念花园系统 (Direction A)
@@ -1294,8 +1090,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 86dd3995, push成功; 冥想练习 呼吸训练 正念游戏)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-045: future-little-leaders V94 Science Museum System 科学博物馆系统 (Direction A)
@@ -1303,8 +1097,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 2d4962e7, push成功; 博物馆展厅 互动展品 科学收藏册)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-046: future-little-leaders V95 World Culture Explorer System 世界文化探索系统 (Direction A)
@@ -1312,8 +1104,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit cb260985, push成功; 环球文化之旅 风土人情 文化体验)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-047: future-little-leaders V96 Digital Pet System 数字宠物系统 (Direction A)
@@ -1321,8 +1111,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit ce712ae3, push成功; 虚拟宠物养成 宠物技能 宠物竞赛)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-048: future-little-leaders V97 Daily Ceremonies System 日常仪式系统 (Direction A)
@@ -1330,8 +1118,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit d58ddddf, push成功; 晨间惯例 晚间惯例 特别日仪式)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-049: future-little-leaders V98 Interest Discovery System 兴趣发现系统 (Direction A)
@@ -1339,8 +1125,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit cdc3b073, push成功; 兴趣测评 推荐探索 兴趣追踪)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-050: future-little-leaders V99 Growth Portfolio System 成长档案袋系统 (Direction A)
@@ -1348,8 +1132,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit 8af695c6, push成功; 综合素质档案 作品集 成长时间线)
-- **Deployment**: [accepted](accepted)
 ---
 
 ### P-20260519-051: future-little-leaders V100 Family Legacy System 家族传承系统 (Direction A)
@@ -1357,8 +1139,6 @@ Total: 166 proposals, 14 projects
 - **Project**: future-little-leaders
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](git commit aa481aea, push成功; 家族历史 家族树 家训传承)
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260419-007: ai-creator-h5
@@ -1372,8 +1152,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit ab247d1，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-030: ai-creator-h5 记忆系统 (Direction C)
@@ -1381,8 +1159,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 984f7e6，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-031: ai-creator-h5 PWA离线优先增强 (Direction D)
@@ -1390,8 +1166,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit a1bc35b，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-032: ai-creator-h5 跨平台桌面端 (Direction E)
@@ -1399,8 +1173,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 39295b7，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-033: ai-creator-h5 端到端加密 (Direction F)
@@ -1408,8 +1180,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 7d7da2e，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-036: ai-creator-h5 实时协作 (Direction C)
@@ -1417,8 +1187,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 1eff031，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260517-037: ai-creator-h5 API开放平台 (Direction D)
@@ -1426,8 +1194,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit e5fab2c，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-001: ai-creator-h5 AI创作工作流编排器 (Direction A iter3)
@@ -1435,8 +1201,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 478e240，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-002: ai-creator-h5 AI角色组合协作系统 V2 (Direction B iter2)
@@ -1444,8 +1208,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit fdee205+7769028，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-004: ai-creator-h5 AI创作工作流编排器 v3 (Direction A iter5)
@@ -1453,8 +1215,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit d8c04ce+ca19af4，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-006: ai-creator-h5 AI创作工作流编排器 v5 (Direction A iter7)
@@ -1462,8 +1222,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit a304c9e，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-007: ai-creator-h5 AI创作工作流编排器 v6 (Direction A iter8)
@@ -1471,8 +1229,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 7f28787，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-008: ai-creator-h5 AI创作工作流编排器 v7 (Direction A iter9)
@@ -1480,8 +1236,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 02ecc5d，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-009: ai-creator-h5 AI创作工作流编排器 v8 (Direction A iter10)
@@ -1489,8 +1243,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit d2f3693，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-011: ai-creator-h5 AI创作工作流编排器 v10 (Direction A iter12)
@@ -1498,8 +1250,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 548f61d，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-019: ai-creator-h5 AI创作工作流编排器 v18 (Direction A iter20)
@@ -1507,8 +1257,6 @@ Total: 166 proposals, 14 projects
 - **Project**: ai-creator-h5
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](Git commit 4c7af81，push 成功)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260423-005: hermes-agent-collab
@@ -1522,7 +1270,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-054: hermes-agent-collab 分布式追踪增强（Direction AG）
@@ -1530,7 +1277,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-055: hermes-agent-collab 通知管道（Direction AH）
@@ -1538,7 +1284,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-056: hermes-agent-collab A/B 测试框架（Direction AI）
@@ -1546,7 +1291,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-057: hermes-agent-collab Playground / REPL 沙盒环境（Direction AJ）
@@ -1554,7 +1298,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260518-058: hermes-agent-collab 知识图谱增强（Direction AK）
@@ -1562,7 +1305,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260519-052: hermes-agent-collab Admin UI 仪表盘扩展（Direction AN）
@@ -1570,7 +1312,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ### P-20260519-053: hermes-agent-collab API 限流与配额管理（Direction AO）
@@ -1578,7 +1319,6 @@ Total: 166 proposals, 14 projects
 - **Project**: hermes-agent-collab
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260427-001: preschool-puzzle
@@ -1592,8 +1332,6 @@ Total: 166 proposals, 14 projects
 - **Project**: preschool-puzzle
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](accepted)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260430-001: tower-baby-guard
@@ -1607,8 +1345,6 @@ Total: 166 proposals, 14 projects
 - **Project**: tower-baby-guard
 - **Acceptance**: 提案
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](delivered)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260418-004: future-little-leaders
@@ -1624,8 +1360,6 @@ Total: 166 proposals, 14 projects
 - **Stage**: delivered
 - **Acceptance**: 2026-05-22
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](2026-05-20)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260419-007: ai-creator-h5
@@ -1641,8 +1375,6 @@ Total: 166 proposals, 14 projects
 - **Stage**: delivered
 - **Acceptance**: 2026-05-22
 - **Last Update**: 2026-05-22
-- **Git**: [GitHub](2026-05-19)
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -1660,8 +1392,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-dev/proposals/cultivation-simulator/docs/P-20260521-003-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: [GitHub](node --check passed, git commit 9bda0a6)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260421-001: card-game-prototype
@@ -1679,8 +1409,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/P-20260521-001-prd.md
 - **Project Path**: /home/hermes/workspace-dev/proposals/card-game-prototype
-- **Git**: [GitHub](accepted)
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260521-002: price-compare
@@ -1697,7 +1425,6 @@ Total: 166 proposals, 14 projects
 - **Acceptance**: Vue3+Vite多端比价，mock数据，监控列表，历史价格走势
 - **Last Update**: 2026-05-22
 - **Project Path**: /home/hermes/projects/price-compare
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260420-002: pixel-pal-web
@@ -1715,8 +1442,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/P-20260521-005-prd.md
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: [GitHub](accepted)
-- **Deployment**: [accepted](accepted)
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -1734,7 +1459,6 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-dev/proposals/cultivation-simulator/docs/P-20260521-005-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260418-002: creative-drawing-board
@@ -1751,8 +1475,7 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: /home/hermes/proposals/workspace-pm/proposals/P-20260522-035-prd.md
 - **Project Path**: /home/hermes/projects/creative-drawing-board
-- **Git**: 分支: accepted | [GitHub](timeout-approved)
-- **Deployment**: [timeout-approved](timeout-approved)
+- **Git**: 分支: accepted
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -1770,8 +1493,7 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: /home/hermes/proposals/workspace-pm/proposals/P-20260522-031-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator/
-- **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
-- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
+- **Git**: 分支: main
 ---
 
 ### P-20260522-037: V52 天命系统 - 核心修仙深化
@@ -1781,7 +1503,6 @@ Total: 166 proposals, 14 projects
 - **Stage**: delivered
 - **Acceptance**: 2026-05-22
 - **Last Update**: 2026-05-22
-- **Deployment**: [pending](pending)
 ---
 
 ## PRJ-20260516-003: github-repo-manager
@@ -1799,7 +1520,24 @@ Total: 166 proposals, 14 projects
 - **Last Update**: 2026-05-22
 - **PRD Path**: /home/hermes/proposals/workspace-pm/proposals/P-20260522-038-prd.md
 - **Project Path**: /home/hermes/projects/github-repo-manager
-- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/github-repo-manager)
-- **Deployment**: [https://yeluo45.github.io/github-repo-manager/](https://yeluo45.github.io/github-repo-manager/)
+- **Git**: 分支: master
 - **Description**: 26个MCP工具+ToolRegistry+SandboxExecutor+cli.js；node server/mcp/cli.js list显示26工具；语法检查通过；Commit 4c879b3
+---
+
+## PRJ-20250416-001: todolist
+
+- **Description**: Todo/任务管理Web应用
+- **Git Repo**: https://github.com/YeLuo45/todo-list
+- **Local Path**: /home/hermes/projects/todolist
+
+### P-20260522-040: V51: audit命令增加纯重复ID检测
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V51-Direction-A.md
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/proposals-document)
+- **Description**: audit命令增加纯重复ID检测; 57个ID出现94次重复; --fix保留最新last_update; Commit f4aaa18
 ---

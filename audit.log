@@ -194,3 +194,27 @@
 [2026-05-22 01:22:00] CSV_WRITE | projects.csv | 74 rows, 8 fields
 [2026-05-22 01:22:54] CSV_WRITE | proposals.csv | 255 rows, 22 fields
 [2026-05-22 01:22:54] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:27:22] CSV_WRITE | proposals.csv | 257 rows, 22 fields
+[2026-05-22 01:27:22] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:27:48] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:31:35] ERROR | die | Operation failed: name 'issues' is not defined
+[2026-05-22 01:32:21] ERROR | die | Operation failed: name 'issues' is not defined
+[2026-05-22 01:34:11] CSV_WRITE | proposals.csv | 257 rows, 22 fields
+[2026-05-22 01:35:59] CSV_WRITE | proposals.csv | 257 rows, 22 fields
+[2026-05-22 01:36:14] CSV_WRITE | proposals.csv | 257 rows, 22 fields
+[2026-05-22 01:44:37] ERROR | die | Project does not exist: PRJ-pixel-pal-web
+[2026-05-22 01:44:46] ERROR | die | Proposal ID already exists: P-20260522-030
+[2026-05-22 01:44:49] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 01:44:50] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 01:44:59] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:45:08] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:45:43] ERROR | die | Proposal ID already exists: P-20260522-030
+[2026-05-22 01:46:00] ERROR | die | Proposal ID already exists: P-20260522-030
+[2026-05-22 01:46:13] ERROR | die | Proposal ID already exists: P-20260522-035
+[2026-05-22 01:46:20] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 01:46:42] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:47:14] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 01:49:34] ERROR | die | Proposal ID already exists: P-20260522-037
+[2026-05-22 01:49:46] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:52:59] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 01:53:23] ERROR | die | dict contains fields not in fieldnames: None

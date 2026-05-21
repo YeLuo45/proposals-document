@@ -1,7 +1,36 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 237 proposals, 14 projects
+Total: 239 proposals, 14 projects
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-001: Direction A2: CSV重复ID检测+修复
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A3发现字段值互换；acceptance=accepted是正确值(交付通过)；已通过proposal diff发现并更正
+---
+
+### P-20260522-002: Direction A3: proposal diff 命令（字段对比）
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A3无人值守模式交付；proposal diff命令(commit 201c21f)；支持两个提案的字段级差异对比；发现P-20260522-001字段问题(acceptance/tech_expectations值互换)
+---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)
 

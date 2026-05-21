@@ -1164,7 +1164,21 @@ def cmd_audit(args):
             issues.append(('warn', f"[{row['id']}]: last_update is empty", "last_update=2026-05-21"))
             fix_counts['empty_last_update'] += 1
 
-    # Output report
+    total_issues = sum(fix_counts.values())
+
+    # JSON output mode
+    if getattr(args, 'json', False):
+        import json
+        output = {
+            'total_rows': len(parsed),
+            'true_duplicate_groups': len(true_dupes),
+            'fix_counts': fix_counts,
+            'total_issues': total_issues,
+            'issues': [{'severity': s, 'description': d, 'fix': f} for s, d, f in issues],
+        }
+        print(json.dumps(output, ensure_ascii=False, indent=2))
+        return
+
     print(f"\n=== CSV Audit Report ===")
     print(f"Total rows (physical P- lines): {len(parsed)}")
     print(f"True duplicate groups (same ID + same project): {len(true_dupes)}")
@@ -1187,7 +1201,6 @@ def cmd_audit(args):
         if len(issues) > 20:
             print(f"  ... and {len(issues) - 20} more issues")
 
-    total_issues = sum(fix_counts.values())
     print(f"\nTotal: {total_issues} issues")
 
     # Auto-fix

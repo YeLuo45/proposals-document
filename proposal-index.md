@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 251 proposals, 16 projects
+Total: 250 proposals, 16 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -405,24 +405,7 @@ Total: 251 proposals, 16 projects
 - **Last Update**: 2026-05-22
 - **Technical Solution**: /home/hermes/proposals
 - **Deployment**: [accepted](accepted)
----
-
-## PRJ-20260420-002: pixel-pal-web
-
-- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
-- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
-- **Local Path**: /home/hermes/projects/pixel-pal-web
-
-### P-20260522-027: Direction A6: future-little-leaders 95个提案归档
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: accepted
-- **Last Update**: 2026-05-22
-- **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
-- **Description**: Direction A6交付(commit c4a71c9)；执行archive-project归档future-little-leaders 95个提案(status=archived)；CSV现有248个提案(177 archived + 71 active)；CLI所有命令验证通过(download/sync-to-index/audit/archive-project/diff)
+- **Description**: P-20260522-027
 ---
 
 ## PRJ-20260418-004: future-little-leaders

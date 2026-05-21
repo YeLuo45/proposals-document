@@ -2184,6 +2184,8 @@ def main():
     # proposal archive-project (batch archive for a project)
     pr_arch_proj = prop_sub.add_parser('archive-project', help='Batch archive proposals for a project')
     pr_arch_proj.add_argument('--project-id', required=True, help='Project ID')
+    pr_arch_proj.add_argument('--status', help='Comma-separated statuses to archive (default: accepted,delivered)')
+    pr_arch_proj.add_argument('--before', help='Archive only proposals with last_update before date (YYYY-MM-DD)')
     pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
     pr_arch_proj.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
     pr_arch_proj.set_defaults(func=cmd_archive_project)

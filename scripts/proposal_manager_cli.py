@@ -839,11 +839,12 @@ def generate_proposal_entry(p, format='detailed') -> str:
         p: proposal dict
         format: 'compact' (ID + title + status) or 'detailed' (full 21-field entry)
     """
-    pid = p.get('id', '')
-    title = p.get('title', '')
+    # Use `or ''` to handle None values gracefully
+    pid = p.get('id') or ''
+    title = p.get('title') or ''
 
     if format == 'compact':
-        status = p.get('status', '')
+        status = p.get('status') or ''
         return f"- **{pid}**: {title} [{status}]"
 
     # Detailed format (full 21-field entry)
@@ -853,21 +854,21 @@ def generate_proposal_entry(p, format='detailed') -> str:
         if value:
             lines.append(f"- **{key}**: {value}")
 
-    add_field("Project", p.get('project_name', ''))
-    add_field("Owner", p.get('owner', ''))
-    add_field("Stage", p.get('stage', ''))
-    add_field("Acceptance", p.get('acceptance', ''))
-    add_field("Last Update", p.get('last_update', ''))
-    add_field("PRD Path", p.get('prd_path', ''))
-    add_field("Technical Solution", p.get('tech_solution_path', ''))
-    add_field("Project Path", p.get('project_path', ''))
+    add_field("Project", p.get('project_name') or '')
+    add_field("Owner", p.get('owner') or '')
+    add_field("Stage", p.get('stage') or '')
+    add_field("Acceptance", p.get('acceptance') or '')
+    add_field("Last Update", p.get('last_update') or '')
+    add_field("PRD Path", p.get('prd_path') or '')
+    add_field("Technical Solution", p.get('tech_solution_path') or '')
+    add_field("Project Path", p.get('project_path') or '')
 
     # Git info: show branch + commit SHA from notes if present
     git_parts = []
     if p.get('deployment_branch'):
         git_parts.append(f"分支: {p.get('deployment_branch')}")
     # Extract commit SHA from notes if present (format: ...Commit: XXXXXXXX)
-    notes = p.get('notes', '')
+    notes = p.get('notes') or ''
     import re
     sha_match = re.search(r'Commit:\s*([0-9a-f]{7,40})', notes)
     if sha_match:
@@ -906,10 +907,17 @@ def cmd_sync_to_index(args):
     delta_mode = getattr(args, 'delta', False)
     check_mode = getattr(args, 'check', False)
     fmt = getattr(args, 'format', 'detailed') or 'detailed'
+    project_filter = getattr(args, 'project', None)
 
     if not proposals:
         log("No proposals found in CSV — skipping index generation")
         return
+
+    # Apply project filter if --project was specified
+    if project_filter:
+        filtered = [p for p in proposals if p.get('project_id') == project_filter]
+        log(f"Filtered to {len(filtered)} proposals for project {project_filter} (from {len(proposals)} total)")
+        proposals = filtered
 
     # Sort by last_update descending
     sorted_proposals = sorted(
@@ -1113,6 +1121,7 @@ def cmd_audit(args):
     issues = []
     fix_counts = {
         'true_duplicate': 0,
+        'duplicate_id': 0,
         'empty_title': 0,
         'empty_project_id': 0,
         'invalid_status': 0,
@@ -1136,6 +1145,22 @@ def cmd_audit(args):
             issues.append(('error', f"Duplicate ID '{pid}' in project '{proj}': {count} copies",
                           "keep last copy, archive others"))
             shown += 1
+
+    # 1b. Pure duplicate ID detection (same ID, any project)
+    from collections import Counter
+    id_counts = Counter(row['id'] for row in parsed)
+    duplicate_ids = {k: v for k, v in id_counts.items() if v > 1}
+    if duplicate_ids:
+        fix_counts['duplicate_id'] = sum(v - 1 for _, v in duplicate_ids.items())
+        unique_count = len(id_counts)
+        total_count = len(parsed)
+        issues.append(('info', f"Duplicate IDs: {len(duplicate_ids)} unique IDs appear {total_count - unique_count} extra times ({total_count} total rows, {unique_count} unique)", ""))
+        shown = 0
+        for pid, count in sorted(duplicate_ids.items(), key=lambda x: -x[1])[:5]:
+            projs = sorted(set(row.get('project_name','') or row.get('project_id','') for row in parsed if row['id'] == pid))
+            issues.append(('warn', f"  ID '{pid}': {count} copies across {len(projs)} project(s): {', '.join(projs[:3])}", "keep latest by last_update, archive others"))
+        if len(duplicate_ids) > 5:
+            issues.append(('info', f"  ... and {len(duplicate_ids) - 5} more duplicate IDs", ""))
 
     # 2. Empty title
     for row in parsed:
@@ -1199,9 +1224,13 @@ def cmd_audit(args):
     print(f"\n=== CSV Audit Report ===")
     print(f"Total rows (physical P- lines): {len(parsed)}")
     print(f"True duplicate groups (same ID + same project): {len(true_dupes)}")
+    unique_ids = len(set(row['id'] for row in parsed))
+    dup_id_count = sum(v - 1 for _, v in duplicate_ids.items()) if duplicate_ids else 0
+    print(f"Duplicate IDs: {len(duplicate_ids)} IDs appear {dup_id_count} extra times ({unique_ids} unique / {len(parsed)} total)")
     print(f"")
     print(f"Issues found:")
     print(f"  True duplicates:     {fix_counts['true_duplicate']}")
+    print(f"  Duplicate IDs:      {fix_counts['duplicate_id']}")
     print(f"  Empty title:         {fix_counts['empty_title']}")
     print(f"  Empty project_id:    {fix_counts['empty_project_id']}")
     print(f"  Invalid status:     {fix_counts['invalid_status']}")
@@ -1267,6 +1296,28 @@ def cmd_audit(args):
                     deduped.append(row)
             parsed = list(reversed(deduped))
             print(f"\nFixed {fix_counts['true_duplicate']} true duplicate rows")
+
+        # 6g. Fix pure duplicate IDs: keep latest by last_update, archive others
+        if duplicate_ids:
+            id_to_rows = defaultdict(list)
+            for row in parsed:
+                id_to_rows[row['id']].append(row)
+            deduped = []
+            archived_count = 0
+            for pid, rows in id_to_rows.items():
+                if len(rows) <= 1:
+                    deduped.extend(rows)
+                    continue
+                # sort by last_update descending (empty = oldest)
+                sorted_rows = sorted(rows, key=lambda r: r.get('last_update', '0000'), reverse=True)
+                deduped.append(sorted_rows[0])  # keep latest
+                for row in sorted_rows[1:]:
+                    row['id'] = f"{row['id']}-dup"
+                    row['status'] = 'archived'
+                    deduped.append(row)
+                    archived_count += 1
+            parsed = deduped
+            print(f"\nFixed {archived_count} pure duplicate rows (kept latest by last_update)")
 
         # Write back
         write_csv(PROPOSALS_CSV, FIELDNAMES_AUDIT, parsed)
@@ -1928,29 +1979,48 @@ def cmd_validate_proposals(args):
     warn_count = sum(1 for s, _, _ in issues if s == 'warn')
     info_count = sum(1 for s, _, _ in issues if s == 'info')
 
-    print(f"Issues: {len(issues)} total ({error_count} errors, {warn_count} warnings, {info_count} info)")
-    print()
 
-    if issues:
-        print("Details:")
-        for sev, desc, fix in issues[:50]:
-            prefix = "ERROR" if sev == 'error' else "WARN " if sev == 'warn' else "INFO "
-            print(f"  [{prefix}] {desc}")
-            if fix:
-                print(f"         → {fix}")
-        if len(issues) > 50:
-            print(f"  ... and {len(issues) - 50} more issues")
-        print()
-        if error_count > 0:
-            print("VALIDATION: FAIL")
-        else:
-            print("VALIDATION: PASS (warnings only)")
+# ==================== Template Generation ====================
+
+def cmd_generate_template(args):
+    """Generate a proposal document from template."""
+    from pathlib import Path
+    TEMPLATES_DIR = Path(__file__).parent.parent / 'templates'
+
+    template_map = {
+        'prd': TEMPLATES_DIR / 'prd-template.md',
+        'tech': TEMPLATES_DIR / 'tech-solution-template.md',
+        'test': TEMPLATES_DIR / 'test-cases-template.md',
+    }
+
+    if args.type not in template_map:
+        die(f"Template type '{args.type}' not supported. Available: {', '.join(template_map.keys())}")
+
+    template_path = template_map[args.type]
+    if not template_path.exists():
+        die(f"Template not found: {template_path}")
+
+    with open(template_path, encoding='utf-8') as f:
+        content = f.read()
+
+    # Replace placeholders
+    replacements = {
+        'YYYYMMDD': args.proposal_id.replace('P-', '').split('-')[0] if args.proposal_id else 'YYYYMMDD',
+        '<Title>': args.title or 'Untitled',
+        '<project-name>': args.project_name or '',
+        '<author>': args.owner or '',
+    }
+    for placeholder, value in replacements.items():
+        content = content.replace(placeholder, value)
+        content = content.replace(placeholder.replace('<', '').replace('>', ''), value)  # Also handle without <>
+
+    if args.output:
+        output_path = Path(args.output)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        log(f"Generated {args.type} template -> {output_path}")
     else:
-        print("VALIDATION: PASS")
-
-    if args.fix and issues:
-        # --fix only fixes CSV issues (empty title, etc.) by delegating to audit --fix
-        print("\n--fix passed but no auto-fixable issues in validate (try 'audit --fix' for CSV fixes)")
+        print(content)
 
 
 # ==================== Export / Import ====================
@@ -2230,6 +2300,7 @@ def main():
     pr_sync.add_argument('--delta', action='store_true', help='Show git-friendly diff between new content and existing index')
     pr_sync.add_argument('--check', action='store_true', help='Compare CSV vs index, exit 0 if in sync, 1 if divergent (no file writes)')
     pr_sync.add_argument('--format', choices=['compact', 'detailed'], default='detailed', help='Entry format: compact (ID+title+status) or detailed (full entry, default)')
+    pr_sync.add_argument('--project', help='Filter proposals to a specific project ID (e.g., PRJ-20260516-002)')
     pr_sync.set_defaults(func=cmd_sync_to_index)
 
     # proposal audit
@@ -2319,6 +2390,16 @@ def main():
     pr_import.add_argument('--skip-existing', action='store_true', help='Skip proposals where ID already exists')
     pr_import.add_argument('--overwrite', action='store_true', help='Overwrite existing proposals with same ID')
     pr_import.set_defaults(func=cmd_import_proposals)
+
+    # proposal generate
+    pr_generate = prop_sub.add_parser('generate', help='Generate a document from template')
+    pr_generate.add_argument('--type', '-t', required=True, choices=['prd', 'tech', 'test'], help='Template type')
+    pr_generate.add_argument('--proposal-id', help='Proposal ID for placeholders')
+    pr_generate.add_argument('--title', help='Title for placeholders')
+    pr_generate.add_argument('--project-name', help='Project name for placeholders')
+    pr_generate.add_argument('--owner', help='Author/owner for placeholders')
+    pr_generate.add_argument('--output', '-o', help='Output file path')
+    pr_generate.set_defaults(func=cmd_generate_template)
 
     args = parser.parse_args()
     

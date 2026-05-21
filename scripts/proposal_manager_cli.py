@@ -18,7 +18,7 @@ import os
 import re
 import shutil
 import argparse
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 # Configuration paths
@@ -33,6 +33,34 @@ TEST_OUTPUT_DIR = PROPOSALS_ROOT / "workspace-test"
 RESEARCH_OUTPUT_DIR = PROPOSALS_ROOT / "workspace-research"
 
 # Valid enum values
+# Status state machine: which fields to auto-fill on each transition
+STATUS_TRANSITIONS = {
+    "intake": "clarifying",
+    "clarifying": "prd_pending_confirmation",
+    "prd_pending_confirmation": "approved_for_dev",
+    "approved_for_dev": "in_tdd_test",
+    "in_tdd_test": "in_dev",
+    "in_dev": "in_test_acceptance",
+    "in_test_acceptance": "accepted",
+    "test_failed": "in_dev",
+    "needs_revision": "in_dev",
+    "accepted": "deployed",
+    "deployed": "delivered",
+    "deploying": "deployed",
+    "research_direction_pending": "intake",
+    "active": "active",
+    "archived": "archived",
+    "delivered": "delivered",
+}
+
+# Fields to auto-set when transitioning to a new status
+AUTO_FILL_ON_TRANSITION = {
+    "accepted": {"acceptance": "accepted"},
+    "deployed": {},
+    "in_test_acceptance": {},
+    "test_failed": {},
+}
+
 VALID_PROPOSAL_STATUSES = {
     "intake", "clarifying", "prd_pending_confirmation", "approved_for_dev",
     "in_tdd_test", "in_dev", "in_test_acceptance", "test_failed",
@@ -761,9 +789,15 @@ def generate_proposal_entry(p) -> str:
 
 
 def cmd_sync_to_index(args):
-    """Sync proposal-index.md from CSV data (CSV is source of truth)."""
+    """Sync proposal-index.md from CSV data (CSV is source of truth).
+
+    Supports --dry-run and --verbose flags.
+    """
     _, proposals = load_proposals()
     _, projects = load_projects()
+
+    dry_run = getattr(args, 'dry_run', False)
+    verbose = getattr(args, 'verbose', False) or dry_run
 
     if not proposals:
         log("No proposals found in CSV — skipping index generation")
@@ -820,9 +854,65 @@ def cmd_sync_to_index(args):
 
     content = '\n'.join(lines)
 
+    if dry_run:
+        # Show what would be written without touching files
+        content_lines = content.split('\n')
+        print(f"[DRY-RUN] Would write {PROPOSAL_INDEX_PATH}")
+        print(f"  Total lines: {len(content_lines)}")
+        print(f"  Proposals: {len(proposals)}")
+        print(f"  Projects: {len(project_ids)}")
+        print()
+        if verbose:
+            print("First 5 entries preview:")
+            preview_count = 0
+            for line in content_lines:
+                if line.startswith('### P-'):
+                    print(f"  {line}")
+                    preview_count += 1
+                    if preview_count >= 5:
+                        break
+            print()
+            # Show skipped entries (would be skipped — none currently since we generate full index)
+            # but check vs current index for verbose
+            if PROPOSAL_INDEX_PATH.exists():
+                with open(PROPOSAL_INDEX_PATH, encoding='utf-8') as f:
+                    current_content = f.read()
+                current_ids = set(re.findall(r'^### (P-\d{8}-\d{3}):', current_content, re.MULTILINE))
+                new_ids = {p['id'] for p in proposals}
+                missing = new_ids - current_ids
+                extra = current_ids - new_ids
+                if missing:
+                    print(f"  Would add: {len(missing)} proposals")
+                    for mid in sorted(list(missing))[:5]:
+                        print(f"    + {mid}")
+                if extra:
+                    print(f"  Would remove: {len(extra)} proposals")
+                    for eid in sorted(list(extra))[:5]:
+                        print(f"    - {eid}")
+                if not missing and not extra:
+                    print("  No changes to existing entries")
+            else:
+                print("  (no existing index — would be created fresh)")
+        print()
+        print("[DRY-RUN] No files written. Remove --dry-run to apply changes.")
+        return
+
     # Write atomically
     tmp_path = PROPOSAL_INDEX_PATH.with_suffix('.md.tmp')
     bak_path = PROPOSAL_INDEX_PATH.with_suffix('.md.bak')
+
+    # Pre-write diff for verbose mode
+    if verbose and PROPOSAL_INDEX_PATH.exists():
+        with open(PROPOSAL_INDEX_PATH, encoding='utf-8') as f:
+            current_content = f.read()
+        current_ids = set(re.findall(r'^### (P-\d{8}-\d{3}):', current_content, re.MULTILINE))
+        new_ids = {p['id'] for p in proposals}
+        missing = new_ids - current_ids
+        extra = current_ids - new_ids
+        changed_count = 0
+        for p in proposals:
+            if p['id'] in missing:
+                changed_count += 1
 
     with open(tmp_path, 'w', encoding='utf-8') as f:
         f.write(content)
@@ -835,6 +925,11 @@ def cmd_sync_to_index(args):
 
     log(f"Synced proposal-index.md: {len(proposals)} proposals, {len(project_ids)} projects")
     print(f"Written: {PROPOSAL_INDEX_PATH}")
+
+    if verbose:
+        adds = len(missing) if 'missing' in dir() else 0
+        deletes = len(extra) if 'extra' in dir() else 0
+        print(f"[VERBOSE] Adds: {adds}, Removes: {deletes}")
 
 
 # ==================== Audit ====================
@@ -1091,6 +1186,420 @@ def cmd_diff(args):
     print(f"\nTotal: {len(diffs)} different, {len(same)} same fields")
 
 
+# ==================== Advance (State Machine) ====================
+
+def cmd_advance(args):
+    """Advance proposal to next state in lifecycle."""
+    headers, proposals = load_proposals()
+
+    p = get_proposal_by_id(args.id, proposals)
+    if not p:
+        die(f"Proposal not found: {args.id}")
+
+    current = p.get('status', '')
+    next_status = STATUS_TRANSITIONS.get(current)
+
+    if not next_status:
+        die(f"Cannot advance from status '{current}' — no transition defined")
+
+    p['status'] = next_status
+    p['last_update'] = datetime.now().strftime('%Y-%m-%d')
+
+    # Auto-fill related fields
+    auto_fills = AUTO_FILL_ON_TRANSITION.get(next_status, {})
+    for field, value in auto_fills.items():
+        if not p.get(field):
+            p[field] = value
+
+    write_csv(PROPOSALS_CSV, headers, proposals)
+    log(f"Advanced {args.id}: {current} → {next_status}")
+    print(f"{args.id}: {current} → {next_status}")
+
+    if not args.no_sync:
+        cmd_sync_to_index(args)
+
+
+# ==================== Validate ====================
+
+def cmd_validate(args):
+    """Validate a single proposal's fields."""
+    headers, proposals = load_proposals()
+
+    p = get_proposal_by_id(args.id, proposals)
+    if not p:
+        die(f"Proposal not found: {args.id}")
+
+    errors = []
+    warnings = []
+
+    # Required non-empty
+    if not p.get('title', '').strip():
+        errors.append("title is empty")
+    if not p.get('project_id', '').strip():
+        errors.append("project_id is empty")
+
+    # Enum checks
+    status = p.get('status', '')
+    if status and status not in VALID_PROPOSAL_STATUSES:
+        warnings.append(f"status '{status}' not in VALID_PROPOSAL_STATUSES")
+
+    stage = p.get('stage', '')
+    if stage and stage not in VALID_PROPOSAL_STAGES:
+        warnings.append(f"stage '{stage}' not in VALID_PROPOSAL_STAGES")
+
+    prd = p.get('prd_confirmation', '')
+    if prd and prd not in VALID_PRDS:
+        warnings.append(f"prd_confirmation '{prd}' not in VALID_PRDS")
+
+    tech = p.get('tech_expectations', '')
+    if tech and tech not in VALID_TECH_EXPS:
+        warnings.append(f"tech_expectations '{tech}' not in VALID_TECH_EXPS")
+
+    acc = p.get('acceptance', '')
+    if acc and acc not in VALID_ACCEPTANCES:
+        warnings.append(f"acceptance '{acc}' not in VALID_ACCEPTANCES")
+
+    # Date format
+    last_up = p.get('last_update', '')
+    if last_up:
+        import re
+        if not re.match(r'^\d{4}-\d{2}-\d{2}$', last_up):
+            warnings.append(f"last_update '{last_up}' doesn't match YYYY-MM-DD")
+
+    # ID format
+    pid = p.get('id', '')
+    if pid and not PROPOSAL_ID_PATTERN.match(pid):
+        errors.append(f"id '{pid}' doesn't match P-YYYYMMDD-XXX format")
+
+    proj_id = p.get('project_id', '')
+    if proj_id and not PROJECT_ID_PATTERN.match(proj_id):
+        errors.append(f"project_id '{proj_id}' doesn't match PRJ-YYYYMMDD-XXX format")
+
+    print(f"\n=== Validate: {args.id} ===")
+    if errors:
+        print(f"ERRORS ({len(errors)}):")
+        for e in errors:
+            print(f"  ✗ {e}")
+    else:
+        print("No errors.")
+
+    if warnings:
+        print(f"WARNINGS ({len(warnings)}):")
+        for w in warnings:
+            print(f"  ! {w}")
+    else:
+        print("No warnings.")
+
+    if errors:
+        sys.exit(1)
+    elif warnings:
+        sys.exit(2)
+    else:
+        print("PASS")
+
+
+# ==================== Search ====================
+
+def cmd_search(args):
+    """Search proposals by keyword across all text fields."""
+    headers, proposals = load_proposals()
+    keyword = args.keyword.lower()
+    matched = []
+
+    for p in proposals:
+        searchable = ' '.join(str(v) for v in p.values()).lower()
+        if keyword in searchable:
+            matched.append(p)
+
+    print(f"\n=== Search: '{args.keyword}' — {len(matched)} matches ===")
+    fields = ['id', 'title', 'status', 'project_name', 'owner', 'last_update']
+    print('\t'.join(fields))
+    for p in matched:
+        row = [p.get(f, '') for f in fields]
+        print('\t'.join(row))
+
+
+# ==================== Stats ====================
+
+def cmd_stats(args):
+    """Output proposal statistics summary."""
+    _, proposals = load_proposals()
+    _, projects = load_projects()
+
+    from collections import Counter
+
+    status_counts = Counter(p.get('status', '') for p in proposals)
+    project_counts = Counter(p.get('project_name', '') for p in proposals)
+
+    today = datetime.now().strftime('%Y-%m-%d')
+    this_month = today[:7]  # YYYY-MM
+    this_month_count = sum(1 for p in proposals if p.get('last_update', '').startswith(this_month))
+
+    print(f"\n=== Proposal Stats ===")
+    print(f"Total proposals : {len(proposals)}")
+    print(f"Total projects  : {len(projects)}")
+    print(f"This month      : {this_month_count}")
+    print()
+
+    print("By status:")
+    for status, count in status_counts.most_common():
+        print(f"  {status or '(empty)':<30} {count}")
+    print()
+
+    if args.top:
+        print(f"Top {args.top} projects:")
+        for proj, count in project_counts.most_common(args.top):
+            print(f"  {proj:<30} {count}")
+
+
+# ==================== Duplicate ====================
+
+def cmd_duplicate(args):
+    """Duplicate a proposal with a new ID."""
+    headers, proposals = load_proposals()
+
+    source = get_proposal_by_id(args.id, proposals)
+    if not source:
+        die(f"Proposal not found: {args.id}")
+
+    new_id = generate_proposal_id(proposals)
+    new_data = dict(source)
+    new_data['id'] = new_id
+    new_data['title'] = f"{source.get('title', '')} (copy)"
+    new_data['status'] = 'intake'
+    new_data['last_update'] = datetime.now().strftime('%Y-%m-%d')
+    new_data['notes'] = f"Duplicated from {args.id}"
+
+    proposals.append(new_data)
+    write_csv(PROPOSALS_CSV, headers, proposals)
+
+    # Update project count
+    update_project_proposal_count(source.get('project_id', ''))
+
+    log(f"Duplicated {args.id} → {new_id}")
+    print(new_id)
+
+    if not args.no_sync:
+        cmd_sync_to_index(args)
+
+
+# ==================== Migrate ====================
+
+def cmd_migrate(args):
+    """Migrate proposals from one project to another."""
+    _, projects = load_projects()
+
+    from_proj = get_project_by_id(args.from_project, projects)
+    to_proj = get_project_by_id(args.to_project, projects)
+    if not from_proj:
+        die(f"Source project not found: {args.from_project}")
+    if not to_proj:
+        die(f"Target project not found: {args.to_project}")
+
+    headers, proposals = load_proposals()
+    migrated = []
+
+    for p in proposals:
+        if p.get('project_id') == args.from_project:
+            p['project_id'] = args.to_project
+            p['project_name'] = to_proj['name']
+            p['git_repo'] = to_proj.get('git_repo', '')
+            p['last_update'] = datetime.now().strftime('%Y-%m-%d')
+            migrated.append(p['id'])
+
+    if not migrated:
+        die(f"No proposals found for project: {args.from_project}")
+
+    write_csv(PROPOSALS_CSV, headers, proposals)
+
+    # Update counts
+    update_project_proposal_count(args.from_project)
+    update_project_proposal_count(args.to_project)
+
+    log(f"Migrated {len(migrated)} proposals: {args.from_project} → {args.to_project}")
+    print(f"Migrated {len(migrated)} proposals")
+    for pid in migrated:
+        print(f"  {pid}")
+
+    if not args.no_sync:
+        cmd_sync_to_index(args)
+
+
+# ==================== Stats ====================
+
+def cmd_stats_proposals(args):
+    """Show proposal statistics: totals, status/stage distribution, project counts, recent activity."""
+    import json
+
+    _, proposals = load_proposals()
+    _, projects = load_projects()
+
+    total_proposals = len(proposals)
+    total_projects = len(projects)
+
+    # Status distribution
+    status_counts = {}
+    for p in proposals:
+        s = p.get('status', '') or '(empty)'
+        status_counts[s] = status_counts.get(s, 0) + 1
+
+    # Stage distribution
+    stage_counts = {}
+    for p in proposals:
+        s = p.get('stage', '') or '(empty)'
+        stage_counts[s] = stage_counts.get(s, 0) + 1
+
+    # Proposals per project (top 10)
+    project_counts = {}
+    for p in proposals:
+        pid = p.get('project_id', '') or '(none)'
+        project_counts[pid] = project_counts.get(pid, 0) + 1
+    top_projects = sorted(project_counts.items(), key=lambda x: -x[1])[:10]
+
+    # Recent activity: last_update distribution
+    now = datetime.now()
+    cutoff_7 = (now - timedelta(days=7)).strftime('%Y-%m-%d')
+    cutoff_30 = (now - timedelta(days=30)).strftime('%Y-%m-%d')
+
+    count_7 = 0
+    count_30 = 0
+    count_older = 0
+    for p in proposals:
+        lu = p.get('last_update', '')
+        if lu >= cutoff_7:
+            count_7 += 1
+        elif lu >= cutoff_30:
+            count_30 += 1
+        else:
+            count_older += 1
+
+    if args.format == 'json':
+        stats = {
+            'total_proposals': total_proposals,
+            'total_projects': total_projects,
+            'status_distribution': dict(sorted(status_counts.items(), key=lambda x: -x[1])),
+            'stage_distribution': dict(sorted(stage_counts.items(), key=lambda x: -x[1])),
+            'top_projects': [{'project_id': pid, 'count': c} for pid, c in top_projects],
+            'recent_activity': {
+                'last_7_days': count_7,
+                'last_30_days': count_30,
+                'older': count_older,
+            }
+        }
+        print(json.dumps(stats, ensure_ascii=False, indent=2))
+    else:
+        # Plain text tab-separated output
+        print(f"Total proposals\t{total_proposals}")
+        print(f"Total projects\t{total_projects}")
+        print()
+        print("Status distribution")
+        for status, count in sorted(status_counts.items(), key=lambda x: -x[1]):
+            print(f"  {status}\t{count}")
+        print()
+        print("Stage distribution")
+        for stage, count in sorted(stage_counts.items(), key=lambda x: -x[1]):
+            print(f"  {stage}\t{count}")
+        print()
+        print("Proposals per project (top 10)")
+        print(f"{'Project ID'}\t{'Count'}")
+        for pid, count in top_projects:
+            print(f"{pid}\t{count}")
+        print()
+        print("Recent activity (by last_update)")
+        print(f"Last 7 days\t{count_7}")
+        print(f"Last 30 days\t{count_30}")
+        print(f"Older\t{count_older}")
+
+
+# ==================== Validate ====================
+
+def cmd_validate_proposals(args):
+    """Validate proposals.csv against business rules and optionally fix issues."""
+    import re as re_mod
+    import io as io_mod
+
+    _, proposals = load_proposals()
+    _, projects = load_projects()
+
+    # Build project ID set
+    project_ids = {p['id'] for p in projects}
+    project_ids_parsed = project_ids  # for CSV-based check below
+
+    issues = []
+
+    # 1. Every proposal has a project_id that exists in projects.csv
+    for p in proposals:
+        pid = p.get('project_id', '').strip()
+        if not pid:
+            issues.append(('error', f"[{p['id']}] project_id is empty", 'proposal references no project'))
+        elif pid not in project_ids:
+            issues.append(('error', f"[{p['id']}] project_id='{pid}' not found in projects.csv", 'project does not exist'))
+
+    # 2. Every project_id in projects.csv has at least one proposal (warn if orphaned)
+    proposal_project_ids = {p.get('project_id', '').strip() for p in proposals}
+    for pid in project_ids:
+        if pid and pid not in proposal_project_ids:
+            issues.append(('warn', f"[project {pid}] no proposals found (orphaned project)", "consider linking or removing"))
+
+    # 3. proposal-index.md is in sync with CSV (same number of proposals, same IDs)
+    if PROPOSAL_INDEX_PATH.exists():
+        with open(PROPOSAL_INDEX_PATH, encoding='utf-8') as f:
+            index_content = f.read()
+        # Count proposal entries in index (### P-YYYYMMDD-XXX: pattern)
+        index_ids = set(re_mod.findall(r'^### (P-\d{8}-\d{3}):', index_content, re_mod.MULTILINE))
+        csv_ids = {p['id'] for p in proposals}
+        missing_in_index = csv_ids - index_ids
+        extra_in_index = index_ids - csv_ids
+        if missing_in_index:
+            for mid in sorted(list(missing_in_index)[:5]):
+                issues.append(('error', f"[index] proposal {mid} in CSV but missing from proposal-index.md", 'run sync-to-index'))
+        if extra_in_index:
+            for eid in sorted(list(extra_in_index)[:5]):
+                issues.append(('error', f"[index] proposal {eid} in proposal-index.md but not in CSV", 'run sync-to-index'))
+        if len(csv_ids) != len(index_ids):
+            issues.append(('info', f"[index] count mismatch: CSV={len(csv_ids)} vs index={len(index_ids)}", 'run sync-to-index'))
+
+    # 4. All deployment_url fields are valid URLs or empty
+    for p in proposals:
+        url = p.get('deployment_url', '').strip()
+        if url and not (url.startswith('http://') or url.startswith('https://') or url.startswith('git@') or url.startswith('//')):
+            issues.append(('error', f"[{p['id']}] deployment_url='{url}' is not a valid URL", 'must start with http://, https://, or git@'))
+
+    # Report
+    print(f"\n=== Validation Report ===")
+    print(f"Proposals: {len(proposals)}")
+    print(f"Projects: {len(projects)}")
+    print()
+
+    error_count = sum(1 for s, _, _ in issues if s == 'error')
+    warn_count = sum(1 for s, _, _ in issues if s == 'warn')
+    info_count = sum(1 for s, _, _ in issues if s == 'info')
+
+    print(f"Issues: {len(issues)} total ({error_count} errors, {warn_count} warnings, {info_count} info)")
+    print()
+
+    if issues:
+        print("Details:")
+        for sev, desc, fix in issues[:50]:
+            prefix = "ERROR" if sev == 'error' else "WARN " if sev == 'warn' else "INFO "
+            print(f"  [{prefix}] {desc}")
+            if fix:
+                print(f"         → {fix}")
+        if len(issues) > 50:
+            print(f"  ... and {len(issues) - 50} more issues")
+        print()
+        if error_count > 0:
+            print("VALIDATION: FAIL")
+        else:
+            print("VALIDATION: PASS (warnings only)")
+    else:
+        print("VALIDATION: PASS")
+
+    if args.fix and issues:
+        # --fix only fixes CSV issues (empty title, etc.) by delegating to audit --fix
+        print("\n--fix passed but no auto-fixable issues in validate (try 'audit --fix' for CSV fixes)")
+
+
 # ==================== Main ====================
 
 def main():
@@ -1240,11 +1749,52 @@ def main():
     pr_audit.add_argument('--fix', action='store_true', help='Auto-fix issues found')
     pr_audit.set_defaults(func=cmd_audit)
 
+    # proposal archive-project (placeholder — requires cmd_archive implementation)
+    # pr_arch_proj = prop_sub.add_parser('archive-project', help='Archive all proposals for a project')
+    # pr_arch_proj.add_argument('--project-id', help='Project ID to archive')
+    # pr_arch_proj.add_argument('--before', help='Archive proposals with last_update before date (YYYY-MM-DD)')
+    # pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
+    # pr_arch_proj.set_defaults(func=cmd_archive)
+
     # proposal diff
     pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')
     pr_diff.add_argument('id1', help='First proposal ID')
     pr_diff.add_argument('id2', help='Second proposal ID')
     pr_diff.set_defaults(func=cmd_diff)
+
+    # proposal advance
+    pr_advance = prop_sub.add_parser('advance', help='Advance proposal to next state')
+    pr_advance.add_argument('id', help='Proposal ID')
+    pr_advance.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
+    pr_advance.set_defaults(func=cmd_advance)
+
+    # proposal validate
+    pr_validate = prop_sub.add_parser('validate', help='Validate a proposal\'s fields')
+    pr_validate.add_argument('id', help='Proposal ID')
+    pr_validate.set_defaults(func=cmd_validate)
+
+    # proposal search
+    pr_search = prop_sub.add_parser('search', help='Search proposals by keyword')
+    pr_search.add_argument('keyword', help='Keyword to search')
+    pr_search.set_defaults(func=cmd_search)
+
+    # proposal stats
+    pr_stats = prop_sub.add_parser('stats', help='Show proposal statistics')
+    pr_stats.add_argument('--top', type=int, help='Show top N projects')
+    pr_stats.set_defaults(func=cmd_stats)
+
+    # proposal duplicate
+    pr_dup = prop_sub.add_parser('duplicate', help='Duplicate a proposal')
+    pr_dup.add_argument('id', help='Source proposal ID')
+    pr_dup.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
+    pr_dup.set_defaults(func=cmd_duplicate)
+
+    # proposal migrate
+    pr_migrate = prop_sub.add_parser('migrate', help='Migrate proposals between projects')
+    pr_migrate.add_argument('--from-project', required=True, help='Source project ID')
+    pr_migrate.add_argument('--to-project', required=True, help='Target project ID')
+    pr_migrate.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
+    pr_migrate.set_defaults(func=cmd_migrate)
 
     args = parser.parse_args()
     

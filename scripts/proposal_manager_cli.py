@@ -822,11 +822,21 @@ def cmd_next_proposal_id(args):
 
 PROPOSAL_INDEX_PATH = PROPOSALS_ROOT / "proposal-index.md"
 
-def generate_proposal_entry(p) -> str:
-    """Generate a single proposal entry in markdown format."""
+def generate_proposal_entry(p, format='detailed') -> str:
+    """Generate a single proposal entry in markdown format.
+    
+    Args:
+        p: proposal dict
+        format: 'compact' (ID + title + status) or 'detailed' (full 21-field entry)
+    """
     pid = p.get('id', '')
     title = p.get('title', '')
 
+    if format == 'compact':
+        status = p.get('status', '')
+        return f"- **{pid}**: {title} [{status}]"
+
+    # Detailed format (full 21-field entry)
     lines = [f"### {pid}: {title}", ""]
 
     def add_field(key, value):
@@ -1835,12 +1845,17 @@ def main():
     pr_audit.add_argument('--csv-only', action='store_true', help='Only audit and report, skip index sync')
     pr_audit.set_defaults(func=cmd_audit)
 
-    # proposal archive-project (placeholder — requires cmd_archive implementation)
+    # proposal validate-csv
+    pr_validate_csv = prop_sub.add_parser('validate-csv', help='Validate entire proposals.csv against business rules (project refs, index sync, URLs)')
+    pr_validate_csv.add_argument('--fix', action='store_true', help='Auto-fix issues (delegates to audit --fix)')
+    pr_validate_csv.set_defaults(func=cmd_validate_proposals)
+
+    # proposal archive-project
     pr_arch_proj = prop_sub.add_parser('archive-project', help='Archive all proposals for a project')
     pr_arch_proj.add_argument('--project-id', help='Project ID to archive')
     pr_arch_proj.add_argument('--before', help='Archive proposals with last_update before date (YYYY-MM-DD)')
     pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
-    pr_arch_proj.set_defaults(func=cmd_archive_proposal)
+    pr_arch_proj.set_defaults(func=cmd_archive)
 
     # proposal diff
     pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')
@@ -1865,9 +1880,9 @@ def main():
     pr_search.set_defaults(func=cmd_search)
 
     # proposal stats
-    pr_stats = prop_sub.add_parser('stats', help='Show proposal statistics')
-    pr_stats.add_argument('--top', type=int, help='Show top N projects')
-    pr_stats.set_defaults(func=cmd_stats)
+    pr_stats = prop_sub.add_parser('stats', help='Show proposal statistics (totals, status/stage distribution, project counts, recent activity)')
+    pr_stats.add_argument('--format', '-f', choices=['text', 'json'], default='text', help='Output format (default: text)')
+    pr_stats.set_defaults(func=cmd_stats_proposals)
 
     # proposal duplicate
     pr_dup = prop_sub.add_parser('duplicate', help='Duplicate a proposal')

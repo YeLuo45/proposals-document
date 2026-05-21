@@ -432,7 +432,7 @@ Total: 251 proposals, 14 projects
 - **Git Repo**: https://github.com/YeLuo45/card-game-prototype
 - **Local Path**: /home/hermes/projects/card-game-prototype
 
-### P-20260522-026: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
+### P-20260522-027: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
 
 - **Project**: card-game-prototype
 - **Owner**: 小墨
@@ -442,7 +442,7 @@ Total: 251 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
+- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案ID唯一无冲突；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID"
 ---
 
 ## PRJ-20260516-002: cultivation-simulator

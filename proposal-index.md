@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 251 proposals, 14 projects
+Total: 252 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -461,6 +461,23 @@ Total: 251 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/cultivation-simulator
 - **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
 - **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
+---
+
+## PRJ-20250416-001: todolist
+
+- **Description**: Todo/任务管理Web应用
+- **Git Repo**: https://github.com/YeLuo45/todo-list
+- **Local Path**: /home/hermes/projects/todolist
+
+### P-20260522-029: TodoList Direction A Round 2: proposal archive-project + purge
+
+- **Project**: todolist
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/todolist
+- **Git**: [GitHub](https://github.com/YeLuo45/todo-list)
+- **Description**: Round 2交付: archive-project批量归档(P-20260522-022/024) + purge彻底删除; proposal_manager_cli.py新增cmd_archive_project+cmd_purge; 修复P-20260522-026跨项目冲突(→P-20260522-027); CSV去重后251个唯一提案; sync-to-index验证通过
 ---
 
 ## PRJ-20260418-004: future-little-leaders

@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 259 proposals, 17 projects
+Total: 260 proposals, 17 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -327,6 +327,24 @@ Total: 259 proposals, 17 projects
 - **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
 - **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
 - **Description**: 无人值守模式Direction A交付
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-023: Direction A5: cmd_archive regex解析修复 + archive-project命令
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
 ---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)

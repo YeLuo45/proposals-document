@@ -416,13 +416,14 @@ Total: 250 proposals, 14 projects
 
 - **Project**: prj-proposals-manager
 - **Owner**: 小墨
-- **Stage**: development
+- **Stage**: accepted
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md
 - **Project Path**: /home/hermes/prj-proposals-manager
 - **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
 - **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
-- **Description**: 无人值守模式Direction A Round2
+- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
 ---
 
 ## PRJ-20260421-001: card-game-prototype
@@ -435,12 +436,13 @@ Total: 250 proposals, 14 projects
 
 - **Project**: card-game-prototype
 - **Owner**: 小墨
-- **Stage**: proposal
+- **Stage**: accepted
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 无人值守模式；Direction A Round3；修复58个跨项目ID冲突(P-20260517/P-20260518序列被多项目共用)；改进audit检测跨项目冲突
+- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
 ---
 
 ## PRJ-20260418-004: future-little-leaders
@@ -887,7 +889,7 @@ Total: 250 proposals, 14 projects
 - **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
 - **Local Path**: /home/hermes/projects/ai-creator-h5
 
-### P-20260519-011: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
+### P-20260519-011-dup: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -2171,7 +2173,7 @@ Total: 250 proposals, 14 projects
 - **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
 - **Local Path**: /home/hermes/projects/ai-creator-h5
 
-### P-20260519-011: TodoList V49 B3c 多Agent并行执行+投票引擎
+### P-20260519-011-dup: TodoList V49 B3c 多Agent并行执行+投票引擎
 
 - **Project**: todo-list
 - **Acceptance**: 2026-05-19

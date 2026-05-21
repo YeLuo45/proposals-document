@@ -170,3 +170,14 @@
 [2026-05-22 01:07:44] ERROR | die | Operation failed: 'Namespace' object has no attribute 'before'
 [2026-05-22 01:07:52] CSV_WRITE | proposals.csv | 251 rows, 22 fields
 [2026-05-22 01:07:52] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:08:30] ERROR | die | dict contains fields not in fieldnames: None
+[2026-05-22 01:08:35] ERROR | die | dict contains fields not in fieldnames: None
+[2026-05-22 01:08:44] ERROR | die | dict contains fields not in fieldnames: None
+[2026-05-22 01:08:49] CSV_WRITE | proposals.csv | 249 rows, 22 fields
+[2026-05-22 01:08:49] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:09:03] CSV_WRITE | proposals.csv | 250 rows, 22 fields
+[2026-05-22 01:09:04] CSV_WRITE | proposals.csv | 250 rows, 22 fields
+[2026-05-22 01:09:04] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:09:04] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:09:28] CSV_WRITE | proposals.csv | 250 rows, 22 fields
+[2026-05-22 01:09:44] CSV_WRITE | proposals.csv | 250 rows, 22 fields

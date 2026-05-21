@@ -492,14 +492,15 @@ def cmd_add_proposal(args):
     # Generate ID if not specified
     proposal_id = args.id
     if not proposal_id:
-        proposal_id = generate_proposal_id(proposals)
-        log(f"Auto-generated proposal ID: {proposal_id}")
+        validate_project_exists(args.project_id, projects)
+        project = get_project_by_id(args.project_id, projects)
+        proposal_id = generate_proposal_id(proposals, project['id'])
+        log(f"Auto-generated proposal ID: {proposal_id} (project: {project['id']})")
     
     # Validate
     validate_proposal_id(proposal_id)
     validate_non_empty(args.title, 'title')
     validate_project_exists(args.project_id, projects)
-    project = get_project_by_id(args.project_id, projects)
     
     if get_proposal_by_id(proposal_id, proposals):
         die(f"Proposal ID already exists: {proposal_id}")
@@ -1538,7 +1539,7 @@ def cmd_duplicate(args):
     if not source:
         die(f"Proposal not found: {args.id}")
 
-    new_id = generate_proposal_id(proposals)
+    new_id = generate_proposal_id(proposals, source.get('project_id'))
     new_data = dict(source)
     new_data['id'] = new_id
     new_data['title'] = f"{source.get('title', '')} (copy)"

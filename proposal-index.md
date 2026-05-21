@@ -455,7 +455,7 @@ Total: 251 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 无人值守模式Round4交付；P-20260522-028创建成功；新ID生成逻辑：按(project_id,日期)独立计数避免跨项目冲突；历史冲突(59个)需后续cleanup重编ID
+- **Description**: Round 3: stats增强(CSV vs index一致性检查+recent_proposals_7d) + validate新增URL格式校验
 ---
 
 ## PRJ-20260418-004: future-little-leaders

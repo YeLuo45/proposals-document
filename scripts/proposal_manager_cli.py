@@ -450,18 +450,22 @@ def cmd_init_workspace(args):
 
 # ==================== Proposal Operations ====================
 
-def generate_proposal_id(proposals):
-    """Generate next proposal ID: P-YYYYMMDD-XXX"""
+def generate_proposal_id(proposals, project_id=None):
+    """Generate next proposal ID: P-YYYYMMDD-XXX (per-project independent counter)"""
     today = datetime.now().strftime('%Y%m%d')
     prefix = f"P-{today}-"
     max_num = 0
     for p in proposals:
-        if p.get('id', '').startswith(prefix):
-            try:
-                num = int(p['id'].split('-')[-1])
-                max_num = max(max_num, num)
-            except:
-                pass
+        pid = p.get('id', '')
+        if not pid.startswith(prefix):
+            continue
+        if project_id and p.get('project_id') != project_id:
+            continue
+        try:
+            num = int(pid.split('-')[-1])
+            max_num = max(max_num, num)
+        except:
+            pass
     return f"{prefix}{max_num + 1:03d}"
 
 

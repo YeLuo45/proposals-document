@@ -1305,13 +1305,11 @@ def cmd_diff(args):
 
     p1, p2 = parsed[id1], parsed[id2]
 
-    # Fields to compare (exclude notes for readability)
-    compare_fields = [f for f in FIELDNAMES_DIFF if f not in ('notes',)]
-
-    print(f"\n=== Proposal Diff ===")
-    print(f"  Left:  {id1}  [{p1.get('project_id','')}]")
-    print(f"  Right: {id2}  [{p2.get('project_id','')}]")
-    print()
+    # Fields to compare
+    if args.fields:
+        compare_fields = [f.strip() for f in args.fields.split(',')]
+    else:
+        compare_fields = [f for f in FIELDNAMES_DIFF if f not in ('notes',)]
 
     same = []
     diffs = []
@@ -1319,27 +1317,35 @@ def cmd_diff(args):
     only_right = []
 
     for field in compare_fields:
+        if field not in FIELDNAMES_DIFF:
+            continue
         v1 = p1.get(field, '').strip()
         v2 = p2.get(field, '').strip()
         if v1 == v2:
-            if v1:  # Only show if non-empty
+            if v1 or args.only_same:
                 same.append((field, v1))
         else:
             diffs.append((field, v1, v2))
 
-    if diffs:
+    print(f"\n=== Proposal Diff ===")
+    print(f"  Left:  {id1}  [{p1.get('project_id','')}]")
+    print(f"  Right: {id2}  [{p2.get('project_id','')}]")
+    print(f"  Comparing {len(compare_fields)} fields")
+    print()
+
+    if diffs and not args.only_same:
         print(f"--- Different ({len(diffs)}) ---")
         for field, v1, v2 in diffs:
             print(f"  {field}:")
             print(f"    - {v1 or '(empty)'}")
             print(f"    + {v2 or '(empty)'}")
 
-    if same:
+    if same and not args.only_diff:
         print(f"\n--- Same ({len(same)}) ---")
-        for field, v in same[:10]:
+        for field, v in same[:20]:
             print(f"  {field}: {v[:60]}{'...' if len(v) > 60 else ''}")
-        if len(same) > 10:
-            print(f"  ... and {len(same) - 10} more")
+        if len(same) > 20:
+            print(f"  ... and {len(same) - 20} more")
 
     print(f"\nTotal: {len(diffs)} different, {len(same)} same fields")
 
@@ -2149,6 +2155,9 @@ def main():
     pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')
     pr_diff.add_argument('id1', help='First proposal ID')
     pr_diff.add_argument('id2', help='Second proposal ID')
+    pr_diff.add_argument('--only-diff', action='store_true', help='Show only differing fields')
+    pr_diff.add_argument('--only-same', action='store_true', help='Show only same fields')
+    pr_diff.add_argument('--fields', help='Comma-separated list of fields to compare')
     pr_diff.set_defaults(func=cmd_diff)
 
     # proposal advance

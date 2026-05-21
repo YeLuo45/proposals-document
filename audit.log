@@ -153,3 +153,18 @@
 [2026-05-22 00:53:10] ERROR | die | dict contains fields not in fieldnames: 'deployment_branch', 'research_direction'
 [2026-05-22 00:54:49] ERROR | die | Operation failed: [Errno 32] Broken pipe
 [2026-05-22 00:56:27] CSV_WRITE | proposals.csv | 260 rows, 22 fields
+[2026-05-22 00:58:00] CSV_WRITE | proposals.csv | 260 rows, 22 fields
+[2026-05-22 01:00:15] ERROR | die | Project does not exist: PRJ-20260522-001
+[2026-05-22 01:00:22] CSV_WRITE | proposals.csv | 261 rows, 22 fields
+[2026-05-22 01:00:22] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 01:04:33] CSV_WRITE | proposals.csv | 261 rows, 22 fields
+[2026-05-22 01:04:33] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 01:05:54] CSV_WRITE | proposals.csv | 248 rows, 22 fields
+[2026-05-22 01:06:28] CSV_WRITE | projects.csv | 72 rows, 8 fields
+[2026-05-22 01:06:28] CSV_WRITE | projects.csv | 73 rows, 8 fields
+[2026-05-22 01:06:29] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:06:50] CSV_WRITE | proposals.csv | 249 rows, 22 fields
+[2026-05-22 01:06:50] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:06:59] ERROR | die | Operation failed: 'Namespace' object has no attribute 'status'
+[2026-05-22 01:07:36] CSV_WRITE | proposals.csv | 250 rows, 22 fields
+[2026-05-22 01:07:44] ERROR | die | Operation failed: 'Namespace' object has no attribute 'before'

@@ -570,10 +570,15 @@ def cmd_list_proposals(args):
         default_fields = ['id', 'title', 'status', 'project_name', 'owner', 'last_update']
         fields = [f for f in default_fields if f in headers]
     
-    print('\t'.join(fields))
-    for p in proposals:
-        row = [p.get(f, '') for f in fields]
-        print('\t'.join(row))
+    if getattr(args, 'format', None) == 'json':
+        import json
+        output = [{f: p.get(f, '') for f in fields} for p in proposals]
+        print(json.dumps(output, ensure_ascii=False, indent=2))
+    else:
+        print('\t'.join(fields))
+        for p in proposals:
+            row = [p.get(f, '') for f in fields]
+            print('\t'.join(row))
 
 
 def cmd_get_proposal(args):
@@ -1569,7 +1574,7 @@ def cmd_archive_project(args):
 
     headers, proposals = load_proposals()
     project_id = args.project_id
-    target_statuses = {s.strip() for s in (args.status or 'accepted,delivered').split(',')}
+    target_statuses = {s.strip() for s in (getattr(args, 'status', None) or 'accepted,delivered').split(',')}
     before_date = args.before  # YYYY-MM-DD or None
     dry_run = args.dry_run
 
@@ -2115,6 +2120,7 @@ def main():
     pr_audit = prop_sub.add_parser('audit', help='Audit proposals.csv for data quality issues')
     pr_audit.add_argument('--fix', action='store_true', help='Auto-fix issues found')
     pr_audit.add_argument('--csv-only', action='store_true', help='Only audit and report, skip index sync')
+    pr_audit.add_argument('--json', action='store_true', help='Output as JSON for machine parsing')
     pr_audit.set_defaults(func=cmd_audit)
 
     # proposal validate-csv

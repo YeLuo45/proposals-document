@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 249 proposals, 17 projects
+Total: 250 proposals, 16 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -390,6 +390,28 @@ Total: 249 proposals, 17 projects
 - **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
 - **Description**: 无人值守模式Direction A Round2
 ---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-011: PRD: proposal_manager_cli.py CSV→index 同步增强
+
+- **Project**: price-compare
+- **Owner**: boss
+- **Stage**: approved_for_dev
+- **Last Update**: 2026-05-22
+- **Technical Solution**: /home/hermes/proposals
+- **Deployment**: [accepted](accepted)
+---
+
+## PRJ-20260418-004: future-little-leaders
+
+- **Description**: 儿童领导力培养互动游戏
+- **Git Repo**: https://github.com/YeLuo45/future-little-leaders
+- **Local Path**: /home/hermes/projects/future-little-leaders
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)
 
@@ -1151,6 +1173,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V100-family-legacy.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
+## PRJ-20260419-007: ai-creator-h5
+
+- **Description**: AI创作助手H5应用
+- **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
+- **Local Path**: /home/hermes/projects/ai-creator-h5
+
 ### P-20260517-029: ai-creator-h5 多渠道分享 (Direction B)
 
 - **Project**: ai-creator-h5
@@ -1487,6 +1515,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/prd-ai-creator-h5-v32.md | [GitHub](https://github.com/YeLuo45/ai-creator-h5)
 ---
 
+## PRJ-20260423-005: hermes-agent-collab
+
+- **Description**: Hermes Agent协作系统，用于多Agent任务协调
+- **Git Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Local Path**: /home/hermes/projects/hermes-agent-collab
+
 ### P-20260518-001: nanobot-inspired AsyncMessageBus + Channel Adapter
 
 - **Project**: hermes-agent-collab
@@ -1775,6 +1809,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: docs/P-20260519-004-prd.md | [GitHub](https://github.com/YeLuo45/hermes-agent-collab)
 ---
 
+## PRJ-20260427-001: preschool-puzzle
+
+- **Description**: 学龄前儿童拼图游戏
+- **Git Repo**: https://github.com/YeLuo45/preschool-puzzle
+- **Local Path**: /home/hermes/projects/preschool-puzzle
+
 ### P-20260518-008: preschool-puzzle 道具系统 V2 (Direction A)
 
 - **Project**: preschool-puzzle
@@ -2007,6 +2047,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/preschool-puzzle/docs/PRD-V32-A-helper.md | [GitHub](https://github.com/YeLuo45/preschool-puzzle)
 ---
 
+## PRJ-20250416-001: todolist
+
+- **Description**: Todo/任务管理Web应用
+- **Git Repo**: https://github.com/YeLuo45/todo-list
+- **Local Path**: /home/hermes/projects/todolist
+
 ### P-20260519-002: TodoList V41 A3 MCP工具扩展 (GitHub/Jira/Figma MCP集成)
 
 - **Project**: todo-list
@@ -2079,6 +2125,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/todo-list/PRD-V49-B3c-parallel-execution.md | [GitHub](https://github.com/YeLuo45/todo-list)
 ---
 
+## PRJ-20260522-001: future-little-leaders-admin
+
+- **Description**: future-little-leaders 家长后台管理
+- **Git Repo**: https://github.com/YeLuo45/future-little-leaders-admin
+- **Local Path**: 
+
 ### P-20260518-019: future-little-leaders-admin V17 家长后台管理 (Direction A)
 
 - **Project**: future-little-leaders-admin
@@ -2095,6 +2147,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V25-testing-admin.md | [GitHub](https://github.com/YeLuo45/future-little-leaders-admin)
 ---
 
+## PRJ-20260522-002: future-little-leaders-sdk-python
+
+- **Description**: future-little-leaders Python SDK
+- **Git Repo**: https://github.com/YeLuo45/future-little-leaders-sdk-python
+- **Local Path**: 
+
 ### P-20260518-007: future-little-leaders V8 Python SDK + 家校互通 (Direction A)
 
 - **Project**: future-little-leaders-sdk-python
@@ -2103,6 +2161,12 @@ Total: 249 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V8-python-sdk.md | [GitHub](https://github.com/YeLuo45/future-little-leaders-sdk-python)
 ---
 
+## PRJ-20260430-001: tower-baby-guard
+
+- **Description**: 塔防宝宝监护游戏
+- **Git Repo**: https://github.com/YeLuo45/tower-baby-guard
+- **Local Path**: /home/hermes/projects/tower-baby-guard
+
 ### P-20260517-028: ai-creator-h5 工具系统生态 (Direction A)
 
 - **Project**: tower-baby-guard
@@ -2110,6 +2174,12 @@ Total: 249 proposals, 17 projects
 - **Last Update**: 2026-05-21
 - **Git**: 分支: ~/.hermes/proposals/workspace-pm/proposals/P-20260517-012-prd.md | [GitHub](https://github.com/YeLuo45/tower-baby-guard)
 ---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
 
 ### P-20260519-002: AI多平台比价App (React Native)
 

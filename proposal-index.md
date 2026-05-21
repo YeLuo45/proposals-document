@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 250 proposals, 14 projects
+Total: 251 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -443,6 +443,24 @@ Total: 250 proposals, 14 projects
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
 - **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
+---
+
+## PRJ-20260516-002: cultivation-simulator
+
+- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
+- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
+- **Local Path**: /home/hermes/projects/cultivation-simulator
+
+### P-20260522-028: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
+
+- **Project**: cultivation-simulator
+- **Owner**: 小墨
+- **Stage**: in_dev
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
+- **Project Path**: /home/hermes/projects/cultivation-simulator
+- **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
+- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
 ---
 
 ## PRJ-20260418-004: future-little-leaders

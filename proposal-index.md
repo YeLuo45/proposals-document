@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 252 proposals, 14 projects
+Total: 251 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -432,7 +432,7 @@ Total: 252 proposals, 14 projects
 - **Git Repo**: https://github.com/YeLuo45/card-game-prototype
 - **Local Path**: /home/hermes/projects/card-game-prototype
 
-### P-20260522-027: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
+### P-20260522-026: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
 
 - **Project**: card-game-prototype
 - **Owner**: 小墨
@@ -442,38 +442,25 @@ Total: 252 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案ID唯一无冲突；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID"
+- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
 ---
 
-### P-20260522-028: card-game-prototype Direction A Round4: 修复proposal add的ID生成逻辑(按项目独立计数)
+## PRJ-20260516-002: cultivation-simulator
 
-- **Project**: card-game-prototype
+- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
+- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
+- **Local Path**: /home/hermes/projects/cultivation-simulator
+
+### P-20260522-028: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
+
+- **Project**: cultivation-simulator
 - **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: accepted
+- **Stage**: in_dev
 - **Last Update**: 2026-05-22
-- **Project Path**: /home/hermes/projects/card-game-prototype
-- **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
-- **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: Round 3: stats增强(CSV vs index一致性检查+recent_proposals_7d) + validate新增URL格式校验
----
-
-## PRJ-20260420-002: pixel-pal-web
-
-- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
-- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
-- **Local Path**: /home/hermes/projects/pixel-pal-web
-
-### P-20260522-029: Direction A7: proposal purge 永久删除归档提案
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Acceptance**: accepted
-- **Last Update**: 2026-05-22
-- **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
-- **Description**: Direction A7交付；purge命令已验证(dry-run测试通过，0个待删除-归档提案保护期7天)；CLI工具链完整
+- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
+- **Project Path**: /home/hermes/projects/cultivation-simulator
+- **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
+- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
 ---
 
 ## PRJ-20260418-004: future-little-leaders

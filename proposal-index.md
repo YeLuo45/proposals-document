@@ -178,7 +178,7 @@ Total: 260 proposals, 17 projects
 - **Project**: pixel-pal-web
 - **Owner**: 小墨
 - **Stage**: in_dev
-- **Acceptance**: pending
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/P-20260522-003-prd.md
 - **Project Path**: /home/hermes/proposals

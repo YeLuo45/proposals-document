@@ -883,13 +883,19 @@ def generate_proposal_entry(p, format='detailed') -> str:
 def cmd_sync_to_index(args):
     """Sync proposal-index.md from CSV data (CSV is source of truth).
 
-    Supports --dry-run and --verbose flags.
+    Supports --dry-run, --verbose, --delta, --check, and --format flags.
+    --delta: compute diff and only output different lines (git-friendly).
+    --check: compare CSV vs index, exit 0 if in sync, exit 1 if divergent.
+    --format: 'compact' (ID + title + status) or 'detailed' (full entry, default).
     """
     _, proposals = load_proposals()
     _, projects = load_projects()
 
     dry_run = getattr(args, 'dry_run', False)
     verbose = getattr(args, 'verbose', False) or dry_run
+    delta_mode = getattr(args, 'delta', False)
+    check_mode = getattr(args, 'check', False)
+    fmt = getattr(args, 'format', 'detailed') or 'detailed'
 
     if not proposals:
         log("No proposals found in CSV — skipping index generation")
@@ -941,10 +947,47 @@ def cmd_sync_to_index(args):
                     ""
                 ])
 
-        lines.append(generate_proposal_entry(p))
+        lines.append(generate_proposal_entry(p, format=fmt))
         lines.append("")
 
     content = '\n'.join(lines)
+
+    # --check mode: compare CSV-generated content vs existing index, no file writes
+    if check_mode:
+        if not PROPOSAL_INDEX_PATH.exists():
+            print("proposal-index.md is missing — CSV and index are divergent")
+            sys.exit(1)
+        with open(PROPOSAL_INDEX_PATH, encoding='utf-8') as f:
+            existing_content = f.read()
+        if content == existing_content:
+            print("in sync")
+            sys.exit(0)
+        else:
+            print("divergent")
+            sys.exit(1)
+
+    # --delta mode: compute and show git-friendly diff, no file writes
+    if delta_mode:
+        if not PROPOSAL_INDEX_PATH.exists():
+            print(content)
+            return
+        with open(PROPOSAL_INDEX_PATH, encoding='utf-8') as f:
+            existing_lines = f.read().splitlines()
+        new_lines = content.splitlines()
+
+        # Unified diff style
+        import difflib
+        diff = difflib.unified_diff(
+            existing_lines, new_lines,
+            fromfile='a/proposal-index.md', tofile='b/proposal-index.md',
+            lineterm=''
+        )
+        diff_lines = [l for l in diff]
+        if diff_lines:
+            print('\n'.join(diff_lines))
+        else:
+            print("No changes")
+        return
 
     if dry_run:
         # Show what would be written without touching files
@@ -958,7 +1001,7 @@ def cmd_sync_to_index(args):
             print("First 5 entries preview:")
             preview_count = 0
             for line in content_lines:
-                if line.startswith('### P-'):
+                if line.startswith('### P-') or line.startswith('- **P-'):
                     print(f"  {line}")
                     preview_count += 1
                     if preview_count >= 5:
@@ -1693,6 +1736,106 @@ def cmd_validate_proposals(args):
         print("\n--fix passed but no auto-fixable issues in validate (try 'audit --fix' for CSV fixes)")
 
 
+# ==================== Export / Import ====================
+
+def cmd_export_proposals(args):
+    """Export proposals to CSV or JSON format for a given project."""
+    _, proposals = load_proposals()
+
+    # Filter by project if specified
+    if args.project:
+        proposals = [p for p in proposals if p.get('project_id') == args.project]
+
+    if not proposals:
+        log("No proposals found to export")
+        return
+
+    import io as io_mod
+    output = io_mod.StringIO()
+
+    if args.format == 'csv':
+        writer = csv.DictWriter(output, fieldnames=PROPOSALS_CSV_HEADERS)
+        writer.writeheader()
+        writer.writerows(proposals)
+        content = output.getvalue()
+    else:  # json
+        import json
+        content = json.dumps(proposals, ensure_ascii=False, indent=2)
+
+    if args.output:
+        output_path = Path(args.output)
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        log(f"Exported {len(proposals)} proposals to {output_path}")
+    else:
+        print(content)
+
+
+def cmd_import_proposals(args):
+    """Import proposals from a CSV file."""
+    import_file = Path(args.file)
+    if not import_file.exists():
+        die(f"Import file not found: {args.file}")
+
+    with open(import_file, encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        imported_rows = list(reader)
+
+    if not imported_rows:
+        die("No proposals found in import file")
+
+    headers, existing_proposals = load_proposals()
+
+    imported_ids = set(r['id'] for r in imported_rows)
+    existing_ids = {p['id'] for p in existing_proposals}
+
+    skipped = 0
+    overwritten = 0
+    added = 0
+
+    for row in imported_rows:
+        pid = row.get('id', '')
+        if not pid:
+            log(f"Skipping row with empty ID")
+            skipped += 1
+            continue
+
+        if pid in existing_ids:
+            if args.skip_existing:
+                skipped += 1
+                continue
+            elif args.overwrite:
+                # Find and replace existing
+                for i, existing in enumerate(existing_proposals):
+                    if existing['id'] == pid:
+                        # Preserve all fields from imported row, fill missing with ''
+                        for key in PROPOSALS_CSV_HEADERS:
+                            existing_proposals[i][key] = row.get(key, '')
+                        overwritten += 1
+                        break
+            else:
+                log(f"Proposal {pid} already exists. Use --skip-existing or --overwrite")
+                skipped += 1
+                continue
+        else:
+            # Add new proposal
+            new_row = {key: row.get(key, '') for key in PROPOSALS_CSV_HEADERS}
+            existing_proposals.append(new_row)
+            added += 1
+
+    if not headers:
+        headers = PROPOSALS_CSV_HEADERS
+
+    write_csv(PROPOSALS_CSV, headers, existing_proposals)
+
+    print(f"Import complete: {added} added, {overwritten} overwritten, {skipped} skipped")
+
+    # Sync index
+    class SyncArgs:
+        quiet = False
+    cmd_sync_to_index(SyncArgs())
+
+
 # ==================== Main ====================
 
 def main():
@@ -1837,6 +1980,9 @@ def main():
     pr_sync = prop_sub.add_parser('sync-to-index', help='Sync proposal-index.md from CSV (CSV is source of truth)')
     pr_sync.add_argument('--dry-run', action='store_true', help='Show what would be written without making changes')
     pr_sync.add_argument('--verbose', '-v', action='store_true', help='Show per-proposal changes and counts')
+    pr_sync.add_argument('--delta', action='store_true', help='Show git-friendly diff between new content and existing index')
+    pr_sync.add_argument('--check', action='store_true', help='Compare CSV vs index, exit 0 if in sync, 1 if divergent (no file writes)')
+    pr_sync.add_argument('--format', choices=['compact', 'detailed'], default='detailed', help='Entry format: compact (ID+title+status) or detailed (full entry, default)')
     pr_sync.set_defaults(func=cmd_sync_to_index)
 
     # proposal audit
@@ -1896,6 +2042,20 @@ def main():
     pr_migrate.add_argument('--to-project', required=True, help='Target project ID')
     pr_migrate.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
     pr_migrate.set_defaults(func=cmd_migrate)
+
+    # proposal export
+    pr_export = prop_sub.add_parser('export', help='Export proposals to CSV or JSON format')
+    pr_export.add_argument('--project', help='Filter by project ID')
+    pr_export.add_argument('--format', '-f', choices=['csv', 'json'], required=True, help='Output format')
+    pr_export.add_argument('--output', '-o', help='Output file path (print to stdout if not specified)')
+    pr_export.set_defaults(func=cmd_export_proposals)
+
+    # proposal import
+    pr_import = prop_sub.add_parser('import', help='Import proposals from a CSV file')
+    pr_import.add_argument('--file', '-i', required=True, help='Input CSV file path')
+    pr_import.add_argument('--skip-existing', action='store_true', help='Skip proposals where ID already exists')
+    pr_import.add_argument('--overwrite', action='store_true', help='Overwrite existing proposals with same ID')
+    pr_import.set_defaults(func=cmd_import_proposals)
 
     args = parser.parse_args()
     

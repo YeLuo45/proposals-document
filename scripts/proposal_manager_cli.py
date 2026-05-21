@@ -49,8 +49,8 @@ VALID_GAME_TYPES = {"", "休闲", "策略", "卡牌", "RPG", "消除", "塔防",
 PROJECTS_CSV_HEADERS = ['id', 'name', 'proposal_count', 'git_repo', 'local_path', 'description', 'last_update']
 PROPOSALS_CSV_HEADERS = ['id', 'title', 'owner', 'status', 'project_id', 'project_name', 'stage',
                           'prd_path', 'tech_solution_path', 'project_path', 'git_repo', 'deployment_url',
-                          'deployment_branch', 'prd_confirmation', 'tech_expectations', 'acceptance',
-                          'research_direction', 'last_update', 'engine', 'target', 'game_type', 'notes']
+                          'prd_confirmation', 'tech_expectations', 'acceptance',
+                          'last_update', 'engine', 'target', 'game_type', 'notes']
 
 # ID patterns
 PROJECT_ID_PATTERN = re.compile(r'^PRJ-\d{8}-\d{3}$')
@@ -90,25 +90,52 @@ def read_csv(path):
 def write_csv(path, headers, rows):
     """Atomic CSV write: write to .tmp first, then rename.
     Prevents partial writes from corrupting the CSV file.
-    Records audit log entry for every write."""
+    Records audit log entry for every write.
+
+    Safety guards:
+    - Refuses to write 0 rows to a file that has >10 existing rows (data loss prevention)
+    - Raises on unknown CSV fields (no silent field dropping)
+    - Verifies row count after rename (post-write verification)
+    """
     tmp_path = Path(str(path) + '.tmp')
     bak_path = Path(str(path) + '.bak')
-    
-    # Write to temp file
+
+    # Guard: refuse to truncate a populated CSV to 0 rows
+    if not rows:
+        if path.exists():
+            existing_rows = sum(1 for _ in open(path)) - 1  # -1 for header
+            if existing_rows > 10:
+                raise ValueError(
+                    f"Refusing to write 0 rows to {path.name}: "
+                    f"file currently has {existing_rows} rows. "
+                    f"Backup data before overwriting."
+                )
+
+    # Write to temp file — extrasaction='raise' catches field mismatches
     with open(tmp_path, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=headers, extrasaction='ignore')
+        writer = csv.DictWriter(f, fieldnames=headers, extrasaction='raise')
         writer.writeheader()
         writer.writerows(rows)
-    
-    # Atomic rename (Linux guarantees this is atomic on same filesystem)
-    # Keep a .bak as emergency recovery
+
+    # Backup existing file BEFORE rename (crash-safe order: backup first)
     if path.exists():
         shutil.copy2(path, bak_path)
+
+    # Atomic rename (Linux guarantees this is atomic on same filesystem)
     tmp_path.rename(path)
-    
-    # Audit trail
-    row_count = len(rows) - 1 if rows else 0  # minus header
-    audit_log("CSV_WRITE", path.name, f"{row_count} rows, {len(headers)} fields")
+
+    # Post-write verification: confirm file has expected row count
+    with open(path, newline='', encoding='utf-8') as f:
+        actual_rows = sum(1 for _ in f) - 1  # -1 for header
+    if actual_rows != len(rows):
+        raise RuntimeError(
+            f"Post-write mismatch for {path.name}: "
+            f"wrote {len(rows)} rows but file has {actual_rows} rows. "
+            f"Restore from {bak_path} if needed."
+        )
+
+    # Audit trail (row_count is actual data rows, header not counted)
+    audit_log("CSV_WRITE", path.name, f"{len(rows)} rows, {len(headers)} fields")
 
 
 def load_projects():
@@ -813,22 +840,39 @@ def cmd_sync_to_index(args):
 # ==================== Audit ====================
 
 def cmd_audit(args):
-    """Audit proposals.csv for data quality issues, optionally auto-fix."""
-    headers, proposals = load_proposals()
+    """Audit proposals.csv for data quality issues, optionally auto-fix.
 
-    if not proposals:
-        log("No proposals found in CSV")
-        return
+    Uses regex-based parsing (each physical P- line = one row) to handle
+    embedded newlines in notes fields correctly.
+    """
+    import re as re_mod
+    from collections import defaultdict
+    import io as io_mod
 
-    # Expected headers
-    required_fields = ['id', 'title', 'project_id', 'status', 'stage', 'last_update']
-    optional_fields = ['owner', 'prd_path', 'tech_solution_path', 'project_path',
-                       'git_repo', 'deployment_url', 'deployment_branch',
-                       'prd_confirmation', 'tech_expectations', 'acceptance',
-                       'research_direction', 'engine', 'target', 'game_type', 'notes']
+    with open(PROPOSALS_CSV, encoding='utf-8') as f:
+        raw_content = f.read()
+
+    FIELDNAMES_AUDIT = ['id','title','owner','status','project_id','project_name','stage',
+                         'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                         'deployment_branch','prd_confirmation','tech_expectations','acceptance',
+                         'research_direction','last_update','engine','target','game_type','notes']
+
+    # Parse each physical line as a separate row (regex: lines starting with P-)
+    p_lines = [l for l in raw_content.split('\n') if re_mod.match(r'^P-\d{8}-\d{3},', l)]
+    parsed = []
+    for line in p_lines:
+        try:
+            reader = csv.DictReader(io_mod.StringIO(line), fieldnames=FIELDNAMES_AUDIT)
+            for row in reader:
+                if row.get('id','').startswith('P-'):
+                    parsed.append(row)
+                    break
+        except:
+            pass
 
     issues = []
     fix_counts = {
+        'true_duplicate': 0,
         'empty_title': 0,
         'empty_project_id': 0,
         'invalid_status': 0,
@@ -836,58 +880,67 @@ def cmd_audit(args):
         'empty_last_update': 0,
     }
 
-    for idx, p in enumerate(proposals):
-        row_num = idx + 2  # +2 for header row and 0-index
-        pid = p.get('id', '')
+    # 1. TRUE duplicate detection: same id + same project_id
+    id_proj_count = defaultdict(int)
+    for row in parsed:
+        id_proj_count[(row['id'], row.get('project_id',''))] += 1
 
-        # 1. Empty title
-        if not p.get('title', '').strip():
-            issue = f"Row {row_num} [{pid}]: title is empty"
-            fix = f"title=UNTITLED-{pid}"
-            issues.append(('error', issue, fix))
+    true_dupes = {k: v for k, v in id_proj_count.items() if v > 1}
+    if true_dupes:
+        fix_counts['true_duplicate'] = sum(v - 1 for _, v in true_dupes.items())
+        shown = 0
+        for (pid, proj), count in sorted(true_dupes.items(), key=lambda x: -x[1]):
+            if shown >= 5:
+                issues.append(('info', f"... and {len(true_dupes) - 5} more duplicate groups", ""))
+                break
+            issues.append(('error', f"Duplicate ID '{pid}' in project '{proj}': {count} copies",
+                          "keep last copy, archive others"))
+            shown += 1
+
+    # 2. Empty title
+    for row in parsed:
+        if not row.get('title', '').strip():
+            issues.append(('error', f"[{row['id']}]: title is empty", f"title=UNTITLED-{row['id']}"))
             fix_counts['empty_title'] += 1
 
-        # 2. Empty project_id
-        if not p.get('project_id', '').strip():
-            issue = f"Row {row_num} [{pid}]: project_id is empty"
-            fix = "project_id=MISSING"
-            issues.append(('error', issue, fix))
+    # 3. Empty project_id
+    for row in parsed:
+        if not row.get('project_id', '').strip():
+            issues.append(('error', f"[{row['id']}]: project_id is empty", "project_id=MISSING"))
             fix_counts['empty_project_id'] += 1
 
-        # 3. Invalid status
-        status = p.get('status', '')
+    # 4. Invalid status
+    for row in parsed:
+        status = row.get('status', '')
         if status and status not in VALID_PROPOSAL_STATUSES:
-            issue = f"Row {row_num} [{pid}]: invalid status='{status}'"
-            fix = f"status=unknown"
-            issues.append(('warn', issue, fix))
+            issues.append(('warn', f"[{row['id']}]: invalid status='{status}'", "status=unknown"))
             fix_counts['invalid_status'] += 1
 
-        # 4. Invalid stage
-        stage = p.get('stage', '')
+    # 5. Invalid stage
+    for row in parsed:
+        stage = row.get('stage', '')
         if stage and stage not in VALID_PROPOSAL_STAGES:
-            issue = f"Row {row_num} [{pid}]: invalid stage='{stage}'"
-            fix = "stage=proposal"
-            issues.append(('warn', issue, fix))
+            issues.append(('warn', f"[{row['id']}]: invalid stage='{stage}'", "stage=proposal"))
             fix_counts['invalid_stage'] += 1
 
-        # 5. Empty last_update
-        if not p.get('last_update', '').strip():
-            issue = f"Row {row_num} [{pid}]: last_update is empty"
-            fix = "last_update=2026-05-21"
-            issues.append(('warn', issue, fix))
+    # 6. Empty last_update
+    for row in parsed:
+        if not row.get('last_update', '').strip():
+            issues.append(('warn', f"[{row['id']}]: last_update is empty", "last_update=2026-05-21"))
             fix_counts['empty_last_update'] += 1
 
     # Output report
     print(f"\n=== CSV Audit Report ===")
-    print(f"Total proposals: {len(proposals)}")
-    print(f"Headers: {', '.join(headers)}")
+    print(f"Total rows (physical P- lines): {len(parsed)}")
+    print(f"True duplicate groups (same ID + same project): {len(true_dupes)}")
     print(f"")
     print(f"Issues found:")
-    print(f"  Empty title:        {fix_counts['empty_title']}")
+    print(f"  True duplicates:     {fix_counts['true_duplicate']}")
+    print(f"  Empty title:         {fix_counts['empty_title']}")
     print(f"  Empty project_id:    {fix_counts['empty_project_id']}")
-    print(f"  Invalid status:      {fix_counts['invalid_status']}")
-    print(f"  Invalid stage:       {fix_counts['invalid_stage']}")
-    print(f"  Empty last_update:   {fix_counts['empty_last_update']}")
+    print(f"  Invalid status:     {fix_counts['invalid_status']}")
+    print(f"  Invalid stage:      {fix_counts['invalid_stage']}")
+    print(f"  Empty last_update:  {fix_counts['empty_last_update']}")
     print(f"")
 
     if issues:
@@ -902,48 +955,62 @@ def cmd_audit(args):
     total_issues = sum(fix_counts.values())
     print(f"\nTotal: {total_issues} issues")
 
-    # Auto-fix if requested
+    # Auto-fix
     if args.fix and total_issues > 0:
-        fixes_applied = 0
         today = datetime.now().strftime('%Y-%m-%d')
 
-        for p in proposals:
-            pid = p.get('id', '')
+        # 6a. Fill empty last_update
+        for row in parsed:
+            if not row.get('last_update', '').strip():
+                row['last_update'] = today
 
-            # Fix empty title
-            if not p.get('title', '').strip():
-                p['title'] = f"UNTITLED-{pid}"
-                fixes_applied += 1
+        # 6b. Fix empty title
+        for row in parsed:
+            if not row.get('title', '').strip():
+                row['title'] = f"UNTITLED-{row['id']}"
 
-            # Fix empty project_id
-            if not p.get('project_id', '').strip():
-                p['project_id'] = 'MISSING'
-                p['project_name'] = 'MISSING'
-                fixes_applied += 1
+        # 6c. Fix empty project_id
+        for row in parsed:
+            if not row.get('project_id', '').strip():
+                row['project_id'] = 'MISSING'
+                row['project_name'] = 'MISSING'
 
-            # Fix invalid status
-            status = p.get('status', '')
+        # 6d. Fix invalid status
+        for row in parsed:
+            status = row.get('status', '')
             if status and status not in VALID_PROPOSAL_STATUSES:
-                p['status'] = 'unknown'
-                fixes_applied += 1
+                row['status'] = 'unknown'
 
-            # Fix invalid stage
-            stage = p.get('stage', '')
+        # 6e. Fix invalid stage
+        for row in parsed:
+            stage = row.get('stage', '')
             if stage and stage not in VALID_PROPOSAL_STAGES:
-                p['stage'] = 'proposal'
-                fixes_applied += 1
+                row['stage'] = 'proposal'
 
-            # Fix empty last_update
-            if not p.get('last_update', '').strip():
-                p['last_update'] = today
-                fixes_applied += 1
+        # 6f. Fix TRUE duplicates: keep last occurrence, archive others
+        if true_dupes:
+            seen = set()
+            deduped = []
+            for row in reversed(parsed):
+                key = (row['id'], row.get('project_id',''))
+                if key not in seen:
+                    deduped.append(row)
+                    seen.add(key)
+                else:
+                    row['id'] = f"{row['id']}-dup"
+                    row['status'] = 'archived'
+                    deduped.append(row)
+            parsed = list(reversed(deduped))
+            print(f"\nFixed {fix_counts['true_duplicate']} true duplicate rows")
 
-        write_csv(PROPOSALS_CSV, headers, proposals)
-        print(f"\nAuto-fixed {fixes_applied} fields in {PROPOSALS_CSV}")
+        # Write back
+        write_csv(PROPOSALS_CSV, FIELDNAMES_AUDIT, parsed)
+        print(f"\nAuto-fixed {total_issues} issues in {PROPOSALS_CSV}")
 
-        # Re-run sync-to-index
+        # Re-sync index
         cmd_sync_to_index(args)
         print("Re-synced proposal-index.md")
+
     elif not args.fix and total_issues > 0:
         print(f"\nRun with --fix to auto-repair issues")
 

@@ -148,6 +148,156 @@ Total: 240 proposals, 16 projects
 - **Description**: PRD完成，确认方向B：输入任意username查看其fork列表
 ---
 
+
+## PRJ-20260422-001: ai-novel-assistant
+
+- **Description**: AI小说创作助手，提供故事生成和写作辅助
+- **Git Repo**: https://github.com/YeLuo45/ai-novel-assistant
+- **Local Path**: /home/hermes/projects/ai-novel-assistant
+
+### P-20260512-018: ai-novel-assistant V13 — Agent能力深化
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260512-018-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260512-019: ai-novel-assistant V14 — 跨章节记忆系统
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260512-019-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260513-017: ai-novel-assistant V15 — 类型小说垂直优化
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260513-017-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260513-018: ai-novel-assistant V16 — 多版本生成与对比
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260513-018-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260513-019: ai-novel-assistant V17 — 实时干预机制
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260513-019-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260513-020: ai-novel-assistant V18 — 写作素材库集成
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260513-020-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260514-015: ai-novel-assistant V19 — 协作效率优化
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260514-015-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260514-016: ai-novel-assistant V20 — 深度定制能力
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260514-016-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260514-017: ai-novel-assistant V21 — 发布与分享
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260514-017-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260516-001: ai-novel-assistant V12 — 多智能体协作引擎
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/PRJ-20260422-001/P-20260516-001-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260516-004: ai-novel-assistant V31 — 离线优先存储 + 版本历史
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/P-20260516-004-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260516-005: ai-novel-assistant V32 — 写作工具系统生态
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/P-20260516-005-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260516-006: ai-novel-assistant V33 — AI角色专业化分工
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/P-20260516-006-prd.md
+- **Last Update**: 2026-05-21
+---
+
+### P-20260521-016: ai-novel-assistant 提案系统数据同步优化 (Direction A)
+
+- **Project**: ai-novel-assistant
+- **Owner**: 小墨
+- **Stage**: proposal
+- **Status**: accepted
+- **PRD Path**: workspace-pm/proposals/P-20260521-016-prd.md
+- **Last Update**: 2026-05-21
+- **Notes**: Direction A 无人值守模式交付；CSV优先索引派生
+---
+
+
+
 ## PRJ-20260521-001: prj-plants-vs-zombies
 
 - **Description**: Plants vs Zombies Python+Pygame game

@@ -483,7 +483,10 @@ def cmd_add_proposal(args):
     
     # Update project proposal count
     update_project_proposal_count(args.project_id)
-    
+
+    # Auto-sync proposal-index.md from CSV
+    cmd_sync_to_index(args)
+
     log(f"Added proposal: {proposal_id} - {args.title}")
     print(proposal_id)
 
@@ -602,7 +605,10 @@ def cmd_update_proposal(args):
     if args.project_id and args.project_id != old_project_id:
         update_project_proposal_count(old_project_id)
         update_project_proposal_count(args.project_id)
-    
+
+    # Auto-sync proposal-index.md from CSV
+    cmd_sync_to_index(args)
+
     log(f"Updated proposal: {args.id}")
 
 
@@ -618,9 +624,12 @@ def cmd_delete_proposal(args):
     
     proposals = [x for x in proposals if x['id'] != args.id]
     write_csv(PROPOSALS_CSV, headers, proposals)
-    
+
     update_project_proposal_count(project_id)
-    
+
+    # Auto-sync proposal-index.md from CSV
+    cmd_sync_to_index(args)
+
     log(f"Deleted proposal: {args.id}")
 
 
@@ -695,8 +704,30 @@ def generate_proposal_entry(p) -> str:
     add_field("PRD Path", p.get('prd_path', ''))
     add_field("Technical Solution", p.get('tech_solution_path', ''))
     add_field("Project Path", p.get('project_path', ''))
-    add_field("Git", f"{p.get('deployment_branch', '')} ({p.get('notes', '')})" if p.get('notes', '') else '')
-    add_field("Description", p.get('notes', ''))
+
+    # Git info: show branch + commit SHA from notes if present
+    git_parts = []
+    if p.get('deployment_branch'):
+        git_parts.append(f"分支: {p.get('deployment_branch')}")
+    # Extract commit SHA from notes if present (format: ...Commit: XXXXXXXX)
+    notes = p.get('notes', '')
+    import re
+    sha_match = re.search(r'Commit:\s*([0-9a-f]{7,40})', notes)
+    if sha_match:
+        git_parts.append(f"Commit: {sha_match.group(1)}")
+    if p.get('git_repo'):
+        git_parts.append(f"[GitHub]({p.get('git_repo')})")
+    if git_parts:
+        lines.append(f"- **Git**: {' | '.join(git_parts)}")
+
+    # Deployment
+    if p.get('deployment_url'):
+        lines.append(f"- **Deployment**: [{p.get('deployment_url')}]({p.get('deployment_url')})")
+
+    # Description from notes (strip commit info for display)
+    desc = re.sub(r'Commit:\s*[0-9a-f]{7,40}\s*', '', notes).strip()
+    if desc:
+        add_field("Description", desc)
 
     lines.append("---")
     return '\n'.join(lines)

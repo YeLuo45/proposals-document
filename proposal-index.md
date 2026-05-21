@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 254 proposals, 14 projects
+Total: 255 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -432,7 +432,7 @@ Total: 254 proposals, 14 projects
 - **Git Repo**: https://github.com/YeLuo45/card-game-prototype
 - **Local Path**: /home/hermes/projects/card-game-prototype
 
-### P-20260522-026: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
+### P-20260522-027: card-game-prototype Round5: 修复 proposal add ID 生成逻辑 (per-project counter)
 
 - **Project**: card-game-prototype
 - **Owner**: 小墨
@@ -442,7 +442,7 @@ Total: 254 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
+- **Description**: 修复ID生成逻辑：新proposal add使用per-project计数器
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -455,12 +455,14 @@ Total: 254 proposals, 14 projects
 
 - **Project**: cultivation-simulator
 - **Owner**: 小墨
-- **Stage**: in_dev
+- **Stage**: delivered
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
 - **Project Path**: /home/hermes/projects/cultivation-simulator
 - **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
 - **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
+- **Description**: 无人值守模式Direction A交付；内置提案系统(game.js新增proposalBtn常驻按钮/提交面板/提案列表/方向标签/状态追踪)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
 ---
 
 ## PRJ-20260521-002: price-compare
@@ -514,6 +516,18 @@ Total: 254 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/price-compare
 - **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
 - **Description**: 无人值守 Round5 完成
+---
+
+### P-20260522-033: price-compare Round6 - proposal audit 增强 (跨项目ID冲突检测)
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
+- **Description**: 无人值守 Round6 完成
 ---
 
 ## PRJ-20260418-004: future-little-leaders

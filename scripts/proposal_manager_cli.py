@@ -1168,6 +1168,18 @@ def cmd_audit(args):
             issues.append(('warn', f"[{row['id']}]: last_update is empty", "last_update=2026-05-21"))
             fix_counts['empty_last_update'] += 1
 
+    # 7. Cross-project ID conflict: same ID used in different projects
+    id_to_projects = defaultdict(set)
+    for row in parsed:
+        id_to_projects[row['id']].add(row.get('project_id', ''))
+
+    cross_project_conflicts = {pid: projs for pid, projs in id_to_projects.items() if len(projs) > 1}
+    if cross_project_conflicts:
+        for pid, projs in list(cross_project_conflicts.items())[:5]:
+            issues.append(('error', f"Cross-project ID conflict: '{pid}' appears in {len(projs)} projects: {', '.join(sorted(projs))}",
+                          "assign unique project_id or archive duplicate"))
+            issues.append(('info', f"  -> Proposls with this ID:", ", ".join([f"{row['id']}/{row.get('project_name','')}" for row in parsed if row['id'] == pid])))
+
     total_issues = sum(fix_counts.values())
 
     # JSON output mode
@@ -1718,14 +1730,39 @@ def cmd_purge(args):
 # ==================== Stats ====================
 
 def cmd_stats_proposals(args):
-    """Show proposal statistics: totals, status/stage distribution, project counts, recent activity."""
+    """Show proposal statistics: totals, status/stage distribution, project counts, recent activity.
+    Uses regex-based parsing for accuracy. Enhanced with project health metrics."""
+    import re as re_mod
+    import io as io_mod
     import json
 
-    _, proposals = load_proposals()
-    _, projects = load_projects()
+    with open(PROPOSALS_CSV, encoding='utf-8') as f:
+        raw_content = f.read()
 
+    FIELDNAMES = ['id','title','owner','status','project_id','project_name','stage',
+                  'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                  'deployment_branch','prd_confirmation','tech_expectations','acceptance',
+                  'research_direction','last_update','engine','target','game_type','notes']
+
+    p_lines = [l for l in raw_content.split('\n') if re_mod.match(r'^P-\d{8}-\d{3},', l)]
+    parsed = {}
+    for line in p_lines:
+        try:
+            reader = csv.DictReader(io_mod.StringIO(line), fieldnames=FIELDNAMES)
+            for row in reader:
+                if row.get('id','').startswith('P-') and row['id'] not in parsed:
+                    parsed[row['id']] = row
+                    break
+        except:
+            pass
+
+    proposals = list(parsed.values())
     total_proposals = len(proposals)
+
+    # Load projects for project count
+    _, projects = load_projects()
     total_projects = len(projects)
+    valid_project_ids = {p['id'] for p in projects}
 
     # Status distribution
     status_counts = {}
@@ -1754,14 +1791,25 @@ def cmd_stats_proposals(args):
     count_7 = 0
     count_30 = 0
     count_older = 0
+    empty_last_update = 0
     for p in proposals:
         lu = p.get('last_update', '')
-        if lu >= cutoff_7:
+        if not lu or lu == '0':
+            empty_last_update += 1
+        elif lu >= cutoff_7:
             count_7 += 1
         elif lu >= cutoff_30:
             count_30 += 1
         else:
             count_older += 1
+
+    # Health metrics
+    orphan_proposals = sum(1 for p in proposals
+                           if p.get('project_id','') and p['project_id'] not in valid_project_ids)
+    intake_stale = sum(1 for p in proposals
+                       if p.get('status','') == 'intake' and
+                       (p.get('last_update','') < cutoff_7 if p.get('last_update','') else True))
+    archived_count = status_counts.get('archived', 0)
 
     if args.format == 'json':
         stats = {
@@ -1774,6 +1822,13 @@ def cmd_stats_proposals(args):
                 'last_7_days': count_7,
                 'last_30_days': count_30,
                 'older': count_older,
+            },
+            'health': {
+                'empty_last_update': empty_last_update,
+                'orphan_proposals': orphan_proposals,
+                'stale_intake': intake_stale,
+                'archived': archived_count,
+                'active': total_proposals - archived_count,
             }
         }
         print(json.dumps(stats, ensure_ascii=False, indent=2))
@@ -1799,6 +1854,13 @@ def cmd_stats_proposals(args):
         print(f"Last 7 days\t{count_7}")
         print(f"Last 30 days\t{count_30}")
         print(f"Older\t{count_older}")
+        print(f"Empty\t{empty_last_update}")
+        print()
+        print("Health metrics")
+        print(f"  Orphan proposals (invalid project_id)\t{orphan_proposals}")
+        print(f"  Stale intake (>7 days)\t{intake_stale}")
+        print(f"  Archived\t{archived_count}")
+        print(f"  Active (non-archived)\t{total_proposals - archived_count}")
 
 
 # ==================== Validate ====================

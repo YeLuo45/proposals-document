@@ -1561,6 +1561,132 @@ def cmd_migrate(args):
         cmd_sync_to_index(args)
 
 
+# ==================== Archive Project (Batch) ====================
+
+def cmd_archive_project(args):
+    """Batch archive proposals for a project."""
+    from datetime import datetime as dt
+
+    headers, proposals = load_proposals()
+    project_id = args.project_id
+    target_statuses = {s.strip() for s in (args.status or 'accepted,delivered').split(',')}
+    before_date = args.before  # YYYY-MM-DD or None
+    dry_run = args.dry_run
+
+    to_archive = []
+    for p in proposals:
+        if p.get('project_id') != project_id:
+            continue
+        if p.get('status') not in target_statuses:
+            continue
+        if before_date and p.get('last_update', '') >= before_date:
+            continue
+        to_archive.append(p['id'])
+
+    if dry_run:
+        print(f"\n=== Dry Run: archive-project ===")
+        print(f"Project : {project_id}")
+        print(f"Status  : {target_statuses}")
+        print(f"Before  : {before_date or '(any)'}")
+        print(f"Would archive: {len(to_archive)} proposals")
+        for pid in to_archive:
+            print(f"  {pid}")
+        return
+
+    if not to_archive:
+        print("No proposals match the criteria.")
+        return
+
+    today = datetime.now().strftime('%Y-%m-%d')
+    count = 0
+    for p in proposals:
+        if p['id'] in to_archive:
+            p['status'] = 'archived'
+            p['last_update'] = today
+            count += 1
+
+    write_csv(PROPOSALS_CSV, headers, proposals)
+    update_project_proposal_count(project_id)
+
+    log(f"Archived {count} proposals for project {project_id}")
+    print(f"Archived {count} proposals")
+    for pid in to_archive:
+        print(f"  {pid}")
+
+    if not args.no_sync:
+        cmd_sync_to_index(args)
+
+
+# ==================== Purge ====================
+
+def cmd_purge(args):
+    """Permanently delete archived proposals older than --before date."""
+    from datetime import datetime as dt, timedelta
+
+    headers, proposals = load_proposals()
+    before_date = args.before  # YYYY-MM-DD (required)
+    project_id = args.project_id  # optional filter
+    target_status = args.status or 'archived'
+    dry_run = args.dry_run
+    force = args.force
+
+    # Safety: refuse --before within 7 days
+    if before_date:
+        try:
+            before_dt = dt.strptime(before_date, '%Y-%m-%d')
+            cutoff = (dt.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+            if before_date > cutoff:
+                die(f"--before must be at least 7 days in the past. Received: {before_date}, minimum: {cutoff}")
+        except ValueError:
+            die(f"--before must be YYYY-MM-DD format. Received: {before_date}")
+
+    # Safety: refuse purge of non-archived unless --force
+    if not force and target_status != 'archived':
+        die(f"Refusing to purge status='{target_status}' without --force. Use --status archived (default) or --force.")
+
+    to_delete = []
+    for p in proposals:
+        if p.get('status') != target_status:
+            continue
+        if project_id and p.get('project_id') != project_id:
+            continue
+        if before_date and p.get('last_update', '') >= before_date:
+            continue
+        to_delete.append(p['id'])
+
+    if dry_run:
+        print(f"\n=== Dry Run: purge ===")
+        print(f"Status : {target_status}")
+        print(f"Before : {before_date}")
+        print(f"Project: {project_id or '(all)'}")
+        print(f"Would delete: {len(to_delete)} proposals")
+        for pid in to_delete:
+            print(f"  {pid}")
+        return
+
+    if not to_delete:
+        print("No proposals match the purge criteria.")
+        return
+
+    # Backup before purge
+    bak_path = PROPOSALS_CSV.with_suffix('.purge bak')
+    import shutil
+    shutil.copy2(PROPOSALS_CSV, bak_path)
+    log(f"Purge backup: {bak_path}")
+
+    remaining = [p for p in proposals if p['id'] not in to_delete]
+    write_csv(PROPOSALS_CSV, headers, remaining)
+
+    log(f"Purged {len(to_delete)} proposals (backup: {bak_path})")
+    print(f"Purged {len(to_delete)} proposals")
+    for pid in to_delete:
+        print(f"  {pid}")
+    print(f"Backup saved: {bak_path}")
+
+    if not args.no_sync:
+        cmd_sync_to_index(args)
+
+
 # ==================== Stats ====================
 
 def cmd_stats_proposals(args):
@@ -1928,6 +2054,7 @@ def main():
     pr_list.add_argument('--project', help='Filter by project name (partial match)')
     pr_list.add_argument('--status', '-s', help='Filter by status')
     pr_list.add_argument('--fields', '-f', help='Output fields (comma-separated)')
+    pr_list.add_argument('--format', choices=['table', 'json'], default='table', help='Output format (default: table)')
     pr_list.set_defaults(func=cmd_list_proposals)
     
     # proposal get
@@ -1995,13 +2122,6 @@ def main():
     pr_validate_csv.add_argument('--fix', action='store_true', help='Auto-fix issues (delegates to audit --fix)')
     pr_validate_csv.set_defaults(func=cmd_validate_proposals)
 
-    # proposal archive-project
-    pr_arch_proj = prop_sub.add_parser('archive-project', help='Archive all proposals for a project')
-    pr_arch_proj.add_argument('--project-id', help='Project ID to archive')
-    pr_arch_proj.add_argument('--before', help='Archive proposals with last_update before date (YYYY-MM-DD)')
-    pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
-    pr_arch_proj.set_defaults(func=cmd_archive)
-
     # proposal diff
     pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')
     pr_diff.add_argument('id1', help='First proposal ID')
@@ -2041,6 +2161,23 @@ def main():
     pr_migrate.add_argument('--to-project', required=True, help='Target project ID')
     pr_migrate.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
     pr_migrate.set_defaults(func=cmd_migrate)
+
+    # proposal archive-project (batch archive for a project)
+    pr_arch_proj = prop_sub.add_parser('archive-project', help='Batch archive proposals for a project')
+    pr_arch_proj.add_argument('--project-id', required=True, help='Project ID')
+    pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
+    pr_arch_proj.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
+    pr_arch_proj.set_defaults(func=cmd_archive_project)
+
+    # proposal purge
+    pr_purge = prop_sub.add_parser('purge', help='Permanently delete old archived proposals')
+    pr_purge.add_argument('--before', required=True, help='Delete proposals with last_update before date (YYYY-MM-DD, min 7 days ago)')
+    pr_purge.add_argument('--project-id', help='Limit to a specific project')
+    pr_purge.add_argument('--status', default='archived', help='Status to purge (default: archived)')
+    pr_purge.add_argument('--dry-run', action='store_true', help='Show what would be deleted without changes')
+    pr_purge.add_argument('--force', action='store_true', help='Allow purging non-archived status')
+    pr_purge.add_argument('--no-sync', action='store_true', help='Skip auto-sync to index')
+    pr_purge.set_defaults(func=cmd_purge)
 
     # proposal export
     pr_export = prop_sub.add_parser('export', help='Export proposals to CSV or JSON format')

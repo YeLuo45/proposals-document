@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 248 proposals, 17 projects
+Total: 249 proposals, 17 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -370,6 +370,25 @@ Total: 248 proposals, 17 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Description**: 无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-026: PRD: proposal_manager_cli.py 深化优化 Round 2
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: development
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md
+- **Project Path**: /home/hermes/prj-proposals-manager
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
+- **Description**: 无人值守模式Direction A Round2
 ---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)

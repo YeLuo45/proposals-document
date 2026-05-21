@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 260 proposals, 17 projects
+Total: 248 proposals, 17 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -352,6 +352,24 @@ Total: 260 proposals, 17 projects
 - **Project Path**: /home/hermes/projects/prj-proposals-manager
 - **Git**: Commit: a9ffe65 | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
 - **Description**: mode: unattended. 实现5个子功能: stats(统计), validate-csv(一致性校验), sync-to-index --dry-run/--verbose, audit --csv-only. . 本地已push，网络恢复后自动同步。
+---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
+
+### P-20260522-025: card-game-prototype Direction A Round2: proposal sync-to-index 验证 + CSV数据质量报告
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
+- **Description**: 无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
 ---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)
@@ -754,28 +772,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V55-collab-games.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-007-dup: future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V56-subscription-rewards.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-007: future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V56-subscription-rewards.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-008-dup: future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V57-micro-learning.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-008: future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A)
@@ -786,28 +788,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V57-micro-learning.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-009-dup: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V58-moral-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-009: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V58-moral-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-010-dup: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V59-coding-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-010: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
@@ -818,28 +804,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V59-coding-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-011-dup: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V60-financial-literacy.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-011: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V60-financial-literacy.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-012-dup: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V61-environmental-awareness.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-012: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
@@ -850,28 +820,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V61-environmental-awareness.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-013-dup: future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V62-geography-culture.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-013: future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V62-geography-culture.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-014-dup: future-little-leaders V63 Safety Education System 安全教育系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V63-safety-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-014: future-little-leaders V63 Safety Education System 安全教育系统 (Direction A)
@@ -882,28 +836,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V63-safety-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-015-dup: future-little-leaders V64 Time Management System 时间管理系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V64-time-management.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-015: future-little-leaders V64 Time Management System 时间管理系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V64-time-management.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-016-dup: future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V65-creative-writing.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-016: future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A)
@@ -914,14 +852,6 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V65-creative-writing.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-017-dup: future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V66-music-rhythm.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-017: future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A)
 
 - **Project**: future-little-leaders
@@ -930,28 +860,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V66-music-rhythm.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-018-dup: future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V67-science-experiment.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
 ### P-20260519-018: future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V67-science-experiment.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
----
-
-### P-20260519-019-dup: future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A)
-
-- **Project**: future-little-leaders
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V68-art-workshop.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
 ### P-20260519-019: future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A)
@@ -2232,6 +2146,12 @@ Total: 260 proposals, 17 projects
 - **Git**: 分支: timeout-approved | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
 - **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
 ---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
 
 ### P-20260521-004: card-game-prototype V69 插件系统 v2 (Direction C - ruflo/nanobot)
 

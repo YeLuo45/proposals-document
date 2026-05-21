@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 255 proposals, 14 projects
+Total: 256 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -442,7 +442,7 @@ Total: 255 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 修复ID生成逻辑：新proposal add使用per-project计数器
+- **Description**: ✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
 ---
 
 ## PRJ-20260516-002: cultivation-simulator
@@ -528,6 +528,24 @@ Total: 255 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/price-compare
 - **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
 - **Description**: 无人值守 Round6 完成
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-034: Direction A8: proposal stats JSON输出+健康度报告
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A8交付(commit d62720e)；stats命令改用regex解析(防数据丢失)+健康度指标(orphan/stale_intake/empty_last_update)；stats --format json输出health字段
 ---
 
 ## PRJ-20260418-004: future-little-leaders

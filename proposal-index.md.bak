@@ -442,7 +442,7 @@ Total: 255 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
-- **Description**: 修复ID生成逻辑：新proposal add使用per-project计数器
+- **Description**: ✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
 ---
 
 ## PRJ-20260516-002: cultivation-simulator

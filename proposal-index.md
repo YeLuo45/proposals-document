@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 252 proposals, 14 projects
+Total: 251 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -445,39 +445,17 @@ Total: 252 proposals, 14 projects
 - **Description**: 无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案ID唯一无冲突；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID"
 ---
 
-## PRJ-20260516-002: cultivation-simulator
+### P-20260522-028: card-game-prototype Direction A Round4: 修复proposal add的ID生成逻辑(按项目独立计数)
 
-- **Description**: 修仙模拟器游戏，支持角色养成和境界突破
-- **Git Repo**: https://github.com/YeLuo45/cultivation-simulator
-- **Local Path**: /home/hermes/projects/cultivation-simulator
-
-### P-20260522-028: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
-
-- **Project**: cultivation-simulator
-- **Owner**: 小墨
-- **Stage**: in_dev
-- **Last Update**: 2026-05-22
-- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
-- **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
-- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
----
-
-## PRJ-20250416-001: todolist
-
-- **Description**: Todo/任务管理Web应用
-- **Git Repo**: https://github.com/YeLuo45/todo-list
-- **Local Path**: /home/hermes/projects/todolist
-
-### P-20260522-029: TodoList Direction A Round 2: proposal archive-project + purge
-
-- **Project**: todolist
+- **Project**: card-game-prototype
 - **Owner**: 小墨
 - **Stage**: accepted
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
-- **Project Path**: /home/hermes/projects/todolist
-- **Git**: [GitHub](https://github.com/YeLuo45/todo-list)
-- **Description**: Round 2交付: archive-project批量归档(P-20260522-022/024) + purge彻底删除; proposal_manager_cli.py新增cmd_archive_project+cmd_purge; 修复P-20260522-026跨项目冲突(→P-20260522-027); CSV去重后251个唯一提案; sync-to-index验证通过
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
+- **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
+- **Description**: 无人值守模式Round4交付；P-20260522-028创建成功；新ID生成逻辑：按(project_id,日期)独立计数避免跨项目冲突；历史冲突(59个)需后续cleanup重编ID
 ---
 
 ## PRJ-20260418-004: future-little-leaders

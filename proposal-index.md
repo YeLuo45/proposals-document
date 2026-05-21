@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 251 proposals, 14 projects
+Total: 253 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -461,6 +461,41 @@ Total: 251 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/cultivation-simulator
 - **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
 - **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-030: price-compare Round4 - proposal diff 字段级对比
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
+- **Description**: 无人值守 Round4 完成
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-031: Direction A Round 3: 清理 CSV header 泄漏脏数据 + validate 0 errors 确认
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/prj-proposals-manager
+- **Git**: [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Description**: mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
 ---
 
 ## PRJ-20260418-004: future-little-leaders

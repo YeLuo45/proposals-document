@@ -1015,6 +1015,82 @@ def cmd_audit(args):
         print(f"\nRun with --fix to auto-repair issues")
 
 
+# ==================== Diff ====================
+
+def cmd_diff(args):
+    """Compare two proposals by ID and show field-level differences."""
+    import re as re_mod
+    import io as io_mod
+
+    with open(PROPOSALS_CSV, encoding='utf-8') as f:
+        raw_content = f.read()
+
+    FIELDNAMES_DIFF = ['id','title','owner','status','project_id','project_name','stage',
+                        'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                        'deployment_branch','prd_confirmation','tech_expectations','acceptance',
+                        'research_direction','last_update','engine','target','game_type','notes']
+
+    # Parse each physical line as a separate row
+    p_lines = [l for l in raw_content.split('\n') if re_mod.match(r'^P-\d{8}-\d{3},', l)]
+    parsed = {}
+    for line in p_lines:
+        try:
+            reader = csv.DictReader(io_mod.StringIO(line), fieldnames=FIELDNAMES_DIFF)
+            for row in reader:
+                if row.get('id','').startswith('P-'):
+                    parsed[row['id']] = row
+                    break
+        except:
+            pass
+
+    id1, id2 = args.id1, args.id2
+
+    if id1 not in parsed:
+        die(f"Proposal '{id1}' not found in CSV")
+    if id2 not in parsed:
+        die(f"Proposal '{id2}' not found in CSV")
+
+    p1, p2 = parsed[id1], parsed[id2]
+
+    # Fields to compare (exclude notes for readability)
+    compare_fields = [f for f in FIELDNAMES_DIFF if f not in ('notes',)]
+
+    print(f"\n=== Proposal Diff ===")
+    print(f"  Left:  {id1}  [{p1.get('project_id','')}]")
+    print(f"  Right: {id2}  [{p2.get('project_id','')}]")
+    print()
+
+    same = []
+    diffs = []
+    only_left = []
+    only_right = []
+
+    for field in compare_fields:
+        v1 = p1.get(field, '').strip()
+        v2 = p2.get(field, '').strip()
+        if v1 == v2:
+            if v1:  # Only show if non-empty
+                same.append((field, v1))
+        else:
+            diffs.append((field, v1, v2))
+
+    if diffs:
+        print(f"--- Different ({len(diffs)}) ---")
+        for field, v1, v2 in diffs:
+            print(f"  {field}:")
+            print(f"    - {v1 or '(empty)'}")
+            print(f"    + {v2 or '(empty)'}")
+
+    if same:
+        print(f"\n--- Same ({len(same)}) ---")
+        for field, v in same[:10]:
+            print(f"  {field}: {v[:60]}{'...' if len(v) > 60 else ''}")
+        if len(same) > 10:
+            print(f"  ... and {len(same) - 10} more")
+
+    print(f"\nTotal: {len(diffs)} different, {len(same)} same fields")
+
+
 # ==================== Main ====================
 
 def main():
@@ -1163,6 +1239,12 @@ def main():
     pr_audit = prop_sub.add_parser('audit', help='Audit proposals.csv for data quality issues')
     pr_audit.add_argument('--fix', action='store_true', help='Auto-fix issues found')
     pr_audit.set_defaults(func=cmd_audit)
+
+    # proposal diff
+    pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')
+    pr_diff.add_argument('id1', help='First proposal ID')
+    pr_diff.add_argument('id2', help='Second proposal ID')
+    pr_diff.set_defaults(func=cmd_diff)
 
     args = parser.parse_args()
     

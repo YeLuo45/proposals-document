@@ -145,3 +145,10 @@
 [2026-05-22 00:49:30] ERROR | die | Proposal ID already exists: P-20260522-006
 [2026-05-22 00:49:38] CSV_WRITE | proposals.csv | 259 rows, 22 fields
 [2026-05-22 00:49:38] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:50:06] ERROR | die | Operation failed: 'Namespace' object has no attribute 'id'
+[2026-05-22 00:50:35] ERROR | die | Operation failed: 'Namespace' object has no attribute 'id'
+[2026-05-22 00:51:45] CSV_WRITE | proposals.csv | 260 rows, 22 fields
+[2026-05-22 00:51:45] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:53:06] ERROR | die | dict contains fields not in fieldnames: 'research_direction', 'deployment_branch'
+[2026-05-22 00:53:10] ERROR | die | dict contains fields not in fieldnames: 'deployment_branch', 'research_direction'
+[2026-05-22 00:54:49] ERROR | die | Operation failed: [Errno 32] Broken pipe

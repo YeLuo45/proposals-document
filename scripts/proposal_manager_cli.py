@@ -77,8 +77,8 @@ VALID_GAME_TYPES = {"", "休闲", "策略", "卡牌", "RPG", "消除", "塔防",
 PROJECTS_CSV_HEADERS = ['id', 'name', 'proposal_count', 'git_repo', 'local_path', 'description', 'last_update']
 PROPOSALS_CSV_HEADERS = ['id', 'title', 'owner', 'status', 'project_id', 'project_name', 'stage',
                           'prd_path', 'tech_solution_path', 'project_path', 'git_repo', 'deployment_url',
-                          'prd_confirmation', 'tech_expectations', 'acceptance',
-                          'last_update', 'engine', 'target', 'game_type', 'notes']
+                          'deployment_branch', 'prd_confirmation', 'tech_expectations', 'acceptance',
+                          'research_direction', 'last_update', 'engine', 'target', 'game_type', 'notes']
 
 # ID patterns
 PROJECT_ID_PATTERN = re.compile(r'^PRJ-\d{8}-\d{3}$')
@@ -1754,7 +1754,7 @@ def cmd_export_proposals(args):
     output = io_mod.StringIO()
 
     if args.format == 'csv':
-        writer = csv.DictWriter(output, fieldnames=PROPOSALS_CSV_HEADERS)
+        writer = csv.DictWriter(output, fieldnames=PROPOSALS_CSV_HEADERS, extrasaction='ignore')
         writer.writeheader()
         writer.writerows(proposals)
         content = output.getvalue()
@@ -1785,9 +1785,8 @@ def cmd_import_proposals(args):
         die("No proposals found in import file")
 
     headers, existing_proposals = load_proposals()
-
-    imported_ids = set(r['id'] for r in imported_rows)
     existing_ids = {p['id'] for p in existing_proposals}
+    imported_ids = set(r['id'] for r in imported_rows)
 
     skipped = 0
     overwritten = 0
@@ -1818,7 +1817,7 @@ def cmd_import_proposals(args):
                 skipped += 1
                 continue
         else:
-            # Add new proposal
+            # Add new proposal - only use known headers, ignore extra fields
             new_row = {key: row.get(key, '') for key in PROPOSALS_CSV_HEADERS}
             existing_proposals.append(new_row)
             added += 1

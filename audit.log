@@ -27,3 +27,121 @@
 [2026-05-21 11:54:47] CSV_WRITE | projects.csv | 69 rows, 8 fields
 [2026-05-21 12:02:08] CSV_WRITE | proposals.csv | 239 rows, 20 fields
 [2026-05-21 12:02:16] CSV_WRITE | proposals.csv | 239 rows, 20 fields
+[2026-05-21 12:06:38] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:06:38] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:51] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:51] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:51] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:52] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:53] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:08:54] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:10:15] CSV_WRITE | proposals.csv | 240 rows, 20 fields
+[2026-05-21 12:27:10] CSV_WRITE | proposals.csv | 241 rows, 20 fields
+[2026-05-21 12:27:10] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:28:12] CSV_WRITE | proposals.csv | 241 rows, 20 fields
+[2026-05-21 12:31:26] CSV_WRITE | proposals.csv | 241 rows, 20 fields
+[2026-05-21 12:34:46] CSV_WRITE | proposals.csv | 241 rows, 20 fields
+[2026-05-21 12:38:33] ERROR | die | Proposal ID already exists: P-20260521-009
+[2026-05-21 12:38:41] ERROR | die | Proposal ID already exists: P-20260521-010
+[2026-05-21 12:38:49] CSV_WRITE | proposals.csv | 242 rows, 20 fields
+[2026-05-21 12:38:49] CSV_WRITE | projects.csv | 69 rows, 8 fields
+[2026-05-21 12:39:52] ERROR | die | Invalid acceptance: sync-to-index 验证通过：CSV 243行 → proposal-index.md 242提案，0 issues，proposal-index.md 正确派生, valid: {'', 'pending', 'rejected', 'accepted'}
+[2026-05-21 12:39:55] ERROR | die | Invalid acceptance: sync-to-index验证通过, valid: {'', 'pending', 'rejected', 'accepted'}
+[2026-05-21 12:40:01] CSV_WRITE | proposals.csv | 242 rows, 20 fields
+[2026-05-21 12:41:16] CSV_WRITE | proposals.csv | 242 rows, 20 fields
+[2026-05-21 20:08:45] ERROR | die | Project does not exist: PRJ-20260521-001
+[2026-05-21 20:09:00] CSV_WRITE | projects.csv | 0 rows, 4 fields
+[2026-05-21 20:09:05] CSV_WRITE | proposals.csv | 0 rows, 20 fields
+[2026-05-21 20:09:05] CSV_WRITE | projects.csv | 0 rows, 4 fields
+[2026-05-21 20:16:30] CSV_WRITE | proposals.csv | 0 rows, 20 fields
+[2026-05-21 20:23:17] CSV_WRITE | projects.csv | 1 rows, 4 fields
+[2026-05-21 20:23:27] CSV_WRITE | proposals.csv | 1 rows, 20 fields
+[2026-05-21 20:23:27] CSV_WRITE | projects.csv | 1 rows, 4 fields
+[2026-05-21 20:35:00] CSV_WRITE | proposals.csv | 1 rows, 20 fields
+[2026-05-21 20:35:31] CSV_WRITE | proposals.csv | 1 rows, 20 fields
+[2026-05-21 21:10:07] CSV_WRITE | proposals.csv | 1 rows, 20 fields
+[2026-05-22 00:22:36] CSV_WRITE | proposals.csv | 224 rows, 22 fields
+[2026-05-22 00:24:08] CSV_WRITE | proposals.csv | 238 rows, 22 fields
+[2026-05-22 00:24:08] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:35:54] CSV_WRITE | proposals.csv | 238 rows, 22 fields
+[2026-05-22 00:38:54] ERROR | die | Proposal 'P-20260521-007' not found in CSV
+[2026-05-22 00:39:28] CSV_WRITE | proposals.csv | 239 rows, 22 fields
+[2026-05-22 00:39:28] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:39:41] CSV_WRITE | proposals.csv | 239 rows, 22 fields
+[2026-05-22 00:44:54] CSV_WRITE | proposals.csv | 240 rows, 22 fields
+[2026-05-22 00:44:54] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:44:56] CSV_WRITE | proposals.csv | 241 rows, 22 fields
+[2026-05-22 00:44:56] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:44:58] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 00:44:58] CSV_WRITE | proposals.csv | 241 rows, 22 fields
+[2026-05-22 00:45:13] CSV_WRITE | proposals.csv | 242 rows, 22 fields
+[2026-05-22 00:45:13] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:45:29] CSV_WRITE | proposals.csv | 242 rows, 22 fields
+[2026-05-22 00:46:00] ERROR | die | Proposal ID already exists: P-20260522-003
+[2026-05-22 00:47:09] ERROR | die | Proposal ID already exists: P-20260522-003
+[2026-05-22 00:47:35] CSV_WRITE | proposals.csv | 242 rows, 22 fields
+[2026-05-22 00:47:37] ERROR | die | Proposal ID already exists: P-20260522-001
+[2026-05-22 00:47:37] ERROR | die | Proposal ID already exists: P-20260522-002
+[2026-05-22 00:47:37] ERROR | die | Proposal ID already exists: P-20260522-003
+[2026-05-22 00:47:38] ERROR | die | Proposal ID already exists: P-20260522-004
+[2026-05-22 00:47:38] ERROR | die | Proposal ID already exists: P-20260522-005
+[2026-05-22 00:47:38] CSV_WRITE | proposals.csv | 243 rows, 22 fields
+[2026-05-22 00:47:38] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:38] CSV_WRITE | proposals.csv | 244 rows, 22 fields
+[2026-05-22 00:47:38] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:39] CSV_WRITE | proposals.csv | 245 rows, 22 fields
+[2026-05-22 00:47:39] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:39] CSV_WRITE | proposals.csv | 246 rows, 22 fields
+[2026-05-22 00:47:39] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:39] CSV_WRITE | proposals.csv | 247 rows, 22 fields
+[2026-05-22 00:47:39] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:40] ERROR | die | Proposal ID already exists: P-20260522-006
+[2026-05-22 00:47:41] CSV_WRITE | proposals.csv | 248 rows, 22 fields
+[2026-05-22 00:47:41] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:47:55] CSV_WRITE | proposals.csv | 249 rows, 22 fields
+[2026-05-22 00:47:55] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:06] ERROR | die | Proposal ID already exists: P-20260522-011
+[2026-05-22 00:48:07] ERROR | die | Proposal ID already exists: P-20260522-012
+[2026-05-22 00:48:07] CSV_WRITE | proposals.csv | 250 rows, 22 fields
+[2026-05-22 00:48:07] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:07] CSV_WRITE | proposals.csv | 251 rows, 22 fields
+[2026-05-22 00:48:07] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:07] CSV_WRITE | proposals.csv | 252 rows, 22 fields
+[2026-05-22 00:48:07] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:08] CSV_WRITE | proposals.csv | 253 rows, 22 fields
+[2026-05-22 00:48:08] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:08] CSV_WRITE | proposals.csv | 254 rows, 22 fields
+[2026-05-22 00:48:08] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:08] CSV_WRITE | proposals.csv | 255 rows, 22 fields
+[2026-05-22 00:48:08] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:48:08] CSV_WRITE | proposals.csv | 256 rows, 22 fields
+[2026-05-22 00:48:08] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:49:22] CSV_WRITE | proposals.csv | 257 rows, 22 fields
+[2026-05-22 00:49:22] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:49:22] CSV_WRITE | proposals.csv | 258 rows, 22 fields
+[2026-05-22 00:49:22] CSV_WRITE | projects.csv | 71 rows, 8 fields
+[2026-05-22 00:49:30] ERROR | die | Proposal ID already exists: P-20260522-006
+[2026-05-22 00:49:38] CSV_WRITE | proposals.csv | 259 rows, 22 fields
+[2026-05-22 00:49:38] CSV_WRITE | projects.csv | 71 rows, 8 fields

@@ -20,9 +20,9 @@ SUBDIRS = [
     "workspace-research",
 ]
 
-# 需创建的 CSV 文件（带表头）
+#需创建的 CSV 文件（带表头）— 使用当前实际的 schema
 CSV_FILES = {
-    "projects.csv": "id,name,proposal_count,git_repo\n",
+    "projects.csv": "id,name,proposal_count,git_repo,local_path,prj_url,description,last_update\n",
     "proposals.csv": "id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,git_repo,deployment_url,prd_confirmation,tech_expectations,acceptance,last_update,engine,target,game_type,notes\n",
 }
 

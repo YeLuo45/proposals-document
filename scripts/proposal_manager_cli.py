@@ -704,6 +704,88 @@ def cmd_archive_proposal(args):
     log(f"Archived proposal: {args.id}")
 
 
+def cmd_archive(args):
+    """Bulk archive proposals by project ID or date threshold. Uses regex-based parsing to handle embedded newlines."""
+    import re as re_mod
+    import io as io_mod
+
+    with open(PROPOSALS_CSV, encoding='utf-8') as f:
+        raw_content = f.read()
+
+    FIELDNAMES_ARCH = ['id','title','owner','status','project_id','project_name','stage',
+                        'prd_path','tech_solution_path','project_path','git_repo','deployment_url',
+                        'deployment_branch','prd_confirmation','tech_expectations','acceptance',
+                        'research_direction','last_update','engine','target','game_type','notes']
+
+    p_lines = [l for l in raw_content.split('\n') if re_mod.match(r'^P-\d{8}-\d{3},', l)]
+    parsed = {}
+    for line in p_lines:
+        try:
+            reader = csv.DictReader(io_mod.StringIO(line), fieldnames=FIELDNAMES_ARCH)
+            for row in reader:
+                if row.get('id','').startswith('P-') and row['id'] not in parsed:
+                    parsed[row['id']] = row
+                    break
+        except:
+            pass
+
+    to_archive = []
+    for pid, row in parsed.items():
+        match = True
+        if args.project_id and row.get('project_id','') != args.project_id:
+            match = False
+        if args.before and row.get('last_update',''):
+            if row['last_update'] >= args.before:
+                match = False
+        if match and row.get('status','') != 'archived':
+            to_archive.append(pid)
+
+    if not to_archive:
+        print("No proposals match the archive criteria")
+        return
+
+    print(f"\n=== Archive Report ===")
+    print(f"Matched: {len(to_archive)} proposals")
+    for pid in sorted(to_archive):
+        row = parsed[pid]
+        print(f"  {pid} | {row.get('project_id','')} | {row.get('title','')[:50]} | last_update={row.get('last_update','')}")
+
+    if args.dry_run:
+        print(f"\n[Dry run] No changes made. Run without --dry-run to archive.")
+        return
+
+    # Apply archive: update status=archived for matched proposals
+    fixed_lines = []
+    for line in p_lines:
+        try:
+            reader = csv.DictReader(io_mod.StringIO(line), fieldnames=FIELDNAMES_ARCH)
+            rows = list(reader)
+            for row in rows:
+                if row.get('id','').startswith('P-') and row['id'] in to_archive:
+                    row['status'] = 'archived'
+                    import io as io_module
+                    output = io_module.StringIO()
+                    writer = csv.DictWriter(output, fieldnames=FIELDNAMES_ARCH, extrasaction='ignore')
+                    writer.writerow(row)
+                    fixed_lines.append(output.getvalue().rstrip('\n'))
+                    break
+            else:
+                fixed_lines.append(line)
+        except:
+            fixed_lines.append(line)
+
+    header = "id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,git_repo,deployment_url,deployment_branch,prd_confirmation,tech_expectations,acceptance,research_direction,last_update,engine,target,game_type,notes\n"
+    with open(PROPOSALS_CSV, 'w', encoding='utf-8') as f:
+        f.write(header + '\n'.join(fixed_lines))
+
+    print(f"\nArchived {len(to_archive)} proposals. Status set to 'archived'.")
+
+    # Sync index
+    class SyncArgs:
+        quiet = False
+    cmd_sync_to_index(SyncArgs())
+
+
 def cmd_next_project_id(args):
     """Generate next project ID"""
     _, projects = load_projects()
@@ -1102,9 +1184,10 @@ def cmd_audit(args):
         write_csv(PROPOSALS_CSV, FIELDNAMES_AUDIT, parsed)
         print(f"\nAuto-fixed {total_issues} issues in {PROPOSALS_CSV}")
 
-        # Re-sync index
-        cmd_sync_to_index(args)
-        print("Re-synced proposal-index.md")
+        # Re-sync index (skip if --csv-only)
+        if not getattr(args, 'csv_only', False):
+            cmd_sync_to_index(args)
+            print("Re-synced proposal-index.md")
 
     elif not args.fix and total_issues > 0:
         print(f"\nRun with --fix to auto-repair issues")
@@ -1742,19 +1825,22 @@ def main():
 
     # proposal sync-to-index
     pr_sync = prop_sub.add_parser('sync-to-index', help='Sync proposal-index.md from CSV (CSV is source of truth)')
+    pr_sync.add_argument('--dry-run', action='store_true', help='Show what would be written without making changes')
+    pr_sync.add_argument('--verbose', '-v', action='store_true', help='Show per-proposal changes and counts')
     pr_sync.set_defaults(func=cmd_sync_to_index)
 
     # proposal audit
     pr_audit = prop_sub.add_parser('audit', help='Audit proposals.csv for data quality issues')
     pr_audit.add_argument('--fix', action='store_true', help='Auto-fix issues found')
+    pr_audit.add_argument('--csv-only', action='store_true', help='Only audit and report, skip index sync')
     pr_audit.set_defaults(func=cmd_audit)
 
     # proposal archive-project (placeholder — requires cmd_archive implementation)
-    # pr_arch_proj = prop_sub.add_parser('archive-project', help='Archive all proposals for a project')
-    # pr_arch_proj.add_argument('--project-id', help='Project ID to archive')
-    # pr_arch_proj.add_argument('--before', help='Archive proposals with last_update before date (YYYY-MM-DD)')
-    # pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
-    # pr_arch_proj.set_defaults(func=cmd_archive)
+    pr_arch_proj = prop_sub.add_parser('archive-project', help='Archive all proposals for a project')
+    pr_arch_proj.add_argument('--project-id', help='Project ID to archive')
+    pr_arch_proj.add_argument('--before', help='Archive proposals with last_update before date (YYYY-MM-DD)')
+    pr_arch_proj.add_argument('--dry-run', action='store_true', help='Show what would be archived without changes')
+    pr_arch_proj.set_defaults(func=cmd_archive_proposal)
 
     # proposal diff
     pr_diff = prop_sub.add_parser('diff', help='Compare two proposals by ID')

@@ -1,0 +1,39 @@
+# Proposal Index
+
+Last updated: 2026-05-21
+Total: 2 proposals, 2 projects
+
+## PRJ-20260521-001: trending-dashboard
+
+- **Description**: 
+- **Git Repo**: https://github.com/YeLuo45/trending-dashboard
+- **Local Path**: 
+
+### P-20260521-001: Repositories Tab + 批量Sync Fork
+
+- **Project**: trending-dashboard
+- **Stage**: proposal
+- **Last Update**: 2026-05-21
+- **Project Path**: /home/hermes/projects/trending-dashboard
+- **Git**: [GitHub](https://github.com/YeLuo45/trending-dashboard)
+- **Description**: Tab: Forked→Repositories; 筛选fork/original; 批量sync fork
+---
+
+## PRJ-20260521-002: openclaw
+
+- **Description**: 
+- **Git Repo**: https://github.com/YeLuo45/openclaw
+- **Local Path**: 
+
+### P-20260521-002: openclaw中文版网站
+
+- **Project**: openclaw
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-21
+- **Technical Solution**: /home/hermes/proposals/workspace-dev/proposals/openclaw/P-20260521-002-tech-solution.md
+- **Project Path**: /home/hermes/workspace-dev/proposals/openclaw
+- **Git**: [GitHub](https://github.com/YeLuo45/openclaw)
+- **Deployment**: [https://yeluo45.github.io/openclaw/](https://yeluo45.github.io/openclaw/)
+- **Description**: Commit 9a7ea06, GitHub Actions构建中, 部署URL: https://yeluo45.github.io/openclaw/
+---

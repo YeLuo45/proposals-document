@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 239 proposals, 14 projects
+Total: 259 proposals, 17 projects
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -30,6 +30,303 @@ Total: 239 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/pixel-pal-web
 - **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
 - **Description**: Direction A3无人值守模式交付；proposal diff命令(commit 201c21f)；支持两个提案的字段级差异对比；发现P-20260522-001字段问题(acceptance/tech_expectations值互换)
+---
+
+## PRJ-20260421-001: card-game-prototype
+
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
+
+### P-20260522-003: card-game-prototype Direction A: CSV审计修复 + proposal-index同步
+
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
+- **Description**: 无人值守模式Direction A交付；audit --fix修复13个重复ID；CSV:240→228行(proposals)→242行(含新增P-20260522-003)；proposal-index同步完成
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-004: Direction A4: acceptance vs tech_expectations 字段语义调研
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A4调研完成(commit 201c21f)；结论：无全局互换问题；不同项目用法不同：pixel-pal-web用acceptance=日期+tech_expectations=accepted；future-little-leaders用tech_expectations=提交日志；proposal diff已能发现字段异常；无需全局互换修复
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-005: PRD: price-compare 数据层强化 - 真实API接入与价格图表
+
+- **Project**: price-compare
+- **Owner**: boss
+- **Stage**: approved_for_dev
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Git**: [GitHub](/home/hermes/projects/price-compare)
+- **Description**: 无人值守模式迭代，方向A: proposal_manager_cli.py 脚本操作 CSV → proposal-index.md 是派生索引；price-compare Round1
+---
+
+## PRJ-20260430-002: doc-editor
+
+- **Description**: 文档编辑器，支持多人协作编辑
+- **Git Repo**: https://github.com/YeLuo45/doc-editor
+- **Local Path**: /home/hermes/projects/doc-editor
+
+### P-20260522-006: Direction F: 导出增强 (JSON/LaTeX/DOCX)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 支持JSON/LaTeX/DOCX多格式导出
+---
+
+### P-20260522-007: Direction G: ResearcherAgent 网络搜索+插入引用
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: ResearcherAgent网络搜索 + 插入引用到文档
+---
+
+### P-20260522-008: Direction H: 文档模板系统 (6个预设模板)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 会议记录/项目提案/周报/头脑风暴/学习笔记模板
+---
+
+### P-20260522-009: Direction I: 协作者面板 (Collaborators Panel)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 协作者面板：在线状态/邀请/存在指示器
+---
+
+### P-20260522-010: Direction A: doc-editor 提案系统数据一致性规范
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: proposal_manager_cli.py脚本操作CSV→proposal-index.md派生索引；修复archive子命令冲突；批量登记doc-editor历史提案(A-I方向)
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-011: Direction A3: proposal diff 命令（字段对比） (copy)
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Duplicated from P-20260522-002
+---
+
+### P-20260522-012: proposal_manager_cli.py 功能增强 Direction A
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: in_dev
+- **Acceptance**: pending
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/P-20260522-003-prd.md
+- **Project Path**: /home/hermes/proposals
+- **Git**: [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
+- **Description**: 无人值守模式；强化sync-to-index、audit、export、import命令；补录github-repo-manager 35+ PRD
+---
+
+## PRJ-20260430-002: doc-editor
+
+- **Description**: 文档编辑器，支持多人协作编辑
+- **Git Repo**: https://github.com/YeLuo45/doc-editor
+- **Local Path**: /home/hermes/projects/doc-editor
+
+### P-20260522-013: Direction C: ReviewerAgent AI审核
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: ReviewerAgent AI自动化审查(语法检查+风格分析+一致性检查)
+---
+
+### P-20260522-014: Direction D: 文档评论功能 (Comments)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 文档评论面板：添加/删除评论，选定文本评论，匿名评论
+---
+
+### P-20260522-015: Direction E: 版本历史对比 (Version Diff)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 词语级diff算法+颜色标记(绿新增/红删除/黄修改)；多选版本对比
+---
+
+### P-20260522-016: Direction F: 导出增强 (JSON/LaTeX/DOCX)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 支持JSON/LaTeX/DOCX多格式导出，Word XML格式生成
+---
+
+### P-20260522-017: Direction G: ResearcherAgent 网络搜索+插入引用
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: ResearcherAgent网络搜索+插入引用到文档，SearchResult结构
+---
+
+### P-20260522-018: Direction H: 文档模板系统 (6个预设模板)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 6个预设模板：空白/会议记录/项目提案/周报/头脑风暴/学习笔记
+---
+
+### P-20260522-019: Direction I: 协作者面板 (Collaborators Panel)
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: 协作者面板：在线状态指示/邀请协作者/存在指示器
+---
+
+### P-20260522-020: Direction A: ManagerAgent 编排能力 + ContextPool localStorage 持久化
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: ManagerAgent状态机编排(DRAFT→IN_REVIEW→APPROVED→PUBLISHED)；ContextPool持久化到localStorage key=doc-editor-agent-contexts
+---
+
+### P-20260522-021: Direction B: EditorAgent AI格式化/润色
+
+- **Project**: doc-editor
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/doc-editor
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/doc-editor)
+- **Deployment**: [https://yeluo45.github.io/doc-editor/](https://yeluo45.github.io/doc-editor/)
+- **Description**: EditorAgent AI自动格式化+润色；role/content字段修复到AgentMessage
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-022: PRD: proposal_manager_cli.py 脚本优化 — CSV→proposal-index.md 同步增强
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: development
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md
+- **Project Path**: /home/hermes/prj-proposals-manager
+- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
+- **Description**: 无人值守模式Direction A交付
 ---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)
@@ -432,7 +729,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V55-collab-games.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-007: future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A)
+### P-20260519-007-dup: future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -448,7 +745,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V56-subscription-rewards.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-008: future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A)
+### P-20260519-008-dup: future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -464,7 +761,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V57-micro-learning.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-009: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
+### P-20260519-009-dup: future-little-leaders V58 Moral Education System 品德教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -480,7 +777,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V58-moral-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-010: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
+### P-20260519-010-dup: future-little-leaders V59 Coding Education System 编程教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -496,7 +793,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V59-coding-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-011: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
+### P-20260519-011-dup: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -512,7 +809,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V60-financial-literacy.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-012: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
+### P-20260519-012-dup: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -528,7 +825,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V61-environmental-awareness.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-013: future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A)
+### P-20260519-013-dup: future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -544,7 +841,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V62-geography-culture.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-014: future-little-leaders V63 Safety Education System 安全教育系统 (Direction A)
+### P-20260519-014-dup: future-little-leaders V63 Safety Education System 安全教育系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -560,7 +857,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V63-safety-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-015: future-little-leaders V64 Time Management System 时间管理系统 (Direction A)
+### P-20260519-015-dup: future-little-leaders V64 Time Management System 时间管理系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -576,7 +873,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V64-time-management.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-016: future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A)
+### P-20260519-016-dup: future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -592,7 +889,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V65-creative-writing.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-017: future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A)
+### P-20260519-017-dup: future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -608,7 +905,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V66-music-rhythm.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-018: future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A)
+### P-20260519-018-dup: future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19
@@ -624,7 +921,7 @@ Total: 239 proposals, 14 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V67-science-experiment.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
-### P-20260519-019: future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A)
+### P-20260519-019-dup: future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A)
 
 - **Project**: future-little-leaders
 - **Acceptance**: 2026-05-19

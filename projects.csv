@@ -4,7 +4,7 @@ PRJ-20250416-002,game-1024,6,https://github.com/YeLuo45/game-1024,/home/hermes/p
 PRJ-20250418-003,harness-desktop,2,https://github.com/YeLuo45/harness-desktop,/home/hermes/projects/harness-desktop,https://yeluo45.github.io/harness-desktop/,Electron桌面应用，用于AI Agent协作管理,2026-05-20
 PRJ-20260412-008,ai-subscription,38,https://github.com/YeLuo45/ai-subscription,/home/hermes/projects/ai-subscription,https://yeluo45.github.io/ai-subscription/,AI内容订阅聚合平台，支持多源订阅和智能推荐,2026-05-20
 PRJ-20260412-009,ai-stock-simulation,8,https://github.com/YeLuo45/ai-stock-simulation,/home/hermes/projects/ai-stock-simulation,https://yeluo45.github.io/ai-stock-simulation/,AI股票模拟交易平台，提供虚拟交易和回测功能,2026-05-20
-PRJ-20260417-001,prj-proposals-manager,3,https://github.com/YeLuo45/prj-proposals-manager,/home/hermes/projects/prj-proposals-manager,https://yeluo45.github.io/prj-proposals-manager/,提案管理系统，用于跟踪和管理项目提案生命周期,2026-05-22
+PRJ-20260417-001,prj-proposals-manager,1,https://github.com/YeLuo45/prj-proposals-manager,/home/hermes/projects/prj-proposals-manager,https://yeluo45.github.io/prj-proposals-manager/,提案管理系统，用于跟踪和管理项目提案生命周期,2026-05-22
 PRJ-20260417-002,android-hello,20,https://github.com/YeLuo45/android-hello,/home/hermes/projects/android-hello,https://yeluo45.github.io/android-hello/,Android入门示例应用,2026-05-20
 PRJ-20260418-001,monopoly3d,1,https://github.com/YeLuo45/monopoly3d,/home/hermes/projects/monopoly3d,https://yeluo45.github.io/monopoly3d/,3D大富翁游戏，支持多人联机对战,2026-05-20
 PRJ-20260418-002,creative-drawing-board,40,https://github.com/YeLuo45/creative-drawing-board,/home/hermes/projects/creative-drawing-board,https://yeluo45.github.io/creative-drawing-board/,在线创意画板，支持多种绘画工具和分享功能,2026-05-20
@@ -22,7 +22,7 @@ PRJ-20260421-003,personalClaw,1,https://github.com/YeLuo45/personalClaw,/home/he
 PRJ-20260422-001,ai-novel-assistant,4,https://github.com/YeLuo45/ai-novel-assistant,/home/hermes/projects/ai-novel-assistant,https://yeluo45.github.io/ai-novel-assistant/,AI小说创作助手，提供故事生成和写作辅助,2026-05-20
 PRJ-20260423-001,room-escape-puzzle,1,https://github.com/YeLuo45/room-escape-puzzle,/home/hermes/projects/room-escape-puzzle,https://yeluo45.github.io/room-escape-puzzle/,密室逃脱解谜游戏,2026-05-20
 PRJ-20260423-002,little-garden,1,https://github.com/YeLuo45/little-garden,/home/hermes/projects/little-garden,https://yeluo45.github.io/little-garden/,小型花园养成游戏,2026-05-20
-PRJ-20260423-005,hermes-agent-collab,2,https://github.com/YeLuo45/hermes-agent-collab,/home/hermes/projects/hermes-agent-collab,https://yeluo45.github.io/hermes-agent-collab/,Hermes Agent协作系统，用于多Agent任务协调,2026-05-20
+PRJ-20260423-005,hermes-agent-collab,16,https://github.com/YeLuo45/hermes-agent-collab,/home/hermes/projects/hermes-agent-collab,https://yeluo45.github.io/hermes-agent-collab/,Hermes Agent协作系统，用于多Agent任务协调,2026-05-22
 PRJ-20260424-001,OpenMAIC,1,https://github.com/YeLuo45/OpenMAIC,/home/hermes/projects/OpenMAIC,https://yeluo45.github.io/OpenMAIC/,多智能体交互课堂设计项目,2026-05-21
 PRJ-20260424-004,match3-puzzle,1,https://github.com/YeLuo45/match3-puzzle,/home/hermes/projects/match3-puzzle,https://yeluo45.github.io/match3-puzzle/,三消益智游戏,2026-05-20
 PRJ-20260426-003,calculator-app,1,https://github.com/YeLuo45/calculator-app,/home/hermes/projects/calculator-app,https://yeluo45.github.io/calculator-app/,计算器应用,2026-05-20

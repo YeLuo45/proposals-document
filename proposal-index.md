@@ -1,7 +1,41 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 250 proposals, 16 projects
+Total: 250 proposals, 14 projects
+
+## PRJ-20260418-004: future-little-leaders
+
+- **Description**: 儿童领导力培养互动游戏
+- **Git Repo**: https://github.com/YeLuo45/future-little-leaders
+- **Local Path**: /home/hermes/projects/future-little-leaders
+
+### P-20260520-002: flow-editor V45e 执行进度环
+
+- **Project**: future-little-leaders
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Acceptance**: 2026-05-21
+- **Last Update**: 2026-05-22
+- **Git**: [GitHub](https://github.com/YeLuo45/future-little-leaders)
+---
+
+## PRJ-20260423-005: hermes-agent-collab
+
+- **Description**: Hermes Agent协作系统，用于多Agent任务协调
+- **Git Repo**: https://github.com/YeLuo45/hermes-agent-collab
+- **Local Path**: /home/hermes/projects/hermes-agent-collab
+
+### P-20260519-054: Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager
+
+- **Project**: hermes-agent-collab
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: 2026-05-19
+- **Last Update**: 2026-05-22
+- **PRD Path**: docs/P-20260519-005-prd.md
+- **Git**: [GitHub](https://github.com/YeLuo45/hermes-agent-collab)
+- **Description**: hermes-agent-collab 链路追踪提案，project_id修复
+---
 
 ## PRJ-20260420-002: pixel-pal-web
 
@@ -391,21 +425,22 @@ Total: 250 proposals, 16 projects
 - **Description**: 无人值守模式Direction A Round2
 ---
 
-## PRJ-20260521-002: price-compare
+## PRJ-20260421-001: card-game-prototype
 
-- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
-- **Git Repo**: https://github.com/YeLuo45/price-compare
-- **Local Path**: /home/hermes/projects/price-compare
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
 
-### P-20260522-011: PRD: proposal_manager_cli.py CSV→index 同步增强
+### P-20260522-026: card-game-prototype Direction A Round3: 跨项目ID冲突检测修复 + audit改进
 
-- **Project**: price-compare
-- **Owner**: boss
-- **Stage**: approved_for_dev
+- **Project**: card-game-prototype
+- **Owner**: 小墨
+- **Stage**: proposal
 - **Last Update**: 2026-05-22
-- **Technical Solution**: /home/hermes/proposals
-- **Deployment**: [accepted](accepted)
-- **Description**: P-20260522-027
+- **Project Path**: /home/hermes/projects/card-game-prototype
+- **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
+- **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
+- **Description**: 无人值守模式；Direction A Round3；修复58个跨项目ID冲突(P-20260517/P-20260518序列被多项目共用)；改进audit检测跨项目冲突
 ---
 
 ## PRJ-20260418-004: future-little-leaders
@@ -846,6 +881,12 @@ Total: 250 proposals, 16 projects
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V59-coding-education.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
 
+## PRJ-20260419-007: ai-creator-h5
+
+- **Description**: AI创作助手H5应用
+- **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
+- **Local Path**: /home/hermes/projects/ai-creator-h5
+
 ### P-20260519-011: future-little-leaders V60 Financial Literacy System 财商教育系统 (Direction A)
 
 - **Project**: future-little-leaders
@@ -853,6 +894,12 @@ Total: 250 proposals, 16 projects
 - **Last Update**: 2026-05-21
 - **Git**: 分支: workspace-dev/proposals/future-little-leaders/PRD-V60-financial-literacy.md | [GitHub](https://github.com/YeLuo45/future-little-leaders)
 ---
+
+## PRJ-20260418-004: future-little-leaders
+
+- **Description**: 儿童领导力培养互动游戏
+- **Git Repo**: https://github.com/YeLuo45/future-little-leaders
+- **Local Path**: /home/hermes/projects/future-little-leaders
 
 ### P-20260519-012: future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A)
 
@@ -2118,6 +2165,12 @@ Total: 250 proposals, 16 projects
 - **Git**: 分支: workspace-dev/proposals/todo-list/PRD-V48-B3b-dynamic-tool-registry.md | [GitHub](https://github.com/YeLuo45/todo-list)
 ---
 
+## PRJ-20260419-007: ai-creator-h5
+
+- **Description**: AI创作助手H5应用
+- **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
+- **Local Path**: /home/hermes/projects/ai-creator-h5
+
 ### P-20260519-011: TodoList V49 B3c 多Agent并行执行+投票引擎
 
 - **Project**: todo-list
@@ -2190,24 +2243,11 @@ Total: 250 proposals, 16 projects
 - **Git**: 分支: workspace-pm/proposals/P-20260519-002-prd.md | [GitHub](https://github.com/YeLuo45/ai-price-compare)
 ---
 
-### P-20260520-002: flow-editor V45e 执行进度环
+## PRJ-20260419-007: ai-creator-h5
 
-- **Project**: future-little-leaders
-- **Owner**: 小墨
-- **Stage**: delivered
-- **Acceptance**: 2026-05-21
-- **Last Update**: 2026-05-21
----
-
-### P-20260519-054: Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager
-
-- **Project**: MISSING
-- **Owner**: 小墨
-- **Stage**: accepted
-- **Acceptance**: 2026-05-19
-- **Last Update**: 2026-05-21
-- **PRD Path**: docs/P-20260519-005-prd.md
----
+- **Description**: AI创作助手H5应用
+- **Git Repo**: https://github.com/YeLuo45/ai-creator-h5
+- **Local Path**: /home/hermes/projects/ai-creator-h5
 
 ### P-20260519-011: workflow v33 数字孪生+实时同步+虚实映射
 

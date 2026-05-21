@@ -162,17 +162,6 @@ Total: 260 proposals, 17 projects
 - **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
 - **Local Path**: /home/hermes/projects/pixel-pal-web
 
-### P-20260522-011: Direction A3: proposal diff 命令（字段对比） (copy)
-
-- **Project**: pixel-pal-web
-- **Owner**: 小墨
-- **Stage**: development
-- **Last Update**: 2026-05-22
-- **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
-- **Description**: Duplicated from P-20260522-002
----
-
 ### P-20260522-012: proposal_manager_cli.py 功能增强 Direction A
 
 - **Project**: pixel-pal-web
@@ -321,12 +310,13 @@ Total: 260 proposals, 17 projects
 - **Project**: prj-proposals-manager
 - **Owner**: 小墨
 - **Stage**: development
+- **Acceptance**: accepted
 - **Last Update**: 2026-05-22
 - **PRD Path**: workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md
 - **Project Path**: /home/hermes/prj-proposals-manager
-- **Git**: 分支: master | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Git**: 分支: master | Commit: 1fbc91b | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
 - **Deployment**: [https://yeluo45.github.io/prj-proposals-manager/](https://yeluo45.github.io/prj-proposals-manager/)
-- **Description**: 无人值守模式Direction A交付
+- **Description**: 无人值守模式Direction A交付: 修复cmd_archive引用错误(enable archive-project), audit 0 issues, 246 proposals, 自动同步机制完善。
 ---
 
 ## PRJ-20260420-002: pixel-pal-web
@@ -345,6 +335,23 @@ Total: 260 proposals, 17 projects
 - **Project Path**: /home/hermes/projects/pixel-pal-web
 - **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
 - **Description**: Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-024: Direction A: proposal_manager_cli.py CSV→index 管道强化 (stats/validate/dry-run/verbose)
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/prj-proposals-manager
+- **Git**: Commit: a9ffe65 | [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Description**: mode: unattended. 实现5个子功能: stats(统计), validate-csv(一致性校验), sync-to-index --dry-run/--verbose, audit --csv-only. . 本地已push，网络恢复后自动同步。
 ---
 
 ### P-20260517-034: future-little-leaders V4 离线优先 + 多设备同步 (Direction A)

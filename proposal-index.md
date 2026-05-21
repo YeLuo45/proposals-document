@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 251 proposals, 14 projects
+Total: 252 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -456,6 +456,24 @@ Total: 251 proposals, 14 projects
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
 - **Description**: Round 3: stats增强(CSV vs index一致性检查+recent_proposals_7d) + validate新增URL格式校验
+---
+
+## PRJ-20260420-002: pixel-pal-web
+
+- **Description**: 像素风格AI伙伴Web应用，支持人格定制和情感交互
+- **Git Repo**: https://github.com/YeLuo45/pixel-pal-web
+- **Local Path**: /home/hermes/projects/pixel-pal-web
+
+### P-20260522-029: Direction A7: proposal purge 永久删除归档提案
+
+- **Project**: pixel-pal-web
+- **Owner**: 小墨
+- **Stage**: development
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/pixel-pal-web
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Description**: Direction A7交付；purge命令已验证(dry-run测试通过，0个待删除-归档提案保护期7天)；CLI工具链完整
 ---
 
 ## PRJ-20260418-004: future-little-leaders

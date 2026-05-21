@@ -190,3 +190,5 @@
 [2026-05-22 01:20:57] ERROR | die | Proposal not found: P-20260522-027
 [2026-05-22 01:21:14] CSV_WRITE | proposals.csv | 253 rows, 22 fields
 [2026-05-22 01:21:14] CSV_WRITE | projects.csv | 74 rows, 8 fields
+[2026-05-22 01:22:00] CSV_WRITE | proposals.csv | 254 rows, 22 fields
+[2026-05-22 01:22:00] CSV_WRITE | projects.csv | 74 rows, 8 fields

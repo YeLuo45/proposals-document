@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 253 proposals, 14 projects
+Total: 254 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -496,6 +496,24 @@ Total: 253 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/prj-proposals-manager
 - **Git**: [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
 - **Description**: mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
+---
+
+## PRJ-20260521-002: price-compare
+
+- **Description**: 多平台比价软件，商品价格比较与购物决策辅助
+- **Git Repo**: https://github.com/YeLuo45/price-compare
+- **Local Path**: /home/hermes/projects/price-compare
+
+### P-20260522-032: price-compare Round5 - proposal export (JSON/CSV/LaTeX)
+
+- **Project**: price-compare
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/price-compare
+- **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
+- **Description**: 无人值守 Round5 完成
 ---
 
 ## PRJ-20260418-004: future-little-leaders

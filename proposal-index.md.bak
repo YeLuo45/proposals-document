@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 252 proposals, 14 projects
+Total: 253 proposals, 14 projects
 
 ## PRJ-20260418-004: future-little-leaders
 
@@ -479,6 +479,23 @@ Total: 252 proposals, 14 projects
 - **Project Path**: /home/hermes/projects/price-compare
 - **Git**: [GitHub](https://github.com/YeLuo45/price-compare)
 - **Description**: 无人值守 Round4 完成
+---
+
+## PRJ-20260417-001: prj-proposals-manager
+
+- **Description**: 提案管理系统，用于跟踪和管理项目提案生命周期
+- **Git Repo**: https://github.com/YeLuo45/prj-proposals-manager
+- **Local Path**: /home/hermes/projects/prj-proposals-manager
+
+### P-20260522-031: Direction A Round 3: 清理 CSV header 泄漏脏数据 + validate 0 errors 确认
+
+- **Project**: prj-proposals-manager
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Last Update**: 2026-05-22
+- **Project Path**: /home/hermes/projects/prj-proposals-manager
+- **Git**: [GitHub](https://github.com/YeLuo45/prj-proposals-manager)
+- **Description**: mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
 ---
 
 ## PRJ-20260418-004: future-little-leaders
@@ -2315,34 +2332,21 @@ Total: 252 proposals, 14 projects
 - **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
 ---
 
-### P-20260521-006: cultivation-simulator V49 宗门NPC自进化系统 (Direction A - generic-agent)
+## PRJ-20260421-001: card-game-prototype
 
-- **Project**: cultivation-simulator
-- **Owner**: 小墨
-- **Stage**: in_dev
-- **Acceptance**: 2026-05-21
-- **Last Update**: 2026-05-21
-- **PRD Path**: workspace-dev/proposals/cultivation-simulator/docs/P-20260521-005-prd.md
-- **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: timeout-approved | [GitHub](https://github.com/YeLuo45/cultivation-simulator)
-- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
----
+- **Description**: 卡牌游戏原型，支持多种卡牌规则和战斗系统
+- **Git Repo**: https://github.com/YeLuo45/card-game-prototype
+- **Local Path**: /home/hermes/projects/card-game-prototype
 
-### P-20260522-030: cultivation-simulator V50 内置提案系统 (Direction A - CSV同步)
+### P-20260521-004: card-game-prototype V69 插件系统 v2 (Direction C - ruflo/nanobot)
 
-- **Project**: cultivation-simulator
+- **Project**: card-game-prototype
 - **Owner**: 小墨
 - **Stage**: delivered
-- **Acceptance**: accepted
-- **Last Update**: 2026-05-22
-- **PRD Path**: workspace-pm/proposals/P-20260522-001-prd.md
-- **Project Path**: /home/hermes/projects/cultivation-simulator
-- **Git**: 分支: main | [GitHub](https://github.com/YeLuo45/cultivation-simulator/commit/c40241a)
-- **Deployment**: [https://yeluo45.github.io/cultivation-simulator/](https://yeluo45.github.io/cultivation-simulator/)
-- **Notes**: Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
----
-
-## PRJ-20260421-001: card-game-prototype
+- **Acceptance**: 2026-05-21
+- **Last Update**: 2026-05-21
+- **PRD Path**: workspace-pm/proposals/P-20260521-001-prd.md
+- **Project Path**: /home/hermes/workspace-dev/proposals/card-game-prototype
 - **Git**: [GitHub](https://github.com/YeLuo45/card-game-prototype)
 - **Deployment**: [https://yeluo45.github.io/card-game-prototype/](https://yeluo45.github.io/card-game-prototype/)
 ---

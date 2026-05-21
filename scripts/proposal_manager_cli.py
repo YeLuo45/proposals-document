@@ -1892,6 +1892,33 @@ def cmd_validate_proposals(args):
 
 # ==================== Export / Import ====================
 
+def _generate_latex_table(proposals):
+    """Generate LaTeX table from proposals list."""
+    headers = ['ID', 'Title', 'Owner', 'Status', 'Stage', 'Project', 'Last Update']
+    fields = ['id', 'title', 'owner', 'status', 'stage', 'project_name', 'last_update']
+
+    lines = [
+        "\\begin{table}[htbp]",
+        "\\centering",
+        "\\caption{Proposal Status Overview}",
+        "\\begin{tabular}{|" + "l|" * len(headers) + "}",
+        "\\hline",
+        " & ".join(headers) + " \\\\",
+        "\\hline",
+    ]
+
+    for p in proposals[:50]:  # Limit to 50 rows
+        row = [p.get(f, '').replace('&', '\\&').replace('%', '\\%')[:30] for f in fields]
+        lines.append(" & ".join(row) + " \\\\")
+
+    lines.extend([
+        "\\hline",
+        "\\end{tabular}",
+        "\\end{table}",
+        f"% Total: {len(proposals)} proposals" + (f" (showing first 50)" if len(proposals) > 50 else ""),
+    ])
+    return '\n'.join(lines)
+
 def cmd_export_proposals(args):
     """Export proposals to CSV or JSON format for a given project."""
     _, proposals = load_proposals()
@@ -1912,6 +1939,9 @@ def cmd_export_proposals(args):
         writer.writeheader()
         writer.writerows(proposals)
         content = output.getvalue()
+    elif args.format == 'latex':
+        import json
+        content = _generate_latex_table(proposals)
     else:  # json
         import json
         content = json.dumps(proposals, ensure_ascii=False, indent=2)
@@ -2216,7 +2246,7 @@ def main():
     # proposal export
     pr_export = prop_sub.add_parser('export', help='Export proposals to CSV or JSON format')
     pr_export.add_argument('--project', help='Filter by project ID')
-    pr_export.add_argument('--format', '-f', choices=['csv', 'json'], required=True, help='Output format')
+    pr_export.add_argument('--format', '-f', choices=['csv', 'json', 'latex'], required=True, help='Output format')
     pr_export.add_argument('--output', '-o', help='Output file path (print to stdout if not specified)')
     pr_export.set_defaults(func=cmd_export_proposals)
 

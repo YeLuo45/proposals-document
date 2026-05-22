@@ -1,7 +1,7 @@
 # Proposal Index
 
 Last updated: 2026-05-22
-Total: 178 proposals, 17 projects
+Total: 181 proposals, 17 projects
 
 ## PRJ-20260418-002: creative-drawing-board
 
@@ -59,6 +59,18 @@ Total: 178 proposals, 17 projects
 - **Git**: 分支: https://github.com/YeLuo45/ai-subscription
 ---
 
+### P-20260522-046: ai-subscription 策略市场 + 用户自定义策略 (Direction A阶段5)
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: approved_for_dev
+- **Acceptance**: timeout-approved
+- **Last Update**: pending
+- **Technical Solution**: /home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-046-prd.md
+- **Project Path**: /home/hermes/projects/ai-subscription
+- **Git**: 分支: https://github.com/YeLuo45/ai-subscription
+---
+
 ## PRJ-20260516-002: cultivation-simulator
 
 - **Description**: 修仙模拟器游戏，支持角色养成和境界突破
@@ -102,6 +114,18 @@ Total: 178 proposals, 17 projects
 - **Acceptance**: timeout-approved
 - **Last Update**: accepted
 - **Technical Solution**: /home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-042-prd.md
+- **Project Path**: /home/hermes/projects/ai-subscription
+- **Git**: 分支: https://github.com/YeLuo45/ai-subscription
+---
+
+### P-20260522-045: ai-subscription 路由策略自动化 + A/B测试框架 (Direction A阶段4交付)
+
+- **Project**: ai-subscription
+- **Owner**: 小墨
+- **Stage**: accepted
+- **Acceptance**: timeout-approved
+- **Last Update**: accepted
+- **Technical Solution**: /home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-044-prd.md
 - **Project Path**: /home/hermes/projects/ai-subscription
 - **Git**: 分支: https://github.com/YeLuo45/ai-subscription
 ---
@@ -1701,6 +1725,19 @@ Total: 178 proposals, 17 projects
 - **Owner**: 小墨
 - **Stage**: delivered
 - **Last Update**: 2026-05-22
+- **Git**: 分支: https://github.com/YeLuo45/proposals-document
+- **Description**: V52交付;sync-to-index功能完整;--dry-run/--project/--check/--delta正常;audit 0 issues;commit b1a97dc
+---
+
+### P-20260522-046: V52: sync-to-index命令完整功能验证
+
+- **Project**: todo-list
+- **Owner**: 小墨
+- **Stage**: delivered
+- **Last Update**: 2026-05-22
+- **PRD Path**: workspace-dev/proposals/todo-list/PRD-V52-Direction-A.md
+- **Git**: 分支: https://github.com/YeLuo45/proposals-document
+- **Description**: V52交付;sync-to-index完整功能(--dry-run/--project/--check/--delta);audit 0 issues;commit e9a7075
 ---
 
 ## PRJ-20260423-005: hermes-agent-collab

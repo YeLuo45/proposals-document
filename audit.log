@@ -229,3 +229,10 @@
 [2026-05-22 07:48:37] CSV_WRITE | proposals.csv | 168 rows, 20 fields
 [2026-05-22 07:51:19] ERROR | die | dict contains fields not in fieldnames: None
 [2026-05-22 07:56:34] ERROR | die | dict contains fields not in fieldnames: None
+[2026-05-22 09:15:00] ERROR | die | Project does not exist: PRJ-20260422-001
+[2026-05-22 09:15:12] ERROR | die | dict contains fields not in fieldnames: 'last_update', 'local_path', 'description'
+[2026-05-22 09:15:22] ERROR | die | Proposal ID already exists: P-20260522-046
+[2026-05-22 09:15:32] ERROR | die | dict contains fields not in fieldnames: None
+[2026-05-22 09:15:56] ERROR | die | Project does not exist: PRJ-20260430-002
+[2026-05-22 09:16:05] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value
+[2026-05-22 09:16:27] ERROR | die | Operation failed: cannot access local variable 'project' where it is not associated with a value

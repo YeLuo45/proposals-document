@@ -4275,19 +4275,20 @@ Iteration: 9/9
 
 - **Project**: pixel-pal-web
 - **Owner**: 小墨
-- **Stage**: approved_for_dev
-- **Acceptance**: PRD → Tech Solution → Test Cases → dev委托 → 验收
+- **Stage**: ✅ delivered
+- **Acceptance**: All 3 iterations complete + merged to master + deployed
 - **Last Update**: 2026-05-31
 - **PRD Path**: workspace-pm/proposals/P-20260531-001-prd.md
 - **Tech Solution**: workspace-pm/proposals/P-20260531-001-tech-solution.md
 - **Test Cases**: workspace-pm/proposals/P-20260531-001-test-cases.md
 - **Project Path**: /home/hermes/projects/pixel-pal-web
-- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web)
+- **Git**: [GitHub](https://github.com/YeLuo45/pixel-pal-web) | master → gh-pages
 - **Deployment**: [https://yeluo45.github.io/pixel-pal-web/](https://yeluo45.github.io/pixel-pal-web/)
 - **Branch**: master (dev) / gh-pages (deploy)
 - **Project ID**: PRJ-20260420-002
 - **Proposal ID**: P-20260531-001
 - **Description**: 分3个迭代将PixelPal重设计为符合Apple macOS Human Interface Guidelines的沉浸式AI伴侣界面：Iteration 1 (Design Foundation) CSS变量+色彩+字体；Iteration 2 (Layout & Components) Sidebar毛玻璃+输入框+按钮；Iteration 3 (Motion & Polish) 动效+SF Symbols+深浅色模式
 - **Design Spec**: 设计方案见 PRD，包含完整的 CSS Design Tokens 定义（40+ 变量）、macOS Type Scale、动效规格、组件规范
+- **Iterations**: v169 (Iter1) → v170 (Iter2) → v171 (Iter3) → master (merge commit 71c2eb2)
 
 | P-20260526-001 | todolist | Bug Fix: Gist sync credentials mismatch + empty data + __taskStore | fix | in_dev | [PRD](/home/hermes/proposals/workspace-pm/proposals/TodoList/P-20260526-001-prd.md) | | fix/gist-sync-bugs | https://yeluo45.github.io/todo-list/ | | 2026-05-26 |

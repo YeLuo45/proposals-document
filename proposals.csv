@@ -1,189 +1,153 @@
-id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,deployment_branch,prd_confirmation,tech_expectations,acceptance,research_direction,last_update,engine,target,game_type,notes
-P-20260517-034,future-little-leaders V4 离线优先 + 多设备同步 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-035,future-little-leaders V5 可视化任务编排画布 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-003,future-little-leaders V6 自进化技能树/成长图谱系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-005,future-little-leaders V7 家庭通知中枢 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-010,future-little-leaders V9 成长报告 AI 总结 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-012,future-little-leaders V10 V3 M5 Dashboard 补全 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-013,future-little-leaders V11 Flow 模板市场 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-014,future-little-leaders V12 积分商城增强 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-015,future-little-leaders V13 V4 离线同步深度集成 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-016,future-little-leaders V14 多语言 i18n 支持 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-017,future-little-leaders V15 儿童社交功能 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-018,future-little-leaders V16 微信小程序特定功能 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-020,future-little-leaders V18 Advanced Data Analytics (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-021,future-little-leaders V19 AI-Driven Personalized Task Recommendation (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-022,future-little-leaders V20 Parent Growth Academy 家长成长学院 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-023,future-little-leaders V21 Home-School Collaboration 家校协作实时通知 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-024,future-little-leaders V22 Multi-Child Family Management 多儿童家庭管理 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-025,future-little-leaders V23 Seasonal Challenge + Badge Evolution 赛季系统+徽章进化 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-026,future-little-leaders V24 Offline-First PWA Enhancement 离线优先增强 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-027,future-little-leaders V25 E2E Testing Infrastructure Playwright测试框架 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-029,future-little-leaders V26 WeChat Mini-Program Deep Integration 微信深度集成 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-030,future-little-leaders V27 Performance Optimization + Code Splitting 性能优化 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-031,future-little-leaders V28 Accessibility + i18n Enhancement 无障碍增强 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-032,future-little-leaders V29 Security Hardening + Privacy Protection 安全加固 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-033,future-little-leaders V30 Anti-Cheat System + Reputation Scoring 反作弊+信誉评分 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-034,future-little-leaders V31 API Gateway + Rate Limiting API网关+限流 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-035,future-little-leaders V32 WebSocket Real-time + Cloud Functions 实时通信 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-036,future-little-leaders V33 Plugin Marketplace + Theme System 插件市场+主题系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-037,future-little-leaders V34 AI Companion Smart Buddy Assistant 智能伙伴 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-038,future-little-leaders V35 Family Ritual System 家庭仪式感 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-039,future-little-leaders V36 AI Tutor Pipeline Multi-Agent协作教学 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-040,future-little-leaders V37 Multi-language + Cultural Localization 多语言+文化本地化 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-041,future-little-leaders V38 Data Portability + Blockchain Receipts 数据主权+区块链凭证 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-042,future-little-leaders V39 AR/VR Growth Space 沉浸式成长空间 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-043,future-little-leaders V40 Smart Home Integration 智能家居联动 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-044,future-little-leaders V41 Cross-Platform Widgets + Mini App 跨平台Widgets+小程序生态 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-045,future-little-leaders V42 Developer SDK + Plugin API 开放平台SDK (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-046,future-little-leaders V43 Personalized Learning Path 个性化学习路径引擎 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-047,future-little-leaders V44 Emotional Intelligence Training 情绪智力训练 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-048,future-little-leaders V45 Parent-Child Activity System 亲子活动系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-049,future-little-leaders V46 Reading Tracker System 阅读追踪系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-050,future-little-leaders V47 Social Learning Circles 社交学习圈 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-051,future-little-leaders V48 Physical Activity Tracker 运动追踪系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-052,future-little-leaders V49 Creative Arts Studio 创意艺术工作室 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-001,future-little-leaders V50 Gamified Science Lab 游戏化科学实验室 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-002,future-little-leaders V51 Digital Pet Companion 虚拟宠物伙伴 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-003,future-little-leaders V52 Sleep & Wellness Tracker 睡眠健康追踪 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-004,future-little-leaders V53 Personalized Avatar System 个性化虚拟形象 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-005,future-little-leaders V54 Family Memory Archive 家庭回忆档案 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-006,future-little-leaders V55 Collaborative Game System 协作游戏系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-007,future-little-leaders V56 Subscription & Rewards System 订阅奖励系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-008,future-little-leaders V57 Micro-learning System 碎片化学习系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-009,future-little-leaders V58 Moral Education System 品德教育系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-010,future-little-leaders V59 Coding Education System 编程教育系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-012,future-little-leaders V61 Environmental Awareness System 环保意识教育 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-013,future-little-leaders V62 Geography Culture System 世界地理与文化 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-014,future-little-leaders V63 Safety Education System 安全教育系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-015,future-little-leaders V64 Time Management System 时间管理系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-016,future-little-leaders V65 Creative Writing System 创意写作系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-017,future-little-leaders V66 Music & Rhythm System 音乐与节奏系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-018,future-little-leaders V67 Science Experiment System 科学实验系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-019,future-little-leaders V68 Art Workshop System 美术工作坊系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-020,future-little-leaders V69 Math Playground System 数学游乐场系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-021,future-little-leaders V70 Language Learning System 语言学习系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-022,future-little-leaders V71 Health & Nutrition System 健康营养系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-023,future-little-leaders V72 PBL Project Learning System PBL项目制学习 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-024,future-little-leaders V73 Critical Thinking Training System 思辨能力训练 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-025,future-little-leaders V74 Public Speaking System 演讲与口才系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-026,future-little-leaders V75 Leadership Challenge System 领导力挑战系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-027,future-little-leaders V76 Family Charter System 家庭宪章系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-028,future-little-leaders V77 Growth Journal System 成长日记系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-029,future-little-leaders V78 Peer Coaching System 同伴辅导系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-030,future-little-leaders V79 Achievement Badge System 成就徽章系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-031,future-little-leaders V80 Daily Challenge System 每日挑战系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-032,future-little-leaders V81 Habit Master System 习惯养成系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-033,future-little-leaders V82 Mood Journal System 情绪日记系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-034,future-little-leaders V83 Study Room System 自习室系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-035,future-little-leaders V84 Knowledge Tree System 知识树系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-036,future-little-leaders V85 Reading Club System 读书会系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-037,future-little-leaders V86 Parent-Child Challenge System 亲子挑战系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-038,future-little-leaders V87 Growth Report Card System 成长报告卡系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-039,future-little-leaders V88 Character Quest System 品格修炼系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-040,future-little-leaders V89 Weekend Camp System 周末营系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-041,future-little-leaders V90 Dream Journal System 梦想日记系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-042,future-little-leaders V91 Social Skills Dojo System 社交技能道场 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-043,future-little-leaders V92 Creative Drama System 创意戏剧系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-044,future-little-leaders V93 Mindfulness Garden System 正念花园系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-045,future-little-leaders V94 Science Museum System 科学博物馆系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-046,future-little-leaders V95 World Culture Explorer System 世界文化探索系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-047,future-little-leaders V96 Digital Pet System 数字宠物系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-048,future-little-leaders V97 Daily Ceremonies System 日常仪式系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-049,future-little-leaders V98 Interest Discovery System 兴趣发现系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-050,future-little-leaders V99 Growth Portfolio System 成长档案袋系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-051,future-little-leaders V100 Family Legacy System 家族传承系统 (Direction A),,archived,PRJ-20260418-004,future-little-leaders,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-029,ai-creator-h5 多渠道分享 (Direction B),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-030,ai-creator-h5 记忆系统 (Direction C),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-031,ai-creator-h5 PWA离线优先增强 (Direction D),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-032,ai-creator-h5 跨平台桌面端 (Direction E),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-033,ai-creator-h5 端到端加密 (Direction F),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-036,ai-creator-h5 实时协作 (Direction C),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-037,ai-creator-h5 API开放平台 (Direction D),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-001,ai-creator-h5 AI创作工作流编排器 (Direction A iter3),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-002,ai-creator-h5 AI角色组合协作系统 V2 (Direction B iter2),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-004,ai-creator-h5 AI创作工作流编排器 v3 (Direction A iter5),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-006,ai-creator-h5 AI创作工作流编排器 v5 (Direction A iter7),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-007,ai-creator-h5 AI创作工作流编排器 v6 (Direction A iter8),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-008,ai-creator-h5 AI创作工作流编排器 v7 (Direction A iter9),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-009,ai-creator-h5 AI创作工作流编排器 v8 (Direction A iter10),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-011,ai-creator-h5 AI创作工作流编排器 v10 (Direction A iter12),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-019,ai-creator-h5 AI创作工作流编排器 v18 (Direction A iter20),,active,PRJ-20260419-007,ai-creator-h5,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-053,hermes-agent-collab 实时协作编辑（Direction AF）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-054,hermes-agent-collab 分布式追踪增强（Direction AG）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-055,hermes-agent-collab 通知管道（Direction AH）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-056,hermes-agent-collab A/B 测试框架（Direction AI）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-057,hermes-agent-collab Playground / REPL 沙盒环境（Direction AJ）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-058,hermes-agent-collab 知识图谱增强（Direction AK）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-052,hermes-agent-collab Admin UI 仪表盘扩展（Direction AN）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260519-053,hermes-agent-collab API 限流与配额管理（Direction AO）,,active,PRJ-20260423-005,hermes-agent-collab,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260518-028,preschool-puzzle A12道具历史 V22 (Direction A - A12),,active,PRJ-20260427-001,preschool-puzzle,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260517-028,ai-creator-h5 工具系统生态 (Direction A),,active,PRJ-20260430-001,tower-baby-guard,,,,,,2026-05-21,,提案,,2026-05-22,,,,
-P-20260520-002,flow-editor V45e 执行进度环,小墨,deployed,PRJ-20260418-004,future-little-leaders,delivered,,,,,2026-05-22,feat(flow-editor): V45e 执行进度环(executionProgress状态/SVG圆形进度条226.195周长/流动填充动画/FlowNode进度环容器/100%完成); Git commit 75823874; push成功,accepted,,2026-05-22,,,,
-P-20260519-054,Direction AS: 深度链路追踪 — InMemoryTraceStore / Slow Span / EnhancedTracingManager,小墨,active,PRJ-20260423-005,hermes-agent-collab,accepted,docs/P-20260519-005-prd.md,,,,2026-05-22,,accepted,,2026-05-19,,,,hermes-agent-collab 链路追踪提案，project_id修复
-P-20260519-011,workflow v33 数字孪生+实时同步+虚实映射,小墨,archived,PRJ-20260419-007,ai-creator-h5,delivered,,,,,2026-05-21,feat(workflow): v33 数字孪生(虚拟实体建模/物理属性映射/状态同步/生命周期); 实时同步(数据流/双向同步/延迟补偿/冲突解决); 虚实映射(IoT传感器/设备控制/地理空间/3D可视化); 数字孪生面板(实体管理/监控/同步状态); Git commit 0b3f593; push成功,accepted,,2026-05-22,,,,
-P-20260521-003,cultivation-simulator V48 插件市场系统 (Direction E - ruflo/nanobot),小墨,active,PRJ-20260516-002,cultivation-simulator,in_dev,workspace-dev/proposals/cultivation-simulator/docs/P-20260521-003-prd.md,,/home/hermes/projects/cultivation-simulator,,2026-05-21,,无人值守模式交付；参考ruflo/nanobot设计文档实现插件市场系统,,2026-05-22,,,,
-P-20260521-004,card-game-prototype V69 插件系统 v2 (Direction C - ruflo/nanobot),小墨,deployed,PRJ-20260421-001,card-game-prototype,delivered,workspace-pm/proposals/P-20260521-001-prd.md,,/home/hermes/workspace-dev/proposals/card-game-prototype,,2026-05-21,,feat: 插件系统 v2 (V69) — ruflo Hook架构 + nanobot Registry模式; Git commit a0d6e26; push via GitHub REST API; remote SHA 2ad5a393,,2026-05-22,,,,
-P-20260521-002,多平台比价App (Vue3),boss,intake,PRJ-20260521-002,price-compare,approved_for_dev,,,/home/hermes/projects/price-compare,,2026-05-21,,Vue3+Vite多端比价，mock数据，监控列表，历史价格走势,,2026-05-22,,,,
-P-20260521-005,proposal_manager_cli.py sync-to-index 命令,小墨,accepted,PRJ-20260420-002,pixel-pal-web,in_dev,workspace-pm/proposals/P-20260521-005-prd.md,,/home/hermes/projects/pixel-pal-web,,2026-05-21,,Direction A无人值守模式交付；sync-to-index命令(commit 6586ae5/push 5eff835)；proposal-index.md 6819→2140行，237提案13项目,,2026-05-22,,,,
-P-20260521-006,cultivation-simulator V49 宗门NPC自进化系统 (Direction A - generic-agent),小墨,active,PRJ-20260516-002,cultivation-simulator,in_dev,workspace-dev/proposals/cultivation-simulator/docs/P-20260521-005-prd.md,,/home/hermes/projects/cultivation-simulator,,2026-05-21,,无人值守模式；参考generic-agent五层记忆实现NPC自进化,,2026-05-22,,,,
-P-20260522-001,Direction A2: CSV重复ID检测+修复,小墨,intake,PRJ-20260420-002,pixel-pal-web,development,,,/home/hermes/projects/pixel-pal-web,,2026-05-22,,accepted,,2026-05-22,,,,Direction A3发现字段值互换；acceptance=accepted是正确值(交付通过)；已通过proposal diff发现并更正
-P-20260522-002,Direction A3: proposal diff 命令（字段对比）,小墨,clarifying,PRJ-20260420-002,pixel-pal-web,development,,,/home/hermes/projects/pixel-pal-web,,2026-05-22,,accepted,,2026-05-22,,,,Direction A3无人值守模式交付；proposal diff命令(commit 201c21f)；支持两个提案的字段级差异对比；发现P-20260522-001字段问题(acceptance/tech_expectations值互换)
-P-20260522-003,card-game-prototype Direction A: CSV审计修复 + proposal-index同步,小墨,accepted,PRJ-20260421-001,card-game-prototype,accepted,,,/home/hermes/projects/card-game-prototype,,2026-05-22,,accepted,,2026-05-22,,,,无人值守模式Direction A交付；audit --fix修复13个重复ID；CSV:240→228行(proposals)→242行(含新增P-20260522-003)；proposal-index同步完成
-P-20260522-004,Direction A4: acceptance vs tech_expectations 字段语义调研,小墨,intake,PRJ-20260420-002,pixel-pal-web,development,,,/home/hermes/projects/pixel-pal-web,,2026-05-22,,accepted,,2026-05-22,,,,Direction A4调研完成(commit 201c21f)；结论：无全局互换问题；不同项目用法不同：pixel-pal-web用acceptance=日期+tech_expectations=accepted；future-little-leaders用tech_expectations=提交日志；proposal diff已能发现字段异常；无需全局互换修复
-P-20260522-005,PRD: price-compare 数据层强化 - 真实API接入与价格图表,boss,accepted,PRJ-20260521-002,price-compare,approved_for_dev,,,/home/hermes/projects/price-compare,,2026-05-22,,无人值守模式 Round1 完成。feat commit 00355f4，构建成功(7.30s)，数据层强化 + ECharts + IndexedDB。,,2026-05-22,,,,无人值守模式迭代，方向A: proposal_manager_cli.py 脚本操作 CSV → proposal-index.md 是派生索引；price-compare Round1
-P-20260522-006,Direction F: 导出增强 (JSON/LaTeX/DOCX),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,支持JSON/LaTeX/DOCX多格式导出
-P-20260522-007,Direction G: ResearcherAgent 网络搜索+插入引用,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,ResearcherAgent网络搜索 + 插入引用到文档
-P-20260522-008,Direction H: 文档模板系统 (6个预设模板),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,会议记录/项目提案/周报/头脑风暴/学习笔记模板
-P-20260522-009,Direction I: 协作者面板 (Collaborators Panel),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,协作者面板：在线状态/邀请/存在指示器
-P-20260522-010,Direction A: doc-editor 提案系统数据一致性规范,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,proposal_manager_cli.py脚本操作CSV→proposal-index.md派生索引；修复archive子命令冲突；批量登记doc-editor历史提案(A-I方向)
-P-20260522-012,proposal_manager_cli.py 功能增强 Direction A,小墨,accepted,PRJ-20260420-002,pixel-pal-web,in_dev,workspace-pm/proposals/P-20260522-003-prd.md,,/home/hermes/proposals,Direction A,2026-05-22,,accepted,,2026-05-22,,,,无人值守模式；强化sync-to-index、audit、export、import命令；补录github-repo-manager 35+ PRD
-P-20260522-013,Direction C: ReviewerAgent AI审核,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,ReviewerAgent AI自动化审查(语法检查+风格分析+一致性检查)
-P-20260522-014,Direction D: 文档评论功能 (Comments),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,文档评论面板：添加/删除评论，选定文本评论，匿名评论
-P-20260522-015,Direction E: 版本历史对比 (Version Diff),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,词语级diff算法+颜色标记(绿新增/红删除/黄修改)；多选版本对比
-P-20260522-016,Direction F: 导出增强 (JSON/LaTeX/DOCX),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,支持JSON/LaTeX/DOCX多格式导出，Word XML格式生成
-P-20260522-017,Direction G: ResearcherAgent 网络搜索+插入引用,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,ResearcherAgent网络搜索+插入引用到文档，SearchResult结构
-P-20260522-018,Direction H: 文档模板系统 (6个预设模板),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,6个预设模板：空白/会议记录/项目提案/周报/头脑风暴/学习笔记
-P-20260522-019,Direction I: 协作者面板 (Collaborators Panel),小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,协作者面板：在线状态指示/邀请协作者/存在指示器
-P-20260522-020,Direction A: ManagerAgent 编排能力 + ContextPool localStorage 持久化,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,ManagerAgent状态机编排(DRAFT→IN_REVIEW→APPROVED→PUBLISHED)；ContextPool持久化到localStorage key=doc-editor-agent-contexts
-P-20260522-021,Direction B: EditorAgent AI格式化/润色,小墨,accepted,PRJ-20260430-002,doc-editor,accepted,,,/home/hermes/projects/doc-editor,,2026-05-22,,accepted,,2026-05-22,,,,EditorAgent AI自动格式化+润色；role/content字段修复到AgentMessage
-P-20260522-022,PRD: proposal_manager_cli.py 脚本优化 — CSV→proposal-index.md 同步增强,小墨,archived,PRJ-20260417-001,prj-proposals-manager,development,workspace-pm/proposals/prj-proposals-manager/P-20260522-003-prd.md,,/home/hermes/prj-proposals-manager,,2026-05-22,,accepted,,2026-05-22,,,,"无人值守模式Direction A交付: 修复cmd_archive引用错误(enable archive-project), audit 0 issues, 246 proposals, 自动同步机制完善。Commit: 1fbc91b"
-P-20260522-023,Direction A5: cmd_archive regex解析修复 + archive-project命令,小墨,intake,PRJ-20260420-002,pixel-pal-web,development,,,/home/hermes/projects/pixel-pal-web,,2026-05-22,,accepted,,2026-05-22,,,,Direction A5交付(commit 9f9cb3f)；cmd_archive改用regex解析(防数据丢失)；发现future-little-leaders有95个提案可归档(last_update=2026-05-21)；dry-run测试通过；CLI现在有archive/diff/audit/sync-to-index等完整工具链
-P-20260522-024,Direction A: proposal_manager_cli.py CSV→index 管道强化 (stats/validate/dry-run/verbose),小墨,archived,PRJ-20260417-001,prj-proposals-manager,accepted,,,/home/hermes/projects/prj-proposals-manager,,2026-05-22,,accepted,,2026-05-22,,,,"mode: unattended. 实现5个子功能: stats(统计), validate-csv(一致性校验), sync-to-index --dry-run/--verbose, audit --csv-only. Commit: a9ffe65. 本地已push，网络恢复后自动同步。"
-P-20260522-025,card-game-prototype Direction A Round2: proposal sync-to-index 验证 + CSV数据质量报告,小墨,accepted,PRJ-20260421-001,card-game-prototype,accepted,,,/home/hermes/projects/card-game-prototype,,2026-05-22,,accepted,,2026-05-22,,,,无人值守模式Round2交付；发现58个跨项目ID冲突(future-little-leaders/ai-creator-h5/hermes-agent-collab等共用P-20260517/P-20260518序列)；audit未检测此问题；card-game-prototype自身3个提案ID唯一无冲突；projects.csv中PRJ-20260508-001→PRJ-20260421-001已修复
-P-20260522-026,PRD: proposal_manager_cli.py 深化优化 Round 2,小墨,accepted,PRJ-20260417-001,prj-proposals-manager,accepted,workspace-pm/proposals/prj-proposals-manager/P-20260522-026-prd.md,,/home/hermes/prj-proposals-manager,,2026-05-22,,accepted,,2026-05-22,,,,无人值守模式Round3交付；发现59个跨项目ID冲突(P-20260517-P-20260519序列被5+项目共用)；影响future-little-leaders/ai-creator-h5/preschool-puzzle/hermes-agent-collab/todo-list等；card-game-prototype自身3个提案(ID唯一)；根因:proposal add仅按日计数不区分项目；修复需重写ID生成逻辑或迁移历史数据；audit未检测此类冲突(Round2已报告)；建议后续cleanup脚本重编冲突ID
-P-20260522-027,card-game-prototype Round5: 修复 proposal add ID 生成逻辑 (per-project counter),小墨,accepted,PRJ-20260421-001,card-game-prototype,accepted,,,/home/hermes/projects/card-game-prototype,,2026-05-22,,accepted,,2026-05-22,,,,✅ Round5: 修复 generate_proposal_id() per-project counter + 2处调用点更新 + 全局唯一性检查保留
-P-20260522-028,cultivation-simulator V50 内置提案系统 (Direction A - CSV同步),小墨,active,PRJ-20260516-002,cultivation-simulator,delivered,workspace-pm/proposals/P-20260522-001-prd.md,,/home/hermes/projects/cultivation-simulator,Direction A无人值守模式交付；内置提案系统(游戏内提交→CSV存储→proposal-index同步)；参考proposal_manager_cli.py CSV→index模式,2026-05-22,,accepted,,2026-05-22,,,,无人值守模式Direction A交付；内置提案系统(game.js新增proposalBtn常驻按钮/提交面板/提案列表/方向标签/状态追踪)；参考proposal_manager_cli.py CSV→index模式；Commit c40241a；push成功
-P-20260522-030,price-compare Round4 - proposal diff 字段级对比,小墨,accepted,PRJ-20260521-002,price-compare,accepted,,,/home/hermes/projects/price-compare,,2026-05-22,,accepted,,2026-05-22,,,,无人值守 Round4 完成
-P-20260522-031,Direction A Round 3: 清理 CSV header 泄漏脏数据 + validate 0 errors 确认,小墨,accepted,PRJ-20260417-001,prj-proposals-manager,accepted,,,/home/hermes/projects/prj-proposals-manager,,2026-05-22,,accepted,,2026-05-22,,,,mode: unattended. 清理2个脏行（id=title=project_id=header泄漏进数据）。手动验证251 proposals，0 real errors，60 warnings均为orphaned-project正常警告。Commit a22ea52。Push: origin/master与本地完全同步。
-P-20260522-032,price-compare Round5 - proposal export (JSON/CSV/LaTeX),小墨,accepted,PRJ-20260521-002,price-compare,accepted,,,/home/hermes/projects/price-compare,,2026-05-22,,accepted,,2026-05-22,,,,无人值守 Round5 完成
-P-20260522-033,price-compare Round6 - proposal audit 增强 (跨项目ID冲突检测),小墨,accepted,PRJ-20260521-002,price-compare,accepted,,,/home/hermes/projects/price-compare,,2026-05-22,,accepted,,2026-05-22,,,,无人值守 Round6 完成
-P-20260522-034,Direction A8: proposal stats JSON输出+健康度报告,小墨,intake,PRJ-20260420-002,pixel-pal-web,development,,,/home/hermes/projects/pixel-pal-web,Direction A,2026-05-22,,accepted,,2026-05-22,,,,Direction A8交付(commit d62720e)；stats命令改用regex解析(防数据丢失)+健康度指标(orphan/stale_intake/empty_last_update)；stats --format json输出health字段
-P-20260522-029,cultivation-simulator V51 proposal_manager_cli.py 深化集成 (Direction A),小墨,active,PRJ-20260516-002,cultivation-simulator,delivered,,,/home/hermes/projects/cultivation-simulator,Direction A：游戏内提案→CSV→proposal-index.md全自动同步闭环；深化proposal_manager_cli.py集成,2026-05-22,,accepted,,2026-05-22,,,,无人值守Direction A交付；build_vite.js添加post-build hook调用CLI sync-to-index；Commit a423da9；push成功
-P-20260522-035,creative-drawing-board V68: 插件市场系统 (Direction A),小墨,deployed,PRJ-20260418-002,creative-drawing-board,,/home/hermes/proposals/workspace-pm/proposals/P-20260522-035-prd.md,,/home/hermes/projects/creative-drawing-board,accepted,2026-05-22,2026-05-22,accepted,,2026-05-22,,,,
-P-20260522-036,cultivation-simulator V52 CLI按项目同步 (Direction A),collab-agent,in_dev,PRJ-20260516-002,cultivation-simulator,delivered,/home/hermes/proposals/workspace-pm/proposals/P-20260522-031-prd.md,,/home/hermes/projects/cultivation-simulator/,https://github.com/YeLuo45/cultivation-simulator,https://yeluo45.github.io/cultivation-simulator/,main,,timeout-approved,accepted,A,2026-05-22,,,V52交付；CLI sync-to-index --project PRJ-20260516-002；Commit 5075bb9 | V53: 提案状态筛选/详情弹窗/localStorage持久化；Commit 5e496ab
-P-20260522-037,V52 天命系统 - 核心修仙深化,小墨,deployed,PRJ-20260516-002,cultivation-simulator,delivered,,,,,2026-05-22,,accepted,,2026-05-22,,,,
-P-20260522-038,github-repo-manager MCP Server 工具生态 (Direction A),小墨,delivered,accepted,github-repo-manager,delivered,/home/hermes/proposals/workspace-pm/proposals/P-20260522-038-prd.md,,/home/hermes/projects/github-repo-manager,master,2026-05-22,A,accepted,A,2026-05-22,,,,26个MCP工具+ToolRegistry+SandboxExecutor+cli.js；node server/mcp/cli.js list显示26工具；语法检查通过；Commit 4c879b3
-P-20260522-040,ai-subscription Provider路由器增强 + 多Provider竞价 (Direction A),小墨,active,PRJ-20260412-008,ai-subscription,accepted,,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,timeout-approved,timeout-approved,accepted,Direction A,277cf4dd,2026-05-22,,,,无人值守Direction A交付；cost-optimizer模块(6文件)；llm-router增强；commit 277cf4dd；push成功；构建验证：既有问题非本轮引入
-P-20260522-040-dup,V51: audit命令增加纯重复ID检测,小墨,archived,PRJ-20250416-001,todo-list,delivered,,,,,,2026-05-22,,audit增加纯重复ID检测;57个ID出现94次重复;--fix保留最新last_update;commit f4aaa18,2026-05-22,,,,
-P-20260522-042,V35: 工具系统生态深化 - Sandbox + MCP Client + ToolPanel增强,小墨,active,PRJ-20260422-001,ai-novel-assistant,accepted,,,,,,,2026-05-22,,2026-05-22,,,Sandbox隔离执行;MCP Client连接外部工具服务器;ToolRegistry新增mcp类别;ToolPanel三Tab(工具/历史/统计);Commit bdf5e508;构建待验证,
-P-20260522-039,github-repo-manager MCP HTTP Server + Client + Web UI (Direction A),小墨,delivered,PRJ-20260516-003,github-repo-manager,approved_for_dev,/home/hermes/proposals/workspace-pm/proposals/P-20260522-039-prd.md,,/home/hermes/projects/github-repo-manager,master,,timeout-approved,pending,delivered,2026-05-22,,,2026-05-22,Direction A无人值守模式；MCP HTTP Server+Client+Web UI测试面板
-P-20260522-042,V52: sync-to-index命令完整验证,小墨,delivered,PRJ-20250416-001,todo-list,delivered,,,,,https://github.com/YeLuo45/proposals-document,,,2026-05-22,,V52交付;sync-to-index完整功能验证;--dry-run/--project/--check/--delta均正常;audit 0 issues;commit b1a97dc
-P-20260522-043,V52: sync-to-index命令完整验证,小墨,delivered,PRJ-20250416-001,todo-list,delivered,,,,https://github.com/YeLuo45/proposals-document,,,,,2026-05-22,,,,V52交付;sync-to-index功能完整;--dry-run/--project/--check/--delta正常;audit 0 issues;commit b1a97dc
-P-20260522-044,V53 悟道天梯 - 天道法则可视化/悟道境界晋升/领悟历程记录,小墨,delivered,accepted,PRJ-20260516-002,cultivation-simulator,delivered,,,,,https://github.com/YeLuo45/cultivation-simulator,https://yeluo45.github.io/cultivation-simulator/,main,,,accepted,,2026-05-22,,,,V53悟道天梯交付；天道法则可视化天梯/悟道境界6层晋升/领悟历程记录；Commit bbe5eaf
-P-20260522-041,ai-subscription Provider竞价可视化 + 路由日志增强 (Direction A阶段2交付),小墨,active,PRJ-20260412-008,ai-subscription,accepted,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-040-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,accepted,Direction A阶段2,e0deeb12,无人值守Direction A阶段2交付；routing-history模块(3文件)；smart-scorer增强；llm-router增强；commit e0deeb12；push成功
-P-20260522-042,ai-subscription 模型性能分析 + 路由推荐引擎 (Direction A阶段3),小墨,active,PRJ-20260412-008,ai-subscription,approved_for_dev,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-042-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,pending,Direction A阶段3,P-20260522-040前置,无人值守模式：自动确认+自动验收+自动迭代
-P-20260522-001,creative-drawing-board V69: AI 辅助绘画引擎 (Direction A),小墨,delivered,PRJ-20260418-002,creative-drawing-board,,/home/hermes/proposals/workspace-pm/proposals/P-20260522-037-prd.md,,/home/hermes/projects/creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,https://yeluo45.github.io/creative-drawing-board/,master,,timeout-approved,timeout-approved,accepted,Direction A,2026-05-22,,,,GenericAgent L3 Skill；笔画补全 + 智能填色 + 风格迁移 + 绘画SOP；Commit d8b06ee,,in_dev
-P-20260522-045,creative-drawing-board V69: AI 辅助绘画引擎 (Direction A),小墨,delivered,accepted,creative-drawing-board,,/home/hermes/proposals/workspace-pm/proposals/P-20260522-037-prd.md,,/home/hermes/projects/creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,https://yeluo45.github.io/creative-drawing-board/,master,,timeout-approved,timeout-approved,accepted,Direction A,2026-05-22,,,,GenericAgent L3 Skill；笔画补全 + 智能填色 + 风格迁移 + 绘画SOP；Commit d8b06ee,,in_dev
-P-20260522-043,ai-subscription 模型性能分析 + 路由推荐引擎 (Direction A阶段3交付),小墨,active,PRJ-20260412-008,ai-subscription,accepted,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-042-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,accepted,Direction A阶段3,e76321ce,无人值守Direction A阶段3交付；analytics.ts；recommender.ts；index.ts更新；commit e76321ce；push成功
-P-20260522-044,ai-subscription 路由策略自动化 + A/B测试框架 (Direction A阶段4),小墨,active,PRJ-20260412-008,ai-subscription,approved_for_dev,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-044-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,pending,Direction A阶段4,P-20260522-042前置,无人值守模式：自动确认+自动验收+自动迭代
-P-20260522-046,V52: sync-to-index命令完整功能验证,小墨,delivered,PRJ-20250416-001,todo-list,delivered,workspace-dev/proposals/todo-list/PRD-V52-Direction-A.md,,,https://github.com/YeLuo45/proposals-document,,,,,2026-05-22,,,,V52交付;sync-to-index完整功能(--dry-run/--project/--check/--delta);audit 0 issues;commit e9a7075
-P-20260522-045,ai-subscription 路由策略自动化 + A/B测试框架 (Direction A阶段4交付),小墨,active,PRJ-20260412-008,ai-subscription,accepted,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-044-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,accepted,Direction A阶段4,a5aa8b5b,无人值守Direction A阶段4交付；routing-strategy模块(5文件)；RoutingStrategy+ABTest+AutoTuner；commit a5aa8b5b；push成功
-P-20260522-046,ai-subscription 策略市场 + 用户自定义策略 (Direction A阶段5),小墨,active,PRJ-20260412-008,ai-subscription,approved_for_dev,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-046-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,pending,Direction A阶段5,P-20260522-044前置,无人值守模式：自动确认+自动验收+自动迭代
-P-20260522-047,cultivation-simulator V54 渡劫增强+宗门框架 (Direction A),collab-agent,in_dev,PRJ-20260516-002,cultivation-simulator,in_dev,/home/hermes/proposals/workspace-pm/proposals/P-20260522-042-prd.md,,/home/hermes/projects/cultivation-simulator/,https://github.com/YeLuo45/cultivation-simulator,https://yeluo45.github.io/cultivation-simulator/,main,,timeout-approved,accepted,A,2026-05-22,,,,无人值守模式 V54 Direction A
-P-20260522-054,ai-subscription MCP工具注册表 + 外部工具集成 (方向A深化A1),小墨,active,PRJ-20260412-008,ai-subscription,approved_for_dev,,/home/hermes/.hermes/proposals/workspace-pm/proposals/P-20260522-054-prd.md,/home/hermes/projects/ai-subscription,https://github.com/YeLuo45/ai-subscription,https://yeluo45.github.io/ai-subscription/,master,timeout-approved,timeout-approved,pending,方向A深化A1,P-20260522-053前置,无人值守模式：自动确认+自动验收+自动迭代
-P-20260522-048,Direction A: 工具插件化 + LLM Provider可插拔架构,小墨,active,doc-editor,doc-editor,approved_for_dev,,,/mnt/c/Users/YeZhimin/Desktop/doc-editor,master,timeout-approved,timeout-approved,pending,A,2026-05-22,,,,无人值守模式；方向A：ToolRegistry工具注册发现+ProviderFactory多模型切换；参考claude-code+nanobot架构模式
-P-20260522-055,pixel-pal-web V129 MUI移除 Phase 4 (Direction A),小墨,in_dev,PRJ-20260420-002,pixel-pal-web,in_dev,/home/hermes/prj-proposals/PRJ-20260522-002.md,,/home/hermes/projects/pixel-pal-web/,https://github.com/YeLuo45/pixel-pal-web,https://yeluo45.github.io/pixel-pal-web/,master,,,in_dev,A,2026-05-22,,,,无人值守模式 V129 Phase 4
-P-20260522-011,creative-drawing-board V70: 多玩家协作绘画 (Direction A),小墨,delivered,PRJ-20260418-002,creative-drawing-board,,/home/hermes/proposals/workspace-pm/proposals/P-20260522-046-prd.md,,/home/hermes/projects/creative-drawing-board,https://github.com/YeLuo45/creative-drawing-board,https://yeluo45.github.io/creative-drawing-board/,master,,timeout-approved,timeout-approved,accepted,Direction A,2026-05-22,,,,chatdev Multi-Agent + ruflo 3-Tier；BroadcastChannel房间 + 角色权限 + 冲突解决；Commit 6e14ffb,,in_dev
-P-20260522-056,V54 飞升机制深化 - 仙界版图9大区域探索/渡劫场景增强,小墨,delivered,accepted,PRJ-20260516-002,cultivation-simulator,delivered,,,,,https://github.com/YeLuo45/cultivation-simulator,https://yeluo45.github.io/cultivation-simulator/,main,,,accepted,,2026-05-22,,,,,V54飞升机制深化交付；仙界版图9大区域探索/渡劫场景增强/飞升档案记录；Commit ada60c3
-P-20260522-040,github-repo-manager MCP Streaming + 调用日志持久化 (Direction A iter3),小墨,delivered,PRJ-20260516-003,github-repo-manager,delivered,/home/hermes/proposals/workspace-pm/proposals/P-20260522-040-prd.md,,/home/hermes/projects/github-repo-manager,master,,timeout-approved,accepted,Direction A,2026-05-22,,,,MCP SSE流式响应+JSONL日志持久化+Commit ca2b092(未push)
+id,title,owner,status,project_id,project_name,stage,prd_path,tech_solution_path,project_path,git_repo,deployment_url,prd_confirmation,tech_expectations,acceptance,last_update,engine,target,game_type,notes
+P-20260521-004,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-21,,,,提案
+P-20260524-016,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-045,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-048,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260527-001,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260524-061,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-065,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-078,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-079,card-game-prototype,,archived,card-game-prototype,card-game-prototype,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260521-006,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,无人值守模式；参考generic-agent五层记忆实现NPC自进化,2026-05-22,,,,提案
+P-20260522-028,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-22,,,,提案
+P-20260522-029,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-22,,,,提案
+P-20260522-036,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-22,,,,提案
+P-20260522-037,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-22,,,,提案
+P-20260522-056,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-22,,,,提案
+P-20260521-003,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,"node --check passed, git commit 9bda0a6",2026-05-21,,,,提案
+P-20260526-001,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-26,,,,提案
+P-20260524-080,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-081,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-083,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-084,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-093,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260527-023,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-024,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-025,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-026,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-027,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-028,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-029,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-030,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260527-031,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-27,,,,提案
+P-20260528-003,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-004,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-005,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-006,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-007,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-008,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-009,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-010,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-011,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-012,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-013,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-014,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-015,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-016,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-017,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-018,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-019,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-020,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-021,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-022,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-023,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-024,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-025,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-026,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-027,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-028,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-029,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-030,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-031,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-032,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-033,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-034,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-035,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-036,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-037,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-038,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-039,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-040,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-041,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-042,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-043,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-044,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-045,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-046,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-047,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-048,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-049,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-050,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-051,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-052,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-28,,,,提案
+P-20260528-053,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-003,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-004,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-005,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-006,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-007,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-008,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-009,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-010,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-011,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-012,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-013,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-014,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-015,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-016,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-017,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-018,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-019,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,无人值守模式；45项TDD测试用例，pass_rate 100%，覆盖率≥90%,2026-05-29,,,,提案
+P-20260529-020,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-021,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-022,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-023,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-024,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-025,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-026,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-027,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-028,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-029,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-030,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-031,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-032,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-033,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-034,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-035,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-036,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-037,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-038,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-039,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-040,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-041,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260529-042,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-29,,,,提案
+P-20260530-001,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-002,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-003,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-004,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-005,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-006,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-007,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-008,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-009,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-010,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-011,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-012,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-013,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-014,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-015,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-016,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,无人值守模式；45项TDD测试用例，pass_rate 100%，覆盖率≥95%,2026-05-30,,,,提案
+P-20260530-017,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,无人值守模式；45项TDD测试用例，pass_rate 100%，覆盖率≥95%,2026-05-30,,,,提案
+P-20260530-018,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260530-019,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-30,,,,提案
+P-20260531-025,cultivation-simulator,,archived,cultivation-simulator,cultivation-simulator,,,,,,,,,accepted,2026-05-31,,,,提案
+P-20260524-006,ai-superpower-dev,,archived,ai-superpower-dev,ai-superpower-dev,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260525-002,ai-superpower-dev,,archived,ai-superpower-dev,ai-superpower-dev,,,,,,,,,accepted,2026-05-25,,,,提案
+P-20260525-003,ai-superpower-dev,,archived,ai-superpower-dev,ai-superpower-dev,,,,,,,,,accepted,2026-05-25,,,,提案
+P-20260526-004,ai-superpower-dev,,archived,ai-superpower-dev,ai-superpower-dev,,,,,,,,,accepted,2026-05-26,,,,提案
+P-20260526-011,ai-superpower-dev,,archived,ai-superpower-dev,ai-superpower-dev,,,,,,,,,accepted,2026-05-26,,,,Web
+P-20260524-065,ai-novel-assistant,,archived,ai-novel-assistant,ai-novel-assistant,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-067,ai-novel-assistant,,archived,ai-novel-assistant,ai-novel-assistant,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-072,ai-novel-assistant,,archived,ai-novel-assistant,ai-novel-assistant,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260524-073,ai-novel-assistant,,archived,ai-novel-assistant,ai-novel-assistant,,,,,,,,,accepted,2026-05-24,,,,提案
+P-20260531-001,pixel-pal-web,,completed,pixel-pal-web,pixel-pal-web,delivered,,,,,,,,PRD → Tech Solution → Test Cases → dev委托 → 验收,2026-05-31,,,,提案
